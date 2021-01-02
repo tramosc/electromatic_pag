@@ -20,7 +20,6 @@ class CreateServiciosTable extends Migration
             $table->string('definicion');
             $table->string('caracteristicas');
             $table->string('importancia');
-            $table->string('imgs_galeria');
             $table->timestamps();
         });
     }
