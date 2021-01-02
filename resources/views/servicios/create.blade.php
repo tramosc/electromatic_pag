@@ -34,10 +34,6 @@
                 <label for="importancia">Datos...</label>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="imgs_galeria" class="form-label">Subir imagenes</label>
-                <input type="file" class="form-control" name="imgs_galeria" id="imgs_galeria">
-            </div>
 
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

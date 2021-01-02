@@ -49,5 +49,7 @@ Route::resource('manuales', 'ManualesController');
 Route::get('/manuales', 'ManualesController@index')->name('manuales');
 Route::get('/manuales/create', 'ManualesController@create');
 Route::get('/manuales/edit', 'ManualesController@edit');
-
 */
+
+//Imagenes
+Route::resource('imagenes', 'ImagesServiciosController');

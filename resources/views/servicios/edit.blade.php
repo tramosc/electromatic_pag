@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
     <h1 class="align:center">Editar servicio actual</h1>
+    <a href="{{ url('imagenes/create') }}">Subir imagenes</a>
         <div class="card" style="width: 70rem;">
         <div class="card-body">
 
@@ -36,11 +37,6 @@
                 <textarea class="form-control"  id="importancia" name="importancia" style="height: 100px" value="{{ $servicio->importancia }}"></textarea>
                 <label for="importancia">Datos...</label>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <label for="imgs_galeria" class="form-label">Subir imagenes</label>
-                <img src="{{asset('storage').'/'.$servicio->imgs_galeria}}" width="200">
-                <input type="file" class="form-control" name="imgs_galeria" id="imgs_galeria" value="">
             </div>
 
             <div class="col-12">
