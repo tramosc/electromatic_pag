@@ -3,8 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    <a href="{{ url('imagenes/create') }}">Subir Nueva imagen</a>
-    <a href="{{ url('servicios') }}">Regresar a servicios</a>
+    <a class="btn btn-primary" href="{{ url('imagenes/create') }}" role="button">Subir Nueva imagen</a>
         <h1 class="align:center">Lista de imagenes</h1>
         
         <i class="bi bi-plus-square-fill"></i>
@@ -49,6 +48,7 @@
             </tbody>
 
         </table>
+        <a class="btn btn-primary" href="{{ url('servicios') }}" role="button">Regresar a servicios</a>
     </div>
 </div>
 @endsection

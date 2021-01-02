@@ -20,6 +20,10 @@ class CreateServiciosTable extends Migration
             $table->string('definicion');
             $table->string('caracteristicas');
             $table->string('importancia');
+
+            /*$table->unsignedBigInteger('imagenes_id');
+            $table->foreign('imagenes_id')->references('id')->on('images_servicios')->onDelete('cascade');
+*/
             $table->timestamps();
         });
     }
