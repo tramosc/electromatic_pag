@@ -38,7 +38,7 @@
 
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
-                <a href="{{ url('manuales') }}">Regresar a Manuales</a>
+                <a class="btn btn-danger" href="{{ url('manuales') }}">Regresar a Manuales</a>
             </div>
 
         </form>

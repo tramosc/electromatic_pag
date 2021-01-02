@@ -4,8 +4,9 @@
 <div class="container">
     
 <div class="row justify-content-center">
-<a href="{{ url('manuales/create') }}">Crear Nuevo Manual</a>
-        <h1 class="align:center">Lista de Manuales</h1>
+<a class="btn btn-primary" href="{{ url('manuales/create') }}">Crear Nuevo Manual</a>
+
+<h1 class="align:center">Lista de Manuales</h1>
         <i class="bi bi-plus-square-fill"></i>
 
         <table class="table table-striped table-hover">
@@ -36,7 +37,7 @@
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <a href="{{ url('/manuales/'.$manual->id.'/edit') }}">Editar</a>
+                <a class="btn btn-warning" href="{{ url('/manuales/'.$manual->id.'/edit') }}">Editar</a>
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>
                 </div>

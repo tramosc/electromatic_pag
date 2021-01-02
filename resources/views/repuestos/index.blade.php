@@ -4,7 +4,7 @@
 <div class="container">
     
 <div class="row justify-content-center">
-<a href="{{ url('repuestos/create') }}">Crear Nuevo Repuesto</a>
+<a class="btn btn-primary"  href="{{ url('repuestos/create') }}">Crear Nuevo Repuesto</a>
         <h1 class="align:center">Lista de Repuestos</h1>
         <i class="bi bi-plus-square-fill"></i>
 
@@ -36,7 +36,7 @@
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <a href="{{ url('/repuestos/'.$repuesto->id.'/edit') }}">Editar</a>
+                <a class="btn btn-warning" href="{{ url('/repuestos/'.$repuesto->id.'/edit') }}">Editar</a>
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>
                 </div>

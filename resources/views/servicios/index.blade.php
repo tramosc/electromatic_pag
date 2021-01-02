@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    <a href="{{ url('servicios/create') }}">Crear Nuevo servicio</a>
+    <a class="btn btn-primary" href="{{ url('servicios/create') }}">Crear Nuevo servicio</a>
         <h1 class="align:center">Lista de servicios</h1>
         
         <i class="bi bi-plus-square-fill"></i>
@@ -38,7 +38,7 @@
                 <form method="POST" action="{{ url('/servicios/'.$servicio->id) }}">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
-                <a href="{{ url('/servicios/'.$servicio->id.'/edit') }}">Editar</a>
+                <a class="btn btn-warning" href="{{ url('/servicios/'.$servicio->id.'/edit') }}">Editar</a>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>

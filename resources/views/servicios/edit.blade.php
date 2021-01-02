@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row justify-content-center">
     <h1 class="align:center">Editar servicio actual</h1>
-    <a href="{{ url('imagenes/create') }}">Subir imagenes</a>
         <div class="card" style="width: 70rem;">
         <div class="card-body">
 
@@ -41,7 +40,7 @@
 
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar</button>
-                <a href="{{ url('servicios') }}">Regresar a Servicios</a>
+                <a class="btn btn-danger" href="{{ url('servicios') }}">Regresar a Servicios</a>
             </div>
         </form>
 
@@ -50,6 +49,11 @@
  
 
         </div>
+    </div>
+    <h1>Imagenes para la Galeria</h1>
+    <br>
+    <div class="col-6">
+    <a class="btn btn-primary btn-lg btn-block" href="{{ url('imagenes/') }}" role="button">Subir Imagenes Galeria</a>
     </div>
 </div>
 @endsection

@@ -25,7 +25,6 @@
                 <tr>
                 <th scope="row">{{$loop->iteration}}</th>
                 <td>{{$imagen->titulo_img}}</td>
-                <td>{{$imagen->imagen_servicios}}</td>
                 <td>
                 <img src="{{asset('storage').'/'.$imagen->imagen_servicios}}" width="200">
                 
@@ -34,7 +33,7 @@
                 <form method="POST" action="{{ url('/imagenes/'.$imagen->id) }}">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
-                <a href="{{ url('/imagenes/'.$imagen->id.'/edit') }}">Editar</a>
+                <a class="btn btn-warning" href="{{ url('/imagenes/'.$imagen->id.'/edit') }}">Editar</a>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>
