@@ -49,12 +49,9 @@ class ManualesController extends Controller
         if($request->hasFile('img_manual')){
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
-
-        $datosManual = request()->except('_token');
-        if($request->hasFile('archivo_url')){
-            $datosManual['archivo_url']=$request->file('archivo_url')->store('uploads', 'public');
+        if($request->hasFile('imgs_galeria')){
+            $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
-
         Manuales::insert($datosManual);
         return redirect('manuales');
     }
@@ -98,17 +95,18 @@ class ManualesController extends Controller
 
         if($request->hasFile('img_manual')){
 
-            $manual= Manuales::findOrFail($id);
-
-            Storage::delete('public/'.$manual->img_portada);
-
+            $Manual= Manuales::findOrFail($id);
+            Storage::delete('public/'.$Manual->img_portada);
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
 
-        Manuales::where('id','=',$id)->update($datosManuales);
+        Manuales::where('id','=',$id)->update($datosManual);
 
-        $manual= Manuales::findOrFail($id);
+        $Manual= Manuales::findOrFail($id);
+        //dd("actualizacion de imagen".$servicio->img_portada);
         return redirect('manuales');
+        //return view('servicios.edit', compact('servicio'));
+        
     }
 
     /**
@@ -120,14 +118,13 @@ class ManualesController extends Controller
     public function destroy($id)
     {
         //
-      /*
+    
         $manual= Manuales::findOrFail($id);
 
         if(Storage::delete('public/'.$manual->img_manual)){
-            
+            Manuales::destroy($id);
         }
-*/
-        Manuales::destroy($id);
+        
         
 
         return redirect('manuales');

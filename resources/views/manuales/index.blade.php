@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    
 <div class="row justify-content-center">
 <a href="{{ url('manuales/create') }}">Crear Nuevo Manual</a>
         <h1 class="align:center">Lista de Manuales</h1>
@@ -15,7 +16,7 @@
                 <th scope="col">Fecha</th>
                 <th scope="col">Descripcion</th>
                 <th scope="col">Detalles</th>
-                <th scope="col">Img Portada</th>
+                <th scope="col">img portada</th>
                 <th scope="col">Acciones</th>
                 </tr>
             </thead>
@@ -28,15 +29,14 @@
                 <td>{{$manual->descripcion}}</td>
                 <td>{{$manual->detalles}}</td>
                 <td>
-                    <img src="{{asset('storage').'/'.$manual->img_manual}}" width="200">
+                <img src="{{asset('storage').'/'.$manual->img_manual}}" width="200">
                 </td>
-
                 <td>
                 <form method="POST" action="{{ url('/manuales/'.$manual->id) }}">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
-                <a href="{{ url('/manuales/'.$manual->id.'/edit') }}">Editar</a>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <a href="{{ url('/manuales/'.$manual->id.'/edit') }}">Editar</a>
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>
                 </div>
@@ -44,9 +44,12 @@
                 </td>
                 </tr>
                 <tr>
+                <tr>
             @endforeach
             </tbody>
         </table>
     </div>
+
+
 </div>
 @endsection

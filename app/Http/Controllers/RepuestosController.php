@@ -96,9 +96,9 @@ class RepuestosController extends Controller
  
              Storage::delete('public/'.$repuesto->img_repuesto);
  
-             $datosRepuestos['img_repuesto']=$request->file('img_repuesto')->store('uploads', 'public');
+             $datosRepuesto['img_repuesto']=$request->file('img_repuesto')->store('uploads', 'public');
          }
-         Repuestos::where('id','=',$id)->update($datosRepuestos);
+         Repuestos::where('id','=',$id)->update($datosRepuesto);
  
          $repuesto= Repuestos::findOrFail($id);
          return redirect('repuestos');

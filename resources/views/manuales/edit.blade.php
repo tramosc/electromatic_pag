@@ -18,7 +18,7 @@
                 <img src="{{asset('storage').'/'.$manual->img_manual}}" width="200">
                 <input type="file" class="form-control" name="img_manual" id="img_manual" value="">
             </div>
-            <div class="col-12">
+            <div class="col-2">
                 <label for="fecha" class="form-label">Fecha</label>
                 <input type="date" class="form-control" name="fecha" id="fecha" value="{{ $manual->fecha }}">
             </div>

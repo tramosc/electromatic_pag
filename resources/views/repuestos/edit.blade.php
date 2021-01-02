@@ -27,7 +27,8 @@
             </div>
             <div class="col-md-6">
                 <label for="img_repuesto" class="form-label">Imagen repuesto</label>
-                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" value="{{ $repuesto->img_repuesto }}">
+                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" value="">
+                <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="200">
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>

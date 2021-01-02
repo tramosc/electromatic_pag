@@ -98,23 +98,22 @@ class ServiciosController extends Controller
         if($request->hasFile('img_portada')){
 
             $servicio= Servicios::findOrFail($id);
-
             Storage::delete('public/'.$servicio->img_portada);
-
             $datosServicio['img_portada']=$request->file('img_portada')->store('uploads', 'public');
         }
-        /*
+
         if($request->hasFile('imgs_galeria')){
+
             $servicio= Servicios::findOrFail($id);
-
-            Storage::delete('public/'.$servicio->imgs_galeria);
-
+            Storage::delete('public/'.$servicio->img_portada);
             $datosServicio['imgs_galeria']=$request->file('imgs_galeria')->store('uploads', 'public');
         }
-*/
-        Servicios::where('id','=',$id)->update($datosServicios);
+
+
+        Servicios::where('id','=',$id)->update($datosServicio);
 
         $servicio= Servicios::findOrFail($id);
+        //dd("actualizacion de imagen".$servicio->img_portada);
         return redirect('servicios');
         //return view('servicios.edit', compact('servicio'));
 
@@ -132,7 +131,7 @@ class ServiciosController extends Controller
         
         $servicio= Servicios::findOrFail($id);
 
-        if(Storage::delete('public/'.$servicio->img_portada)){
+        if(Storage::delete('public/'.$servicio->img_portada)&& Storage::delete('public/'.$servicio->imgs_galeria)){
             Servicios::destroy($id);
         }
         

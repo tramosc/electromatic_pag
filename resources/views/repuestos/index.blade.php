@@ -28,13 +28,19 @@
                 <td>{{$repuesto->descripcion_repuesto}}</td>
                 <td>{{$repuesto->detalles_repuesto}}</td>
                 <td>{{$repuesto->precio}}</td>
-                <td>{{$repuesto->img_repuesto}}</td>
                 <td>
+                <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="200">
+                </td>
+                <td>
+                <form method="POST" action="{{ url('/repuestos/'.$repuesto->id) }}">
+                {{ csrf_field() }}
+                {{ method_field('DELETE') }}
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <a href="{{ url('/repuestos/'.$repuesto->id.'/edit') }}">Editar</a>
-                <button type="button" class="btn btn-danger">Eliminar</button>
+                <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 <button type="button" class="btn btn-success">Ver</button>
                 </div>
+                </form>
                 </td>
                 </tr>
                 <tr>
