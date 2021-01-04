@@ -49,9 +49,6 @@ class ManualesController extends Controller
         if($request->hasFile('img_manual')){
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
-        if($request->hasFile('imgs_galeria')){
-            $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
-        }
         Manuales::insert($datosManual);
         return redirect('manuales');
     }
