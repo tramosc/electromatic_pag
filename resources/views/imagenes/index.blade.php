@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
     <a class="btn btn-primary" href="{{ url('imagenes/create') }}" role="button">Subir Nueva imagen</a>
-        <h1 class="align:center">Lista de imagenes</h1>
+        <h1 class="align:center">Lista de imagenes para galeria</h1>
         
         <i class="bi bi-plus-square-fill"></i>
         
@@ -35,7 +35,6 @@
                 <a class="btn btn-warning" href="{{ url('/imagenes/'.$imagen->id.'/edit') }}">Editar</a>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
-                <button type="button" class="btn btn-success">Ver</button>
                 </div>
                 </form>
 

@@ -36,6 +36,7 @@
                 <textarea class="form-control"  id="importancia" name="importancia" style="height: 100px" value="{{ $servicio->importancia }}"></textarea>
                 <label for="importancia">Datos...</label>
                 </div>
+                <br></br>
             </div>
 
             <div class="col-12">
@@ -51,9 +52,33 @@
         </div>
     </div>
     <h1>Imagenes para la Galeria</h1>
+    <h3>Imagenes actuales:</h3>
+    <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 1 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 2 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 3 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 4 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 5 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 6 </h2>     
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>imagen_galeria 7 </h2>     
+                    </div>
+                </div>
     <br>
     <div class="col-6">
-    <a class="btn btn-primary btn-lg btn-block" href="{{ url('imagenes/') }}" role="button">Subir Imagenes Galeria</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{ url('imagenes/') }}" role="button">Ir a Imagenes de Galeria</a>
     </div>
 </div>
 @endsection

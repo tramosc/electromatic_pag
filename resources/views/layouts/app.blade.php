@@ -9,6 +9,7 @@
 
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
     <title>ELECTROMATIC - INTERNO</title>
+    <link href="{{ asset('css/favicon.ico') }}" rel="icon">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
