@@ -13,9 +13,49 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+///Estaticas
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Empresa
+Route::get('/Vista-Empresa', function () {
+    return view('empresa');
+});
+
+//Contacto
+Route::get('/Vista-Contacto', function () {
+    return view('contacto');
+});
+
+//MANEJO DE DATOS
+///Manuales
+Route::get('/Vista-Manuales', function () {
+    return view('manuales');
+});
+
+Route::get('/Vista-Manual-Elemento', function () {
+    return view('manualElemento');
+});
+
+///Repuestos
+Route::get('/Vista-Repuestos', function () {
+    return view('repuestos');
+});
+
+Route::get('/Vista-Repuesto-Elemento', function () {
+    return view('repuestoElemento');
+});
+
+///Servicios
+Route::get('/Vista-Servicios', function () {
+    return view('servicios');
+});
+
+Route::get('/Vista-Servicio-Elemento', function () {
+    return view('servicioElemento');
+});
+
 
 Auth::routes();
 

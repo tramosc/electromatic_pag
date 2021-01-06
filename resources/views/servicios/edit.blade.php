@@ -51,7 +51,8 @@
 
         </div>
     </div>
-    <h1>Imagenes para la Galeria</h1>
+    <br>
+    <h1 style="text-align: center;">Imagenes para la Galeria</h1>
     <h3>Imagenes actuales:</h3>
     <div class="row">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
