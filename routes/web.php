@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,7 +56,6 @@ Route::get('/Vista-Servicio-Elemento', function () {
     return view('servicioElemento');
 });
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -93,3 +92,9 @@ Route::get('/manuales/edit', 'ManualesController@edit');
 
 //Imagenes
 Route::resource('imagenes', 'ImagesServiciosController');
+
+Route::get('imagenesGaleria/{idServicios}', function ($idServicio) {
+    $imagenes = DB::table('images_servicios')->where('imagenes_id', $idServicio)->get();
+
+        return view('imagenes.index', ['imagenes'=>$imagenes]);
+    });

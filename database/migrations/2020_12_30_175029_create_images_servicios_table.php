@@ -17,9 +17,15 @@ class CreateImagesServiciosTable extends Migration
             $table->id();
             $table->string('titulo_img');
             $table->string('imagen_servicios');
+
+            $table->integer('imagenes_id');
             $table->timestamps();
         });
     }
+
+    /**
+     * save o create
+     */
 
     /**
      * Reverse the migrations.

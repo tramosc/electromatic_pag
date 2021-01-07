@@ -32,6 +32,7 @@ class PostulantesController extends Controller
     public function create()
     {
         //
+        return view('postulantes.create');
     }
 
     /**
