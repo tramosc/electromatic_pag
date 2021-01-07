@@ -116,12 +116,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2 style="color: white;">{{titulo_servicios}}</h2>
+                            <h2 style="color: white;">--titulo_servicios--</h2>
                         </div>
                         <div class="col-12">
                             <a href="">Inicio</a>
                             <a href="">Servicios</a>
-                            <a href="">{{titulo_servicios}}</a>
+                            <a href="">--titulo_servicios--</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                                     <img src="img/service-1.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                                     <img src="img/service-2.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                                     <img src="img/service-3.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                                     <img src="img/service-4.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                 </div>
                             </div>
                         </div>
@@ -194,7 +194,7 @@
                                     <img src="img/service-5.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                     <img src="img/service-6.jpg" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">{{titulo_img}}</h3>
+                                    <h3 style="text-align: center;">--titulo_img--</h3>
                                       <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a> 
                                 </div>
                             </div>

@@ -139,7 +139,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="https://lh3.googleusercontent.com/proxy/RliVES_4sBC2C29Q1ybNWFU_RLVJQ0V8phR7QfsDYdfKK4eJk2IhSIpaSdSy1dwBtH4VzvGeyiVIbS7bFo8fRzJyUfcUm-Ovtsn3" width="100px" height="250px" alt="Team Image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DtgXh8ayRirBZIGGqr6ul141LyJ5k7z2mg&usqp=CAU" width="100px" height="250px" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>--titulo_repuesto--</h2>
