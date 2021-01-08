@@ -132,15 +132,10 @@
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                <img src="img/about.jpg" alt="Image">
-                            </div>
-                        </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Bienvenido a ELECTROMATIC INDUSTRIAL</p>
-                                <h2 style="color: black;">8 Años de Experiencia</h2>
+                                <p>Sobre Electromatic industrial</p>
+                                <h2 style="color: black;">Nosotros</h2>
                             </div>
                             <div class="about-text">
                                 <p>
@@ -149,17 +144,26 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- About End -->
-            
-            
-            <!-- Fact Start -->
-            <div class="fact">
+
+                        <!-- Fact Start -->
+                        <div class="fact">
                 <div class="container-fluid">
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
@@ -210,14 +214,77 @@
                 </div>
             </div>
             <!-- Fact End -->
+
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2 style="color: black;">Mision</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                </p>
+                            </div>
+                        </div>
+
+    
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <h2 style="color: black;">Vision</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            
+            
             
             
             <!-- FAQs Start -->
             <div class="faqs">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Frequently Asked Question</p>
-                        <h2 style="color: black;">You May Ask</h2>
+                        <p>Valores de Electromatic</p>
+                        <h2 style="color: black;">NUESTROS VALORES</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -352,6 +419,42 @@
                 </div>
             </div>
             <!-- FAQs End -->
+
+            <!-- ======= Clients LOGO Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container">
+          <h1>NUESTROS CLIENTES</h1>
+          <div class="row">
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+  
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Clients Section -->
+
 
 
             <!-- Footer Start -->

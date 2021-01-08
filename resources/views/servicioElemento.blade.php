@@ -134,6 +134,9 @@
                     <div class="section-header text-center">
                         <h2 style="color: black;">Datos del servicio</h2>
                     </div>
+                    <h2 style="color: black;">definicion</h2>
+                    <h2 style="color: black;">caracteristicas</h2>
+                    <h2 style="color: black;">importancia</h2>
                 </div>
             </div>
             <!-- Service-detalle End -->
@@ -155,6 +158,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center;">--titulo_img--</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
                                 </div>
                             </div>
                         </div>
@@ -165,6 +169,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center;">--titulo_img--</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
                                 </div>
                             </div>
                         </div>
@@ -175,6 +180,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center;">--titulo_img--</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
                                 </div>
                             </div>
                         </div>
@@ -185,6 +191,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center;">--titulo_img--</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
                                 </div>
                             </div>
                         </div>
@@ -195,6 +202,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center;">--titulo_img--</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
                                 </div>
                             </div>
                         </div>

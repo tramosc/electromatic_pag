@@ -51,7 +51,6 @@ Route::get('/Vista-Repuesto-Elemento', function () {
 Route::get('/Vista-Servicios', function () {
     return view('servicios');
 });
-
 Route::get('/Vista-Servicio-Elemento', function () {
     return view('servicioElemento');
 });
