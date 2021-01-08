@@ -539,40 +539,21 @@
                         <h2 style="color: black;">Galeria</h2>
                     </div>
                     <div class="row">
+                    @foreach($imagenesInicio as $imagenInicio)
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-1.jpg" alt="Image">
+                                    <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" width="100px" height="300px" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">imagen 1</h3>
-                                    <a class="btn" href="img/service-1.jpg" data-lightbox="service">+</a>
+                                    <h3 style="text-align: center;">{{$imagenInicio->titulo_img}}</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-2.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">imagen 2</h3>
-                                    <a class="btn" href="img/service-2.jpg" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-3.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">imagen 3</h3>
-                                    <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
+                    
                 </div>
             </div>
             <!-- Service End -->

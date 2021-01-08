@@ -49,6 +49,11 @@ class ManualesController extends Controller
         if($request->hasFile('img_manual')){
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
+        if($request->hasFile('archivo_url')){
+            $datosManual['archivo_url']=$request->file('archivo_url')->store('uploads', 'public');
+        }
+        
+
         Manuales::insert($datosManual);
         return redirect('manuales');
     }
@@ -95,6 +100,12 @@ class ManualesController extends Controller
             $Manual= Manuales::findOrFail($id);
             Storage::delete('public/'.$Manual->img_portada);
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
+        }
+        if($request->hasFile('archivo_url')){
+
+            $Manual= Manuales::findOrFail($id);
+            Storage::delete('public/'.$Manual->archivo_url);
+            $datosManual['archivo_url']=$request->file('archivo_url')->store('uploads', 'public');
         }
 
         Manuales::where('id','=',$id)->update($datosManual);

@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\DB;
 */
 
 ///Estaticas
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontController@viewImagenes');
 
 //Empresa
 Route::get('/Vista-Empresa', function () {
@@ -30,30 +28,16 @@ Route::get('/Vista-Contacto', function () {
 
 //MANEJO DE DATOS
 ///Manuales
-Route::get('/Vista-Manuales', function () {
-    return view('manuales');
-});
-
-Route::get('/Vista-Manual-Elemento', function () {
-    return view('manualElemento');
-});
+Route::get('/Vista-Manuales', 'FrontController@indexManuales');
+Route::get('/Vista-Manual-Elemento', 'FrontController@indexRepuestos');
 
 ///Repuestos
-Route::get('/Vista-Repuestos', function () {
-    return view('repuestos');
-});
-
-Route::get('/Vista-Repuesto-Elemento', function () {
-    return view('repuestoElemento');
-});
+Route::get('/Vista-Repuestos', 'FrontController@indexRepuestos');
+Route::get('/Vista-Repuesto-Elemento', 'FrontController@index');
 
 ///Servicios
-Route::get('/Vista-Servicios', function () {
-    return view('servicios');
-});
-Route::get('/Vista-Servicio-Elemento', function () {
-    return view('servicioElemento');
-});
+Route::get('/Vista-Servicios', 'FrontController@index');
+Route::get('/Vista-Servicio-Elemento','FrontController@view');
 
 Auth::routes();
 
@@ -89,6 +73,10 @@ Route::get('/manuales/create', 'ManualesController@create');
 Route::get('/manuales/edit', 'ManualesController@edit');
 */
 
+//Imagenes inicio
+Route::resource('imagenesInicio', 'ImagesInicioController');
+
+
 //Imagenes
 Route::resource('imagenes', 'ImagesServiciosController');
 
@@ -97,3 +85,4 @@ Route::get('imagenesGaleria/{idServicios}', function ($idServicio) {
 
         return view('imagenes.index', ['imagenes'=>$imagenes]);
     });
+

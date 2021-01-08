@@ -17,6 +17,7 @@
             <div class="col-md-6">
                 <label for="img_portada" class="form-label">Portada</label>
                 <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="200">
+                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
                 <input type="file" class="form-control" name="img_portada" id="img_portada" value="">
             </div>
             <div class="col-12">
@@ -56,7 +57,7 @@
     <h3>Imagenes actuales:</h3>
     <div class="row">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img src="{{asset('storage').'/'.$servicio->$imagen->id}}" width="200"> 
+                    <img src="" width="200"> 
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h2>imagen_galeria 2 </h2>     

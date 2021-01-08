@@ -67,6 +67,7 @@ class ServiciosController extends Controller
     public function show(Servicios $servicios)
     {
         //
+        return view('servicioElemento',compact('servicios'));
     }
 
     /**

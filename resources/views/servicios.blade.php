@@ -130,64 +130,46 @@
 
             <!-- Service Start -->
             <div class="service">
+            
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Servicios</p>
                         <h2 style="color: black;">Brindamos estos servicios</h2>
                     </div>
                     <div class="row">
+                    @foreach($servicios as $servicio)
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="https://pozosatierra.com/carp-img/jb-el-guru-pozo-a-tierra-vertical-con-cemento-conductivo.jpg" width="100px" height="300px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="100px" height="300px" alt="Image">
                                     <div class="service-overlay">
                                         <p>
-                                            --definicion--
+                                        {{$servicio->definicion}}
                                         </p>
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>--titulo_servicios--</h3>
-                                    <a class="btn" href="servicio_elemento.html">+</a>
+                                    <h3>{{$servicio->titulo_servicios}}</h3>
+                                    <a class="btn" href="">+</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="https://www.unimaq.com.pe/wp-content/uploads/2019/06/encapsulado-9-5_2.jpg?$cc-s$" width="100px" height="300px" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            --definicion--
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>--titulo_servicios--</h3>
-                                    <a class="btn" href="servicio_elemento.html">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="https://micarrerauniversitaria.com/wp-content/uploads/2018/02/ingenieria-electrica-32.jpg" width="100px" height="300px" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            --definicion--
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>--titulo_servicios--</h3>
-                                    <a class="btn" href="servicio_elemento.html">+</a>
-                                </div>
-                            </div>
-                        </div>
+                    @endforeach
                     </div>
                 </div>
+                
             </div>
             <!-- Service End -->
+                
+                </td>
+                <td>
+                
+                </td>
+                </tr>
+                <tr>
+                
+
+            
             
 
             <!-- Footer Start -->

@@ -135,56 +135,30 @@
                         <h2 style="color: black;">Nuestros Manuales Disponibles</h2>
                     </div>
                     <div class="row portfolio-container">
+                    @foreach($manuales as $manual)
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                             <div class="portfolio-warp">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-1.jpg" alt="Image">
+                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" alt="Image">
                                     <div class="portfolio-overlay">
                                         <p>
-                                            --descripcion--
+                                        {{$manual->descripcion}}
                                         </p>
                                     </div>
                                 </div>
                                 <div class="portfolio-text">
-                                    <h3>--titulo_manual--</h3>
-                                    <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
+                                    <h3 style="color: white;">{{$manual->titulo_manual}}</h3>
+                                    <a class="btn" href="" data-lightbox="portfolio">+</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-2.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            --descripcion--
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>--titulo_manual--</h3>
-                                    <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-3.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            --descripcion--
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>--titulo_manual--</h3>
-                                    <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
+
+
+
+
             </div>
             <!-- Portfolio End -->
 

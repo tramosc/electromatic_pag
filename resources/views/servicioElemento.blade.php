@@ -134,7 +134,12 @@
                     <div class="section-header text-center">
                         <h2 style="color: black;">Datos del servicio</h2>
                     </div>
-                    <h2 style="color: black;">definicion</h2>
+                    <!--
+                        {{ csrf_field() }}
+                    {{ method_field('GET') }}
+                     -->
+                    
+                    <h2 style="color: black;"></h2>
                     <h2 style="color: black;">caracteristicas</h2>
                     <h2 style="color: black;">importancia</h2>
                 </div>

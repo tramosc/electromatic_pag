@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    <a class="btn btn-primary" href="{{ url('imagenes/create/') }}" role="button">Subir Nueva imagen</a>
-        <h1 class="align:center">Lista de imagenes para galeria</h1>
+    <a class="btn btn-primary" href="{{ url('imagenesInicio/create/') }}" role="button">Subir Nueva imagen</a>
+        <h1 class="align:center">Lista de imagenes para INICIO</h1>
         
         <i class="bi bi-plus-square-fill"></i>
         
@@ -20,19 +20,19 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($imagenes as $imagen)
+                @foreach($imagenesInicio as $imagenInicio)
                 <tr>
                 <th scope="row">{{$loop->iteration}}</th>
-                <td>{{$imagen->titulo_img}}</td>
+                <td>{{$imagenInicio->titulo_img}}</td>
                 <td>
-                <img src="{{asset('storage').'/'.$imagen->imagen_servicios}}" width="200">
+                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" width="200">
                 
                 </td>
                 <td>
-                <form method="POST" action="{{ url('/imagenes/'.$imagen->id) }}">
+                <form method="POST" action="{{ url('/imagenesInicio/'.$imagenInicio->id) }}">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
-                <a class="btn btn-warning" href="{{ url('/imagenes/'.$imagen->id.'/edit') }}">Editar</a>
+                <a class="btn btn-warning" href="{{ url('/imagenesInicio/'.$imagenInicio->id.'/edit') }}">Editar</a>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 </div>
@@ -47,7 +47,6 @@
             </tbody>
 
         </table>
-        <a class="btn btn-primary" href="{{ url('servicios') }}" role="button">Regresar a servicios</a>
     </div>
 </div>
 @endsection
