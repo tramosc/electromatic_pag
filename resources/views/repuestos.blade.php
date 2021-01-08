@@ -136,50 +136,22 @@
                     <h2 style="color: black;">Nuestros repuestos disponibles</h2>
                 </div>
                 <div class="row">
+
+
+                @foreach($repuestos as $repuesto)
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DtgXh8ayRirBZIGGqr6ul141LyJ5k7z2mg&usqp=CAU" width="100px" height="250px" alt="Team Image">
+                                <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="100px" height="250px" alt="Team Image">
                             </div>
                             <div class="team-text">
-                                <h2>--titulo_repuesto--</h2>
-                                <a href="repuestos_elemento.html">Saber mas</a>
+                                <h2 style="color: white;">{{$repuesto->titulo_repuesto}}</h2>
+                                <a href="repuestos_elemento.html" style="color: white;">Saber mas</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://www.unimaq.com.pe/wp-content/uploads/2019/06/encapsulado-9-5.jpg?$cc-s$" width="100px" height="250px" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>--titulo_repuesto--</h2>
-                                <a href="repuestos_elemento.html">Saber mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://todoengeneradores.com/WebRoot/StoreES2/Shops/ea8719/5A29/1C02/8D35/4C1A/10F1/52DF/D07D/D1A4/ITC_1500_abierto-3_m.jpg" width="100px" height="250px" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>--titulo_repuesto--</h2>
-                                <a href="repuestos_elemento.html">Saber mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://www.generadoreselectricos.org/1307-large_default/generador-electrico-carod-ctw-16-l-trifasico.jpg"  width="100px" height="250px" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>--titulo_repuesto--</h2>
-                                <a href="repuestos_elemento.html">Saber mas</a>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
+
                 </div>
             </div>
         </div>
