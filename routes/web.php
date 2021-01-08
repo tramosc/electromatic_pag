@@ -37,7 +37,7 @@ Route::get('/Vista-Repuesto-Elemento', 'FrontController@index');
 
 ///Servicios
 Route::get('/Vista-Servicios', 'FrontController@index');
-Route::get('/Vista-Servicio-Elemento','FrontController@view');
+Route::get('/Vista-Servicio-Elemento','FrontController@viewServicios');
 
 Auth::routes();
 

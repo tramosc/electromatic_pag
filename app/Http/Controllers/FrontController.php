@@ -20,7 +20,7 @@ class FrontController extends Controller
 
     public function viewImagenes(){
         //
-        $datos['imagenesInicio'] = imagesInicio::paginate(15);
+        $datos['imagenesInicio'] = imagesInicio::paginate(30);
         return view('welcome', $datos);
     }
 
@@ -36,7 +36,7 @@ class FrontController extends Controller
         return view('repuestos', $datos);
     }
 
-    public function view($id)
+    public function viewServicios($id)
     {
         $servicio= Servicios::findOrFail($id);
 

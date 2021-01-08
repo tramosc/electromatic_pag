@@ -18,7 +18,12 @@ class CreateImagesServiciosTable extends Migration
             $table->string('titulo_img');
             $table->string('imagen_servicios');
 
-            $table->integer('imagenes_id');
+            $table->unsignedBigInteger('imagenes_id');
+            $table->foreign('imagenes_id')
+            ->references('id')
+            ->on('servicios')
+            ->onDelete('cascade');
+            
             $table->timestamps();
         });
     }
