@@ -11,6 +11,14 @@ use Illuminate\Support\Facades\Storage;
 
 class FrontController extends Controller
 {
+
+    public function viewImagenes(){
+        //
+        $datos['imagenesInicio'] = imagesInicio::paginate(30);
+        return view('welcome', $datos);
+    }
+
+
     public function index()
     {
         //
@@ -18,11 +26,6 @@ class FrontController extends Controller
         return view('servicios', $datos);
     }
 
-    public function viewImagenes(){
-        //
-        $datos['imagenesInicio'] = imagesInicio::paginate(30);
-        return view('welcome', $datos);
-    }
 
     public function indexManuales()
     {
@@ -36,12 +39,31 @@ class FrontController extends Controller
         return view('repuestos', $datos);
     }
 
-    public function viewServicios($id)
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Servicios  $servicios
+     * @return \Illuminate\Http\Response
+     */
+    public function viewServicio($id)
     {
-        $servicio= Servicios::findOrFail($id);
-
+        $servicio = Servicios::findOrFail($id);
         return view('servicioElemento', compact('servicio'));
     }
+
+    public function viewManual($id)
+    {
+        $manual = Manuales::findOrFail($id);
+        return view('manualElemento', compact('manual'));
+    }
+
+
+    public function viewRepuesto($id)
+    {
+        $repuesto = Repuestos::findOrFail($id);
+        return view('repuestoElemento', compact('repuesto'));
+    }
+
 
    
 }

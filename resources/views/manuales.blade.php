@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="portfolio-text">
                                     <h3 style="color: white;">{{$manual->titulo_manual}}</h3>
-                                    <a class="btn" href="" data-lightbox="portfolio">+</a>
+                                    <a class="btn" href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">+</a>
                                 </div>
                             </div>
                         </div>

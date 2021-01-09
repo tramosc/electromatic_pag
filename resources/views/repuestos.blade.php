@@ -146,7 +146,7 @@
                             </div>
                             <div class="team-text">
                                 <h2 style="color: white;">{{$repuesto->titulo_repuesto}}</h2>
-                                <a href="repuestos_elemento.html" style="color: white;">Saber mas</a>
+                                <a href="{{ url('/'.$repuesto->id.'/Vista-Repuesto-Elemento') }}" style="color: white;">Saber mas</a>
                             </div>
                         </div>
                     </div>

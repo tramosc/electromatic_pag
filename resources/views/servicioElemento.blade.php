@@ -116,12 +116,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2 style="color: white;">--titulo_servicios--</h2>
+                            <h2 style="color: white;">{{ $servicio->titulo_servicios }}</h2>
                         </div>
                         <div class="col-12">
                             <a href="">Inicio</a>
                             <a href="">Servicios</a>
-                            <a href="">--titulo_servicios--</a>
+                            <a href="">{{ $servicio->titulo_servicios }}</a>
                         </div>
                     </div>
                 </div>
@@ -134,21 +134,19 @@
                     <div class="section-header text-center">
                         <h2 style="color: black;">Datos del servicio</h2>
                     </div>
-                    <!--
-                        {{ csrf_field() }}
-                    {{ method_field('GET') }}
-                     -->
-                    
+
                     <h2 style="color: black;"></h2>
                     <h2 style="color: black;">caracteristicas</h2>
+                    <p>{{ $servicio->caracteristicas }}</p>
                     <h2 style="color: black;">importancia</h2>
+                    <p>{{ $servicio->importancia }}</p>
                 </div>
             </div>
             <!-- Service-detalle End -->
             
 
-
-            <!-- Service Start -->
+<!-- 
+            Service Start 
             <div class="service">
                 <div class="container">
                     <div class="section-header text-center">
@@ -225,8 +223,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Service End -->
-            
+             Service End 
+           -->
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

@@ -136,6 +136,10 @@
                         <h2 style="color: black;">Datos del Manual</h2>
                     </div>
 
+                    <p>
+                                        {{$manual->descripcion}}
+                                        </p>
+
                 </div>
             </div>
             <!-- Portfolio End -->

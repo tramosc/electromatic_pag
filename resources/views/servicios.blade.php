@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="service-text">
                                     <h3>{{$servicio->titulo_servicios}}</h3>
-                                    <a class="btn" href="">+</a>
+                                    <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">+</a>
                                 </div>
                             </div>
                         </div>

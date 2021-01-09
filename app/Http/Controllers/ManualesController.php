@@ -44,8 +44,10 @@ class ManualesController extends Controller
      */
     public function store(Request $request)
     {
+        
         //
         $datosManual = request()->except('_token');
+        
         if($request->hasFile('img_manual')){
             $datosManual['img_manual']=$request->file('img_manual')->store('uploads', 'public');
         }
@@ -53,7 +55,6 @@ class ManualesController extends Controller
             $datosManual['archivo_url']=$request->file('archivo_url')->store('uploads', 'public');
         }
         
-
         Manuales::insert($datosManual);
         return redirect('manuales');
     }

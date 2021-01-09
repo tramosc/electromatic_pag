@@ -32,7 +32,8 @@
             </div>
             <div class="col-md-6">
                 <label for="archivo_url" class="form-label">Archivo</label>
-                <a href="{{asset('storage').'/'.$manual->archivo_url}}">
+                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download="">Descargar</a>
+
                 <input type="file" class="form-control" name="archivo_url" id="archivo_url" value="">
             </div>
 
