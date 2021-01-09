@@ -121,7 +121,7 @@
                         <div class="col-12">
                             <a href="">Inicio</a>
                             <a href="">Servicios</a>
-                            <a href="">{{ $servicio->titulo_servicios }}</a>
+                            <a >{{ $servicio->titulo_servicios }}</a>
                         </div>
                     </div>
                 </div>
@@ -132,15 +132,29 @@
             <div class="service">
                 <div class="container">
                     <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del servicio</h2>
+                        <h2 style="color: black;">Datos del servicio</h2> <br>
+                        <img src="" class="align-items-center">
+                    
+                            <div class="about-img">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                     </div>
 
                     <h2 style="color: black;"></h2>
-                    <h2 style="color: black;">caracteristicas</h2>
+                    <h2 style="color: black;">Caracteristicas:</h2>
                     <p>{{ $servicio->caracteristicas }}</p>
-                    <h2 style="color: black;">importancia</h2>
+                    <h2 style="color: black;">Importancia:</h2>
                     <p>{{ $servicio->importancia }}</p>
-                </div>
+
+                    
+                </div> 
             </div>
             <!-- Service-detalle End -->
             

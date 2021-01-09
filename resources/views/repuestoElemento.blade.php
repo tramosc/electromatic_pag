@@ -133,8 +133,37 @@
             <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del repuesto</h2>
-                        <h2 style="color: black;">{{$repuesto->titulo_repuesto}}</h2>
+
+                    <h1 style="color: black;">DATOS DEL REPUESTO</h1>
+                    <br>
+
+                    <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$repuesto->titulo_repuesto}}</h5>
+                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="950" height="750">
+                        <h2 style="color: black; text-align: left;">Detalles:</h2>
+                        <p class="card-text">{{$repuesto->detalles_repuesto}}</p>
+                        <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$repuesto->precio}}</span> </h2>
+                        
+                    </div>
+
+                    
+
+                    <div class="container">
+                        <div class="card text-center">
+                        <h1 style="color: black;">CONTACTO</h1>
+                        <div class="card-body">
+                        <p><i class="fa fa-map-marker-alt"></i> Calle Consuelo 307-A - Cercado Arequipa</p>
+                                <p><i class="fa fa-phone-alt"></i> 054-399450 - 964-770-354</p>
+                                <p><i class="fa fa-envelope"></i> servicios_cliente@electromaticindustrial.com</p>
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+
+                    </div>
+
                         
                     </div>
                 </div>

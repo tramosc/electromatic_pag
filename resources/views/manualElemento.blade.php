@@ -116,12 +116,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2 style="color: white;">--titulo_manual--</h2>
+                            <h2 style="color: white;">{{$manual->titulo_manual}}</h2>
                         </div>
                         <div class="col-12">
                             <a href="">Inicio</a>
                             <a href="">Manuales</a>
-                            <a href="">--titulo_manual--</a>
+                            <a >{{$manual->titulo_manual}}</a>
                         </div>
                     </div>
                 </div>
@@ -134,12 +134,39 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <h2 style="color: black;">Datos del Manual</h2>
+                        <div class="about-img">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
 
-                    <p>
+                    <h1 style="color: black;">Descripcion de manual</h1>
+                                        <p>
                                         {{$manual->descripcion}}
                                         </p>
+                    
+                    <h1 style="color: black;">Fecha manual</h1>
+                            <p>
+                                {{$manual->fecha}}
+                            </p>
 
+                    <h1 style="color: black;">Detalles de manual</h1>
+                            <p>
+                                {{$manual->detalles}}
+                            </p>
+                    
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Recursos Extras</h2><br>
+                        <div class="about-img">
+                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
+                        </div>
+                        <!-- <a href="{{asset('storage').'/'.$manual->archivo_url}}" download>Descargar PDF</a> -->
+                    </div>
                 </div>
             </div>
             <!-- Portfolio End -->

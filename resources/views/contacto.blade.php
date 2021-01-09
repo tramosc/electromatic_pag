@@ -135,6 +135,7 @@
                         <p>Mantengase en contacto con nosotros</p>
                         <h2 style="color: black;">Para consultas</h2>
                     </div>
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="contact-info">
@@ -174,6 +175,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-md-6">
                             <div class="contact-form">
