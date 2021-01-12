@@ -170,6 +170,7 @@
                             <label style="color: black;" for="cv">Subir CV(solo formato PDF):</label>
                             <input type="file" class="form-control-file" name="cv" id="cv" required accept="application/pdf" >
                         </div>
+                        <br></br>
 
                         <button type="submit" class="btn btn-success btn-lg btn-block">Enviar datos</button>
                         </form>
