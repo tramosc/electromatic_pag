@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POSTULANTES - ELECTROMATIC</title>
+        <title>SERVICIOS - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -82,9 +82,7 @@
                     </div>
                 </div>
             </div>
-
             <!-- Top Bar End -->
-            
 
             <!-- Nav Bar Start -->
             <div class="nav-bar">
@@ -129,20 +127,57 @@
             </div>
             <!-- Page Header End -->
 
-
-            <!-- Team Start -->
-            <div class="team">
+            <!-- Service-detalle Start -->
+            <div class="service">
                 <div class="container">
                     <div class="section-header text-center">
-                        <h2 style="color: black;">Postula aqui</h2>
+                        <h2 style="color: black;">Datos del Postulante</h2> <br>
+                    </div>
+
+            <form action="{{ url('/postulantes') }}" method="POST" enctype="multipart/form-data">
+            {{ csrf_field() }}
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                        <label style="color: black;" for="nombre">Nombres:</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" required placeholder="Sus Nombres">
+                        </div>
+                        <div class="col">
+                        <label style="color: black;" for="apellidos">Apellidos:</label>
+                        <input type="text" class="form-control" name="apellidos" id="apellidos" required placeholder="Sus Apellidos">
+                        </div>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                        <label style="color: black;" for="dni">DNI:</label>
+                        <input type="number" class="form-control" name="dni" id="dni" required placeholder="Su DNI">
+                        </div>
+                        <div class="col">
+                        <label style="color: black;" for="telefono">Telefono:</label>
+                        <input type="number" class="form-control" name="telefono" id="telefono" required placeholder="Su Telefono">
+                        </div>
+                    </div>
+                </div>
+
+                        <div class="form-group">
+                        <label style="color: black;" for="correo">Correo</label>
+                            <input type="email" class="form-control" name="correo" id="correo" required placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label style="color: black;" for="cv">Subir CV(solo formato PDF):</label>
+                            <input type="file" class="form-control-file" name="cv" id="cv" required accept="application/pdf" >
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Enviar datos</button>
+                        </form>
+                    
+                </div> 
             </div>
-            <!-- Team End -->
-
+            <!-- Service-detalle End -->
             
-
-
 
 
             <!-- Footer Start -->
@@ -205,7 +240,6 @@
                 </div>
             </div>
             <!-- Footer End -->
-
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>

@@ -537,6 +537,7 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <h2 style="color: black;">Galeria</h2>
+                        
                     </div>
                     <div class="row">
                     @foreach($imagenesInicio as $imagenInicio)
@@ -555,6 +556,8 @@
                     </div>
                     
                 </div>
+                <!-- DIRECCION A POSTULANTES  --->
+                <a href="{{ url('postulantes/create') }}" class="btn btn-danger">ir a postulantes</a>
             </div>
             <!-- Service End -->
 

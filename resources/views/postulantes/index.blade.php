@@ -16,42 +16,24 @@
                 </tr>
             </thead>
             <tbody>
+            @foreach($postulantes as $postulante)
                 <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
+                <th scope="row">{{$loop->iteration}}</th>
+                <td>{{$postulante->nombre}}</td>
+                <td>{{$postulante->apellidos}}</td>
                 <td>
+                <form method="POST" action="{{ url('/postulantes/'.$postulante->id) }}">
+                {{ csrf_field() }}
+                {{ method_field('DELETE') }}
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-danger">Eliminar</button>
-                <button type="button" class="btn btn-success">Ver Datos</button>
+                <a class="btn btn-success" href="{{ route('postulantes.show',$postulante->id) }}">Ver</a>
+                <button type="submit" onclick="return confirm('¿Desea borrar?');" class="btn btn-danger">Eliminar</button>
                 </div>
+                </form>
                 </td>
                 </tr>
                 <tr>
-
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-danger">Eliminar</button>
-                <button type="button" class="btn btn-success">Ver Datos</button>
-                </div>
-                </td>
-                </tr>
-                <tr>
-
-                <th scope="row">3</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-danger">Eliminar</button>
-                <button type="button" class="btn btn-success">Ver Datos</button>
-                </div>
-                </td>
-                </tr>
-                <tr>
+            @endforeach
             </tbody>
         </table>
     </div>

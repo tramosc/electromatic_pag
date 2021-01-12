@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Postulantes;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostulantesController extends Controller
 {
@@ -21,7 +22,8 @@ class PostulantesController extends Controller
     public function index()
     {
         //
-        return view('postulantes.index');
+        $datos['postulantes'] = Postulantes::paginate(25);
+        return view('postulantes.index', $datos);
     }
 
     /**
@@ -44,6 +46,14 @@ class PostulantesController extends Controller
     public function store(Request $request)
     {
         //
+        $datosPostulante = request()->except('_token');
+        
+        if($request->hasFile('cv')){
+            $datosPostulante['cv']=$request->file('cv')->store('uploads', 'public');
+        }
+        
+        Postulantes::insert($datosPostulante);
+        return redirect('/')->with('msg', 'The Message');
     }
 
     /**
@@ -52,9 +62,12 @@ class PostulantesController extends Controller
      * @param  \App\Postulantes  $postulantes
      * @return \Illuminate\Http\Response
      */
-    public function show(Postulantes $postulantes)
+    public function show($id)
     {
         //
+        $postulante= Postulantes::findOrFail($id);
+
+        return view('postulantes.show', compact('postulante'));
     }
 
     /**
@@ -86,8 +99,15 @@ class PostulantesController extends Controller
      * @param  \App\Postulantes  $postulantes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Postulantes $postulantes)
+    public function destroy($id)
     {
         //
+        $postulante= Postulantes::findOrFail($id);
+
+        if(Storage::delete('public/'.$postulante->cv)){
+            Postulantes::destroy($id);
+        }
+
+        return redirect('postulantes');
     }
 }

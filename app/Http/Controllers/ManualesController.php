@@ -133,6 +133,10 @@ class ManualesController extends Controller
         if(Storage::delete('public/'.$manual->img_manual)){
             Manuales::destroy($id);
         }
+
+        if(Storage::delete('public/'.$manual->archivo_url)){
+            Manuales::destroy($id);
+        }
         
         
 

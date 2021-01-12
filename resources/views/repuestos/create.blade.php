@@ -10,23 +10,23 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_repuesto" class="form-label">Titulo del Repuesto</label>
-                <input type="text" class="form-control" name="titulo_repuesto" id="titulo_repuesto">
+                <input type="text" class="form-control" name="titulo_repuesto" id="titulo_repuesto" required>
             </div>
             <div class="col-12">
                 <label for="descripcion_repuesto" class="form-label">Descripcion Repuesto</label>
-                <input type="text" class="form-control" name="descripcion_repuesto" id="descripcion_repuesto">
+                <input type="text" class="form-control" name="descripcion_repuesto" id="descripcion_repuesto" required>
             </div>
             <div class="col-12">
                 <label for="detalles_repuesto" class="form-label">Detalles del repuesto</label>
-                <input type="text" class="form-control" name="detalles_repuesto" id="detalles_repuesto">
+                <input type="text" class="form-control" name="detalles_repuesto" id="detalles_repuesto" required>
             </div>
             <div class="col-2">
                 <label for="precio" class="form-label">Precio</label>
-                <input type="text" class="form-control" name="precio" id="precio">
+                <input type="text" class="form-control" name="precio" id="precio" required>
             </div>
             <div class="col-md-6">
                 <label for="img_repuesto" class="form-label">Imagen repuesto</label>
-                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto">
+                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" required accept="image/png, image/jpeg" >
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

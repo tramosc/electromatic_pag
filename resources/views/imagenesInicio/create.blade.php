@@ -10,11 +10,11 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_img" class="form-label">Titulo Imagen</label>
-                <input type="text" class="form-control" name="titulo_img" id="titulo_img">
+                <input type="text" class="form-control" name="titulo_img" id="titulo_img" required>
             </div>
             <div class="col-md-6">
                 <label for="imagen_inicio" class="form-label">Imagen</label>
-                <input type="file" class="form-control" name="imagen_inicio" id="imagen_inicio">
+                <input type="file" class="form-control" name="imagen_inicio" required accept="image/png, image/jpeg" id="imagen_inicio">
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Subir Imagen</button>

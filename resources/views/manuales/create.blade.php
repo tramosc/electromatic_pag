@@ -10,27 +10,27 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_manual" class="form-label">Titulo del manual</label>
-                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual">
+                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" required>
             </div>
             <div class="col-md-6">
                 <label for="img_manual" class="form-label">Portada</label>
-                <input type="file" class="form-control" name="img_manual" id="img_manual">
+                <input type="file" class="form-control" name="img_manual" id="img_manual" required accept="image/png, image/jpeg">
             </div>
             <div class="col-2">
                 <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" name="fecha" id="fecha">
+                <input type="date" class="form-control" name="fecha" id="fecha" required>
             </div>
             <div class="col-12">
                 <label for="descripcion" class="form-label">Descripcion</label>
-                <input type="text" class="form-control" name="descripcion" id="descripcion">
+                <input type="text" class="form-control" name="descripcion" id="descripcion" required>
             </div>
             <div class="col-12">
                 <label for="detalles" class="form-label">Detalles</label>
-                <input type="text" class="form-control" name="detalles" id="detalles">
+                <input type="text" class="form-control" name="detalles" id="detalles" required>
             </div>
             <div class="col-md-6">
                 <label for="archivo_url" class="form-label">Archivo</label>
-                <input type="file" class="form-control" name="archivo_url" id="archivo_url">
+                <input type="file" class="form-control" name="archivo_url" id="archivo_url" required accept="application/pdf" >
             </div>
 
             <div class="col-12">
