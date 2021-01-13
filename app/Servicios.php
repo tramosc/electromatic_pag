@@ -8,6 +8,6 @@ class Servicios extends Model
 {
     //relacion de uno a muchos
     public function imagenes(){
-        return $this->hasMany('App\images_servicios');
+        return $this->hasMany('App\images_servicios', 'imagenes_id');
     }
 }

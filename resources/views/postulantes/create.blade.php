@@ -172,7 +172,7 @@
                         </div>
                         <br></br>
 
-                        <button type="submit" class="btn btn-success btn-lg btn-block">Enviar datos</button>
+                        <button type="submit" onclick="return confirm('¿Desea Enviar sus datos?');" class="btn btn-success btn-lg btn-block">Enviar datos</button>
                         </form>
                     
                 </div> 

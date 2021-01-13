@@ -139,7 +139,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                             <div class="portfolio-warp">
                                 <div class="portfolio-img">
-                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" alt="Image">
+                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" width="100px" height="300px" alt="Image">
                                     <div class="portfolio-overlay">
                                         <p>
                                         {{$manual->descripcion}}
@@ -155,6 +155,7 @@
                         <br>
                         @endforeach
                     </div>
+                    <br>
                 </div>
 
 

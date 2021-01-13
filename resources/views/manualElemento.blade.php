@@ -145,28 +145,69 @@
                             </div>
                     </div>
 
-                    <h1 style="color: black;">Descripcion de manual</h1>
-                                        <p>
-                                        {{$manual->descripcion}}
-                                        </p>
-                    
-                    <h1 style="color: black;">Fecha manual</h1>
-                            <p>
-                                {{$manual->fecha}}
-                            </p>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group" style="text-align: right;">
+                            <strong style="text-align: right; color: black;">Subido el dia:</strong>
+                            {{$manual->fecha}}
+                        </div>
+                    </div>
 
-                    <h1 style="color: black;">Detalles de manual</h1>
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h1 style="color: black;">DESCRIPCION DEL MANUAL</h1>
+                        <div class="card-body">
+                        <p>
+                                        {{$manual->descripcion}}
+                        </p>
+
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <br>
+
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h1 style="color: black;">DETALLES DEL MANUAL</h1>
+                        <div class="card-body">
+
                             <p>
                                 {{$manual->detalles}}
                             </p>
-                    
+                        
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h2 style="color: black;">RECURSOS EXTRAS</h2><br>
+                        <div class="card-body">
+
+                        <div class="about-img">
+                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
+                        </div>
+                        
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+                <!--
                     <div class="section-header text-center">
                         <h2 style="color: black;">Recursos Extras</h2><br>
                         <div class="about-img">
                                 <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
                         </div>
-                        <!-- <a href="{{asset('storage').'/'.$manual->archivo_url}}" download>Descargar PDF</a> -->
+                         ///<a href="{{asset('storage').'/'.$manual->archivo_url}}" download>Descargar PDF</a> 
                     </div>
+-->
+
                 </div>
             </div>
             <!-- Portfolio End -->

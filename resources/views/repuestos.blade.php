@@ -142,11 +142,11 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="100px" height="250px" alt="Team Image">
+                                <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="100px" height="230px" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2 style="color: white;">{{$repuesto->titulo_repuesto}}</h2>
-                                <a href="{{ url('/'.$repuesto->id.'/Vista-Repuesto-Elemento') }}" style="color: white;">Saber mas</a>
+                                <a href="{{ url('/'.$repuesto->id.'/Vista-Repuesto-Elemento') }}" style="color: white;">Saber mas...</a>
                             </div>
                         </div>
                     </div>
