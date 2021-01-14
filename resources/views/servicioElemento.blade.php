@@ -157,6 +157,75 @@
                 </div> 
             </div>
             <!-- Service-detalle End -->
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Galeria</h2>
+                        
+                    </div>
+                    <div class="row">
+                        <!-- Imagen 1 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 2 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_dos}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_tres}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 4 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cuatro}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <!-- DIRECCION A POSTULANTES  --->
+                <a href="{{ url('postulantes/create') }}" class="btn btn-danger">ir a postulantes</a>
+            </div>
+            <!-- Service End -->
+
             
 
 <!-- 

@@ -20,6 +20,10 @@ class CreateServiciosTable extends Migration
             $table->string('definicion');
             $table->string('caracteristicas');
             $table->string('importancia');
+            $table->string('img_uno');
+            $table->string('img_dos');
+            $table->string('img_tres');
+            $table->string('img_cuatro');
             $table->timestamps();
         });
     }

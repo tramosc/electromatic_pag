@@ -51,8 +51,17 @@ class ServiciosController extends Controller
         if($request->hasFile('img_portada')){
             $datosServicio['img_portada']=$request->file('img_portada')->store('uploads', 'public');
         }
-        if($request->hasFile('imgs_galeria')){
-            $datosServicio['imgs_galeria']=$request->file('imgs_galeria')->store('uploads', 'public');
+        if($request->hasFile('img_uno')){
+            $datosServicio['img_uno']=$request->file('img_uno')->store('uploads', 'public');
+        }
+        if($request->hasFile('img_dos')){
+            $datosServicio['img_dos']=$request->file('img_dos')->store('uploads', 'public');
+        }
+        if($request->hasFile('img_tres')){
+            $datosServicio['img_tres']=$request->file('img_tres')->store('uploads', 'public');
+        }
+        if($request->hasFile('img_cuatro')){
+            $datosServicio['img_cuatro']=$request->file('img_cuatro')->store('uploads', 'public');
         }
         Servicios::insert($datosServicio);
         return redirect('servicios');
@@ -101,6 +110,38 @@ class ServiciosController extends Controller
             $servicio= Servicios::findOrFail($id);
             Storage::delete('public/'.$servicio->img_portada);
             $datosServicio['img_portada']=$request->file('img_portada')->store('uploads', 'public');
+        }
+
+ 
+
+        //Imagenes
+
+        if($request->hasFile('img_uno')){
+
+            $servicio= Servicios::findOrFail($id);
+            Storage::delete('public/'.$servicio->img_portada);
+            $datosServicio['img_uno']=$request->file('img_uno')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_dos')){
+
+            $servicio= Servicios::findOrFail($id);
+            Storage::delete('public/'.$servicio->img_portada);
+            $datosServicio['img_dos']=$request->file('img_dos')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_tres')){
+
+            $servicio= Servicios::findOrFail($id);
+            Storage::delete('public/'.$servicio->img_portada);
+            $datosServicio['img_tres']=$request->file('img_tres')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_cuatro')){
+
+            $servicio= Servicios::findOrFail($id);
+            Storage::delete('public/'.$servicio->img_portada);
+            $datosServicio['img_cuatro']=$request->file('img_cuatro')->store('uploads', 'public');
         }
 
         Servicios::where('id','=',$id)->update($datosServicio);

@@ -40,6 +40,34 @@
                 <br></br>
             </div>
 
+<!-- Imagenes -->
+            <h1>Imagenes para galeria</h1>
+            <div class="col-md-6">
+                <label for="img_uno" class="form-label">Imagen 1</label>
+                <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="200">
+                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
+                <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" value="">
+            </div>
+            <div class="col-md-6">
+                <label for="img_dos" class="form-label">Imagen 2</label>
+                <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="200">
+                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
+                <input type="file" class="form-control" name="img_dos" id="img_dos" required accept="image/png, image/jpeg" value="">
+            </div>
+            <div class="col-md-6">
+                <label for="img_tres" class="form-label">Imagen 3</label>
+                <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="200">
+                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
+                <input type="file" class="form-control" name="img_tres" id="img_tres" required accept="image/png, image/jpeg" value="">
+            </div>
+            <div class="col-md-6">
+                <label for="img_cuatro" class="form-label">Imagen 4</label>
+                <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="200">
+                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
+                <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" required accept="image/png, image/jpeg" value="">
+            </div>
+            <br>
+
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar</button>
                 <a class="btn btn-danger" href="{{ url('servicios') }}">Regresar a Servicios</a>
@@ -53,6 +81,7 @@
         </div>
     </div>
     <br>
+    <!-- 
     <h1 style="text-align: center;">Imagenes para la Galeria</h1>
     <h3>Imagenes actuales:</h3>
     <div class="row">
@@ -67,9 +96,11 @@
                     </div>
                 </div>
     <br>
+
     <div class="col-6">
     <a class="btn btn-primary btn-lg btn-block" href="{{ url('imagenesGaleria/'.$servicio->id) }}" role="button">Ir a Imagenes de Galeria</a>
-    <!-- form method="POST" action="{{ url('/servicios/'.$servicio->id) }}"> -->
+     ---- form method="POST" action="{{ url('/servicios/'.$servicio->id) }}"> ---
     </div>
+-->
 </div>
 @endsection
