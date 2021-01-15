@@ -11,23 +11,23 @@
         {{ method_field('PATCH') }}
             <div class="col-md-6">
                 <label for="titulo_repuesto" class="form-label">Titulo del Repuesto</label>
-                <input type="text" class="form-control" name="titulo_repuesto" id="titulo_repuesto" required value="{{ $repuesto->titulo_repuesto }}">
+                <input type="text" class="form-control" name="titulo_repuesto" id="titulo_repuesto" value="{{ $repuesto->titulo_repuesto }}">
             </div>
             <div class="col-12">
                 <label for="descripcion_repuesto" class="form-label">Descripcion Repuesto</label>
-                <input type="text" class="form-control" name="descripcion_repuesto" id="descripcion_repuesto" requiredvalue="{{ $repuesto->descripcion_repuesto }}">
+                <input type="text" class="form-control" name="descripcion_repuesto" id="descripcion_repuesto" value="{{ $repuesto->descripcion_repuesto }}">
             </div>
             <div class="col-12">
                 <label for="detalles_repuesto" class="form-label">Detalles del repuesto</label>
-                <input type="text" class="form-control" name="detalles_repuesto" id="detalles_repuesto" required value="{{ $repuesto->detalles_repuesto }}">
+                <input type="text" class="form-control" name="detalles_repuesto" id="detalles_repuesto" value="{{ $repuesto->detalles_repuesto }}">
             </div>
             <div class="col-2">
                 <label for="precio" class="form-label">Precio</label>
-                <input type="text" class="form-control" name="precio" id="precio" required value="{{ $repuesto->precio }}">
+                <input type="text" class="form-control" name="precio" id="precio" value="{{ $repuesto->precio }}">
             </div>
             <div class="col-md-6">
                 <label for="img_repuesto" class="form-label">Imagen repuesto</label>
-                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" required accept="image/png, image/jpeg" value="">
+                <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="200">
             </div>
             <div class="col-12">

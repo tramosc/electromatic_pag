@@ -88,7 +88,7 @@ class RepuestosController extends Controller
     public function update(Request $request, $id)
     {
          //
-         $datosRepuestos=request()->except(['_token','_method']);
+         $datosRepuesto=request()->except(['_token','_method']);
 
          if($request->hasFile('img_repuesto')){
  

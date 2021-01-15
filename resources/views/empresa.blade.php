@@ -135,15 +135,10 @@
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
                                 <p>Sobre Electromatic industrial</p>
-                                <h2 style="color: black;">Nosotros</h2>
+                                <h2 style="color: black;">¿Quienes somos?</h2>
                             </div>
                             <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
+                                <p>Electromatic Industrial está orientada a entregar un servicio integral en el Suministro, instalación y mantenimiento de grupos electrógenos,cableado estructurado, pozos de puesta a tierra, electrobombas, aire acondicionado, UPS, automatización industrial, atendiendo y proporcionando soluciones de ingeniería en diversos sectores productivos, bajo estándares nacionales e internacionales.</p>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
@@ -243,10 +238,13 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                 </p>
                             </div>
+                            <br></br>
                         </div>
+
 
     
                         <div class="col-lg-7 col-md-6">
+                        <br></br>
                             <div class="section-header text-left">
                                 <h2 style="color: black;">Vision</h2>
                             </div>
@@ -292,43 +290,45 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            Lorem ipsum dolor sit amet?
+                                            HONESTIDAD
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        La transparencia, sinceridad y franqueza, son valores que actualmente el público no solamente desea para las empresas, las exige.
+                                        Esto tiene que ver con usar la verdad como herramienta para ganarse la confianza y credibilidad frente al entorno.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Lorem ipsum dolor sit amet?
+                                            INNOVACION
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        La innovación no solo se basa en desarrollar nuevos productos, también supone impulsar nuevos modelos de negocio, ofrecer nuevos servicios y mejorar procesos para hacer más fácil la vida de las personas. Pero sobre todo, se basa en que estos estos avances lleguen a quienes los necesitan.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Lorem ipsum dolor sit amet?
+                                        COMPROMISO
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        Partimos de la definición del compromiso como “la capacidad que tiene el ser humano para tomar conciencia de la importancia que tiene cumplir con el desarrollo de su trabajo dentro del tiempo estipulado para ello”. Al comprometernos, ponemos al máximo nuestras capacidades para sacar adelante la tarea encomendada.
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="card wow fadeInLeft" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            Lorem ipsum dolor sit amet?
+                                            TRABAJO EN EQUIPO
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion-1">
@@ -340,7 +340,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Lorem ipsum dolor sit amet?
+                                            COMPROMISO
                                         </a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion-1">
@@ -349,14 +349,16 @@
                                         </div>
                                     </div>
                                 </div>
+-->
                             </div>
                         </div>
+                        <!-- Segunda mitad-->
                         <div class="col-md-6">
                             <div id="accordion-2">
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            Lorem ipsum dolor sit amet?
+                                        DESARROLLO DE PERSONAS
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
@@ -368,7 +370,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Lorem ipsum dolor sit amet?
+                                        TRABAJO EN EQUIPO
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
@@ -377,10 +379,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Lorem ipsum dolor sit amet?
+                                            CALIDAD
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
@@ -389,6 +392,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
@@ -413,6 +417,7 @@
                                         </div>
                                     </div>
                                 </div>
+-->
                             </div>
                         </div>
                     </div>
@@ -423,31 +428,31 @@
             <!-- ======= Clients LOGO Section ======= -->
       <section id="clients" class="clients">
         <div class="container">
-          <h1>NUESTROS CLIENTES</h1>
+          <h1 style="color: black;">NUESTROS CLIENTES</h1>
           <div class="row">
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+              <img src="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+              <img src="https://starteq.net/wp-content/uploads/2019/11/mcdonalds-png-logo-picture-3-1024x1001.png" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+              <img src="https://us.123rf.com/450wm/netkoff/netkoff1502/netkoff150200044/36370600-colorido-juego-vector-icono-abstracto-sobre-un-fondo-blanco.jpg?ver=6" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
-              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+              <img src="https://us.123rf.com/450wm/maudis60/maudis601601/maudis60160100042/49900954-vector-de-la-muestra-de-paneles-solares.jpg?ver=6" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
-              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+              <img src="https://image.freepik.com/vector-gratis/logo-panel-solar_93835-52.jpg" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
-              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+              <img src="https://previews.123rf.com/images/deniskolt/deniskolt1608/deniskolt160800027/61841548-logotipo-de-la-energ%C3%ADa-solar-o-icono-vector-de-la-muestra-de-paneles-solares-.jpg" class="img-fluid" alt="">
             </div>
   
           </div>

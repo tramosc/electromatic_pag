@@ -94,7 +94,7 @@ class ManualesController extends Controller
     public function update(Request $request,$id)
     {
         //
-        $datosManuales=request()->except(['_token','_method']);
+        $datosManual=request()->except(['_token','_method']);
 
         if($request->hasFile('img_manual')){
 
@@ -110,11 +110,9 @@ class ManualesController extends Controller
         }
 
         Manuales::where('id','=',$id)->update($datosManual);
-
+ 
         $Manual= Manuales::findOrFail($id);
-        //dd("actualizacion de imagen".$servicio->img_portada);
         return redirect('manuales');
-        //return view('servicios.edit', compact('servicio'));
         
     }
 

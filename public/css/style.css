@@ -96,7 +96,7 @@ a:focus {
 
 .top-bar .logo img {
     max-width: 100%;
-    max-height: 60px;
+    max-height: 70px;
 }
 
 .top-bar .top-bar-item {
@@ -2264,7 +2264,6 @@ a:focus {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-    background: #f6f6f7;
     text-align: center;
     padding: 5px 0;
   }
@@ -2283,4 +2282,7 @@ a:focus {
     filter: none;
     transform: scale(1.1);
   }
+
+
+
   
