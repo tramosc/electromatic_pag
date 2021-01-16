@@ -37,7 +37,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>ELECTROMATIC</h1>
+                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -127,6 +127,21 @@
             </div>
             <!-- Page Header End -->
 
+            <section id="services" class="services section-bg">
+                <div class="container">
+                  <div class="container">
+                    <div class="portfolio-description">
+                    <div class="section-header text-left">
+                    <h1 style="color: black; text-align:center"><b>NUESTRA HISTORIA</b></h1>
+                    </div>
+                      
+                      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/N6FTAgmxnFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    </div>
+                </div>
+          </section><!-- End Services Section -->
+
+          <br></br>
+
 
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
@@ -168,8 +183,7 @@
                                         <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">109</h2>
-                                        <p>Expert Workers</p>
+                                        <h4>PERSONAL CAPACITADO</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -177,8 +191,7 @@
                                         <i class="flaticon-building"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">485</h2>
-                                        <p>Happy Clients</p>
+                                        <h4>SIEMPRE ATENTOS CON EL CLIENTE</h4>
                                     </div>
                                 </div>
                             </div>
@@ -190,8 +203,7 @@
                                         <i class="flaticon-address"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">789</h2>
-                                        <p>Completed Projects</p>
+                                        <h4>RESPONSABLES CON EL SERVICIO AL CLIENTE</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -199,8 +211,7 @@
                                         <i class="flaticon-crane"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">890</h2>
-                                        <p>Running Projects</p>
+                                        <h4>EFECTIVOS CON NUESTRO TRABAJO</h4>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +231,7 @@
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
+                                            <img src="https://lh3.googleusercontent.com/proxy/3F0M3v3H22ygJfR56ety_i97shgLPZmcrWgXGQdmR-WNAjTY8xtRosan37WDSkrFHkZkv5zufAIZ86M8jbcfWNxHMyKHdC2ziaI5pUjY3FRvMexYog3OoqPQ1SdxtQmt" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -262,7 +273,7 @@
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
+                                            <img src="https://ingenieromarino.com/wp-content/uploads/portada-2.jpg" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -462,8 +473,8 @@
 
 
 
-            <!-- Footer Start -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+             <!-- Footer Start -->
+             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-lg-3">
@@ -472,6 +483,7 @@
                                 <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
                                 <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
                                 <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -479,13 +491,15 @@
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
+                                -->
                             </div>
                         </div>
                         <div class="col-md-2 col-lg-1">
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
+                            <p>.</p>
+                            <!--<div class="footer-link">
                                 <h2>Nuestras Paginas</h2>
                                 <a href="">Empresa</a>
                                 <a href="">Contactanos</a>
@@ -493,7 +507,8 @@
                                 <a href="">Manuales</a>
                                 <a href="">Repuestos</a>
                                 <a href="">Postulantes</a>
-                            </div>
+                            </div> -->
+
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
@@ -509,20 +524,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container footer-menu">
+                    <h4><b>Nuestras redes sociales</b></h4>
+                    <div class="f-menu">
+                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
+                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                    </div>
+                </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">ELECTROMATIC INDUSTRIAL</a></p>
+                            <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
                         </div>
                         <div class="col-md-6">
-                            <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+                             <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer End -->
-
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>

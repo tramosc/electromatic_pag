@@ -37,7 +37,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>ELECTROMATIC</h1>
+                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -171,8 +171,8 @@
             <!-- Team End -->
 
 
-            <!-- Footer Start -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+             <!-- Footer Start -->
+             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-lg-3">
@@ -181,6 +181,7 @@
                                 <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
                                 <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
                                 <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -188,13 +189,15 @@
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
+                                -->
                             </div>
                         </div>
                         <div class="col-md-2 col-lg-1">
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
+                            <p>.</p>
+                            <!--<div class="footer-link">
                                 <h2>Nuestras Paginas</h2>
                                 <a href="">Empresa</a>
                                 <a href="">Contactanos</a>
@@ -202,7 +205,8 @@
                                 <a href="">Manuales</a>
                                 <a href="">Repuestos</a>
                                 <a href="">Postulantes</a>
-                            </div>
+                            </div> -->
+
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
@@ -218,14 +222,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container footer-menu">
+                    <h4><b>Nuestras redes sociales</b></h4>
+                    <div class="f-menu">
+                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
+                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                    </div>
+                </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">ELECTROMATIC INDUSTRIAL</a></p>
+                            <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
                         </div>
                         <div class="col-md-6">
-                            <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+                             <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
                         </div>
                     </div>
                 </div>

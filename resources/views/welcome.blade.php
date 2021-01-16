@@ -168,7 +168,7 @@
                                     <i class="flaticon-worker"></i>
                                 </div>
                                 <div class="feature-text">
-                                    <h3>Expert Worker</h3>
+                                    <h3>Expertos en grupos electrogenos</h3>
                                     <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                     <i class="flaticon-building"></i>
                                 </div>
                                 <div class="feature-text">
-                                    <h3>Quality Work</h3>
+                                    <h3>Trabajos de calidad</h3>
                                     <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                                     <i class="flaticon-call"></i>
                                 </div>
                                 <div class="feature-text">
-                                    <h3>24/7 Support</h3>
+                                    <h3>Soporte de calidad</h3>
                                     <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                                 </div>
                             </div>
@@ -559,8 +559,9 @@
                     </div>
                     
                 </div>
-                <!-- DIRECCION A POSTULANTES  --->
+                <!-- DIRECCION A POSTULANTES  
                 <a href="{{ url('postulantes/create') }}" class="btn btn-danger">ir a postulantes</a>
+                --->
             </div>
             <!-- Service End -->
 
@@ -636,9 +637,9 @@
                         <div class="col-md-6">
 
                             <!-- Contador de visitas -->
-<center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a></center>
-<!-- Fin Contador de visitas -->
+                            <center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+                            <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a></center>
+                            <!-- Fin Contador de visitas -->
 
 
                              <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->

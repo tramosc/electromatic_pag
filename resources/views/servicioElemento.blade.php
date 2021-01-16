@@ -37,7 +37,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>ELECTROMATIC</h1>
+                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -133,9 +133,13 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <h2 style="color: black;">Datos del servicio</h2> <br>
-                        <img src="" class="align-items-center">
-                    
-                            <div class="about-img">
+                    </div>
+
+                    <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: black;">{{ $servicio->titulo_servicios }}</h5>
+
+                        <div class="about-img">
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
@@ -143,17 +147,56 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        
+                        </div>
+                    <br></br>
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h1 style="color: black;">Definicion:</h1>
+                        <div class="card-body">
+                        <p>
+                        {{ $servicio->definicion }}
+                        </p>
+
+                        </div>
+                        </div>
+                        <br>
                     </div>
 
-                    <h2 style="color: black;"></h2>
-                    <h2 style="color: black;">Caracteristicas:</h2>
-                    <p>{{ $servicio->caracteristicas }}</p>
-                    <h2 style="color: black;">Importancia:</h2>
-                    <p>{{ $servicio->importancia }}</p>
 
-                    
+
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h1 style="color: black;">Caracteristicas:</h1>
+                        <div class="card-body">
+                        <p>
+                        {{ $servicio->caracteristicas }}
+                        </p>
+
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="card text-center">
+                        <br>
+                        <h1 style="color: black;">Importancia:</h1>
+                        <div class="card-body">
+                        <p>
+                        {{ $servicio->importancia }}
+                        </p>
+
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+
+                        
+                    </div> 
                 </div> 
             </div>
             <!-- Service-detalle End -->
@@ -217,12 +260,88 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Imagen 5 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cinco}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 6 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_seis}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 7 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_siete}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 8 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_ocho}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 9 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_nueve}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 10 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_diez}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_diez}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
                     
                     </div>
                     
                 </div>
-                <!-- DIRECCION A POSTULANTES  --->
-                <a href="{{ url('postulantes/create') }}" class="btn btn-danger">ir a postulantes</a>
             </div>
             <!-- Service End -->
 
@@ -309,8 +428,8 @@
              Service End 
            -->
 
-            <!-- Footer Start -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+             <!-- Footer Start -->
+             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-lg-3">
@@ -319,6 +438,7 @@
                                 <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
                                 <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
                                 <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -326,13 +446,15 @@
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
+                                -->
                             </div>
                         </div>
                         <div class="col-md-2 col-lg-1">
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
+                            <p>.</p>
+                            <!--<div class="footer-link">
                                 <h2>Nuestras Paginas</h2>
                                 <a href="">Empresa</a>
                                 <a href="">Contactanos</a>
@@ -340,7 +462,8 @@
                                 <a href="">Manuales</a>
                                 <a href="">Repuestos</a>
                                 <a href="">Postulantes</a>
-                            </div>
+                            </div> -->
+
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
@@ -356,14 +479,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container footer-menu">
+                    <h4><b>Nuestras redes sociales</b></h4>
+                    <div class="f-menu">
+                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
+                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                    </div>
+                </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">ELECTROMATIC INDUSTRIAL</a></p>
+                            <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
                         </div>
                         <div class="col-md-6">
-                            <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+                             <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
                         </div>
                     </div>
                 </div>

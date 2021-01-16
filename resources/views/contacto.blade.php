@@ -37,7 +37,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>ELECTROMATIC</h1>
+                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -142,35 +142,35 @@
                                 <div class="contact-item">
                                     <i class="flaticon-address"></i>
                                     <div class="contact-text">
-                                        <h2>Razon Social</h2>
+                                        <h2 style="color: white;">Razon Social</h2>
                                         <p>Electromatic Industrial S.R.L.</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-address"></i>
                                     <div class="contact-text">
-                                        <h2>RUC</h2>
+                                        <h2 style="color: white;">RUC</h2>
                                         <p>20558228831</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-address"></i>
                                     <div class="contact-text">
-                                        <h2>Direccion</h2>
+                                        <h2 style="color: white;">Direccion</h2>
                                         <p>Calle Consuelo 307-A Cercado Arequipa Referencia frente a SEAL</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-call"></i>
                                     <div class="contact-text">
-                                        <h2>Telefonos</h2>
+                                        <h2 style="color: white;">Telefonos</h2>
                                         <p>964770354 - 054-399450</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-send-mail"></i>
                                     <div class="contact-text">
-                                        <h2>Correo</h2>
+                                        <h2 style="color: white;">Correo</h2>
                                         <p>servicios_cliente@electromaticindustrial.com</p>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                         <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
-                                    <div>
+                                    <div style="align-items: center;">
                                         <button class="btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
                                     </div>
                                 </form>
@@ -212,6 +212,27 @@
             <!-- Contact End -->
 
 
+<!-- Postulantes Start -->
+            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                           <h1>¿Le interesa trabajar con nosotros?</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <div class="ml-auto">
+                                <a class="btn btn-secondary btn-lg" href="{{ url('postulantes/create') }}">POSTULA AQUI</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
@@ -222,6 +243,7 @@
                                 <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
                                 <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
                                 <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -229,13 +251,15 @@
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
+                                -->
                             </div>
                         </div>
                         <div class="col-md-2 col-lg-1">
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
+                            <p>.</p>
+                            <!--<div class="footer-link">
                                 <h2>Nuestras Paginas</h2>
                                 <a href="">Empresa</a>
                                 <a href="">Contactanos</a>
@@ -243,7 +267,8 @@
                                 <a href="">Manuales</a>
                                 <a href="">Repuestos</a>
                                 <a href="">Postulantes</a>
-                            </div>
+                            </div> -->
+
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
@@ -259,14 +284,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container footer-menu">
+                    <h4><b>Nuestras redes sociales</b></h4>
+                    <div class="f-menu">
+                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
+                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                    </div>
+                </div>
                 </div>
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">ELECTROMATIC INDUSTRIAL</a></p>
+                            <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
                         </div>
                         <div class="col-md-6">
-                            <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+                             <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
                         </div>
                     </div>
                 </div>

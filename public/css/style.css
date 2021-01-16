@@ -2032,7 +2032,7 @@ a:focus {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #024227;
+    color: #ffffff;
     background: #343a40;
     border: none;
     border-radius: 0;
@@ -2040,7 +2040,7 @@ a:focus {
 }
 
 .contact .contact-form .btn:hover {
-    color: #343a40;
+    color: #024227;
     background: #ffffff;
 }
 
