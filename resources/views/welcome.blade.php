@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                            <a style="color: white;" href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                 </div>
                                 <div class="feature-text">
                                     <h3>Expertos en grupos electrogenos</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <p>Solidos conocimientos en la manipulacion y mantenimiento de grupos electrogenos</p>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +179,8 @@
                                     <i class="flaticon-building"></i>
                                 </div>
                                 <div class="feature-text">
-                                    <h3>Trabajos de calidad</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <h3>Trabajos de profesionales</h3>
+                                    <p>Tenemos profesionales altamente capacitados dispuestos a la solucion de problemas</p>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="feature-text">
                                     <h3>Soporte de calidad</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <p>Ofrecemos un soporte de primera para todos nuestros clientes</p>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                                     </div>
                                     <div class="fact-text">
                                         <h2 data-toggle="counter-up">109</h2>
-                                        <p>Expert Workers</p>
+                                        <p>Trabajadores Expertos</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -258,7 +258,7 @@
                                     </div>
                                     <div class="fact-text">
                                         <h2 data-toggle="counter-up">485</h2>
-                                        <p>Happy Clients</p>
+                                        <p>clientes satisfechos</p>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +271,7 @@
                                     </div>
                                     <div class="fact-text">
                                         <h2 data-toggle="counter-up">789</h2>
-                                        <p>Completed Projects</p>
+                                        <p>Proyectos de calidad</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -280,7 +280,7 @@
                                     </div>
                                     <div class="fact-text">
                                         <h2 data-toggle="counter-up">890</h2>
-                                        <p>Running Projects</p>
+                                        <p>Proyectos eficientes</p>
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            <b>Lorem ipsum dolor sit amet?</b>
+                                            <b>Pozos de puesta a tierra</b>
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
@@ -315,46 +315,10 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Lorem ipsum dolor sit amet?
+                                            <b>Grupos electrogenos</b>
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                         </div>
@@ -367,7 +331,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            Lorem ipsum dolor sit amet?
+                                            <b>Auditoria energica</b>
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
@@ -379,46 +343,10 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            Lorem ipsum dolor sit amet?
+                                            <b>UPS</b>
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                         </div>
@@ -592,18 +520,17 @@
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <p>.</p>
-                            <!--<div class="footer-link">
-                                <h2>Nuestras Paginas</h2>
-                                <a href="">Empresa</a>
-                                <a href="">Contactanos</a>
-                                <a href="">Servicios</a>
-                                <a href="">Manuales</a>
-                                <a href="">Repuestos</a>
-                                <a href="">Postulantes</a>
-                            </div> -->
-
+                        <h2>Ubicanos</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
+
+                        <div class="col-md-2 col-lg-1">
+                            
+                        </div>
+                        <div class="col-md-2 col-lg-1">
+                            
+                        </div>
+
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
                                 <h2>Nuestros Sitios</h2>
@@ -618,14 +545,18 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="container footer-menu">
                     <h4><b>Nuestras redes sociales</b></h4>
                     <div class="f-menu">
-                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
-                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
-                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="60" height="60" ></a>
+                        <a></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="85" height="85"></a> 
+                        <a></a>
+                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="80" height="80"></a>
+                        <a></a>
+                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="60" height="60"></a> 
+                        <!-- 48*48 -->
                     </div>
                 </div>
                 </div>

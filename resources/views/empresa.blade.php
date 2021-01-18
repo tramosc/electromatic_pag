@@ -183,7 +183,7 @@
                                         <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>PERSONAL CAPACITADO</h4>
+                                        <h4>GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -191,7 +191,7 @@
                                         <i class="flaticon-building"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>SIEMPRE ATENTOS CON EL CLIENTE</h4>
+                                        <h4>ASESORAMIENTO TÉCNICO PERMANENTE</h4>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@
                                         <i class="flaticon-address"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>RESPONSABLES CON EL SERVICIO AL CLIENTE</h4>
+                                        <h4>ATENCIÓN PERSONALIZADA</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -211,7 +211,7 @@
                                         <i class="flaticon-crane"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>EFECTIVOS CON NUESTRO TRABAJO</h4>
+                                        <h4>CONFIDENCIALIDAD</h4>
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +231,7 @@
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="https://lh3.googleusercontent.com/proxy/3F0M3v3H22ygJfR56ety_i97shgLPZmcrWgXGQdmR-WNAjTY8xtRosan37WDSkrFHkZkv5zufAIZ86M8jbcfWNxHMyKHdC2ziaI5pUjY3FRvMexYog3OoqPQ1SdxtQmt" alt="Image">
+                                            <img src="https://2.bp.blogspot.com/-rPodlj7D3S4/WsOrEk98MGI/AAAAAAAABxY/ZRHiAxy7J0s1-lcy0fFBds-6zAU78Z7PgCLcBGAs/s750/_Electr%25C3%25B3nica_Industrial.jpg" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -473,8 +473,8 @@
 
 
 
-             <!-- Footer Start -->
-             <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-lg-3">
@@ -498,18 +498,17 @@
                             
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <p>.</p>
-                            <!--<div class="footer-link">
-                                <h2>Nuestras Paginas</h2>
-                                <a href="">Empresa</a>
-                                <a href="">Contactanos</a>
-                                <a href="">Servicios</a>
-                                <a href="">Manuales</a>
-                                <a href="">Repuestos</a>
-                                <a href="">Postulantes</a>
-                            </div> -->
-
+                        <h2>Ubicanos</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
+
+                        <div class="col-md-2 col-lg-1">
+                            
+                        </div>
+                        <div class="col-md-2 col-lg-1">
+                            
+                        </div>
+
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
                                 <h2>Nuestros Sitios</h2>
@@ -524,14 +523,18 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="container footer-menu">
                     <h4><b>Nuestras redes sociales</b></h4>
                     <div class="f-menu">
-                        <a href=""><i class="fab fa-twitter fa-4x"></i></a>
-                        <a href=""><i class="fab fa-facebook-f fa-4x"></i></a>
-                        <a href=""><i class="fab fa-youtube fa-4x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-4x"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in fa-4x"></i></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="60" height="60" ></a>
+                        <a></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="85" height="85"></a> 
+                        <a></a>
+                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="80" height="80"></a>
+                        <a></a>
+                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="60" height="60"></a> 
+                        <!-- 48*48 -->
                     </div>
                 </div>
                 </div>
@@ -541,6 +544,13 @@
                             <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
                         </div>
                         <div class="col-md-6">
+
+                            <!-- Contador de visitas -->
+                            <center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+                            <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a></center>
+                            <!-- Fin Contador de visitas -->
+
+
                              <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
                         </div>
                     </div>
