@@ -39,6 +39,39 @@ Route::get('{repuesto}/Vista-Repuesto-Elemento', 'FrontController@viewRepuesto')
 Route::get('/Vista-Servicios', 'FrontController@index');
 Route::get('{servicio}/Vista-Servicio-Elemento','FrontController@viewServicio');
 
+
+
+
+
+/** Nuevos Cambios */
+///Grupos electrogenos
+Route::get('/Vista-Grupos', 'FrontController@indexGrupos');
+Route::get('{grupo}/Vista-Grupos-Elemento','FrontController@viewGrupo');
+
+///pozos de puesta a tierra
+Route::get('/Vista-Pozos', 'FrontController@indexPozos');
+Route::get('{pozo}/Vista-Pozo-Elemento','FrontController@viewPozo');
+
+///Ups
+Route::get('/Vista-UPS', 'FrontController@indexUPS');
+Route::get('{ups}/Vista-UPS-Elemento','FrontController@viewUPS');
+
+///Capacitaciones
+Route::get('/Vista-Capacitaciones', 'FrontController@indexCapacitaciones');
+Route::get('{capacitacion}/Vista-Capacitacion-Elemento','FrontController@viewCapacitacion');
+
+//rutas nuevas
+///Grupos electrogenos
+Route::resource('grupos', 'GruposController');
+///pozos de puesta a tierra
+Route::resource('pozos', 'PozosController');
+///Ups
+Route::resource('ups', 'UpsController');
+///Capacitaciones
+Route::resource('capacitaciones', 'CapacitacionesController');
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

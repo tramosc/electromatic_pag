@@ -35,7 +35,7 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
-                        <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
                                 <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
@@ -136,17 +136,16 @@
             <!-- Nav Bar End -->
             
             <!-- Page Header Start -->
-<!--
+<!-- 
             <div class="page-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2 style="color: white;">{{$manual->titulo_manual}}</h2>
+                            <h2 style="color: white;">MANUALES</h2>
                         </div>
                         <div class="col-12">
                             <a href="">Inicio</a>
                             <a href="">Manuales</a>
-                            <a >{{$manual->titulo_manual}}</a>
                         </div>
                     </div>
                 </div>
@@ -154,90 +153,37 @@
 -->
             <!-- Page Header End -->
 
-
-            <!-- Portfolio Start -->
-            <div class="portfolio">
+            <!-- Contact Start -->
+            <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del Manual</h2>
-                        <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" alt="Image">
-                                        </div>
-                                    </div>
+                        <p>Elementos de grupos electrogenos</p>
+                        <h2 style="color: black;">Grupos electrogenos</h2>
+                    </div>
+                    <div class="row">
+
+
+                    
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="https://www.grupodr.com.pe/wp-content/uploads/2018/10/Filtro-de-aire-Perkins-de-grupos-electrogenos-en-lima-peru-300x300.jpg" width="100px" height="230px" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2 style="color: white;">repuesto->titulo_repuesto</h2>
+                                    <a href="" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
+                        </div>
+                    
+
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="form-group" style="text-align: right;">
-                            <strong style="text-align: right; color: black;">Subido el dia:</strong>
-                            {{$manual->fecha}}
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h1 style="color: black;">DESCRIPCION DEL MANUAL</h1>
-                        <div class="card-body">
-                        <p>
-                                        {{$manual->descripcion}}
-                        </p>
-
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                    <br>
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h1 style="color: black;">DETALLES DEL MANUAL</h1>
-                        <div class="card-body">
-
-                            <p>
-                                {{$manual->detalles}}
-                            </p>
-                        
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h2 style="color: black;">RECURSOS EXTRAS</h2><br>
-                        <div class="card-body">
-
-                        <div class="about-img">
-                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
-                        </div>
-                        
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                <!--
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Recursos Extras</h2><br>
-                        <div class="about-img">
-                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
-                        </div>
-                         ///<a href="{{asset('storage').'/'.$manual->archivo_url}}" download>Descargar PDF</a> 
-                    </div>
--->
-
                 </div>
             </div>
-            <!-- Portfolio End -->
+            <!-- Contact End -->
 
+
+      
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

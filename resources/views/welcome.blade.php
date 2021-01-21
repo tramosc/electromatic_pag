@@ -39,7 +39,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
-                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
+                                <img src="{{ asset('img/logo1.png') }}" width="300" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Correo</h3>
-                                            <a style="color: white;" href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -100,8 +100,29 @@
                             <div class="navbar-nav mr-auto">
                                 <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
                                 <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">EMPRESA</a>
+                                <!--
                                 <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a>
+                                -->
+                                <div class="nav-item dropdown">
+                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
+                                    </div>
+                                </div>
+                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
+                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
+                                    </div>
+                                </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
                             </div>
@@ -218,8 +239,8 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Bienvenido a Electromatic industrial</p>
-                                <h2 style="color: black;">8 Años de Experiencia</h2>
+                                <p>Expertos en todo tipo de sistemas electromecanicos</p>
+                                <h2 style="color: black;">8 Años Acompañandolo</h2>
                             </div>
                             <div class="about-text">
                                 <p>
@@ -303,7 +324,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            <b>Pozos de puesta a tierra</b>
+                                            <b>GRUPOS ELECTROGENOS</b>
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
@@ -315,7 +336,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            <b>Grupos electrogenos</b>
+                                            <b>UPS</b>
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
@@ -331,7 +352,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            <b>Auditoria energica</b>
+                                            <b>AUDITORIA ENERGICA</b>
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
@@ -343,7 +364,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            <b>UPS</b>
+                                            <b>POZOS DE PUESTA A TIERRA</b>
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
@@ -535,11 +556,11 @@
                             <div class="newsletter">
                                 <h2>Nuestros Sitios</h2>
                                 <p>
-                                    <b>Intranet</b>, destinado a nuestros clientes <a href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
+                                    <b>Intranet</b>, destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
                                 </p>
                                 <br>
                                 <p>
-                                    <b>Grupos electrogenos</b>, <a href="http://gruposelectrogenosei.com/">Ir al sitio</a>
+                                    <b>Grupos electrogenos</b>, <a style="color: white;" href="http://gruposelectrogenosei.com/">Ir al sitio</a>
                                 </p>
                                 
                             </div>
@@ -549,13 +570,10 @@
                     <div class="container footer-menu">
                     <h4><b>Nuestras redes sociales</b></h4>
                     <div class="f-menu">
-                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="60" height="60" ></a>
-                        <a></a>
-                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="85" height="85"></a> 
-                        <a></a>
-                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="80" height="80"></a>
-                        <a></a>
-                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="60" height="60"></a> 
+                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
+                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
                         <!-- 48*48 -->
                     </div>
                 </div>

@@ -28,16 +28,17 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
 
-    <body>
+    <body> 
         <div class="wrapper">
-            <!-- Top Bar Start -->
+            <!-- Top Bar Start --> 
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12">
+                        
+                    <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <a href="index.html">
-                                <img src="{{ asset('img/logotipo.png') }}" width="200" height="300" alt="Image">
+                                <a href="">
+                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -97,8 +98,29 @@
                             <div class="navbar-nav mr-auto">
                                 <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
                                 <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">EMPRESA</a>
+                                <!--
                                 <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a>
+                                -->
+                                <div class="nav-item dropdown">
+                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
+                                    </div>
+                                </div>
+                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
+                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
+                                    </div>
+                                </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
                             </div>
@@ -111,7 +133,9 @@
             </div>
             <!-- Nav Bar End -->
             
+            
             <!-- Page Header Start -->
+            <!-- 
             <div class="page-header">
                 <div class="container">
                     <div class="row">
@@ -125,13 +149,18 @@
                     </div>
                 </div>
             </div>
+            -->
             <!-- Page Header End -->
+
+            <br></br>
+            
 
             <section id="services" class="services section-bg">
                 <div class="container">
                   <div class="container">
                     <div class="portfolio-description">
                     <div class="section-header text-left">
+                    <p style="text-align: center;">Empresa Electromatic</p>
                     <h1 style="color: black; text-align:center"><b>NUESTRA HISTORIA</b></h1>
                     </div>
                       
@@ -180,7 +209,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-worker"></i>
+                                    <i class="flaticon-measure"></i>
                                     </div>
                                     <div class="fact-text">
                                         <h4>GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</h4>
@@ -188,7 +217,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-building"></i>
+                                        <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
                                         <h4>ASESORAMIENTO TÉCNICO PERMANENTE</h4>
@@ -200,7 +229,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-address"></i>
+                                        <i class="flaticon-call"></i>
                                     </div>
                                     <div class="fact-text">
                                         <h4>ATENCIÓN PERSONALIZADA</h4>
@@ -208,7 +237,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-crane"></i>
+                                        <i class="flaticon-send-mail"></i>
                                     </div>
                                     <div class="fact-text">
                                         <h4>CONFIDENCIALIDAD</h4>

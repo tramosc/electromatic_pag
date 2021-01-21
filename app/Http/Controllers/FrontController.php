@@ -7,6 +7,10 @@ use App\Servicios;
 use App\Repuestos;
 use App\Manuales;
 use App\imagesInicio;
+use App\Capacitaciones;
+use App\Grupos;
+use App\Pozos;
+use App\Ups;
 use Illuminate\Support\Facades\Storage;
 
 class FrontController extends Controller
@@ -38,6 +42,32 @@ class FrontController extends Controller
         $datos['repuestos'] = Repuestos::paginate(15);
         return view('repuestos', $datos);
     }
+
+/**Nuevos cambios */
+    public function indexGrupos()
+    {
+        //
+        return view('grupos');
+    }
+
+    public function indexPozos()
+    {
+        //
+        return view('pozos');
+    }
+
+    public function indexUPS()
+    {
+        //
+        return view('ups');
+    }
+
+    public function indexCapacitaciones()
+    {
+        //
+        return view('capacitaciones');
+    }
+
 
     /**
      * Show the form for editing the specified resource.
