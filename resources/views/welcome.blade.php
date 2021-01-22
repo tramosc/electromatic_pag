@@ -249,7 +249,7 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                 </p>
-                                <a class="btn" href="">Saber Mas...</a>
+                                <a class="btn" href="http://localhost/electromatic/public/Vista-Empresa">Saber Mas...</a>
                             </div>
                         </div>
                     </div>
@@ -571,8 +571,14 @@
                     <h4><b>Nuestras redes sociales</b></h4>
                     <div class="f-menu">
                         <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
+                        <a></a>
+                        <a></a>
                         <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
+                        <a></a>
+                        <a></a>
                         <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                        <a></a>
+                        <a></a>
                         <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
                         <!-- 48*48 -->
                     </div>

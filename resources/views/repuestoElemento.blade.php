@@ -237,11 +237,11 @@
                             <div class="newsletter">
                                 <h2>Nuestros Sitios</h2>
                                 <p>
-                                    <b>Intranet</b>, destinado a nuestros clientes <a href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
+                                    <b>Intranet</b>, destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
                                 </p>
                                 <br>
                                 <p>
-                                    <b>Grupos electrogenos</b>, <a href="http://gruposelectrogenosei.com/">Ir al sitio</a>
+                                    <b>Grupos electrogenos</b>, <a style="color: white;" href="http://gruposelectrogenosei.com/">Ir al sitio</a>
                                 </p>
                                 
                             </div>
@@ -251,13 +251,16 @@
                     <div class="container footer-menu">
                     <h4><b>Nuestras redes sociales</b></h4>
                     <div class="f-menu">
-                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="60" height="60" ></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
                         <a></a>
-                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="85" height="85"></a> 
                         <a></a>
-                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="80" height="80"></a>
+                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
                         <a></a>
-                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="60" height="60"></a> 
+                        <a></a>
+                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                        <a></a>
+                        <a></a>
+                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
                         <!-- 48*48 -->
                     </div>
                 </div>
