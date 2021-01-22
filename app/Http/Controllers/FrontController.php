@@ -47,26 +47,57 @@ class FrontController extends Controller
     public function indexGrupos()
     {
         //
-        return view('grupos');
+        $datos['grupos'] = Grupos::paginate(25);
+        return view('grupos', $datos);
     }
+    public function viewGrupo($id)
+    {
+        $grupo = Grupos::findOrFail($id);
+        return view('grupoElemento', compact('grupo'));
+    }
+
+
 
     public function indexPozos()
     {
         //
-        return view('pozos');
+        $datos['pozos'] = Pozos::paginate(25);
+        return view('pozos', $datos);
     }
+    public function viewPozo($id)
+    {
+        $pozo = Pozos::findOrFail($id);
+        return view('pozoElemento', compact('pozo'));
+    }
+
+
 
     public function indexUPS()
     {
         //
-        return view('ups');
+        $datos['ups'] = Ups::paginate(25);
+        return view('ups', $datos);
     }
+    public function viewUPS($id)
+    {
+        $ups = Ups::findOrFail($id);
+        return view('upsElemento', compact('ups'));
+    }
+
+
 
     public function indexCapacitaciones()
     {
         //
-        return view('capacitaciones');
+        $datos['capacitaciones'] = Capacitaciones::paginate(25);
+        return view('capacitaciones', $datos);
     }
+    public function viewCapacitacion($id)
+    {
+        $capacitacion = Capacitaciones::findOrFail($id);
+        return view('capacitacionElemento', compact('capacitacion'));
+    }
+
 
 
     /**

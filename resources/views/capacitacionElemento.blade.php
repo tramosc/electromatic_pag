@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>POZOS - ELECTROMATIC</title>
+        <title>CAPACITACIONES - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -134,58 +134,128 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-<!-- 
-            <div class="page-header">
+
+            <!-- Service-detalle Start -->
+            <div class="service">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">MANUALES</h2>
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Datos de la capacitacion</h2> <br>
+                    </div>
+
+                    <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: black;">{{ $capacitacion->titulo_capacitacion }}</h5>
+
+                                 <br></br>
+
+                                <div class="card text-center">
+                                        <div class="card-body">
+                                            <h2 style="color: black; text-align: left;">Descripcion:</h2>
+                                            <p class="card-text">{{$capacitacion->descripcion_capacitacion}}</p>
+                                            <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h2>
+                        
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container">
+                            <div class="card text-center">
+                                <br>
+                                <h2 style="color: black;">RECURSOS EXTRAS</h2><br>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="about-img">
+                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
+                                </div>
+                        
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Manuales</a>
+                        <br>
+                    </div>
+                    <div class="container">
+                        <div class="card text-center">
+                            <h1 style="color: black;">CONTACTO</h1>
+                                <div class="card-body">
+                                    <p><i class="fa fa-map-marker-alt"></i> Calle Consuelo 307-A - Cercado Arequipa</p>
+                                    <p><i class="fa fa-phone-alt"></i> 054-399450 - 964-770-354</p>
+                                    <p><i class="fa fa-envelope"></i> servicios_cliente@electromaticindustrial.com</p>
+                                </div>
                         </div>
+                        <br>
                     </div>
                 </div>
             </div>
--->
-            <!-- Page Header End -->
 
-            <!-- Contact Start -->
-             <div class="team">
+
+
+            <!-- Service-detalle End -->
+
+            <!-- Service Start -->
+            <div class="service">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Un vistazo a pozos de puesta a tierra</p>
-                        <h2 style="color: black;">Pozos de puesta a tierra</h2>
+                        <h2 style="color: black;">Galeria</h2>
+                        
                     </div>
                     <div class="row">
-
-
-                    
-                    @foreach($pozos as $pozo)
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="100px" height="230px" alt="Team Image">
+                        <!-- Imagen 1 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="100px" height="300px" alt="Image">
                                 </div>
-                                <div class="team-text">
-                                    <h2 style="color: white;">{{$pozo->titulo_pozo}}</h2>
-                                    <a href="{{ url('/'.$pozo->id.'/Vista-Pozo-Elemento') }}" style="color: white;">Saber mas...</a>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_uno}}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                    
 
+                        <!-- Imagen 2 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_dos}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_tres}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 4 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_cuatro}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
+                    
                 </div>
             </div>
-            <!-- Contact End -->
-
-
-      
+            <!-- Service End -->
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

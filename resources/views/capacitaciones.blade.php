@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>MANUALES - ELECTROMATIC</title>
+        <title>CAPACITACIONES - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -146,17 +146,19 @@
 
 
                     
+                    @foreach($capacitaciones as $capacitacion)
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="https://www.grupodr.com.pe/wp-content/uploads/2018/10/Filtro-de-aire-Perkins-de-grupos-electrogenos-en-lima-peru-300x300.jpg" width="100px" height="230px" alt="Team Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="100px" height="230px" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2 style="color: white;">repuesto->titulo_repuesto</h2>
-                                    <a href="" style="color: white;">Saber mas...</a>
+                                    <h2 style="color: white;">{{$capacitacion->titulo_capacitacion}}</h2>
+                                    <a href="{{ url('/'.$capacitacion->id.'/Vista-Capacitacion-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
                         </div>
+                    @endforeach
                     
 
                     </div>
