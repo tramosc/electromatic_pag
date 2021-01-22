@@ -35,15 +35,7 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         
-                    <div class="col-lg-4 col-md-12">
-                            <div class="logo">
-                                <a href="">
-                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
                                     <div class="top-bar-item">
@@ -80,6 +72,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                
+                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image" align="right">
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                
+                            </div>
+                        </div>
+                        
+
                     </div>
                 </div>
             </div>
@@ -220,7 +222,7 @@
                                         <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>ASESORAMIENTO TÉCNICO PERMANENTE</h4>
+                                        <h4>SERVICIO TECNICO 24/7</h4>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +242,7 @@
                                         <i class="flaticon-send-mail"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h4>CONFIDENCIALIDAD</h4>
+                                        <h4>MONITOREO A DISTANCIA CONSTANTE</h4>
                                     </div>
                                 </div>
                             </div>

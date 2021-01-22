@@ -146,30 +146,39 @@
                             <div class="card-body">
                                 <h2 class="card-title" style="color: black;"><b>{{ $capacitacion->titulo_capacitacion }}</b></h2>
 
+                                <a href="https://github.com/"><img src="https://www.upsdelperu.com.pe/wp-content/uploads/2017/05/grupos-electr%C3%B3genos.jpg" style="align-items: center;" width="200" height="400"></a>
+
                                  <br></br>
 
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h2 style="color: black; text-align: left;">Descripcion:</h2>
+                                            <h3 style="color: black; text-align: left;">Descripcion:</h3>
                                             <p class="card-text">{{$capacitacion->descripcion_capacitacion}}</p>
-                                            <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h2>
+                                            <h3 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h3>
                         
                                 </div>
                             </div>
                     </div>
-                    <div class="container">
-                            <div class="card text-center">
-                                <br>
-                                <h2 style="color: black;">RECURSOS EXTRAS</h2><br>
 
-                                <div class="card-body">
-                                    <div class="about-img">
-                                        <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
-                                    </div>
+                    <div class="card text-center">
+                            <div class="card-body">
+                                <div class="card text-center">
+                                        <div class="card-body">
+                                            <h3 style="color: black; text-align: left;">RECURSOS EXTRAS:</h3>
+
+                                            <div class="card-body">
+                                                <div class="about-img">
+                                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="100" width="90"></a>
+                                                </div>
+                                                <a style="text-align: center;">Descargar recurso PDF</a>
+                                            </div>
+
                                 </div>
-                            </div> 
+                            </div>
                     </div>
+
                         <br>
+                    <!--
                     <div class="container">
                         <div class="card text-center">
                             <h1 style="color: black;">CONTACTO</h1>
@@ -181,6 +190,8 @@
                         </div>
                         <br>
                     </div>
+                    -->
+
                     </div>
 
 
@@ -196,56 +207,55 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <h2 style="color: black;">Galeria</h2>
-                        
                     </div>
                     <div class="row">
                         <!-- Imagen 1 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="100px" height="300px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="150px" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
                                     <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_uno}}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Imagen 2 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="100px" height="300px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="150px" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
                                     <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_dos}}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Imagen 3 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="100px" height="300px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="150px" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
                                     <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_tres}}" data-lightbox="service">+</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Imagen 4 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="100px" height="300px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="150px" alt="Image">
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
                                     <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_cuatro}}" data-lightbox="service">+</a>
                                 </div>
                             </div>

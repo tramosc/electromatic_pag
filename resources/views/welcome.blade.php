@@ -269,8 +269,8 @@
                                         <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">109</h2>
-                                        <p>Trabajadores Expertos</p>
+                                        <h2>CENTRALES ELECTRICAS</h2>
+                                        <p>CENTRALES ELECTRICAS</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -278,8 +278,8 @@
                                         <i class="flaticon-building"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">485</h2>
-                                        <p>clientes satisfechos</p>
+                                        <h2>INDUSTRIAS</h2>
+                                        <p>INDUSTRIAS</p>
                                     </div>
                                 </div>
                             </div>
@@ -291,8 +291,8 @@
                                         <i class="flaticon-address"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">789</h2>
-                                        <p>Proyectos de calidad</p>
+                                        <h2>FINANCIERAS Y BANCOS</h2>
+                                        <p>FINANCIERAS Y BANCOS</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -300,8 +300,8 @@
                                         <i class="flaticon-crane"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">890</h2>
-                                        <p>Proyectos eficientes</p>
+                                        <h2>HOSPITALES Y CLINICAS</h2>
+                                        <p>HOSPITALES Y CLINICAS</p>
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +449,7 @@
             </div>
             <!-- Testimonial End -->
 
-             <!-- About Start -->
+             <!-- About Start
              <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
@@ -481,8 +481,33 @@
                     </div>
                 </div>
             </div>
-            <!-- About End -->
+             About End -->
 
+            <!-- Single Post Start-->
+            <div class="single">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-related wow fadeInUp">
+                                <h2 style="color: black;">Nuestros Ultimos Manuales</h2>
+                                <div class="owl-carousel related-slider">
+                                    <div class="post-item">
+                                        <div class="post-img">
+                                            <img src="img/post-1.jpg" />
+                                        </div>
+                                        <div class="post-text">
+                                            <a href="">Titulo del manual</a>
+                                            <div class="post-meta">
+                                                <p>Publicado el dia:</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Post End-->   
 
              <!-- Service Start -->
              <div class="service">

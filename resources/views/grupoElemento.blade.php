@@ -144,19 +144,22 @@
 
                     <div class="card text-center">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;"><b>{{ $grupo->titulo_grupo }}</b></h2>
+                                <h2 class="card-title" style=" text-align: left; color: black;"><b>{{ $grupo->titulo_grupo }}</b></h2>
 
                                  <br></br>
 
+                                 <img src="https://static.unimaq.com.pe/fcsaprdunimaq01/2019/06/encapsulado-9-5.jpg?$cc-s$">
+
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h2 style="color: black; text-align: left;">Descripcion:</h2>
+                                            <h4 style="color: black; text-align: left;">Descripcion:</h4>
                                             <p class="card-text">{{$grupo->descripcion_grupo}}</p>
-                                            <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$grupo->precio}}</span> </h2>
+                                            <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$grupo->precio}}</span> </h4>
                         
                                 </div>
                             </div>
                     </div>
+                    <!--
                     <div class="container">
                         <div class="card text-center">
                             <h1 style="color: black;">CONTACTO</h1>
@@ -168,6 +171,7 @@
                         </div>
                         <br>
                     </div>
+-->
                 </div>
             </div>
 
@@ -257,31 +261,8 @@
                             </div>
                         </div>
 
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$grupo->img_siete}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$grupo->img_siete}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+<!-- solo 6 fotos  -->
 
-                        <!-- Imagen 8 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$grupo->img_ocho}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$grupo->img_ocho}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                 </div>

@@ -35,7 +35,7 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
-                    <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
                                 <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
@@ -134,26 +134,7 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-<!--
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">{{ $servicio->titulo_servicios }}</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Servicios</a>
-                            <a >{{ $servicio->titulo_servicios }}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-            <!-- Page Header End -->
-
+    
             <!-- Service-detalle Start -->
             <div class="service">
                 <div class="container">
@@ -370,89 +351,6 @@
                 </div>
             </div>
             <!-- Service End -->
-
-            
-
-<!-- 
-            Service Start 
-            <div class="service">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Servicios / Galeria</p>
-                        <h2 style="color: black;">Nuestra galeria de trabajos</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-1.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-2.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-3.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-4.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-5.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="img/service-6.jpg" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">--titulo_img--</h3>
-                                      <a class="btn" href="img/service-6.jpg" data-lightbox="service">▼</a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             Service End 
-           -->
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

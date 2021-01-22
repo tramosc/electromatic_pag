@@ -145,19 +145,22 @@
 
                     <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: black;">{{ $ups->titulo_ups }}</h5>
+                                <h2 class="card-title" style="color: black;"><b>{{ $ups->titulo_ups }}</b></h2>
+
+                                <img src="https://www.tier4.com.mx/wp-content/uploads/2019/08/Captura-de-Pantalla-2019-08-12-a-las-8.31.50-p.-m..png">
 
                                  <br></br>
 
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h2 style="color: black; text-align: left;">Descripcion:</h2>
+                                            <h4 style="color: black; text-align: left;">Descripcion:</h4>
                                             <p class="card-text">{{$ups->descripcion_ups}}</p>
-                                            <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$ups->precio}}</span> </h2>
+                                            <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$ups->precio}}</span> </h4>
                         
                                 </div>
                             </div>
                     </div>
+                    <!--
                     <div class="container">
                         <div class="card text-center">
                             <h1 style="color: black;">CONTACTO</h1>
@@ -169,6 +172,7 @@
                         </div>
                         <br>
                     </div>
+-->
                 </div>
             </div>
 
@@ -257,32 +261,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$ups->img_siete}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">UPS Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_siete}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 8 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$ups->img_ocho}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">UPS Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_ocho}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+<!-- seis fotos -->
                     </div>
                     
                 </div>

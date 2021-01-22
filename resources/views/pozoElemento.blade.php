@@ -143,19 +143,22 @@
 
                     <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: black;">{{ $pozo->titulo_pozo }}</h5>
+                                <h2 class="card-title" style="text-align: left; color: black;"><b>{{ $pozo->titulo_pozo }}</b></h2>
+
+                                <img src="https://i.pinimg.com/originals/76/10/c1/7610c1c4f472f9b3cfa45611f27ca2a3.jpg" width="200" height="150">
 
                                  <br></br>
 
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h2 style="color: black; text-align: left;">Descripcion:</h2>
+                                            <h4 style="color: black; text-align: left;">Descripcion:</h4>
                                             <p class="card-text">{{$pozo->descripcion_pozo}}</p>
-                                            <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$pozo->precio}}</span> </h2>
+                                            <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$pozo->precio}}</span> </h4>
                         
                                 </div>
                             </div>
                     </div>
+                    <!--
                     <div class="container">
                         <div class="card text-center">
                             <h1 style="color: black;">CONTACTO</h1>
@@ -167,6 +170,7 @@
                         </div>
                         <br>
                     </div>
+-->
                 </div>
             </div>
 
@@ -255,32 +259,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_siete}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 8 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_ocho}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_ocho}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+<!-- seis fotos -->
                     </div>
                     
                 </div>

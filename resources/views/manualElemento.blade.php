@@ -35,15 +35,6 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
-                        <div class="col-lg-4 col-md-12">
-                            <div class="logo">
-                                <a href="">
-                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                                </a>
-                            </div>
-                        </div>
-
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
@@ -81,6 +72,16 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="">
+                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image" align="right">
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -134,26 +135,6 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-<!--
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">{{$manual->titulo_manual}}</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Manuales</a>
-                            <a >{{$manual->titulo_manual}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-            <!-- Page Header End -->
-
 
             <!-- Portfolio Start -->
             <div class="portfolio">
