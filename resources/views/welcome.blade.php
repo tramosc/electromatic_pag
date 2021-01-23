@@ -269,8 +269,7 @@
                                         <img src="{{ asset('img/central-electrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h2>CENTRALES ELECTRICAS</h2>
-                                        <p>CENTRALES ELECTRICAS</p>
+                                        <h3 style="color: black;">CENTRALES ELECTRICAS</h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -278,8 +277,7 @@
                                     <img src="{{ asset('img/fabrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h2>INDUSTRIAS</h2>
-                                        <p>INDUSTRIAS</p>
+                                        <h3 style="color: black;">INDUSTRIAS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -291,8 +289,7 @@
                                     <img src="{{ asset('img/bancario.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h2>FINANCIERAS Y BANCOS</h2>
-                                        <p>FINANCIERAS Y BANCOS</p>
+                                        <h3>FINANCIERAS Y BANCOS</h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -300,8 +297,7 @@
                                     <img src="{{ asset('img/hospital.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h2>HOSPITALES Y CLINICAS</h2>
-                                        <p>HOSPITALES Y CLINICAS</p>
+                                        <h3>HOSPITALES Y CLINICAS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -459,30 +455,33 @@
                                 </div>
                         <div class="col-12">
                                 
-                            <div class="single-related wow fadeInUp">
-                            
-                                <h2 style="color: black;">Nuestros Manuales</h2>
-
-                                <div class="owl-carousel related-slider">
-                                    @foreach($manuales as $manual)
-                                    <div class="post-item">
-                                        <div class="post-img">
-                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" />
-                                        </div>
-                                        <div class="post-text">
-                                            <a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a>
-                                            <div class="post-meta">
-                                                <p>Publicado el dia:{{$manual->fecha}}</p>
+                        <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">Manuales Recientes:</h2>
+                                    <br></br>
+                                    <div class="recent-post">
+                                        @foreach($manuales as $manual)
+                                            <div class="post-item">
+                                                <div class="post-img">
+                                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" />
+                                                </div>
+                                                <div class="post-text">
+                                                    <a href="">{{$manual->titulo_manual}}</a>
+                                                    <h5 style="color: black;">{{$manual->descripcion}}</h5>
+                                                    <div class="post-meta">
+                                                        <p>Subido el dia: {{$manual->fecha}}</p>
+                                                    </div>
+                                                    <hr></hr>
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endforeach
                                     </div>
-                                    @endforeach
                                 </div>
-                            </div>
                             
                         </div>
                     </div>
-                 </div>
+                </div>
+
+
                 
             </div>
             <!-- Single Post End-->   

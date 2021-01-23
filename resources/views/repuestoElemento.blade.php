@@ -145,11 +145,12 @@
 
                     <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title" style="color: black;">{{$repuesto->titulo_repuesto}}</h5>
-                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="950" height="750">
-                        <h2 style="color: black; text-align: left;">Detalles:</h2>
+                        <h3 class="card-title" style="text-align: left; color: black;">{{$repuesto->titulo_repuesto}}</h3>
+                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="750" height="550">
+                        <br></br>
+                        <h4 style="color: black; text-align: left;">Detalles:</h4>
                         <p class="card-text">{{$repuesto->detalles_repuesto}}</p>
-                        <h2 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$repuesto->precio}}</span> </h2>
+                        <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$repuesto->precio}}</span> </h4>
                         
                     </div>
 

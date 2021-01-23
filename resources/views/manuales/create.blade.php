@@ -10,7 +10,7 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_manual" class="form-label">Titulo del manual</label>
-                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" required>
+                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" maxlength="191" required>
             </div>
             <div class="col-md-6">
                 <label for="img_manual" class="form-label">Portada</label>

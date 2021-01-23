@@ -134,136 +134,178 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            <!-- Service-detalle Start -->
-            <div class="service">
+
+
+
+
+
+            <!-- Single Post Start-->
+            <div class="single">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del Pozo</h2> <br>
-                    </div>
-
-                    <div class="card text-center">
-                            <div class="card-body">
-                                <h2 class="card-title" style="text-align: left; color: black;"><b>{{ $pozo->titulo_pozo }}</b></h2>
-                                 <br></br>
-                                 <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="650" height="450">
-
-                                <div class="card text-center">
-                                        <div class="card-body">
-                                            <h4 style="color: black; text-align: left;">Descripcion:</h4>
-                                            <p class="card-text">{{$pozo->descripcion_pozo}}</p>
-                                            <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$pozo->precio}}</span> </h4>
-                        
-                                </div>
-                            </div>
-                    </div>
-                    <!--
-                    <div class="container">
-                        <div class="card text-center">
-                            <h1 style="color: black;">CONTACTO</h1>
-                                <div class="card-body">
-                                    <p><i class="fa fa-map-marker-alt"></i> Calle Consuelo 307-A - Cercado Arequipa</p>
-                                    <p><i class="fa fa-phone-alt"></i> 054-399450 - 964-770-354</p>
-                                    <p><i class="fa fa-envelope"></i> servicios_cliente@electromaticindustrial.com</p>
-                                </div>
-                        </div>
-                        <br>
-                    </div>
--->
-                </div>
-            </div>
-
-                                <!-- Service Start -->
-            <div class="service">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                        
-                    </div>
                     <div class="row">
-                        <!-- Imagen 2 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_dos}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Elementos de la zona de la izquierda -->
+                        <div class="col-lg-8">
 
-                        <!-- Imagen 3 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_tres}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                    <!-- Elementos de izquierda -->
+                                        <!-- Service-detalle Start -->
+                                        <div class="service">
+                                            <div class="container">
+                                                <div class="section-header text-center">
+                                                    <h2 style="color: black;">Datos del Grupo</h2> <br>
+                                                </div>
 
-                        <!-- Imagen 4 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_cuatro}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                                <div class="card text-center">
+                                                        <div class="card-body">
+                                                                <div class="sidebar">
+                                                                    <div class="sidebar-widget wow fadeInUp">
+                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $pozo->titulo_pozo }}</b></h2>
+                                                                    </div>
+                                                                </div>
+                                                           
+                                                            
+                                                            <br></br>
 
-                        <!-- Imagen 5 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_cinco}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                                            <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="450" height="250">
 
-                        <!-- Imagen 6 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_seis}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
+                                                            <div class="card text-center">
+                                                                    <div class="card-body">
+                                                                        <h5 style="color: black; text-align: left;">Descripcion:</h5>
+                                                                        <p class="card-text">{{ $pozo->descripcion_pozo }}</p>
+                                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $pozo->precio }}</span> </h5>
+                                                    
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Service Start -->
+                                        <div class="service">
+                                            <div class="container">
+                                                <div class="section-header text-center">
+                                                    <h2 style="color: black;">Galeria</h2>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!-- Imagen 2 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo</h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_dos}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 3 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_tres}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 4 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_cuatro}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 5 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_cinco}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 6 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_seis}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 6 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="200px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">Pozo</h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_siete}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                                
+                                                </div>
+                                        </div>
+                                        <!-- Service End -->
+
                         </div>
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="300px" alt="Image">
+                    <!-- Fin de Elementos de la zona de la izquierda -->
+
+                        <div class="col-lg-4">
+                            <div class="sidebar">
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">CONTACTO</h2>
                                 </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_siete}}" data-lightbox="service">+</a>
-                                </div>
+
+                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg" style="position: fixed;" width="450px" height="440px" alt="Responsive image">
+                                
                             </div>
+                            
                         </div>
-<!-- seis fotos -->
                     </div>
-                    
                 </div>
             </div>
-            <!-- Service End -->
+            <!-- Single Post End-->   
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">

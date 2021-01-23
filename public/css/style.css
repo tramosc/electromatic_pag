@@ -700,7 +700,7 @@ a:focus {
 
 .fact .fact-left {
     color: #ffffff;
-    background: #717171;
+    background: #ffffff;
 }
 
 .fact .fact-right {
@@ -1447,7 +1447,7 @@ a:focus {
 
 .single .post-item .post-img {
     width: 100%;
-    max-width: 80px;
+    max-width: 150px;
 }
 
 .single .post-item .post-img img {
@@ -1459,7 +1459,7 @@ a:focus {
 }
 
 .single .post-item .post-text a {
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -1472,7 +1472,7 @@ a:focus {
     display: inline-block;
     margin: 0;
     padding: 0 3px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     font-style: italic;
 }
@@ -1627,12 +1627,12 @@ a:focus {
 
 .sidebar .sidebar-widget {
     position: relative;
-    margin-bottom: 45px;
+    /*margin-bottom: 45px;*/
 }
 
 .sidebar .sidebar-widget .widget-title {
     position: relative;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     padding-bottom: 5px;
     font-size: 30px;
     font-weight: 700;
