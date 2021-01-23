@@ -162,7 +162,7 @@
                     <div class="container">
                         <div class="card text-center">
                         <br>
-                        <h1 style="color: black;">DESCRIPCION DEL MANUAL</h1>
+                        <h4 style="color: black;">DESCRIPCION DEL MANUAL</h4>
                         <div class="card-body">
                         <p>
                                         {{$manual->descripcion}}
@@ -178,7 +178,7 @@
                     <div class="container">
                         <div class="card text-center">
                         <br>
-                        <h1 style="color: black;">DETALLES DEL MANUAL</h1>
+                        <h4 style="color: black;">DETALLES DEL MANUAL</h4>
                         <div class="card-body">
 
                             <p>
@@ -193,7 +193,7 @@
                     <div class="container">
                         <div class="card text-center">
                         <br>
-                        <h2 style="color: black;">RECURSOS EXTRAS</h2><br>
+                        <h4 style="color: black;">RECURSOS EXTRAS</h4><br>
                         <div class="card-body">
 
                         <div class="about-img">

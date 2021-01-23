@@ -465,7 +465,7 @@
                                                     <img src="{{asset('storage').'/'.$manual->img_manual}}" />
                                                 </div>
                                                 <div class="post-text">
-                                                    <a href="">{{$manual->titulo_manual}}</a>
+                                                    <a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a>
                                                     <h5 style="color: black;">{{$manual->descripcion}}</h5>
                                                     <div class="post-meta">
                                                         <p>Subido el dia: {{$manual->fecha}}</p>
