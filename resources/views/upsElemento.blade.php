@@ -145,7 +145,7 @@
 
                     <div class="card text-center">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;"><b>{{ $ups->titulo_ups }}</b></h2>
+                                <h2 class="card-title" style="text-align: left; color: black;"><b>{{ $ups->titulo_ups }}</b></h2>
 
                                 <img src="https://www.tier4.com.mx/wp-content/uploads/2019/08/Captura-de-Pantalla-2019-08-12-a-las-8.31.50-p.-m..png">
 

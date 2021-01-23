@@ -52,6 +52,10 @@ class CapacitacionesController extends Controller
             $datosCapacitacion['pdf_archivo']=$request->file('pdf_archivo')->store('uploads', 'public');
         }
 
+        if($request->hasFile('img_portada')){
+            $datosCapacitacion['img_portada']=$request->file('img_portada')->store('uploads', 'public');
+        }
+
         if($request->hasFile('img_uno')){
             $datosCapacitacion['img_uno']=$request->file('img_uno')->store('uploads', 'public');
         }
@@ -109,6 +113,13 @@ class CapacitacionesController extends Controller
          //
          $datosCapacitacion=request()->except(['_token','_method']);
 
+
+         if($request->hasFile('img_portada')){
+            $capacitacion= Capacitaciones::findOrFail($id);
+            Storage::delete('public/'.$capacitacion->img_portada);
+            $datosCapacitacion['img_portada']=$request->file('img_portada')->store('uploads', 'public');
+       }
+
         if($request->hasFile('img_uno')){
              $capacitacion= Capacitaciones::findOrFail($id);
              Storage::delete('public/'.$capacitacion->img_uno);
@@ -159,6 +170,9 @@ class CapacitacionesController extends Controller
         //
         $capacitacion= Capacitaciones::findOrFail($id);
 
+        if(Storage::delete('public/'.$capacitacion->img_portada)){
+            Capacitaciones::destroy($id);
+        }
         if(Storage::delete('public/'.$capacitacion->img_uno)){
             Capacitaciones::destroy($id);
         }

@@ -17,11 +17,21 @@
                 <label for="descripcion_capacitacion" class="form-label">Descripcion de la capacitacion</label>
                 <input type="text" class="form-control" name="descripcion_capacitacion" id="descripcion_capacitacion" value="{{ $capacitacion->descripcion_capacitacion }}">
             </div>
+            <div class="col-12">
+                <label for="link" class="form-label">Link de la imagen</label>
+                <input type="text" class="form-control" name="link" id="link" value="{{ $capacitacion->link }}">
+            </div>
             <div class="col-2">
                 <label for="precio" class="form-label">Precio</label>
                 <input type="text" class="form-control" name="precio" id="precio" value="{{ $capacitacion->precio }}">
             </div>
             <br></br>
+            <div class="col-md-6">
+                <label for="img_portada" class="form-label">Imagen Portada</label>
+                <img src="{{asset('storage').'/'.$capacitacion->img_portada}}" width="200">
+                <input type="file" class="form-control" name="img_portada" id="img_portada" accept="image/png, image/jpeg" value="">
+                
+            </div>
             <div class="col-md-6">
                 <label for="img_uno" class="form-label">Imagen Nro 1</label>
                 <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="200">

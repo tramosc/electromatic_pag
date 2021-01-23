@@ -22,7 +22,7 @@
                 <input type="text" class="form-control" name="precio" id="precio" value="{{ $pozo->precio }}">
             </div>
             <div class="col-md-6">
-                <label for="img_uno" class="form-label">Imagen nro 1</label>
+                <label for="img_uno" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="200">
             </div>
@@ -55,11 +55,6 @@
                 <label for="img_siete" class="form-label">Imagen nro 7</label>
                 <input type="file" class="form-control" name="img_siete" id="img_siete" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="200">
-            </div>
-            <div class="col-md-6">
-                <label for="img_ocho" class="form-label">Imagen nro 8</label>
-                <input type="file" class="form-control" name="img_ocho" id="img_ocho" accept="image/png, image/jpeg" value="">
-                <img src="{{asset('storage').'/'.$pozo->img_ocho}}" width="200">
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>

@@ -73,10 +73,6 @@ class PozosController extends Controller
         if($request->hasFile('img_siete')){
             $datosPozo['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
-
-        if($request->hasFile('img_ocho')){
-            $datosPozo['img_ocho']=$request->file('img_ocho')->store('uploads', 'public');
-        }
         Pozos::insert($datosPozo);
         return redirect('pozos');
     }

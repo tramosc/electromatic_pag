@@ -145,10 +145,10 @@
                     <div class="card text-center">
                             <div class="card-body">
                                 <h2 class="card-title" style=" text-align: left; color: black;"><b>{{ $grupo->titulo_grupo }}</b></h2>
-
+                                
                                  <br></br>
 
-                                 <img src="https://static.unimaq.com.pe/fcsaprdunimaq01/2019/06/encapsulado-9-5.jpg?$cc-s$">
+                                 <img src="{{asset('storage').'/'.$grupo->img_uno}}" width="650" height="450">
 
                                 <div class="card text-center">
                                         <div class="card-body">
@@ -183,19 +183,6 @@
                         
                     </div>
                     <div class="row">
-                        <!-- Imagen 1 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$grupo->img_uno}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$grupo->img_uno}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Imagen 2 -->
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
@@ -261,6 +248,19 @@
                             </div>
                         </div>
 
+                        <!-- Imagen 6 -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$grupo->img_siete}}" width="100px" height="300px" alt="Image">
+                                </div>
+                                <div class="service-text">
+                                    <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                    <a class="btn" href="{{asset('storage').'/'.$grupo->img_siete}}" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
 <!-- solo 6 fotos  -->
 
                     </div>

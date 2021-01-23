@@ -21,7 +21,7 @@
                 <input type="text" class="form-control" name="precio" id="precio" required>
             </div>
             <div class="col-md-6">
-                <label for="img_uno" class="form-label">Imagen Nro 1</label>
+                <label for="img_uno" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
@@ -48,11 +48,6 @@
                 <label for="img_siete" class="form-label">Imagen Nro 7</label>
                 <input type="file" class="form-control" name="img_siete" id="img_siete" required accept="image/png, image/jpeg" >
             </div>
-            <div class="col-md-6">
-                <label for="img_ocho" class="form-label">Imagen Nro 8</label>
-                <input type="file" class="form-control" name="img_ocho" id="img_ocho" required accept="image/png, image/jpeg" >
-            </div>
-
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>
                 <a href="{{ url('grupos') }}">Regresar a Grupos</a>

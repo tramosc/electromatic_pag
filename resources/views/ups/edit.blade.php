@@ -56,11 +56,6 @@
                 <input type="file" class="form-control" name="img_siete" id="img_siete" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$ups->img_siete}}" width="200">
             </div>
-            <div class="col-md-6">
-                <label for="img_ocho" class="form-label">Imagen nro 8</label>
-                <input type="file" class="form-control" name="img_ocho" id="img_ocho" accept="image/png, image/jpeg" value="">
-                <img src="{{asset('storage').'/'.$ups->img_ocho}}" width="200">
-            </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
                 <a href="{{ url('ups') }}">Regresar a UPS</a>

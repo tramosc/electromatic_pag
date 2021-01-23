@@ -15,10 +15,16 @@ use Illuminate\Support\Facades\Storage;
 
 class FrontController extends Controller
 {
-
+/*
     public function viewImagenes(){
         //
         $datos['imagenesInicio'] = imagesInicio::paginate(30);
+        return view('welcome', $datos);
+    }
+*/
+    public function viewPostManuales(){
+        //
+        $datos['manuales'] = Manuales::paginate(30);
         return view('welcome', $datos);
     }
 

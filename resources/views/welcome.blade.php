@@ -266,7 +266,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-worker"></i>
+                                        <img src="{{ asset('img/central-electrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
                                         <h2>CENTRALES ELECTRICAS</h2>
@@ -275,7 +275,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-building"></i>
+                                    <img src="{{ asset('img/fabrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
                                         <h2>INDUSTRIAS</h2>
@@ -288,7 +288,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-address"></i>
+                                    <img src="{{ asset('img/bancario.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
                                         <h2>FINANCIERAS Y BANCOS</h2>
@@ -297,7 +297,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                        <i class="flaticon-crane"></i>
+                                    <img src="{{ asset('img/hospital.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
                                         <h2>HOSPITALES Y CLINICAS</h2>
@@ -449,97 +449,43 @@
             </div>
             <!-- Testimonial End -->
 
-             <!-- About Start
-             <div class="about wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-6">
-                            <div class="section-header text-left">
-                                <p>Somos una empresa comprometida con el cliente</p>
-                                <h2 style="color: black;">Compromiso con el cliente</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="https://dsiservicios.com/wp-content/uploads/2015/11/ingenieros-electricos.jpg" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             About End -->
-
             <!-- Single Post Start-->
             <div class="single">
                 <div class="container">
                     <div class="row">
+                                <div class="section-header text-center">
+                                    <p>Un vistazo por nuestros manuales</p>
+                                    <h2 style="color: black;">Manuales</h2>
+                                </div>
                         <div class="col-12">
+                                
                             <div class="single-related wow fadeInUp">
-                                <h2 style="color: black;">Nuestros Ultimos Manuales</h2>
+                            
+                                <h2 style="color: black;">Nuestros Manuales</h2>
+
                                 <div class="owl-carousel related-slider">
+                                    @foreach($manuales as $manual)
                                     <div class="post-item">
                                         <div class="post-img">
-                                            <img src="img/post-1.jpg" />
+                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" />
                                         </div>
                                         <div class="post-text">
-                                            <a href="">Titulo del manual</a>
+                                            <a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a>
                                             <div class="post-meta">
-                                                <p>Publicado el dia:</p>
+                                                <p>Publicado el dia:{{$manual->fecha}}</p>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
                                 </div>
                             </div>
+                            
+                        </div>
                     </div>
-                </div>
+                 </div>
+                
             </div>
             <!-- Single Post End-->   
-
-             <!-- Service Start -->
-             <div class="service">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                        
-                    </div>
-                    <div class="row">
-                    @foreach($imagenesInicio as $imagenInicio)
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">{{$imagenInicio->titulo_img}}</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                    </div>
-                    
-                </div>
-                <!-- DIRECCION A POSTULANTES  
-                <a href="{{ url('postulantes/create') }}" class="btn btn-danger">ir a postulantes</a>
-                --->
-            </div>
-            <!-- Service End -->
-
-
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -562,20 +508,21 @@
                                 -->
                             </div>
                         </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
                         <div class="col-md-6 col-lg-3">
-                        <h2>Ubicanos</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <h2>Ubicanos</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
 
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
+
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
 
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
@@ -590,25 +537,31 @@
                                 
                             </div>
                         </div>
+
                     </div>
+
                     <br>
+
                     <div class="container footer-menu">
-                    <h4><b>Nuestras redes sociales</b></h4>
-                    <div class="f-menu">
-                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
-                        <!-- 48*48 -->
+                    
+                        <h4><b>Nuestras redes sociales</b></h4>
+                        <div class="f-menu">
+                            <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
+                            <!-- 48*48 -->
+                        </div>
                     </div>
+
                 </div>
-                </div>
+
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
@@ -626,6 +579,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- Footer End -->
 

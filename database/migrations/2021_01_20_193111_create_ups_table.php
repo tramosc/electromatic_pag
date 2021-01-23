@@ -25,7 +25,6 @@ class CreateUpsTable extends Migration
             $table->string('img_cinco');
             $table->string('img_seis');
             $table->string('img_siete');
-            $table->string('img_ocho');
             $table->timestamps();
              /**8 fotos */
         });

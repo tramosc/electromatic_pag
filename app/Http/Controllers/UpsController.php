@@ -72,10 +72,6 @@ class UpsController extends Controller
         if($request->hasFile('img_siete')){
             $datosUps['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
-
-        if($request->hasFile('img_ocho')){
-            $datosUps['img_ocho']=$request->file('img_ocho')->store('uploads', 'public');
-        }
         Ups::insert($datosUps);
         return redirect('ups');
     }

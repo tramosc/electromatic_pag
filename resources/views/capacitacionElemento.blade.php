@@ -146,7 +146,7 @@
                             <div class="card-body">
                                 <h2 class="card-title" style="color: black;"><b>{{ $capacitacion->titulo_capacitacion }}</b></h2>
 
-                                <a href="https://github.com/"><img src="https://www.upsdelperu.com.pe/wp-content/uploads/2017/05/grupos-electr%C3%B3genos.jpg" style="align-items: center;" width="200" height="400"></a>
+                                <a href="{{ $capacitacion->link }}"><img src="{{asset('storage').'/'.$capacitacion->img_portada}}" style="align-items: center;" width="850" height="1000"></a>
 
                                  <br></br>
 
