@@ -28,6 +28,14 @@
                 <label for="img_repuesto" class="form-label">Imagen repuesto</label>
                 <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" required accept="image/png, image/jpeg" >
             </div>
+            <div class="col-md-6">
+                <label for="img_uno" class="form-label">Imagen N1</label>
+                <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" >
+            </div>
+            <div class="col-md-6">
+                <label for="img_dos" class="form-label">Imagen N2</label>
+                <input type="file" class="form-control" name="img_dos" id="img_dos" required accept="image/png, image/jpeg" >
+            </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>
                 <a href="{{ url('repuestos') }}">Regresar a Manuales</a>

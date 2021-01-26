@@ -133,22 +133,6 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">POSTULANTES</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Postulantes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Header End -->
 
             <!-- Service-detalle Start -->
             <div class="service">
@@ -176,19 +160,25 @@
                     <div class="row">
                         <div class="col">
                         <label style="color: black;" for="dni">DNI:</label>
-                        <input type="number" class="form-control" name="dni" id="dni" required placeholder="Su DNI">
+                        <input type="text" class="form-control" name="dni" id="dni" required placeholder="Su DNI" maxlength="9">
                         </div>
                         <div class="col">
                         <label style="color: black;" for="telefono">Telefono:</label>
-                        <input type="number" class="form-control" name="telefono" id="telefono" required placeholder="Su Telefono">
+                        <input type="text" maxlength="9" class="form-control" name="telefono" id="telefono" required placeholder="Su Telefono">
                         </div>
                     </div>
                 </div>
 
                         <div class="form-group">
-                        <label style="color: black;" for="correo">Correo</label>
+                            <label style="color: black;" for="correo">Correo</label>
                             <input type="email" class="form-control" name="correo" id="correo" required placeholder="name@example.com">
                         </div>
+
+                        <div class="form-group">
+                            <label style="color: black;" for="area">Area de postulacion</label>
+                            <input type="text" class="form-control" name="area" id="area" required placeholder="mantenimiento, etc">
+                        </div>
+
                         <div class="form-group">
                             <label style="color: black;" for="cv">Subir CV(solo formato PDF):</label>
                             <input type="file" class="form-control-file" name="cv" id="cv" required accept="application/pdf" >

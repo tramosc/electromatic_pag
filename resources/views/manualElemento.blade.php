@@ -136,7 +136,7 @@
             </div>
             <!-- Nav Bar End -->
 
-            <!-- Portfolio Start -->
+            <!-- Portfolio Start 
             <div class="portfolio">
                 <div class="container">
                     <div class="section-header text-center">
@@ -145,11 +145,11 @@
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" alt="Image">
+                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                        </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -160,65 +160,175 @@
                     </div>
 
                     <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h4 style="color: black;">DESCRIPCION DEL MANUAL</h4>
-                        <div class="card-body">
-                        <p>
-                                        {{$manual->descripcion}}
-                        </p>
-
-                        </div>
-                        </div>
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 style="color: black; text-align: left;">DESCRIPCION DEL MANUAL:</h5>
+                                        <p class="card-text">{{ $manual->descripcion }}</p>
+                                    </div>
+                                </div>
                         <br>
                     </div>
 
+                    <div class="container">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 style="color: black; text-align: left;">DETALLES DEL MANUAL:</h5>
+                                        <p class="card-text">{{$manual->detalles}}</p>
+                                    </div>
+                                </div>
+                        <br>
+                    </div>
+
+                    <div class="container">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
+                                        <div class="about-img">
+                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="100" width="90"></a>
+                        </div>
+                        <a style="text-align: center;">Descargar recurso PDF</a>
+                                    </div>
+                                </div>
+                        <br>
+                    </div>                                       
                     <br>
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h4 style="color: black;">DETALLES DEL MANUAL</h4>
-                        <div class="card-body">
-
-                            <p>
-                                {{$manual->detalles}}
-                            </p>
-                        
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h4 style="color: black;">RECURSOS EXTRAS</h4><br>
-                        <div class="card-body">
-
-                        <div class="about-img">
-                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
-                        </div>
-                        
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                <!--
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Recursos Extras</h2><br>
-                        <div class="about-img">
-                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="200" width="180"></a>
-                        </div>
-                         ///<a href="{{asset('storage').'/'.$manual->archivo_url}}" download>Descargar PDF</a> 
-                    </div>
--->
-
                 </div>
             </div>
-            <!-- Portfolio End -->
+            Portfolio End -->
 
+
+            <!-- Single Post Start-->
+            <div class="single">
+                <div class="container">
+                    <div class="row">
+                    <!-- Elementos de la zona de la izquierda -->
+                        <div class="col-lg-8">
+
+                                    <!-- Elementos de izquierda -->
+                                        <!-- Service-detalle Start -->
+                                        <div class="service">
+                                            <div class="container">
+                                                <div class="section-header text-center">
+                                                    <h2 style="color: black;">Datos del Manual</h2> <br>
+                                                </div>
+                                                <div class="card text-center">
+                                                        <div class="card-body">
+                                                                <div class="sidebar">
+                                                                    <div class="sidebar-widget wow fadeInUp">
+                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{$manual->titulo_manual}} </b></h2>
+                                                                    </div>
+                                                                </div>
+                                                           
+                                                                <div class="about-img">
+                                                                        <div class="scaling-image h-100">
+                                                                            <div class="frame h-100">
+                                                                                <div class="feature-img-bg h-100">
+                                                                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                            <br>
+
+                                                            <br></br>
+                                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                <div class="form-group" style="text-align: right;">
+                                                                    <strong style="text-align: right; color: black;">Subido el dia:</strong>
+                                                                    {{$manual->fecha}}
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="container">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body">
+                                                                                <h5 style="color: black; text-align: left;">DESCRIPCION DEL MANUAL:</h5>
+                                                                                <p class="card-text">{{ $manual->descripcion }}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                <br>
+                                                            </div>
+
+                                                            <div class="container">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body">
+                                                                                <h5 style="color: black; text-align: left;">DETALLES DEL MANUAL:</h5>
+                                                                                <p class="card-text">{{$manual->detalles}}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                <br>
+                                                            </div>
+
+
+                                                            <div class="container">
+                                                                        <div class="card text-center">
+                                                                            <div class="card-body">
+                                                                                <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
+                                                                                <div class="about-img">
+                                                                        <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="100" width="90"></a>
+                                                                </div>
+                                                                <a style="text-align: center;">Descargar recurso PDF</a>
+                                                                            </div>
+                                                                        </div>
+                                                                <br>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                        </div>  
+                        </div>
+                    </div>
+                    <!-- Fin de Elementos de la zona de la izquierda -->
+
+                        <div class="col-lg-4">
+                            <div class="sidebar">
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">CONTACTO</h2>
+                                </div>
+
+                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                <br></br>
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">Otros</h2>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-header">
+                                        Nuestros servicios
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Grupos electrogenos</li>
+                                        <li class="list-group-item">Auditoria energetica</li>
+                                        <li class="list-group-item">Ups</li>
+                                        <li class="list-group-item">Pozos de puesta a tierra</li>
+                                    </ul>
+                                </div>
+                                <br></br>
+                                <!--Script de facebook -->
+                                    <div class="sidebar-widget wow fadeInUp">
+                                        <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
+                                    </div>
+                                            <script>(function(d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+
+	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                <!-- Fin de script de facebook-->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Post End-->   
+
+
+
+
+
+ 
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

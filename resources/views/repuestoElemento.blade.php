@@ -24,6 +24,9 @@
         <link href="{{ asset('lib/slick/slick.css') }}" rel="stylesheet">
         <link href="{{ asset('lib/slick/slick-theme.css') }}" rel="stylesheet">
 
+        <link rel="stylesheet" href="{{ asset('css/efectos.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/vanilla-zoom/vanilla-zoom.css') }}">
+
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
@@ -134,48 +137,121 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-
-            <!-- Team Start -->
-            <div class="team">
+        
+            <!-- Single Post Start-->
+            <div class="single">
                 <div class="container">
-                    <div class="section-header text-center">
+                    <div class="row">
+                    <!-- Elementos de la zona de la izquierda -->
+                        <div class="col-lg-8">
 
-                    <h1 style="color: black;">DATOS DEL REPUESTO</h1>
-                    <br>
+                                    <!-- Elementos de izquierda -->
+                                        <!-- Service-detalle Start -->
+                                        <div class="service">
+                                            <div class="container">
+                                                <div class="section-header text-center">
+                                                    <h2 style="color: black;">Datos del Grupo</h2> <br>
+                                                </div>
 
-                    <div class="card text-center">
-                    <div class="card-body">
-                        <h3 class="card-title" style="text-align: left; color: black;">{{$repuesto->titulo_repuesto}}</h3>
-                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="750" height="550">
-                        <br></br>
-                        <h4 style="color: black; text-align: left;">Detalles:</h4>
-                        <p class="card-text">{{$repuesto->detalles_repuesto}}</p>
-                        <h4 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$repuesto->precio}}</span> </h4>
-                        
-                    </div>
+                                                <div class="card text-center">
+                                                        <div class="card-body">
+                                                                <div class="sidebar">
+                                                                    <div class="sidebar-widget wow fadeInUp">
+                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $repuesto->titulo_repuesto }}</b></h2>
+                                                                    </div>
+                                                                </div>
+                                                           
+                                                            
+                                                            <br></br>
 
-                    
+                                                            <!-- <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="450" height="250"> -->
+                                                            <!--  Zona de zoom galeria -->
+                                                            <div class="container">
+                                                                <div id="my-gallery" class="vanilla-zoom">
+                                                                    <div class="sidebar">
+                                                                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" class="small-preview">
+                                                                        <img src="{{asset('storage').'/'.$repuesto->img_uno}}" class="small-preview">
+                                                                        <img src="{{asset('storage').'/'.$repuesto->img_dos}}" class="small-preview">
+                                                                    </div>
+                                                                    <div class="zoomed-image"></div>
+                                                                </div>
+                                                            </div>
 
-                    <div class="container">
-                        <div class="card text-center">
-                        <h1 style="color: black;">CONTACTO</h1>
-                        <div class="card-body">
-                        <p><i class="fa fa-map-marker-alt"></i> Calle Consuelo 307-A - Cercado Arequipa</p>
-                                <p><i class="fa fa-phone-alt"></i> 054-399450 - 964-770-354</p>
-                                <p><i class="fa fa-envelope"></i> servicios_cliente@electromaticindustrial.com</p>
+                                                                <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
+                                                                <script>
+                                                                    vanillaZoom.init('#my-gallery');
+                                                                    vanillaZoom.init('#my-gallery2');
+                                                                </script>
+                                                            <!-- Final de Zona de zoom galeria -->
+
+                                                            <br></br>
+                                                            <div class="card text-center">
+                                                                    <div class="card-body">
+                                                                        <h5 style="color: black; text-align: left;">Descripcion:</h5>
+                                                                        <p class="card-text">{{ $repuesto->descripcion_repuesto }}</p>
+                                                                        <h5 style="color: black; text-align: left;">Detalles:</h5>
+                                                                        <p class="card-text">{{ $repuesto->detalles_repuesto }}</p>
+                                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $repuesto->precio }}</span> </h5>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>  
                         </div>
+                    </div>
+                    <!-- Fin de Elementos de la zona de la izquierda -->
+
+                        <div class="col-lg-4">
+                            <div class="sidebar">
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">CONTACTO</h2>
+                                </div>
+
+                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                <br></br>
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">Otros</h2>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-header">
+                                        Nuestros servicios
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Grupos electrogenos</li>
+                                        <li class="list-group-item">Auditoria energetica</li>
+                                        <li class="list-group-item">Ups</li>
+                                        <li class="list-group-item">Pozos de puesta a tierra</li>
+                                    </ul>
+                                </div>
+                                <br></br>
+                                <!--Script de facebook -->
+                                    <div class="sidebar-widget wow fadeInUp">
+                                        <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
+                                    </div>
+                                            <script>(function(d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+
+	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                <!-- Fin de script de facebook-->
+                            </div>
+                            
                         </div>
-                        <br>
-                    </div>
-
-
-                    </div>
-
-                        
                     </div>
                 </div>
             </div>
-            <!-- Team End -->
+            <!-- Single Post End-->   
+
+
+
+
+
+
 
 
             <!-- Footer Start -->

@@ -135,222 +135,287 @@
             </div>
             <!-- Nav Bar End -->
     
-            <!-- Service-detalle Start -->
-            <div class="service">
+
+            <!-- Single Post Start-->
+            <div class="single">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del servicio</h2> <br>
-                    </div>
-
-                    <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: black;">{{ $servicio->titulo_servicios }}</h5>
-
-                        <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    <br></br>
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h1 style="color: black;">Definicion:</h1>
-                        <div class="card-body">
-                        <p>
-                        {{ $servicio->definicion }}
-                        </p>
-
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h1 style="color: black;">Caracteristicas:</h1>
-                        <div class="card-body">
-                        <p>
-                        {{ $servicio->caracteristicas }}
-                        </p>
-
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-
-
-                    <div class="container">
-                        <div class="card text-center">
-                        <br>
-                        <h1 style="color: black;">Importancia:</h1>
-                        <div class="card-body">
-                        <p>
-                        {{ $servicio->importancia }}
-                        </p>
-
-                        </div>
-                        </div>
-                        <br>
-                    </div>
-
-                        
-                    </div> 
-                </div> 
-            </div>
-            <!-- Service-detalle End -->
-
-            <!-- Service Start -->
-            <div class="service">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                        
-                    </div>
                     <div class="row">
-                        <!-- Imagen 1 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Elementos de la zona de la izquierda -->
+                        <div class="col-lg-8">
+                            <!-- Elementos de izquierda -->
+                                <!-- Service-detalle Start -->
+                            <div class="service">
+                                <div class="container">
+                                    <div class="section-header text-center">
+                                        <h2 style="color: black;">Datos del servicio</h2> <br>
+                                    </div>
 
-                        <!-- Imagen 2 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_dos}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="card text-center">
 
-                        <!-- Imagen 3 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_tres}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                        <div class="card-body">
+                                            <div class="sidebar">
+                                                <div class="sidebar-widget wow fadeInUp">
+                                                    <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $servicio->titulo_servicios }}</b></h2>
+                                                </div>
+                                            </div>
 
-                        <!-- Imagen 4 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cuatro}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                            <div class="about-img">
+                                                    <div class="scaling-image h-100">
+                                                        <div class="frame h-100">
+                                                            <div class="feature-img-bg h-100">
+                                                                <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
 
-                        <!-- Imagen 5 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cinco}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                            <br></br>
 
-                        <!-- Imagen 6 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_seis}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                        <div class="container">
+                                                <div class="card-header" style="background-color: #2fa753;">
+                                                    <h5 style="text-align:left;">Definicion</h5>
+                                                </div>
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <p style="color: black;">
+                                                    {{ $servicio->definicion }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
 
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_siete}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Imagen 8 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_ocho}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Imagen 9 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_nueve}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
+                                        <div class="container">
+                                                <div class="card-header" style="background-color: #2fa753;">
+                                                    <h5 style="text-align:left;">Caracteristicas</h5>
+                                                </div>
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <p style="color: black;">
+                                                    {{ $servicio->caracteristicas }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
 
-                        <!-- Imagen 10 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$servicio->img_diez}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_diez}}" data-lightbox="service">+</a>
+
+
+                                        <div class="container">
+
+                                                <div class="card-header" style="background-color: #2fa753;">
+                                                    <h5 style="text-align:left;">Importancia</h5>
+                                                </div>
+
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <p style="color: black;">
+                                                    {{ $servicio->importancia }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div>
+                            <!-- Service-detalle End -->
+
+                            <!-- Galeria Start -->
+                            <div class="service">
+                                <div class="container">
+                                    <div class="section-header text-center">
+                                        <h2 style="color: black;">Galeria</h2>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <!-- Imagen 1 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 2 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_dos}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 3 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_tres}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 4 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cuatro}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 5 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_cinco}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 6 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_seis}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 7 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_siete}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 8 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_ocho}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 9 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_nueve}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Imagen 10 -->
+                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                            <div class="service-item">
+                                                <div class="service-img">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_diez}}" width="100px" height="200px" alt="Image">
+                                                </div>
+                                                <div class="service-text">
+                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_diez}}" data-lightbox="service">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
                                 </div>
                             </div>
+                            <!-- Galeria End -->
                         </div>
-                    
+                    <!-- Fin de Elementos de la zona de la izquierda -->
+
+                        <div class="col-lg-4">
+                                <div class="sidebar">
+                                    <div class="sidebar-widget wow fadeInUp">
+                                        <h2 style="color: black;" class="widget-title">CONTACTO</h2>
+                                    </div>
+
+                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                    <br></br>
+                                    <div class="sidebar-widget wow fadeInUp">
+                                        <h2 style="color: black;" class="widget-title">Otros</h2>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-header">
+                                            Nuestros servicios
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Grupos electrogenos</li>
+                                            <li class="list-group-item">Auditoria energetica</li>
+                                            <li class="list-group-item">Ups</li>
+                                            <li class="list-group-item">Pozos de puesta a tierra</li>
+                                        </ul>
+                                    </div>
+                                    <br></br>
+                                    <!--Script de facebook -->
+                                        <div class="sidebar-widget wow fadeInUp">
+                                            <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
+                                        </div>
+                                                <script>(function(d, s, id) {
+                                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                                            if (d.getElementById(id)) return;
+                                                            js = d.createElement(s); js.id = id;
+                                                            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                            fjs.parentNode.insertBefore(js, fjs);
+                                                            }(document, 'script', 'facebook-jssdk'));
+                                                </script>
+
+                                            <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                    <!-- Fin de script de facebook-->
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-            </div>
-            <!-- Service End -->
+            </div></div>
+            <!-- Single Post End-->   
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">

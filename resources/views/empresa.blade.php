@@ -214,7 +214,7 @@
                                     <img src="{{ asset('img/garantia.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: black;">GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</h4>
+                                        <h4 style="color: #20773A;">GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -222,7 +222,7 @@
                                     <img src="{{ asset('img/soporte-tecnico.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: black;">SERVICIO TECNICO 24/7</h4>
+                                        <h4 style="color: #20773A;">SERVICIO TECNICO 24/7</h4>
                                     </div>
                                 </div>
                             </div>
@@ -231,10 +231,10 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="fact-icon">
-                                    <img src="{{ asset('img/apoyo.png') }}" width="70px" height="70px">
+                                    <img src="{{ asset('img/servicio-al-cliente.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4>ATENCIÓN PERSONALIZADA</h4>
+                                        <h4 style="color: #20773A;">ATENCIÓN PERSONALIZADA</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -242,7 +242,7 @@
                                     <img src="{{ asset('img/supervision.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4>MONITOREO A DISTANCIA CONSTANTE</h4>
+                                        <h4 style="color: #20773A;" >MONITOREO A DISTANCIA CONSTANTE</h4>
                                     </div>
                                 </div>
                             </div>

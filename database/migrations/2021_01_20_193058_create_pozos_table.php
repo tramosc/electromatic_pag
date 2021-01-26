@@ -25,6 +25,8 @@ class CreatePozosTable extends Migration
             $table->string('img_cinco');
             $table->string('img_seis');
             $table->string('img_siete');
+            $table->string('img_zoom1');
+            $table->string('img_zoom2');
             $table->timestamps();
              /**8 fotos */
         });

@@ -20,10 +20,20 @@
                 <label for="precio" class="form-label">Precio</label>
                 <input type="text" class="form-control" name="precio" id="precio" required>
             </div>
+            <h3>Imagenes para zoom</h3>
             <div class="col-md-6">
                 <label for="img_uno" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" >
             </div>
+            <div class="col-md-6">
+                <label for="img_zoom1" class="form-label">Imagen Zoom 1</label>
+                <input type="file" class="form-control" name="img_zoom1" id="img_zoom1" required accept="image/png, image/jpeg" >
+            </div>
+            <div class="col-md-6">
+                <label for="img_zoom2" class="form-label">Imagen Zoom 2</label>
+                <input type="file" class="form-control" name="img_zoom2" id="img_zoom2" required accept="image/png, image/jpeg" >
+            </div>
+            <h3>Imagenes para Galeria</h3>
             <div class="col-md-6">
                 <label for="img_dos" class="form-label">Imagen Nro 2</label>
                 <input type="file" class="form-control" name="img_dos" id="img_dos" required accept="image/png, image/jpeg" >

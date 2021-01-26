@@ -269,7 +269,7 @@
                                         <img src="{{ asset('img/central-electrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: black;">CENTRALES ELECTRICAS</h3>
+                                        <h3 style="color: #20773A;">CENTRALES ELECTRICAS</h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -277,7 +277,7 @@
                                     <img src="{{ asset('img/fabrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: black;">INDUSTRIAS</h3>
+                                        <h3 style="color: #20773A;">INDUSTRIAS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@
                                     <img src="{{ asset('img/bancario.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3>FINANCIERAS Y BANCOS</h3>
+                                        <h3 style="color: #20773A;">FINANCIERAS Y BANCOS</h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -297,7 +297,7 @@
                                     <img src="{{ asset('img/hospital.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3>HOSPITALES Y CLINICAS</h3>
+                                        <h3 style="color: #20773A;">HOSPITALES Y CLINICAS</h3>
                                     </div>
                                 </div>
                             </div>

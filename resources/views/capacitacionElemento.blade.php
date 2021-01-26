@@ -152,9 +152,9 @@
 
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h3 style="color: black; text-align: left;">Descripcion:</h3>
+                                            <h5 style="color: black; text-align: left;">Descripcion:</h5>
                                             <p class="card-text">{{$capacitacion->descripcion_capacitacion}}</p>
-                                            <h3 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h3>
+                                            <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h5>
                         
                                 </div>
                             </div>
@@ -164,11 +164,11 @@
                             <div class="card-body">
                                 <div class="card text-center">
                                         <div class="card-body">
-                                            <h3 style="color: black; text-align: left;">RECURSOS EXTRAS:</h3>
+                                            <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
 
                                             <div class="card-body">
                                                 <div class="about-img">
-                                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="100" width="90"></a>
+                                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
                                                 </div>
                                                 <a style="text-align: center;">Descargar recurso PDF</a>
                                             </div>
@@ -213,7 +213,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="150px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="180px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -226,7 +226,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="150px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="180px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -239,7 +239,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="150px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="180px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -252,7 +252,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="150px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="180px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>

@@ -20,6 +20,8 @@ class CreateRepuestosTable extends Migration
             $table->string('detalles_repuesto');
             $table->string('precio');
             $table->string('img_repuesto');
+            $table->string('img_uno');
+            $table->string('img_dos');
             $table->timestamps();
         });
     }

@@ -73,6 +73,14 @@ class GruposController extends Controller
         if($request->hasFile('img_siete')){
             $datosGrupo['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
+
+        if($request->hasFile('img_zoom1')){
+            $datosGrupo['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_zoom2')){
+            $datosGrupo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
+        }
         
         Grupos::insert($datosGrupo);
         return redirect('grupos');
@@ -157,10 +165,15 @@ class GruposController extends Controller
             $datosGrupo['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
 
-        if($request->hasFile('img_ocho')){
+        if($request->hasFile('img_zoom1')){
             $grupo= Grupos::findOrFail($id);
-            Storage::delete('public/'.$grupo->img_ocho);
-            $datosGrupo['img_ocho']=$request->file('img_ocho')->store('uploads', 'public');
+            Storage::delete('public/'.$grupo->img_zoom1);
+            $datosGrupo['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
+        }
+        if($request->hasFile('img_zoom2')){
+            $grupo= Grupos::findOrFail($id);
+            Storage::delete('public/'.$grupo->img_zoom2);
+            $datosGrupo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
         }
 
         Grupos::where('id','=',$id)->update($datosGrupo);
@@ -203,7 +216,10 @@ class GruposController extends Controller
         if(Storage::delete('public/'.$grupo->img_siete)){
             Grupos::destroy($id);
         }
-        if(Storage::delete('public/'.$grupo->img_ocho)){
+        if(Storage::delete('public/'.$grupo->img_zoom1)){
+            Grupos::destroy($id);
+        }
+        if(Storage::delete('public/'.$grupo->img_zoom2)){
             Grupos::destroy($id);
         }
         return redirect('grupos');

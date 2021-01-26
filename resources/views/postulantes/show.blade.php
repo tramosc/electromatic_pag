@@ -32,6 +32,13 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Area de postulacion:</strong>
+                {{$postulante->area}}
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>DNI:</strong>
                 {{$postulante->dni}}
             </div>

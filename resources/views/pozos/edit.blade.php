@@ -21,11 +21,23 @@
                 <label for="precio" class="form-label">Precio</label>
                 <input type="text" class="form-control" name="precio" id="precio" value="{{ $pozo->precio }}">
             </div>
+            <h3>Imagenes para zoom</h3>
             <div class="col-md-6">
                 <label for="img_uno" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="200">
             </div>
+            <div class="col-md-6">
+                <label for="img_zoom1" class="form-label">Imagen zoom 1</label>
+                <input type="file" class="form-control" name="img_zoom1" id="img_zoom1" accept="image/png, image/jpeg" value="">
+                <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" width="200">
+            </div>
+            <div class="col-md-6">
+                <label for="img_zoom2" class="form-label">Imagen zoom 1</label>
+                <input type="file" class="form-control" name="img_zoom2" id="img_zoom2" accept="image/png, image/jpeg" value="">
+                <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" width="200">
+            </div>
+            <h3>Imagenes para el Galeria</h3>
             <div class="col-md-6">
                 <label for="img_dos" class="form-label">Imagen nro 2</label>
                 <input type="file" class="form-control" name="img_dos" id="img_dos" accept="image/png, image/jpeg" value="">

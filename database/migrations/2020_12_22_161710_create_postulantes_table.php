@@ -20,6 +20,7 @@ class CreatePostulantesTable extends Migration
             $table->integer('dni');
             $table->integer('telefono');
             $table->string('correo');
+            $table->string('area');
             $table->string('cv');
             $table->timestamps();
         });

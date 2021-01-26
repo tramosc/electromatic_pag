@@ -24,6 +24,9 @@
         <link href="{{ asset('lib/slick/slick.css') }}" rel="stylesheet">
         <link href="{{ asset('lib/slick/slick-theme.css') }}" rel="stylesheet">
 
+        <link rel="stylesheet" href="{{ asset('css/efectos.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/vanilla-zoom/vanilla-zoom.css') }}">
+
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
@@ -157,7 +160,26 @@
                                                             
                                                             <br></br>
 
-                                                            <img src="{{asset('storage').'/'.$grupo->img_uno}}" width="650" height="450">
+                                                            <!-- <img src="{{asset('storage').'/'.$grupo->img_uno}}" width="650" height="450"> -->
+                                                            <!--  Zona de zoom galeria -->
+                                                            <div class="container">
+                                                                <div id="my-gallery" class="vanilla-zoom">
+                                                                    <div class="sidebar">
+                                                                        <img src="{{asset('storage').'/'.$grupo->img_uno}}" class="small-preview">
+                                                                        <img src="{{asset('storage').'/'.$grupo->img_zoom1}}" class="small-preview">
+                                                                        <img src="{{asset('storage').'/'.$grupo->img_zoom2}}" class="small-preview">
+                                                                    </div>
+                                                                    <div class="zoomed-image"></div>
+                                                                </div>
+                                                            </div>
+
+                                                                <script src='css/vanilla-zoom/vanilla-zoom.js'></script>
+                                                                <script>
+                                                                    vanillaZoom.init('#my-gallery');
+                                                                    vanillaZoom.init('#my-gallery2');
+                                                                </script>
+                                                            <!-- Final de Zona de zoom galeria -->
+                                                            <br></br>
 
                                                             <div class="card text-center">
                                                                     <div class="card-body">
@@ -267,17 +289,48 @@
                         </div>
                     <!-- Fin de Elementos de la zona de la izquierda -->
 
-                        <div class="col-lg-4">
+                    <div class="col-lg-4">
                             <div class="sidebar">
                                 <div class="sidebar-widget wow fadeInUp">
                                     <h2 style="color: black;" class="widget-title">CONTACTO</h2>
                                 </div>
 
-                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg" style="position: fixed;" width="450px" height="440px" alt="Responsive image">
-                                
+                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                <br></br>
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <h2 style="color: black;" class="widget-title">Otros</h2>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-header">
+                                        Nuestros servicios
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Grupos electrogenos</li>
+                                        <li class="list-group-item">Auditoria energetica</li>
+                                        <li class="list-group-item">Ups</li>
+                                        <li class="list-group-item">Pozos de puesta a tierra</li>
+                                    </ul>
+                                </div>
+                                <br></br>
+                                <!--Script de facebook -->
+                                    <div class="sidebar-widget wow fadeInUp">
+                                        <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
+                                    </div>
+                                            <script>(function(d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+
+	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                <!-- Fin de script de facebook-->
                             </div>
                             
                         </div>
+                    </div>s
                     </div>
                 </div>
             </div>

@@ -72,6 +72,14 @@ class UpsController extends Controller
         if($request->hasFile('img_siete')){
             $datosUps['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
+
+        if($request->hasFile('img_zoom1')){
+            $datosUps['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_zoom2')){
+            $datosUps['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
+        }
         Ups::insert($datosUps);
         return redirect('ups');
     }
@@ -155,11 +163,17 @@ class UpsController extends Controller
            $datosUps['img_siete']=$request->file('img_siete')->store('uploads', 'public');
        }
 
-       if($request->hasFile('img_ocho')){
+       if($request->hasFile('img_zoom1')){
            $ups= Ups::findOrFail($id);
-           Storage::delete('public/'.$ups->img_ocho);
-           $datosUps['img_ocho']=$request->file('img_ocho')->store('uploads', 'public');
+           Storage::delete('public/'.$ups->img_zoom1);
+           $datosUps['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
        }
+
+       if($request->hasFile('img_zoom2')){
+        $ups= Ups::findOrFail($id);
+        Storage::delete('public/'.$ups->img_zoom2);
+        $datosUps['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
+    }
 
          Ups::where('id','=',$id)->update($datosUps);
  
@@ -201,7 +215,10 @@ class UpsController extends Controller
         if(Storage::delete('public/'.$ups->img_siete)){
             Ups::destroy($id);
         }
-        if(Storage::delete('public/'.$ups->img_ocho)){
+        if(Storage::delete('public/'.$ups->img_zoom1)){
+            Ups::destroy($id);
+        }
+        if(Storage::delete('public/'.$ups->img_zoom2)){
             Ups::destroy($id);
         }
         return redirect('ups');

@@ -30,6 +30,16 @@
                 <input type="file" class="form-control" name="img_repuesto" id="img_repuesto" accept="image/png, image/jpeg" value="">
                 <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="200">
             </div>
+            <div class="col-md-6">
+                <label for="img_uno" class="form-label">Imagen numero 1</label>
+                <input type="file" class="form-control" name="img_uno" id="img_uno" accept="image/png, image/jpeg" value="">
+                <img src="{{asset('storage').'/'.$repuesto->img_uno}}" width="200">
+            </div>
+            <div class="col-md-6">
+                <label for="img_dos" class="form-label">Imagen numero 2</label>
+                <input type="file" class="form-control" name="img_dos" id="img_dos" accept="image/png, image/jpeg" value="">
+                <img src="{{asset('storage').'/'.$repuesto->img_dos}}" width="200">
+            </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
                 <a href="{{ url('repuestos') }}">Regresar a Repuestos</a>

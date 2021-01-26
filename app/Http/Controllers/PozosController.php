@@ -73,6 +73,15 @@ class PozosController extends Controller
         if($request->hasFile('img_siete')){
             $datosPozo['img_siete']=$request->file('img_siete')->store('uploads', 'public');
         }
+
+        if($request->hasFile('img_zoom1')){
+            $datosPozo['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_zoom2')){
+            $datosPozo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
+        }
+
         Pozos::insert($datosPozo);
         return redirect('pozos');
     }
@@ -156,10 +165,16 @@ class PozosController extends Controller
                     $datosPozo['img_siete']=$request->file('img_siete')->store('uploads', 'public');
                 }
         
-                if($request->hasFile('img_ocho')){
+                if($request->hasFile('img_zoom1')){
                     $pozo= Pozos::findOrFail($id);
-                    Storage::delete('public/'.$pozo->img_ocho);
-                    $datosPozo['img_ocho']=$request->file('img_ocho')->store('uploads', 'public');
+                    Storage::delete('public/'.$pozo->img_zoom1);
+                    $datosPozo['img_zoom1']=$request->file('img_zoom1')->store('uploads', 'public');
+                }
+
+                if($request->hasFile('img_zoom2')){
+                    $pozo= Pozos::findOrFail($id);
+                    Storage::delete('public/'.$pozo->img_zoom2);
+                    $datosPozo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
                 }
          
                   Pozos::where('id','=',$id)->update($datosPozo);
@@ -202,7 +217,10 @@ class PozosController extends Controller
         if(Storage::delete('public/'.$pozo->img_siete)){
             Pozos::destroy($id);
         }
-        if(Storage::delete('public/'.$pozo->img_ocho)){
+        if(Storage::delete('public/'.$pozo->img_zoom1)){
+            Pozos::destroy($id);
+        }
+        if(Storage::delete('public/'.$pozo->img_zoom2)){
             Pozos::destroy($id);
         }
         return redirect('pozos');

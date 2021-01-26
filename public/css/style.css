@@ -3,7 +3,8 @@
 /*******************************/
 body {
     color: #666666;
-    background: #dddddd;
+    background: #ffffff;
+    /*background: #dddddd;*/
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -705,7 +706,7 @@ a:focus {
 
 .fact .fact-right {
     color: #ffffff;
-    background: #20773A;
+    background: #ffffff;
 }
 
 .fact .fact-left h2 {

@@ -49,6 +49,12 @@ class RepuestosController extends Controller
         if($request->hasFile('img_repuesto')){
             $datosRepuesto['img_repuesto']=$request->file('img_repuesto')->store('uploads', 'public');
         }
+        if($request->hasFile('img_uno')){
+            $datosRepuesto['img_uno']=$request->file('img_uno')->store('uploads', 'public');
+        }
+        if($request->hasFile('img_dos')){
+            $datosRepuesto['img_dos']=$request->file('img_dos')->store('uploads', 'public');
+        }
         Repuestos::insert($datosRepuesto);
         return redirect('repuestos');
     }
@@ -91,13 +97,26 @@ class RepuestosController extends Controller
          $datosRepuesto=request()->except(['_token','_method']);
 
          if($request->hasFile('img_repuesto')){
- 
              $repuesto= Repuestos::findOrFail($id);
- 
              Storage::delete('public/'.$repuesto->img_repuesto);
- 
              $datosRepuesto['img_repuesto']=$request->file('img_repuesto')->store('uploads', 'public');
          }
+
+         if($request->hasFile('img_uno')){
+            $repuesto= Repuestos::findOrFail($id);
+            Storage::delete('public/'.$repuesto->img_uno);
+            $datosRepuesto['img_uno']=$request->file('img_uno')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_dos')){
+            $repuesto= Repuestos::findOrFail($id);
+            Storage::delete('public/'.$repuesto->img_dos);
+            $datosRepuesto['img_dos']=$request->file('img_dos')->store('uploads', 'public');
+        }
+
+
+
+
          Repuestos::where('id','=',$id)->update($datosRepuesto);
  
          $repuesto= Repuestos::findOrFail($id);
@@ -118,6 +137,12 @@ class RepuestosController extends Controller
         $repuesto= Repuestos::findOrFail($id);
 
         if(Storage::delete('public/'.$repuesto->img_repuesto)){
+            Repuestos::destroy($id);
+        }
+        if(Storage::delete('public/'.$repuesto->img_uno)){
+            Repuestos::destroy($id);
+        }
+        if(Storage::delete('public/'.$repuesto->img_dos)){
             Repuestos::destroy($id);
         }
         
