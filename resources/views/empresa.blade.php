@@ -187,17 +187,11 @@
                                 <p>Electromatic Industrial está orientada a entregar un servicio integral en el Suministro, instalación y mantenimiento de grupos electrógenos,cableado estructurado, pozos de puesta a tierra, electrobombas, aire acondicionado, UPS, automatización industrial, atendiendo y proporcionando soluciones de ingeniería en diversos sectores productivos, bajo estándares nacionales e internacionales.</p>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{ asset('img/collageV1.jpg') }}" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Nueva zona de imagenes con efecto css -->
+                            <div class="col-lg-5 col-md-6">
+                                <img src="https://www.lifeder.com/wp-content/uploads/2017/06/refineria-petroleo-contaminacion-tecnologia-lubricante-espacio-trabajo-fabrica.jpg" width="333" height="500" alt="Image">
                             </div>
-                        </div>
+                        <!-- Fin de Nueva zona de imagenes con efecto css -->
                     </div>
                 </div>
             </div>

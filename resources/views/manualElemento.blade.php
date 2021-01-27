@@ -136,94 +136,30 @@
             </div>
             <!-- Nav Bar End -->
 
-            <!-- Portfolio Start 
-            <div class="portfolio">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Datos del Manual</h2>
-                        <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="form-group" style="text-align: right;">
-                            <strong style="text-align: right; color: black;">Subido el dia:</strong>
-                            {{$manual->fecha}}
-                        </div>
-                    </div>
-
-                    <div class="container">
-                                <div class="card text-center">
-                                    <div class="card-body">
-                                        <h5 style="color: black; text-align: left;">DESCRIPCION DEL MANUAL:</h5>
-                                        <p class="card-text">{{ $manual->descripcion }}</p>
-                                    </div>
-                                </div>
-                        <br>
-                    </div>
-
-                    <div class="container">
-                                <div class="card text-center">
-                                    <div class="card-body">
-                                        <h5 style="color: black; text-align: left;">DETALLES DEL MANUAL:</h5>
-                                        <p class="card-text">{{$manual->detalles}}</p>
-                                    </div>
-                                </div>
-                        <br>
-                    </div>
-
-                    <div class="container">
-                                <div class="card text-center">
-                                    <div class="card-body">
-                                        <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
-                                        <div class="about-img">
-                                <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="100" width="90"></a>
-                        </div>
-                        <a style="text-align: center;">Descargar recurso PDF</a>
-                                    </div>
-                                </div>
-                        <br>
-                    </div>                                       
-                    <br>
-                </div>
-            </div>
-            Portfolio End -->
-
-
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
                     <div class="row">
                     <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
 
                                     <!-- Elementos de izquierda -->
+                                            <div class="container">
+                                                <div class="sidebar">
+                                                    <div class="sidebar-widget wow fadeInUp">
+                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{$manual->titulo_manual}} </b></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         <!-- Service-detalle Start -->
                                         <div class="service">
                                             <div class="container">
-                                                <div class="section-header text-center">
-                                                    <h2 style="color: black;">Datos del Manual</h2> <br>
-                                                </div>
-                                                <div class="card text-center">
+                                                
                                                         <div class="card-body">
-                                                                <div class="sidebar">
-                                                                    <div class="sidebar-widget wow fadeInUp">
-                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{$manual->titulo_manual}} </b></h2>
-                                                                    </div>
-                                                                </div>
-                                                           
                                                                 <div class="about-img">
                                                                         <div class="scaling-image h-100">
                                                                             <div class="frame h-100">
                                                                                 <div class="feature-img-bg h-100">
-                                                                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image">
+                                                                                    <center><img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image"></center>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -272,7 +208,6 @@
                                                                 <br>
                                                             </div>  
                                                         </div>
-                                                </div>
                                         </div>  
                         </div>
                     </div>
@@ -320,7 +255,6 @@
                             
                         </div>
                     </div>
-                </div>
             </div>
             <!-- Single Post End-->   
 
