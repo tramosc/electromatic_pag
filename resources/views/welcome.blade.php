@@ -269,7 +269,7 @@
                                         <img src="{{ asset('img/central-electrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: #20773A;">CENTRALES ELECTRICAS</h3>
+                                        <h3 style="text-align: center; color: #20773A;"><b>CENTRALES ELECTRICAS</b></h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -277,7 +277,7 @@
                                     <img src="{{ asset('img/fabrica.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: #20773A;">INDUSTRIAS</h3>
+                                        <h3 style="text-align: center; color: #20773A;"><b>INDUSTRIAS</b></h3>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@
                                     <img src="{{ asset('img/bancario.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: #20773A;">FINANCIERAS Y BANCOS</h3>
+                                        <h3 style="text-align: center; color: #20773A;"><b> FINANCIERAS Y BANCOS</b></h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -297,7 +297,7 @@
                                     <img src="{{ asset('img/hospital.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h3 style="color: #20773A;">HOSPITALES Y CLINICAS</h3>
+                                        <h3 style="text-align: center; color: #20773A;"><b>HOSPITALES Y CLINICAS</b></h3>
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +319,7 @@
                             <div id="accordion-1">
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
                                             <b>GRUPOS ELECTROGENOS</b>
                                         </a>
                                     </div>
@@ -331,7 +331,7 @@
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
                                             <b>UPS</b>
                                         </a>
                                     </div>
@@ -347,7 +347,7 @@
                             <div id="accordion-2">
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
                                             <b>AUDITORIA ENERGICA</b>
                                         </a>
                                     </div>
@@ -359,7 +359,7 @@
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
                                             <b>POZOS DE PUESTA A TIERRA</b>
                                         </a>
                                     </div>

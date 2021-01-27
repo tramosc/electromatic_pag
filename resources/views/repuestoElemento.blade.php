@@ -140,30 +140,24 @@
         
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
                     <div class="row">
+                                                    
                     <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
-
                                     <!-- Elementos de izquierda -->
+                                            <div class="container">
+                                                    <div class="sidebar">
+                                                        <div class="sidebar-widget wow fadeInUp">
+                                                            <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $repuesto->titulo_repuesto }}</b></h2>
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         <!-- Service-detalle Start -->
                                         <div class="service">
+                                                    
+                                    
                                             <div class="container">
-                                                <div class="section-header text-center">
-                                                    <h2 style="color: black;">Datos del Grupo</h2> <br>
-                                                </div>
-
-                                                <div class="card text-center">
                                                         <div class="card-body">
-                                                                <div class="sidebar">
-                                                                    <div class="sidebar-widget wow fadeInUp">
-                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $repuesto->titulo_repuesto }}</b></h2>
-                                                                    </div>
-                                                                </div>
-                                                           
-                                                            
-                                                            <br></br>
-
                                                             <!-- <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="450" height="250"> -->
                                                             <!--  Zona de zoom galeria -->
                                                             <div class="container">
@@ -194,7 +188,7 @@
                                                                         <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $repuesto->precio }}</span> </h5>
                                                             </div>
                                                         </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>  
                         </div>
@@ -243,7 +237,7 @@
                             
                         </div>
                     </div>
-                </div>
+
             </div>
             <!-- Single Post End-->   
 

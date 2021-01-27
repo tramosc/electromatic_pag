@@ -141,22 +141,20 @@
 
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
+                
                     <div class="row">
-                    <!-- Elementos de la zona de la izquierda -->
+                        <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
 
                                     <!-- Elementos de izquierda -->
                                         <!-- Service-detalle Start -->
                                         <div class="service">
                                             <div class="container">
-                                                <div class="section-header text-center">
-                                                    <h2 style="color: black;">Datos del Grupo</h2> <br>
-                                                </div>
-
-                                                <div class="card text-center">
-                                                        <div class="card-body">
-                                                            <h2 class="card-title" style=" text-align: left; color: black;"><b>{{ $grupo->titulo_grupo }}</b></h2>
+                                                                <div class="sidebar">
+                                                                    <div class="sidebar-widget wow fadeInUp">
+                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $grupo->titulo_grupo }}</b></h2>
+                                                                    </div>
+                                                                </div>
                                                             
                                                             <br></br>
 
@@ -173,7 +171,7 @@
                                                                 </div>
                                                             </div>
 
-                                                                <script src='css/vanilla-zoom/vanilla-zoom.js'></script>
+                                                            <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                                 <script>
                                                                     vanillaZoom.init('#my-gallery');
                                                                     vanillaZoom.init('#my-gallery2');
@@ -188,8 +186,6 @@
                                                                         <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$grupo->precio}}</span> </h5>
                                                     
                                                             </div>
-                                                        </div>
-                                                </div>
                                             </div>
                                         </div>
 
@@ -289,50 +285,49 @@
                         </div>
                     <!-- Fin de Elementos de la zona de la izquierda -->
 
-                    <div class="col-lg-4">
-                            <div class="sidebar">
-                                <div class="sidebar-widget wow fadeInUp">
-                                    <h2 style="color: black;" class="widget-title">CONTACTO</h2>
-                                </div>
+                            <div class="col-lg-4">
+                                    <div class="sidebar">
+                                        <div class="sidebar-widget wow fadeInUp">
+                                            <h2 style="color: black;" class="widget-title">CONTACTO</h2>
+                                        </div>
 
-                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
-                                <br></br>
-                                <div class="sidebar-widget wow fadeInUp">
-                                    <h2 style="color: black;" class="widget-title">Otros</h2>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-header">
-                                        Nuestros servicios
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Grupos electrogenos</li>
-                                        <li class="list-group-item">Auditoria energetica</li>
-                                        <li class="list-group-item">Ups</li>
-                                        <li class="list-group-item">Pozos de puesta a tierra</li>
-                                    </ul>
-                                </div>
-                                <br></br>
-                                <!--Script de facebook -->
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
-                                    </div>
-                                            <script>(function(d, s, id) {
-                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                        if (d.getElementById(id)) return;
-                                                        js = d.createElement(s); js.id = id;
-                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                        }(document, 'script', 'facebook-jssdk'));
-                                            </script>
+                                        <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                        <br></br>
+                                        <div class="sidebar-widget wow fadeInUp">
+                                            <h2 style="color: black;" class="widget-title">Otros</h2>
+                                        </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-header">
+                                                Nuestros servicios
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Grupos electrogenos</li>
+                                                <li class="list-group-item">Auditoria energetica</li>
+                                                <li class="list-group-item">Ups</li>
+                                                <li class="list-group-item">Pozos de puesta a tierra</li>
+                                            </ul>
+                                        </div>
+                                        <br></br>
+                                        <!--Script de facebook -->
+                                            <div class="sidebar-widget wow fadeInUp">
+                                                <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
+                                            </div>
+                                                    <script>(function(d, s, id) {
+                                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                                if (d.getElementById(id)) return;
+                                                                js = d.createElement(s); js.id = id;
+                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                                }(document, 'script', 'facebook-jssdk'));
+                                                    </script>
 
-	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                <!-- Fin de script de facebook-->
+                                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                        <!-- Fin de script de facebook-->
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            
-                        </div>
-                    </div>s
                     </div>
-                </div>
             </div>
             <!-- Single Post End-->   
 

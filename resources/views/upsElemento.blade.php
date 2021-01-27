@@ -141,30 +141,24 @@
 
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
+                
                     <div class="row">
                     <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
 
                                     <!-- Elementos de izquierda -->
+                                    <div class="container">
+                                        <div class="sidebar">
+                                            <div class="sidebar-widget wow fadeInUp">
+                                                <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $ups->titulo_ups }}</b></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                         <!-- Service-detalle Start -->
                                         <div class="service">
                                             <div class="container">
-                                                <div class="section-header text-center">
-                                                    <h2 style="color: black;">Datos del UPS</h2> <br>
-                                                </div>
-
-                                                <div class="card text-center">
                                                         <div class="card-body">
-                                                                <div class="sidebar">
-                                                                    <div class="sidebar-widget wow fadeInUp">
-                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $ups->titulo_ups }}</b></h2>
-                                                                    </div>
-                                                                </div>
-                                                           
-                                                            
-                                                            <br></br>
-
                                                             <!-- <img src="{{asset('storage').'/'.$ups->img_uno}}" width="450" height="250"> -->
                                                             <!--  Zona de zoom galeria -->
                                                             <div class="container">
@@ -178,7 +172,7 @@
                                                                 </div>
                                                             </div>
 
-                                                                <script src="css/vanilla-zoom/vanilla-zoom.js'"></script>
+                                                            <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                                 <script>
                                                                     vanillaZoom.init('#my-gallery');
                                                                     vanillaZoom.init('#my-gallery2');
@@ -193,7 +187,6 @@
                                                     
                                                             </div>
                                                         </div>
-                                                </div>
                                             </div>
                                         </div>
 
@@ -336,7 +329,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
             <!-- Single Post End-->   
 

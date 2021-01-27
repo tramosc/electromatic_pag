@@ -214,7 +214,7 @@
                                     <img src="{{ asset('img/garantia.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: #20773A;">GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</h4>
+                                        <h4 style="text-align: center; color: #20773A;"><b>GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</b></h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -222,7 +222,7 @@
                                     <img src="{{ asset('img/soporte-tecnico.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: #20773A;">SERVICIO TECNICO 24/7</h4>
+                                        <h4 style="text-align: center; color: #20773A;"><b>SERVICIO TECNICO 24/7</b></h4>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                                     <img src="{{ asset('img/servicio-al-cliente.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: #20773A;">ATENCIÓN PERSONALIZADA</h4>
+                                        <h4 style="text-align: center; color: #20773A;"><b>ATENCIÓN PERSONALIZADA</b></h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -242,7 +242,7 @@
                                     <img src="{{ asset('img/supervision.png') }}" width="70px" height="70px">
                                     </div>
                                     <div class="fact-text">
-                                        <h4 style="color: #20773A;" >MONITOREO A DISTANCIA CONSTANTE</h4>
+                                        <h4 style="text-align: center; color: #20773A;" ><b>MONITOREO A DISTANCIA CONSTANTE</b></h4>
                                     </div>
                                 </div>
                             </div>
@@ -332,7 +332,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            HONESTIDAD
+                                            <b>HONESTIDAD</b>
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse" data-parent="#accordion-1">
@@ -345,7 +345,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            INNOVACION
+                                            <b>INNOVACION</b>
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
@@ -357,7 +357,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                        COMPROMISO
+                                        <b>COMPROMISO</b>
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion-1">
@@ -400,7 +400,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                        DESARROLLO DE PERSONAS
+                                        <b>DESARROLLO DE PERSONAS</b>
                                         </a>
                                     </div>
                                     <div id="collapseSix" class="collapse" data-parent="#accordion-2">
@@ -412,7 +412,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                        TRABAJO EN EQUIPO
+                                        <b>TRABAJO EN EQUIPO</b>
                                         </a>
                                     </div>
                                     <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
@@ -425,7 +425,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            CALIDAD
+                                            <b>CALIDAD</b>
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">

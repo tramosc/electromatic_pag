@@ -144,30 +144,21 @@
 
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
                     <div class="row">
                     <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
-
+                                    <div class="container">
+                                        <div class="sidebar">
+                                            <div class="sidebar-widget wow fadeInUp">
+                                                <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $pozo->titulo_pozo }}</b></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                
                                     <!-- Elementos de izquierda -->
                                         <!-- Service-detalle Start -->
                                         <div class="service">
-                                            <div class="container">
-                                                <div class="section-header text-center">
-                                                    <h2 style="color: black;">Datos del Pozo</h2> <br>
-                                                </div>
-
-                                                <div class="card text-center">
                                                         <div class="card-body">
-                                                                <div class="sidebar">
-                                                                    <div class="sidebar-widget wow fadeInUp">
-                                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $pozo->titulo_pozo }}</b></h2>
-                                                                    </div>
-                                                                </div>
-                                                           
-                                                            
-                                                            <br></br>
-
                                                             <!-- <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="450" height="250">-->
                                                             <!--  Zona de zoom galeria -->
                                                                 <div class="container">
@@ -181,7 +172,7 @@
                                                                     </div>
                                                                 </div>
 
-                                                                    <script src="css/vanilla-zoom/vanilla-zoom.js"></script>
+                                                                <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                                     <script>
                                                                         vanillaZoom.init('#my-gallery');
                                                                         vanillaZoom.init('#my-gallery2');
@@ -196,8 +187,6 @@
                                                     
                                                             </div>
                                                         </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <!-- Service Start -->
@@ -212,7 +201,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo</h3>
@@ -225,7 +214,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo </h3>
@@ -238,7 +227,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo </h3>
@@ -251,7 +240,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo </h3>
@@ -264,7 +253,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo </h3>
@@ -277,7 +266,7 @@
                                                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                                         <div class="service-item">
                                                             <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="200px" alt="Image">
+                                                                <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="230px" alt="Image">
                                                             </div>
                                                             <div class="service-text">
                                                                 <h3 style="text-align: center;">Pozo</h3>
@@ -338,7 +327,6 @@
                             
                         </div>
                     </div>
-                </div>
             </div>
             <!-- Single Post End-->   
 

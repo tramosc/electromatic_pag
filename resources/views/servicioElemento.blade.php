@@ -138,32 +138,28 @@
 
             <!-- Single Post Start-->
             <div class="single">
-                <div class="container">
+                
                     <div class="row">
-                    <!-- Elementos de la zona de la izquierda -->
+                        <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
                             <!-- Elementos de izquierda -->
                                 <!-- Service-detalle Start -->
-                            <div class="service">
-                                <div class="container">
-                                    <div class="section-header text-center">
-                                        <h2 style="color: black;">Datos del servicio</h2> <br>
-                                    </div>
 
-                                    <div class="card text-center">
-
-                                        <div class="card-body">
+                                       <div class="container">
                                             <div class="sidebar">
                                                 <div class="sidebar-widget wow fadeInUp">
                                                     <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $servicio->titulo_servicios }}</b></h2>
                                                 </div>
                                             </div>
-
+                                       </div>     
+                            <div class="service">
+                                <div class="container">
+                                        <div class="card-body">
                                             <div class="about-img">
                                                     <div class="scaling-image h-100">
                                                         <div class="frame h-100">
                                                             <div class="feature-img-bg h-100">
-                                                                <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image">
+                                                                <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -219,7 +215,7 @@
                                             </div>
                                             <br>
                                         </div> 
-                                    </div> 
+                                    
                                 </div> 
                             </div>
                             <!-- Service-detalle End -->
@@ -368,7 +364,7 @@
                             </div>
                             <!-- Galeria End -->
                         </div>
-                    <!-- Fin de Elementos de la zona de la izquierda -->
+                            <!-- Fin de Elementos de la zona de la izquierda -->
 
                         <div class="col-lg-4">
                                 <div class="sidebar">
@@ -376,7 +372,7 @@
                                         <h2 style="color: black;" class="widget-title">CONTACTO</h2>
                                     </div>
 
-                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="400px" height="440px" alt="Responsive image">
                                     <br></br>
                                     <div class="sidebar-widget wow fadeInUp">
                                         <h2 style="color: black;" class="widget-title">Otros</h2>
@@ -413,7 +409,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </div></div>
             <!-- Single Post End-->   
 
