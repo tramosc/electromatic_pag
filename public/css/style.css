@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-
+/*
 h1,
 h2, 
 h3, 
@@ -17,7 +17,7 @@ h5,
 h6 {
     color: #ffffff;
 }
-
+*/
 a {
     
     transition: .3s;
@@ -84,7 +84,7 @@ a:focus {
 
 .top-bar .logo {
     /*border limite*/
-    padding: 15px 0;
+    /*padding: 15px 0;*/
     text-align: left;
     overflow: hidden;
 }
@@ -98,7 +98,7 @@ a:focus {
 /** limite maximo de la imagen altura */
 .top-bar .logo img {
     max-width: 100%;
-    max-height: 100px;
+    max-height: 135px;
 }
 
 .top-bar .top-bar-item {

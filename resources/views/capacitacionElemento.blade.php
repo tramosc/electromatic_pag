@@ -38,7 +38,7 @@
                     <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
-                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image">
+                                <img src="{{ asset('img/logo1.png') }}" width="500" height="600" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>

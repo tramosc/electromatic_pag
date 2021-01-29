@@ -26,6 +26,13 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
+
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style8.css') }}" />
+            
     </head>
 
     <body>
@@ -39,7 +46,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
-                                <img src="{{ asset('img/logo1.png') }}" width="300" height="300" alt="Image">
+                                <img src="{{ asset('img/logo1.png') }}" width="500" height="600" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -226,17 +233,24 @@
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
+
+                        <!-- Inicio de la zona de animacion css con imagenes-->
                         <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="img/about.jpg" alt="Image">
+                                        <div class="hs-wrapper">
+                                            <img src="{{ asset('img/img_modelos/1.jpg') }}" alt="image01"/>
+                                            <img src="{{ asset('img/img_modelos/2.jpg') }}" alt="image02"/>
+                                            <img src="{{ asset('img/img_modelos/3.jpg') }}" alt="image03"/>
+                                            <img src="{{ asset('img/img_modelos/4.jpg') }}" alt="image04"/>
+                                            <img src="{{ asset('img/img_modelos/5.jpg') }}" alt="image05"/>
+                                            <img src="{{ asset('img/img_modelos/6.jpg') }}" alt="image06"/>
+                                            <img src="{{ asset('img/img_modelos/7.jpg') }}" alt="image07"/>
+                                            <img src="{{ asset('img/img_modelos/8.jpg') }}" alt="image08"/>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                                        <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
                         </div>
+                        <!-- Fin de la zona de animacion css con imagenes-->
+
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
                                 <p>Expertos en todo tipo de sistemas electromecanicos</p>
@@ -256,56 +270,47 @@
                 </div>
             </div>
             <!-- About End -->
-
-
-            <!-- Fact Start -->
-            <div class="fact">
-                <div class="container-fluid">
-                    <div class="row counters">
-                        <div class="col-md-6 fact-left wow slideInLeft">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <img src="{{ asset('img/central-electrica.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h3 style="text-align: center; color: #20773A;"><b>CENTRALES ELECTRICAS</b></h3>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/fabrica.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h3 style="text-align: center; color: #20773A;"><b>INDUSTRIAS</b></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fact-right wow slideInRight">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/bancario.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h3 style="text-align: center; color: #20773A;"><b> FINANCIERAS Y BANCOS</b></h3>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/hospital.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h3 style="text-align: center; color: #20773A;"><b>HOSPITALES Y CLINICAS</b></h3>
-                                    </div>
-                                </div>
-                            </div>
+   
+            <!-- Feature Start-->
+                <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                                    <ul class="ca-menu">
+                                        <li>
+                                            
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('/img/industria_img.png') }}" height="150" width="150">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2  class="ca-main">EMPRESAS DEL SECTOR INDUSTRIAL</h2>
+                                                </div>
+                                    
+                                        </li>
+                                        <li>
+                                            
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('/img/banco_img.png') }}" height="150" width="150">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2 class="ca-main">BANCOS Y FINANCIERAS </h2>
+                                                </div>
+                                            
+                                        </li>
+                                        <li>
+                                
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('/img/edificios-hospitalarios_img.png') }}" height="150" width="150">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2  class="ca-main">HOSPITALES Y CLINICAS</h2>
+                                                </div>
+                                            
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Fact End -->
+            <!-- Feature End-->
 
             <!-- FAQs Start -->
             <div class="faqs">
@@ -376,7 +381,7 @@
             </div>
             <!-- FAQs End -->
 
-
+            <br></br>
 
             <!-- Testimonial Start -->
             <div class="testimonial wow fadeIn" data-wow-delay="0.1s">

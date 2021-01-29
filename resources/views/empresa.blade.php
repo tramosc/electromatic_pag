@@ -26,6 +26,10 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
+
     </head>
 
     <body> 
@@ -74,8 +78,7 @@
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                
-                                <img src="{{ asset('img/logotipo.png') }}" width="300" height="300" alt="Image" align="right">
+                                <img src="{{ asset('img/logo1.png') }}" width="500" height="600" alt="Image" align="right">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 
                             </div>
@@ -189,7 +192,29 @@
                         </div>
                         <!-- Nueva zona de imagenes con efecto css -->
                             <div class="col-lg-5 col-md-6">
-                                <img src="https://www.lifeder.com/wp-content/uploads/2017/06/refineria-petroleo-contaminacion-tecnologia-lubricante-espacio-trabajo-fabrica.jpg" width="333" height="500" alt="Image">
+                                        <div class="hs-wrapper">
+                                            <img src="{{ asset('img/img_modelos/1.jpg') }}" alt="image01"/>
+                                            <img src="{{ asset('img/img_modelos/2.jpg') }}" alt="image02"/>
+                                            <img src="{{ asset('img/img_modelos/3.jpg') }}" alt="image03"/>
+                                            <img src="{{ asset('img/img_modelos/4.jpg') }}" alt="image04"/>
+                                            <img src="{{ asset('img/img_modelos/5.jpg') }}" alt="image05"/>
+                                            <img src="{{ asset('img/img_modelos/6.jpg') }}" alt="image06"/>
+                                            <img src="{{ asset('img/img_modelos/7.jpg') }}" alt="image07"/>
+                                            <img src="{{ asset('img/img_modelos/8.jpg') }}" alt="image08"/>
+
+                                                <div class="hs-titles">
+                                                    <span style="text-align: center;">Numero 1</span>
+                                                    <span style="text-align: center;">Numero 2</span>
+                                                    <span style="text-align: center;">Numero 3</span>
+                                                    <span style="text-align: center;">Numero 4</span>
+                                                    <span style="text-align: center;">Numero 5</span>
+                                                    <span style="text-align: center;">Numero 6</span>
+                                                    <span style="text-align: center;">Numero 7</span>
+                                                    <span style="text-align: center;">Numero 8</span>
+                                                </div>
+                                        </div>
+
+                                        <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
                             </div>
                         <!-- Fin de Nueva zona de imagenes con efecto css -->
                     </div>
