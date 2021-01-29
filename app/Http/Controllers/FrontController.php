@@ -22,9 +22,16 @@ class FrontController extends Controller
         return view('welcome', $datos);
     }
 */
+/*
     public function viewPostManuales(){
         //
         $datos['manuales'] = Manuales::paginate(30);
+        return view('welcome', $datos);
+    }
+*/
+    public function viewImagenesCSS(){
+        //
+        $datos['imagenesInicio'] = imagesInicio::paginate(30);
         return view('welcome', $datos);
     }
 

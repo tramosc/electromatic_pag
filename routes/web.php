@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\DB;
 
 ///Estaticas
 //Route::get('/', 'FrontController@viewImagenes');
-Route::get('/', 'FrontController@viewPostManuales');
+//Route::get('/', 'FrontController@viewPostManuales');
+Route::get('/', 'FrontController@viewImagenesCSS');
 //Empresa
 Route::get('/Vista-Empresa', function () {
     return view('empresa');

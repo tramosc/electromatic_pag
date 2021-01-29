@@ -185,7 +185,7 @@
             <!-- Carousel End -->
 
 
-            <!-- Feature Start-->
+            <!-- Feature Start
             <div class="feature wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -225,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Feature End-->
+             Feature End-->
 
 
             <!-- About Start -->
@@ -236,6 +236,10 @@
                         <!-- Inicio de la zona de animacion css con imagenes-->
                         <div class="col-lg-5 col-md-6">
                                         <div class="hs-wrapper">
+                                        @foreach($imagenesInicio as $imagenInicio)
+                                            <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}"/>
+                                        @endforeach
+                                        <!-- 
                                             <img src="{{ asset('img/img_modelos/1.jpg') }}" alt="image01"/>
                                             <img src="{{ asset('img/img_modelos/2.jpg') }}" alt="image02"/>
                                             <img src="{{ asset('img/img_modelos/3.jpg') }}" alt="image03"/>
@@ -244,6 +248,7 @@
                                             <img src="{{ asset('img/img_modelos/6.jpg') }}" alt="image06"/>
                                             <img src="{{ asset('img/img_modelos/7.jpg') }}" alt="image07"/>
                                             <img src="{{ asset('img/img_modelos/8.jpg') }}" alt="image08"/>
+                                        -->
                                         </div>
 
                                         <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
@@ -251,25 +256,33 @@
                         <!-- Fin de la zona de animacion css con imagenes-->
 
                         <div class="col-lg-7 col-md-6">
-                            <div class="section-header text-left">
-                                <p>Expertos en todo tipo de sistemas electromecanicos</p>
-                                <h2 style="color: black;">8 Años Acompañandolo</h2>
-                            </div>
-                            <div class="about-text">
+                        <h3 style="color: black;"><b>8 Años Acompañandolo</b></h3>
+
+                        <div class="about-text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
                                 </p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                 </p>
-                                <a class="btn" href="http://localhost/electromatic/public/Vista-Empresa">Saber Mas...</a>
+                                <br><br/></br><br>
+                                
                             </div>
+                            
+                            <div class="section-header text-left">
+                                <br></br>
+                            </div>
+
+                            <div class="about-text">
+                            <a class="btn" href="http://localhost/electromatic/public/Vista-Empresa">Saber Mas...</a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <!-- About End -->
-   
+            <br></br>
             <!-- Feature Start-->
                 <div class="feature wow fadeInUp" data-wow-delay="0.1s">
                     <div class="container-fluid">
@@ -278,7 +291,7 @@
                                         <li>
                                             
                                                 <span class="ca-icon">
-                                                    <img src="{{ asset('/img/industria_img.png') }}" height="150" width="150">
+                                                    <img src="{{ asset('/img/industria_img.png') }}" height="90" width="90">
                                                 </span>
                                                 <div class="ca-content">
                                                     <h2  class="ca-main">EMPRESAS DEL SECTOR INDUSTRIAL</h2>
@@ -288,7 +301,7 @@
                                         <li>
                                             
                                                 <span class="ca-icon">
-                                                    <img src="{{ asset('/img/banco_img.png') }}" height="150" width="150">
+                                                    <img src="{{ asset('/img/banco_img.png') }}" height="90" width="90">
                                                 </span>
                                                 <div class="ca-content">
                                                     <h2 class="ca-main">BANCOS Y FINANCIERAS </h2>
@@ -298,10 +311,10 @@
                                         <li>
                                 
                                                 <span class="ca-icon">
-                                                    <img src="{{ asset('/img/edificios-hospitalarios_img.png') }}" height="150" width="150">
+                                                    <img src="{{ asset('/img/edificios-hospitalarios_img.png') }}" height="90" width="90">
                                                 </span>
                                                 <div class="ca-content">
-                                                    <h2  class="ca-main">HOSPITALES Y CLINICAS</h2>
+                                                    <h2  class="ca-main">HOSPITALES <br>Y CLINICAS</h2>
                                                 </div>
                                             
                                         </li>
@@ -312,10 +325,10 @@
             <!-- Feature End-->
 
             <!-- FAQs Start -->
+            <!--
             <div class="faqs">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Un vistazo por nuestros servicios</p>
                         <h2 style="color: black;">Nuestros servicios</h2>
                     </div>
                     <div class="row">
@@ -378,9 +391,9 @@
                     </div>
                 </div>
             </div>
+-->
             <!-- FAQs End -->
 
-            <br></br>
 
             <!-- Testimonial Start -->
             <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
@@ -449,47 +462,6 @@
             </div>
             <!-- Testimonial End -->
 
-            <!-- Single Post Start-->
-            <div class="single">
-                <div class="container">
-                    <div class="row">
-                                <div class="section-header text-center">
-                                    <p>Un vistazo por nuestros manuales</p>
-                                    <h2 style="color: black;">Manuales</h2>
-                                </div>
-                        <div class="col-12">
-                                
-                        <div class="sidebar-widget wow fadeInUp">
-                                    <h2 style="color: black;" class="widget-title">Manuales Recientes:</h2>
-                                    <br></br>
-                                    <div class="recent-post">
-                                        @foreach($manuales as $manual)
-                                            <div class="post-item">
-                                                <div class="post-img">
-                                                    <img src="{{asset('storage').'/'.$manual->img_manual}}" />
-                                                </div>
-                                                <div class="post-text">
-                                                    <a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a>
-                                                    <h5 style="color: black;">{{$manual->descripcion}}</h5>
-                                                    <div class="post-meta">
-                                                        <p>Subido el dia: {{$manual->fecha}}</p>
-                                                    </div>
-                                                    <hr></hr>
-                                                </div>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-
-                
-            </div>
-            <!-- Single Post End-->   
-
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
@@ -497,9 +469,28 @@
                         <div class="col-md-4 col-lg-3">
                             <div class="footer-contact">
                                 <h2>Oficina de contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
-                                <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
-                                <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa-map-marker-alt"></i></td>
+                                        <td></td>
+                                        <td><p>Calle Consuelo 307-A - Cercado Arequipa</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-phone-alt"></i></td>
+                                        <td></td>
+                                        <td><p>054-399450 - 964-770-354</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-envelope"></i></td>
+                                        <td></td>
+                                        <td><p>servicios_cliente<br>@electromaticindustrial.com</p></td>
+                                    </tr>
+                                </table>
+                                
+                                
+                                
                                 <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -529,13 +520,13 @@
 
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
-                                <h2>Nuestros Sitios</h2>
+                                <h2>INTRANET</h2>
                                 <p>
-                                    <b>Intranet</b>, destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
+                                    Destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
                                 </p>
                                 <br>
                                 <p>
-                                    <b>Grupos electrogenos</b>, <a style="color: white;" href="http://gruposelectrogenosei.com/">Ir al sitio</a>
+                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
                                 </p>
                                 
                             </div>
@@ -546,8 +537,6 @@
                     <br>
 
                     <div class="container footer-menu">
-                    
-                        <h4><b>Nuestras redes sociales</b></h4>
                         <div class="f-menu">
                             <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
                             <a></a>
