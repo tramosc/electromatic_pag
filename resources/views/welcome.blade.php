@@ -46,7 +46,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
-                                <img src="{{ asset('img/logo1.png') }}" width="500" height="600" alt="Image">
+                                <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -81,8 +81,7 @@
                                             <i class="flaticon-send-mail"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +133,7 @@
                                 <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="http://intranet.electromaticindustrial.com/">ZONA CLIENTES</a>
+                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
                             </div>
                         </div>
                     </nav>

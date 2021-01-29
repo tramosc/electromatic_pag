@@ -76,7 +76,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
-                                <img src="{{ asset('img/logo1.png') }}" width="500" height="600" alt="Image" align="right">
+                                <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image" align="right">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -127,7 +127,7 @@
                                 <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="http://intranet.electromaticindustrial.com/">ZONA CLIENTES</a>
+                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
                             </div>
                         </div>
 

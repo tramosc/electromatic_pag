@@ -79,12 +79,12 @@ a:focus {
 .top-bar {
     position: static;
     height: 120px;
-    background: #abd2b6;
+    background: #ffffff;
 }
 
 .top-bar .logo {
     /*border limite*/
-    /*padding: 15px 0;*/
+    padding: 3px 0;
     text-align: left;
     overflow: hidden;
 }
@@ -156,7 +156,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #20773A;
+    background: #ffffff;
     /*20773A*/
     /*#abd2b6*/
     transition: .3s;
