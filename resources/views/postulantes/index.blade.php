@@ -36,6 +36,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $postulantes->links() }}
     </div>
 </div>
 @endsection

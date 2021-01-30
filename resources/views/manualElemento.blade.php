@@ -153,60 +153,90 @@
                                         <!-- Service-detalle Start -->
                                         <div class="service">
                                             <div class="container">
-                                                
-                                                        <div class="card-body">
-                                                                <div class="about-img">
-                                                                        <div class="scaling-image h-100">
-                                                                            <div class="frame h-100">
-                                                                                <div class="feature-img-bg h-100">
-                                                                                    <center><img src="{{asset('storage').'/'.$manual->img_manual}}" width="300" height="350" alt="Image"></center>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                            <br>
 
-                                                            <br></br>
                                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                                 <div class="form-group" style="text-align: right;">
                                                                     <strong style="text-align: right; color: black;">Subido el dia:</strong>
                                                                     {{$manual->fecha}}
                                                                 </div>
                                                             </div>
-
-                                                            <div class="container">
-                                                                        <div class="card text-center">
-                                                                            <div class="card-body">
-                                                                                <h5 style="color: black; text-align: left;">DESCRIPCION DEL MANUAL:</h5>
-                                                                                <p class="card-text">{{ $manual->descripcion }}</p>
-                                                                            </div>
+                                                
+                                                        <div class="card-body">
+                                                            <!-- Zona de elemento descripcion -->
+                                                            @if (($manual->descripcion))
+                                                                        <div class="container">
+                                                                                    <div class="card text-center">
+                                                                                        <div class="card-body">
+                                                                                            <h5 style="color: black; text-align: left;">DESCRIPCION DEL MANUAL:</h5>
+                                                                                        
+                                                                                            <p class="card-text">{{ $manual->descripcion }}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            <br>
                                                                         </div>
-                                                                <br>
-                                                            </div>
+                                                            @else
+                                                                <!-- mensaje de que no hay descripcion--->
+                                                            @endif
+                                                            <!-- Zona de elemento descripcion -->
 
-                                                            <div class="container">
-                                                                        <div class="card text-center">
-                                                                            <div class="card-body">
-                                                                                <h5 style="color: black; text-align: left;">DETALLES DEL MANUAL:</h5>
-                                                                                <p class="card-text">{{$manual->detalles}}</p>
-                                                                            </div>
+
+                                                            <!-- Zona de elemento detalles -->
+                                                                @if (($manual->detalles))
+                                                                        <div class="container">
+                                                                                    <div class="card text-center">
+                                                                                        <div class="card-body">
+                                                                                            <h5 style="color: black; text-align: left;">DETALLES DEL MANUAL:</h5>
+                                                                                            
+                                                                                            <p class="card-text">{{$manual->detalles}}</p>
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                            <br>
                                                                         </div>
-                                                                <br>
-                                                            </div>
+                                                                @else                
+                                                                    <!-- mensaje de que no hay detalles--->
+                                                                @endif
+                                                            <!-- Zona de elemento detalles -->    
 
 
-                                                            <div class="container">
-                                                                        <div class="card text-center">
-                                                                            <div class="card-body">
-                                                                                <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
-                                                                                <div class="about-img">
-                                                                        <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="100" width="90"></a>
-                                                                </div>
-                                                                <a style="text-align: center;">Descargar recurso PDF</a>
-                                                                            </div>
+                                                                <!-- Zona de elemento referencias -->
+                                                                    @if (($manual->referencias))
+                                                                        <div class="container">
+                                                                                    <div class="card text-center">
+                                                                                        <div class="card-body">
+                                                                                            <h5 style="color: black; text-align: left;">REFERENCIAS DEL MANUAL:</h5>
+                                                                                            <p class="card-text">{{$manual->referencias}}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            <br>
                                                                         </div>
-                                                                <br>
-                                                            </div>  
+                                                                    @else
+                                                                        <!-- mensaje de que no hay referencias--->
+                                                                    @endif
+                                                                <!-- Fin Zona de elemento referencias -->    
+
+
+
+                                                                <!-- Zona de elemento archivo url -->
+                                                                    @if (($manual->archivo_url))
+                                                                        <div class="container">
+                                                                                    <div class="card text-center">
+                                                                                        <div class="card-body">
+                                                                                            <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
+                                                                                                
+                                                                                                        <div class="about-img">
+                                                                                                            <a href="{{asset('storage').'/'.$manual->archivo_url}}" download><img src="{{ asset('img/pdf.png') }}" alt="Image" height="100" width="90"></a>
+                                                                                                        </div>
+                                                                                                        <a style="text-align: center;">Descargar recurso PDF</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            <br>
+                                                                        </div>
+                                                                    @else
+                                                                        <!-- mensaje de que no hay pdf--->
+                                                                    @endif
+                                                                <!-- FIN de Zona de elemento archivo url -->  
+
                                                         </div>
                                         </div>  
                         </div>
@@ -271,9 +301,28 @@
                         <div class="col-md-4 col-lg-3">
                             <div class="footer-contact">
                                 <h2>Oficina de contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
-                                <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
-                                <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa-map-marker-alt"></i></td>
+                                        <td></td>
+                                        <td><p>Calle Consuelo 307-A - Cercado Arequipa</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-phone-alt"></i></td>
+                                        <td></td>
+                                        <td><p>054-399450 - 964-770-354</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-envelope"></i></td>
+                                        <td></td>
+                                        <td><p>servicios_cliente<br>@electromaticindustrial.com</p></td>
+                                    </tr>
+                                </table>
+                                
+                                
+                                
                                 <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -285,53 +334,58 @@
                                 -->
                             </div>
                         </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
                         <div class="col-md-6 col-lg-3">
-                        <h2>Ubicanos</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <h2>Ubicanos</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
 
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
+
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
 
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
-                                <h2>Nuestros Sitios</h2>
+                                <h2>INTRANET</h2>
                                 <p>
-                                    <b>Intranet</b>, destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
+                                    Destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
                                 </p>
                                 <br>
                                 <p>
-                                    <b>Grupos electrogenos</b>, <a style="color: white;" href="http://gruposelectrogenosei.com/">Ir al sitio</a>
+                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
                                 </p>
                                 
                             </div>
                         </div>
+
                     </div>
+
                     <br>
+
                     <div class="container footer-menu">
-                    <h4><b>Nuestras redes sociales</b></h4>
-                    <div class="f-menu">
-                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
-                        <!-- 48*48 -->
+                        <div class="f-menu">
+                            <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
+                            <!-- 48*48 -->
+                        </div>
                     </div>
+
                 </div>
-                </div>
+
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
@@ -349,6 +403,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- Footer End -->
 

@@ -11,12 +11,12 @@
         {{ method_field('PATCH') }}
             <div class="col-md-6">
                 <label for="titulo_img" class="form-label">Titulo de la imagen</label>
-                <input type="text" class="form-control" name="titulo_img" id="titulo_img" value="{{ $imagen->titulo_img }}" required>
+                <input type="text" class="form-control" name="titulo_img" id="titulo_img" value="{{ $imagen->titulo_img }}">
             </div>
             <div class="col-md-6">
                 <label for="imagen_inicio" class="form-label">Portada</label>
                 <img src="{{asset('storage').'/'.$imagen->imagen_inicio}}" width="200">
-                <input type="file" class="form-control" name="imagen_inicio" accept="image/png, image/jpeg" id="imagen_inicio" required value="" >
+                <input type="file" class="form-control" name="imagen_inicio" accept="image/png, image/jpeg" id="imagen_inicio" value="" >
             </div>
 
             <div class="col-12">

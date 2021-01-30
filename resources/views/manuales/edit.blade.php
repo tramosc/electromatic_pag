@@ -13,11 +13,6 @@
                 <label for="titulo_manual" class="form-label">Titulo del manual</label>
                 <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" value="{{ $manual->titulo_manual }}">
             </div>
-            <div class="col-md-6">
-                <label for="img_manual" class="form-label">Portada</label>
-                <img src="{{asset('storage').'/'.$manual->img_manual}}" width="200">
-                <input type="file" class="form-control" name="img_manual" id="img_manual" accept="image/png, image/jpeg" value="">
-            </div>
             <div class="col-2">
                 <label for="fecha" class="form-label">Fecha</label>
                 <input type="date" class="form-control" name="fecha" id="fecha" value="{{ $manual->fecha }}">
@@ -30,10 +25,17 @@
                 <label for="detalles" class="form-label">Detalles</label>
                 <input type="text" class="form-control" name="detalles" id="detalles" value="{{ $manual->detalles }}">
             </div>
+            <div class="col-12">
+                <label for="referencias" class="form-label">Referencias</label>
+                <input type="text" class="form-control" name="referencias" id="referencias" value="{{ $manual->referencias }}">
+            </div>
             <div class="col-md-6">
                 <label for="archivo_url" class="form-label">Archivo</label>
+                @if (($manual->archivo_url))
                 <a href="{{asset('storage').'/'.$manual->archivo_url}}" download="">Descargar</a>
-
+                @else                
+                    <p>No hay archivo subido </p>
+                @endif
                 <input type="file" class="form-control" name="archivo_url" id="archivo_url" accept="application/pdf" value="">
             </div>
 

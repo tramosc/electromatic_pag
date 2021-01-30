@@ -237,18 +237,9 @@
                         <div class="col-lg-5 col-md-6">
                                         <div class="hs-wrapper">
                                         @foreach($imagenesInicio as $imagenInicio)
-                                            <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}"/>
+                                            <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" width="333px" height="500px"/>
                                         @endforeach
-                                        <!-- 
-                                            <img src="{{ asset('img/img_modelos/1.jpg') }}" alt="image01"/>
-                                            <img src="{{ asset('img/img_modelos/2.jpg') }}" alt="image02"/>
-                                            <img src="{{ asset('img/img_modelos/3.jpg') }}" alt="image03"/>
-                                            <img src="{{ asset('img/img_modelos/4.jpg') }}" alt="image04"/>
-                                            <img src="{{ asset('img/img_modelos/5.jpg') }}" alt="image05"/>
-                                            <img src="{{ asset('img/img_modelos/6.jpg') }}" alt="image06"/>
-                                            <img src="{{ asset('img/img_modelos/7.jpg') }}" alt="image07"/>
-                                            <img src="{{ asset('img/img_modelos/8.jpg') }}" alt="image08"/>
-                                        -->
+
                                         </div>
 
                                         <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
@@ -323,7 +314,6 @@
                     </div>
                 </div>
             <!-- Feature End-->
-
             <!-- FAQs Start -->
             <!--
             <div class="faqs">
@@ -502,34 +492,38 @@
                                 -->
                             </div>
                         </div>
-                                <div class="col-md-2 col-lg-1">
-                                    
-                                </div>
+                                
                         <div class="col-md-6 col-lg-3">
                             <h2>Ubicanos</h2>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
 
-                                <div class="col-md-2 col-lg-1">
-                                    
-                                </div>
+                        <div class="col-md-2 col-lg-1"></div>
+                        <div class="col-md-2 col-lg-1"></div>
 
-                                <div class="col-md-2 col-lg-1">
-                                    
-                                </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="newsletter">
+                        <div class=".col-sm-4 .col-sm-push-2">
+                            
+                            <!--
                                 <h2>INTRANET</h2>
                                 <p>
-                                    Destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
+                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
                                 </p>
                                 <br>
                                 <p>
                                     Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
                                 </p>
-                                
-                            </div>
+                            -->  
+                                    <script>(function(d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s); js.id = id;
+                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                                }(document, 'script', 'facebook-jssdk'));
+                                    </script>
+                                    
+                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+
                         </div>
 
                     </div>

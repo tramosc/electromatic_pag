@@ -8,6 +8,9 @@
         <div class="card-body">
         <form action="{{ url('/imagenesInicio') }}" method="POST" class="row g-3" enctype="multipart/form-data">
         {{ csrf_field() }}
+                <div class="alert alert-warning" role="alert">
+                    <b>Recordatorio</b>: Usar solo imagenes de tamaño 333x500
+                </div>
             <div class="col-md-6">
                 <label for="titulo_img" class="form-label">Titulo Imagen</label>
                 <input type="text" class="form-control" name="titulo_img" id="titulo_img" required>

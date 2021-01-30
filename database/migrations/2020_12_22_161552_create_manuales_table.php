@@ -19,7 +19,7 @@ class CreateManualesTable extends Migration
             $table->date('fecha');
             $table->string('descripcion');
             $table->string('detalles');
-            $table->string('img_manual');
+            $table->string('referencias');
             $table->string('archivo_url');
             $table->timestamps();
         });

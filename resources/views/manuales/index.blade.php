@@ -17,7 +17,6 @@
                 <th scope="col">Fecha</th>
                 <th scope="col">Descripcion</th>
                 <th scope="col">Detalles</th>
-                <th scope="col">img portada</th>
                 <th scope="col">Acciones</th>
                 </tr>
             </thead>
@@ -29,9 +28,6 @@
                 <td>{{$manual->fecha}}</td>
                 <td>{{$manual->descripcion}}</td>
                 <td>{{$manual->detalles}}</td>
-                <td>
-                <img src="{{asset('storage').'/'.$manual->img_manual}}" width="200">
-                </td>
                 <td>
                 <form method="POST" action="{{ url('/manuales/'.$manual->id) }}">
                 {{ csrf_field() }}
@@ -46,8 +42,11 @@
                 <tr>
                 <tr>
             @endforeach
+
+            
             </tbody>
         </table>
+        {{ $manuales->links() }}
     </div>
 
 

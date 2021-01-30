@@ -201,7 +201,7 @@
                                     <h2 style="color: black;" class="widget-title">CONTACTO</h2>
                                 </div>
 
-                                <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
+                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
                                 <br></br>
                                 <div class="sidebar-widget wow fadeInUp">
                                     <h2 style="color: black;" class="widget-title">Otros</h2>
@@ -218,6 +218,7 @@
                                     </ul>
                                 </div>
                                 <br></br>
+
                                 <!--Script de facebook -->
                                     <div class="sidebar-widget wow fadeInUp">
                                         <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
@@ -233,6 +234,7 @@
 
 	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
                                 <!-- Fin de script de facebook-->
+                                
                             </div>
                             
                         </div>
@@ -255,9 +257,28 @@
                         <div class="col-md-4 col-lg-3">
                             <div class="footer-contact">
                                 <h2>Oficina de contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Calle Consuelo 307-A - Cercado Arequipa</p>
-                                <p><i class="fa fa-phone-alt"></i>054-399450 - 964-770-354</p>
-                                <p><i class="fa fa-envelope"></i>servicios_cliente<br>@electromaticindustrial.com</p>
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa-map-marker-alt"></i></td>
+                                        <td></td>
+                                        <td><p>Calle Consuelo 307-A - Cercado Arequipa</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-phone-alt"></i></td>
+                                        <td></td>
+                                        <td><p>054-399450 - 964-770-354</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa-envelope"></i></td>
+                                        <td></td>
+                                        <td><p>servicios_cliente<br>@electromaticindustrial.com</p></td>
+                                    </tr>
+                                </table>
+                                
+                                
+                                
                                 <!--
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -269,53 +290,58 @@
                                 -->
                             </div>
                         </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
                         <div class="col-md-6 col-lg-3">
-                        <h2>Ubicanos</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <h2>Ubicanos</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
 
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
-                        <div class="col-md-2 col-lg-1">
-                            
-                        </div>
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
+
+                                <div class="col-md-2 col-lg-1">
+                                    
+                                </div>
 
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
-                                <h2>Nuestros Sitios</h2>
+                                <h2>INTRANET</h2>
                                 <p>
-                                    <b>Intranet</b>, destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/">Ir al sitio</a>
+                                    Destinado a nuestros clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
                                 </p>
                                 <br>
                                 <p>
-                                    <b>Grupos electrogenos</b>, <a style="color: white;" href="http://gruposelectrogenosei.com/">Ir al sitio</a>
+                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
                                 </p>
                                 
                             </div>
                         </div>
+
                     </div>
+
                     <br>
+
                     <div class="container footer-menu">
-                    <h4><b>Nuestras redes sociales</b></h4>
-                    <div class="f-menu">
-                        <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
-                        <a></a>
-                        <a></a>
-                        <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
-                        <!-- 48*48 -->
+                        <div class="f-menu">
+                            <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
+                            <a></a>
+                            <a></a>
+                            <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
+                            <!-- 48*48 -->
+                        </div>
                     </div>
+
                 </div>
-                </div>
+
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
@@ -333,9 +359,9 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- Footer End -->
-
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
