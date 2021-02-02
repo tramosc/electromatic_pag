@@ -133,32 +133,13 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-<!-- 
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">REPUESTOS</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Repuestos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-            <!-- Page Header End -->
-
 
            <!-- Team Start -->
            <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Repuestos y equipo</p>
-                        <h2 style="color: black;">Nuestros repuestos disponibles</h2>
+<br></br>
+                        <h2 style="color: black;">Repuestos disponibles</h2>
                     </div>
                     <div class="row">
 
@@ -178,6 +159,7 @@
                     @endforeach
 
                     </div>
+                    <br></br>
                 </div>
             </div>
         <!-- Team End -->

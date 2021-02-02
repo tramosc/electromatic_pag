@@ -156,6 +156,7 @@
             <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
+                    <br></br>
                         <p>Elementos de grupos electrogenos</p>
                         <h2 style="color: black;">Grupos electrogenos</h2>
                     </div>
@@ -179,6 +180,7 @@
                     
 
                     </div>
+                    <br></br>
                 </div>
             </div>
             <!-- Contact End -->

@@ -159,6 +159,7 @@
              <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
+                        <br></br>
                         <p>Un vistazo a pozos de puesta a tierra</p>
                         <h2 style="color: black;">Pozos de puesta a tierra</h2>
                     </div>
@@ -183,10 +184,11 @@
 
                     </div>
                 </div>
+                <br></br>
             </div>
             <!-- Contact End -->
 
-
+        </div>
       
 
 

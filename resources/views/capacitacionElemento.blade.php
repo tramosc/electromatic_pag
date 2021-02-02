@@ -145,7 +145,7 @@
                             <div class="card-body">
                                 <h2 class="card-title" style="color: black;"><b>{{ $capacitacion->titulo_capacitacion }}</b></h2>
 
-                                <a href="{{ $capacitacion->link }}" target="_blank"><img src="{{asset('storage').'/'.$capacitacion->img_portada}}" style="align-items: center;" width="850" height="1000"></a>
+                                <a href="{{ $capacitacion->link }}" target="_blank"><img src="{{asset('storage').'/'.$capacitacion->img_portada}}" class="img-fluid" style="align-items: center;" width="850" height="1000"></a>
 
                                  <br></br>
 
@@ -212,7 +212,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="180px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="250px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -225,7 +225,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="180px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="250px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -238,7 +238,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="180px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="250px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -251,7 +251,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="180px" alt="Image">
+                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="250px" alt="Image">
                                 </div>
                                 <div class="service-text">
                                     <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
@@ -261,7 +261,7 @@
                         </div>
                     
                     </div>
-                    
+                </div>
                 </div>
             </div>
             <!-- Service End -->

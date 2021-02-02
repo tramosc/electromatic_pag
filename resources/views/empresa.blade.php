@@ -518,7 +518,7 @@
       <section id="clients" class="clients">
         <div class="container">
                     <div class="section-header text-center">
-                       <h2 style="color: black;">NUESTROS CLIENTES</h2> 
+                       <h3 style="color: black;"><b>NUESTROS CLIENTES</b></h3>
                     </div>
           <div class="row">
   
