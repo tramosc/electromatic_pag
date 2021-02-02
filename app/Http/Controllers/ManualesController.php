@@ -119,6 +119,8 @@ class ManualesController extends Controller
         $manual= Manuales::findOrFail($id);
         if(Storage::delete('public/'.$manual->archivo_url)){
             Manuales::destroy($id);
+        }else{
+            Manuales::destroy($id);
         }
         
         

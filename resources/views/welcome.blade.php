@@ -80,8 +80,13 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +96,6 @@
                 </div>
             </div>
             <!-- Top Bar End -->
-            
             
             <!-- Nav Bar Start -->
             <div class="nav-bar">
@@ -247,21 +251,33 @@
                         <!-- Fin de la zona de animacion css con imagenes-->
 
                         <div class="col-lg-7 col-md-6">
-                        <h3 style="color: black;"><b>8 Años Acompañandolo</b></h3>
+                            <h4><b>PRONTO!!</b></h4>
+                            <br></br>
+                        <h5 style="color: black;"><b>Actualmente estamos trabajando en realizar alianzas estratégicas para la venta y alquiler de grupos electrógenos.  </b></h5>
 
                         <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                        <br>
+                                <p style="text-align: center;">
+                                Somos parte de aquellos que no se conforman.
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+
+                                <p style="text-align: justify;">
+                                Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos lleva a mejorar día a día.   
                                 </p>
-                                <br><br/></br><br>
+
+                                <p style="text-align: justify;">
+                                Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad su desarrollo personal y profesional.   
+                                </p>
+
+                                <p style="text-align: justify;">
+                                Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
+                                </p>
+
+                                <p style="text-align: justify;">Pensando en nuestros clientes implementamos una plataforma digital los 365 días del año con información importante del diagnóstico, evaluación, mantenimiento preventivo o correctivo, permitiendo adquirir información importante de su equipo, sumado al seguimiento personalizado periódico mientras dura nuestra garantía.</p>
+
+                                <p style="color: black; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
                                 
-                            </div>
-                            
-                            <div class="section-header text-left">
-                                <br></br>
+                                
                             </div>
 
                             <div class="about-text">
@@ -452,125 +468,138 @@
             </div>
             <!-- Testimonial End -->
 
-            <!-- Footer Start -->
-            <div class="footer wow fadeIn" data-wow-delay="0.3s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-3">
-                            <div class="footer-contact">
-                                <h2>Oficina de contacto</h2>
-                                <table>
-                                    <tr>
-                                        <td><i class="fa fa-map-marker-alt"></i></td>
-                                        <td></td>
-                                        <td><p>Calle Consuelo 307-A - Cercado Arequipa</p></td>
-                                    </tr>
 
-                                    <tr>
-                                        <td><i class="fa fa-phone-alt"></i></td>
-                                        <td></td>
-                                        <td><p>054-399450 - 964-770-354</p></td>
-                                    </tr>
+            <!-- Team Start -->
+            <div class="team">
+                <div class="team-item">
 
-                                    <tr>
-                                        <td><i class="fa fa-envelope"></i></td>
-                                        <td></td>
-                                        <td><p>servicios_cliente<br>@electromaticindustrial.com</p></td>
-                                    </tr>
-                                </table>
-                                
-                                
-                                
-                                <!--
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <!-- Footer Start -->
+                    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="footer-link">
+                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <a style="color: white;"> 054-399450</a>
+                                        <a style="color: white;"> 964-770-354</a>
+                                    </div>
+                                            <!-- Frame del mapa 
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                            -->
                                 </div>
-                                -->
+
+
+                                
+                                            <!-- Div 
+                                                <div class="col-md-2 col-lg-1"></div>
+                                                <div class="col-md-2 col-lg-1"></div>
+                                            --> 
+                                        
+
+                                <div class="col-sm-5">
+                                    <h2><i class="fa fa-envelope"></i> Correos</h2>
+                                    <div class="footer-link">	
+                                        <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
+                                        <a style="color: white;">jcueva@electromaticindustrial.com</a>
+                                    </div>
+                                    <!-- Div personalizado  
+                                        <div class=".col-sm-4 .col-sm-push-2">
+                                            <!--
+                                                <h2>INTRANET</h2>
+                                                <p>
+                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
+                                                </p>
+                                            -->  
+
+                                            <!--   SCRIPT DE FACEBOOK
+                                                    <script>(function(d, s, id) {
+                                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                                if (d.getElementById(id)) return;
+                                                                js = d.createElement(s); js.id = id;
+                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                                }(document, 'script', 'facebook-jssdk'));
+                                                    </script>
+                                                    
+                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                            -->
+
+                                            <!-- SCRIPT DE TWITTER personalizado              
+                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                            --> 
+                                    <!--  </div> -->
+                                </div>
+
+                                <div class="col-sm-5">
+                                    <div class="footer-contact">
+                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                            <div class="footer-link">
+                                            <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
+                                            <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
+                                            </div>
+        
+                                        <!--
+                                        <div class="footer-social">
+                                            <a href=""><i class="fab fa-twitter"></i></a>
+                                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a href=""><i class="fab fa-youtube"></i></a>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <div class="text-left p-3" style="background-color: #717171">
+                                ©<a style="color: white;" href="">Electromatic Industrial SRL </a>| Todos los derechos reservados 2013 - 2021
+                            </div>
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-3" style="text-align: center;">
+                                    <!-- Contador de visitas -->
+                                
+                                    <a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+                                    <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a>
+                                
+                                    <!-- Fin Contador de visitas -->
+
                             </div>
                         </div>
-                                
-                        <div class="col-md-6 col-lg-3">
-                            <h2>Ubicanos</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-
-                        <div class="col-md-2 col-lg-1"></div>
-                        <div class="col-md-2 col-lg-1"></div>
-
-                        <div class=".col-sm-4 .col-sm-push-2">
-                            
-                            <!--
-                                <h2>INTRANET</h2>
-                                <p>
-                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                </p>
-                                <br>
-                                <p>
-                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                </p>
-                            -->  
-                                    <script>(function(d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (d.getElementById(id)) return;
-                                                js = d.createElement(s); js.id = id;
-                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                fjs.parentNode.insertBefore(js, fjs);
-                                                }(document, 'script', 'facebook-jssdk'));
-                                    </script>
-                                    
-                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-
-                        </div>
 
                     </div>
+                <!-- Footer End -->
 
-                    <br>
-
-                    <div class="container footer-menu">
-                        <div class="f-menu">
-                            <a href=""><img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png" width="35" height="35" ></a>
-                            <a></a>
-                            <a></a>
-                            <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="55" height="55"></a> 
-                            <a></a>
-                            <a></a>
-                            <a href=""><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" width="50" height="50"></a>
-                            <a></a>
-                            <a></a>
-                            <a href=""><img src="https://revistaitnow.com/wp-content/uploads/2020/03/LinkedIn_logo_initials.png" width="35" height="35"></a>
-                            <!-- 48*48 -->
-                        </div>
+                <!-- Inicio deslizable lateral social -->
+                    <div class="team-social">
+                        <hr>
+                        <a class="social-tw" href="https://twitter.com/electromaticind"><i class="fab fa-twitter"></i></a>
+                        <a class="social-fb" href="https://www.facebook.com/electromaticindustrialsrl/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-li" href="https://www.linkedin.com/in/electromatic-industrial-55857ba1?trk=nav_responsive_tab_profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a style="background-color: red" class="social-yt" href="https://www.youtube.com/channel/UCaDoRP93nUjVAhSYax_EYTg"><i class="fab fa-youtube"></i></a>
                     </div>
-
+                <!-- fin deslizable lateral social -->
                 </div>
-
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="#" style="color: white;">ELECTROMATIC INDUSTRIAL</a></p>
-                        </div>
-                        <div class="col-md-6">
-
-                            <!-- Contador de visitas -->
-                            <center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-                            <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a></center>
-                            <!-- Fin Contador de visitas -->
-
-
-                             <!-- <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>  -->
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <!-- Footer End -->
+            <!-- Team End -->
+
+            
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
+
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

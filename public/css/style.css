@@ -937,12 +937,12 @@ a:focus {
 .team {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    /*padding: 45px 0 15px 0;*/
 }
 
 .team .team-item {
     position: relative;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     overflow: hidden;
 }
 
@@ -985,10 +985,11 @@ a:focus {
 }
 
 .team .team-social {
+
     position: absolute;
     width: 100px;
     top: 0;
-    left: -50px;
+    right: -100px;
     display: flex;
     flex-direction: column;
     font-size: 0;
@@ -996,7 +997,7 @@ a:focus {
 
 .team .team-social a {
     position: relative;
-    left: 0;
+    right: 0;
     width: 50px;
     height: 50px;
     display: flex;
@@ -1008,25 +1009,31 @@ a:focus {
 
 .team .team-item:hover .team-social a:first-child {
     background: #00acee;
-    left: 50px;
+    right: 50px;
     transition: .3s 0s;
 }
 
 .team .team-item:hover .team-social a:nth-child(2) {
-    background: #3b5998;
-    left: 50px;
+    background: #00acee;
+    right: 50px;
     transition: .3s .1s;
 }
 
 .team .team-item:hover .team-social a:nth-child(3) {
-    background: #0e76a8;
-    left: 50px;
+    background: #3b5998;
+    right: 50px;
     transition: .3s .2s;
 }
 
 .team .team-item:hover .team-social a:nth-child(4) {
+    background: #0e76a8;
+    right: 50px;
+    transition: .3s .3s;
+}
+
+.team .team-item:hover .team-social a:nth-child(5) {
     background: #3f729b;
-    left: 50px;
+    right: 50px;
     transition: .3s .3s;
 }
 
@@ -2065,7 +2072,7 @@ a:focus {
 .footer {
     position: relative;
     /*margin-top: 45px;*/
-    padding-top: 90px;
+    padding-top: 45px;
     background: #717171;
     color: #ffffff;
 }
