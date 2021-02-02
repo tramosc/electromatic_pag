@@ -18,10 +18,12 @@ use Illuminate\Support\Facades\DB;
 //Route::get('/', 'FrontController@viewPostManuales');
 Route::get('/', 'FrontController@viewImagenesCSS');
 //Empresa
+Route::get('/Vista-Empresa', 'FrontController@viewImagenesCSSEmpresa');
+/*
 Route::get('/Vista-Empresa', function () {
     return view('empresa');
 });
-
+*/
 //Contacto
 Route::get('/Vista-Contacto', function () {
     return view('contacto');
@@ -110,13 +112,5 @@ Route::get('/manuales/edit', 'ManualesController@edit');
 //Imagenes inicio
 Route::resource('imagenesInicio', 'ImagesInicioController');
 
-
-//Imagenes
-Route::resource('imagenes', 'ImagesServiciosController');
-
-Route::get('imagenesGaleria/{idServicios}', function ($idServicio) {
-    $imagenes = DB::table('images_servicios')->where('imagenes_id', $idServicio)->get();
-
-        return view('imagenes.index', ['imagenes'=>$imagenes]);
-    });
-
+//Imagenes Empresa
+Route::resource('imagenesEmpresa', 'ImagenesEmpresaController');

@@ -69,8 +69,7 @@
                                             <i class="flaticon-send-mail"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -110,8 +109,8 @@
                                     <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                     <div class="dropdown-menu">
                                         <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
                                         <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
                                     </div>
                                 </div>
@@ -197,25 +196,9 @@
                         <!-- Nueva zona de imagenes con efecto css -->
                             <div class="col-lg-5 col-md-6">
                                         <div class="hs-wrapper">
-                                            <img src="{{ asset('img/img_modelos/1.jpg') }}" alt="image01"/>
-                                            <img src="{{ asset('img/img_modelos/2.jpg') }}" alt="image02"/>
-                                            <img src="{{ asset('img/img_modelos/3.jpg') }}" alt="image03"/>
-                                            <img src="{{ asset('img/img_modelos/4.jpg') }}" alt="image04"/>
-                                            <img src="{{ asset('img/img_modelos/5.jpg') }}" alt="image05"/>
-                                            <img src="{{ asset('img/img_modelos/6.jpg') }}" alt="image06"/>
-                                            <img src="{{ asset('img/img_modelos/7.jpg') }}" alt="image07"/>
-                                            <img src="{{ asset('img/img_modelos/8.jpg') }}" alt="image08"/>
-
-                                                <div class="hs-titles">
-                                                    <span style="text-align: center;">Numero 1</span>
-                                                    <span style="text-align: center;">Numero 2</span>
-                                                    <span style="text-align: center;">Numero 3</span>
-                                                    <span style="text-align: center;">Numero 4</span>
-                                                    <span style="text-align: center;">Numero 5</span>
-                                                    <span style="text-align: center;">Numero 6</span>
-                                                    <span style="text-align: center;">Numero 7</span>
-                                                    <span style="text-align: center;">Numero 8</span>
-                                                </div>
+                                        @foreach($imagenesEmpresa as $imagenEmpresa)
+                                            <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="image01"/>
+                                        @endforeach
                                         </div>
 
                                         <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
@@ -226,9 +209,13 @@
             </div>
             <!-- About End -->
 
-                        <!-- Fact Start -->
-                        <div class="fact">
+
+
+        <!-- Fact Start 
+            <div class="fact">
                 <div class="container-fluid">
+
+                
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
                             <div class="row">
@@ -271,9 +258,49 @@
                             </div>
                         </div>
                     </div>
+                
                 </div>
             </div>
-            <!-- Fact End -->
+        Fact End -->
+
+
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="fact-icon">
+                        <img src="{{ asset('img/diagrama.png') }}" width="70px" height="70px">
+                        <br></br>
+                        </div>
+                        <div class="fact-text">
+                            <h4 style="text-align: center; color: #666666;"><b>COSTO - BENEFICIO</b></h4>
+                        <!-- <h4 style="text-align: center; color: #20773A;"><b>COSTO - BENEFICIO</b></h4>-->
+                        </div>
+                    
+                    </div>
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="fact-icon">
+                        <img src="{{ asset('img/soporte-tecnico.png') }}" width="70px" height="70px">
+                        <br></br>
+                        </div>
+                        <div class="fact-text">
+                            <h4 style="text-align: center; color: #666666;"><b>SERVICIO TECNICO 24/7</b></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="fact-icon">
+                        <img src="{{ asset('img/apoyo.png') }}" width="70px" height="70px">
+                        <br></br>
+                        </div>
+                        <div class="fact-text">
+                            <h4 style="text-align: center; color: #666666;"><b>ATENCIÓN PERSONALIZADA</b></h4>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- About End -->
 
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
@@ -342,7 +369,7 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Valores de Electromatic</p>
-                        <h2 style="color: black;">NUESTROS VALORES</h2>
+                       <h2 style="color: black;">NUESTROS VALORES</h2> 
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -490,7 +517,9 @@
             <!-- ======= Clients LOGO Section ======= -->
       <section id="clients" class="clients">
         <div class="container">
-          <h1 style="color: black;">NUESTROS CLIENTES</h1>
+                    <div class="section-header text-center">
+                       <h2 style="color: black;">NUESTROS CLIENTES</h2> 
+                    </div>
           <div class="row">
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
@@ -521,6 +550,7 @@
   
         </div>
       </section><!-- End Clients Section -->
+      <br><br>
 
 
 

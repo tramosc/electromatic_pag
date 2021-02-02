@@ -95,14 +95,6 @@
                 <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
                 <input type="file" class="form-control" name="img_nueve" id="img_nueve" accept="image/png, image/jpeg" value="">
             </div>
-            <div class="col-md-6">
-                <label for="img_diez" class="form-label">Imagen 10</label>
-                <img src="{{asset('storage').'/'.$servicio->img_diez}}" width="200">
-                <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
-                <input type="file" class="form-control" name="img_diez" id="img_diez" accept="image/png, image/jpeg" value="">
-            </div>
-
-
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar</button>
                 <a class="btn btn-danger" href="{{ url('servicios') }}">Regresar a Servicios</a>

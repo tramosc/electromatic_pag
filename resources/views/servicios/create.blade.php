@@ -66,17 +66,12 @@
             </div>
             <div class="col-md-6">
                 <label for="img_ocho" class="form-label">Imagen Numero 8</label>
-                <input type="file" class="form-control" name="img_ocho" id="img_ocho" accept="image/png, image/jpeg">
+                <input type="file" class="form-constrol" name="img_ocho" id="img_ocho" accept="image/png, image/jpeg">
             </div>
             <div class="col-md-6">
                 <label for="img_nueve" class="form-label">Imagen Numero 9</label>
                 <input type="file" class="form-control" name="img_nueve" id="img_nueve" accept="image/png, image/jpeg">
             </div>
-            <div class="col-md-6">
-                <label for="img_diez" class="form-label">Imagen Numero 10</label>
-                <input type="file" class="form-control" name="img_diez" id="img_diez" accept="image/png, image/jpeg">
-            </div>
-
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>
                 <a href="{{ url('servicios') }}">Regresar a Servicios</a>

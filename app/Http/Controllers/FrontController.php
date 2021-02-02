@@ -11,6 +11,7 @@ use App\Capacitaciones;
 use App\Grupos;
 use App\Pozos;
 use App\Ups;
+use App\imagenesEmpresa;
 use Illuminate\Support\Facades\Storage;
 
 class FrontController extends Controller
@@ -29,6 +30,12 @@ class FrontController extends Controller
         return view('welcome', $datos);
     }
 */
+public function viewImagenesCSSEmpresa(){
+    //
+    $datos['imagenesEmpresa'] = imagenesEmpresa::paginate(30);
+    return view('empresa', $datos);
+}
+
     public function viewImagenesCSS(){
         //
         $datos['imagenesInicio'] = imagesInicio::paginate(30);

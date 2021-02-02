@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateImagesServiciosTable extends Migration
+class CreateImagenesEmpresasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,24 +13,13 @@ class CreateImagesServiciosTable extends Migration
      */
     public function up()
     {
-        Schema::create('images_servicios', function (Blueprint $table) {
+        Schema::create('imagenes_empresas', function (Blueprint $table) {
             $table->id();
             $table->string('titulo_img');
-            $table->string('imagen_servicios');
-
-            $table->unsignedBigInteger('imagenes_id');
-            $table->foreign('imagenes_id')
-            ->references('id')
-            ->on('servicios')
-            ->onDelete('cascade');
-            
+            $table->string('img_empresa');
             $table->timestamps();
         });
     }
-
-    /**
-     * save o create
-     */
 
     /**
      * Reverse the migrations.
@@ -39,6 +28,6 @@ class CreateImagesServiciosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('images_servicios');
+        Schema::dropIfExists('imagenes_empresas');
     }
 }

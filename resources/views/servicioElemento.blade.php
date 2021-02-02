@@ -106,8 +106,8 @@
                                     <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                     <div class="dropdown-menu">
                                         <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
                                         <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
                                     </div>
                                 </div>
@@ -129,12 +129,10 @@
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
                             </div>
                         </div>
-
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
-    
 
             <!-- Single Post Start-->
             <div class="single">
@@ -229,19 +227,27 @@
                                     </div>
                                     <div class="row">
                                         <!-- Imagen 1 -->
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                            <div class="service-item">
-                                                <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="200px" alt="Image">
-                                                </div>
-                                                <div class="service-text">
-                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                        @if (($servicio->img_uno))
+                                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="service-item">
+                                                    <div class="service-img">
+                                                        <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="200px" alt="Image">
+                                                    </div>
+                                                    <div class="service-text">
+                                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
+
+
 
                                         <!-- Imagen 2 -->
+                                        @if (($servicio->img_dos))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -253,8 +259,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 3 -->
+                                        @if (($servicio->img_tres))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -266,8 +277,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 4 -->
+                                        @if (($servicio->img_cuatro))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -279,8 +295,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 5 -->
+                                        @if (($servicio->img_cinco))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -292,8 +313,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 6 -->
+                                        @if (($servicio->img_seis))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -305,8 +331,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 7 -->
+                                        @if (($servicio->img_siete))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -318,8 +349,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 8 -->
+                                        @if (($servicio->img_ocho))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -331,8 +367,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
                                         <!-- Imagen 9 -->
+                                        @if (($servicio->img_nueve))
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
@@ -344,20 +385,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @else
+                                            <!-- mensaje de que no hay descripcion--->
+                                        @endif
+                                        <!-- Zona de elemento descripcion -->
 
-                                        <!-- Imagen 10 -->
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                            <div class="service-item">
-                                                <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_diez}}" width="100px" height="200px" alt="Image">
-                                                </div>
-                                                <div class="service-text">
-                                                    <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                                    <a class="btn" href="{{asset('storage').'/'.$servicio->img_diez}}" data-lightbox="service">+</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
                                     </div>
                                     
                                 </div>

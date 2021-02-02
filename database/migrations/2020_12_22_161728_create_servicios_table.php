@@ -30,7 +30,6 @@ class CreateServiciosTable extends Migration
             $table->string('img_siete');
             $table->string('img_ocho');
             $table->string('img_nueve');
-            $table->string('img_diez');
             $table->timestamps();
         });
     }

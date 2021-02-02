@@ -66,6 +66,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url('/imagenesEmpresa') }}">Galeria Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
                         <b><a class="nav-link active" aria-current="page" href="{{ url('/postulantes') }}">Postulantes</a></b>
                     </li>
                     </ul>
