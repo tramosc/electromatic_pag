@@ -124,13 +124,14 @@ class FrontController extends Controller
     public function indexBlogs()
     {
         //
-        $datos['blogs'] = Blogs::paginate(1);
+        $datos['blogs'] = Blogs::paginate(4);
         return view('blog', $datos);
     }
     public function viewBlog($id)
     {
         $blog = Blogs::findOrFail($id);
-        return view('blogElemento', compact('blog'));
+        $datos['blogs'] = Blogs::paginate(3);
+        return view('blogElemento', compact('blog'),$datos);
     }
 
 

@@ -143,36 +143,114 @@
             <div class="blog">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Latest Blog</p>
                         <h2>Ultimas Actualizaciones </h2>
                     </div>
+
+        <style>
+
+            .thumb {
+                width: 500px;
+                height: 400px;
+                margin: 70px auto;
+                perspective: 1000px;
+            }
+
+            .thumb a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                    url("https://www.peru.travel/Contenido/Destino/Imagen/pe/27/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg");
+                background-size: 0, cover;
+                transform-style: preserve-3d;
+                transition: all 0.5s;
+            }
+
+            .thumb:hover a {
+                transform: rotateX(80deg);
+                transform-origin: bottom;
+            }
+            .thumb a:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 36px;
+                background: inherit;
+                background-size: cover, cover;
+                background-position: bottom;
+                transform: rotateX(90deg);
+                transform-origin: bottom;
+            }
+            .thumb a span {
+                color: white;
+                text-transform: uppercase;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                font: bold 12px/36px "Open Sans";
+                text-align: center;
+                transform: rotateX(-89.99deg);
+                transform-origin: top;
+                z-index: 1;
+            }
+            .thumb a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+                transition: all 0.5s;
+                opacity: 0.15;
+                transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+                transform-origin: bottom;
+            }
+
+            .thumb:hover a:before {
+                opacity: 1;
+                box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+                transform: rotateX(0) translateZ(-60px) scale(0.85);
+            }
+            
+        </style>
                     
-                    <center>
-                    <img src="https://blog.mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png" style="align-content: center;">
-                    </center>
+                    <div class="thumb">
+                        <a href="#">
+                                <span>Blogs - Electromatic </span>
+                        </a>
+                    </div>
 
                     <br></br>
 
                     <div class="row blog-page">
-                    @foreach($blogs as $blog)
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <img src="{{asset('storage').'/'.$blog->img_portada}}" alt="Image">
+                        @foreach($blogs as $blog)
+                            <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="blog-item col-lg-12" style="display: flex; flex-direction: wrap">
+                                
+                                    <div class="blog-img col-lg-4">
+                                        <img src="{{asset('storage').'/'.$blog->img_portada}}" alt="Image">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p style="text-align: left;"><span style="background-color: #007939; color: white;"> Blogs-Electromatic </span></p>
+                                        <p style="text-align: left;">
+                                        <a>📆 {{$blog->fecha}}</a>
+                                        <a>🏷️ Admin</a>
+                                        </p>
+                                            <a href="{{ url('/'.$blog->id.'/Vista-Blog-Elemento') }}"><h3 style="text-align: left;">{{$blog->titulo_blog}}</h3></a>
+                                        <p style="text-align: justify;">{{$blog->descripcion_blog}}</p>
+                                    </div>
                                 </div>
-                                <div class="blog-title">
-                                    <h3>{{$blog->titulo_blog}}</h3>
-                                    <a class="btn" href="{{ url('/'.$blog->id.'/Vista-Blog-Elemento') }}">+</a>
-                                </div>
-                                <div class="blog-meta">
-                                    <p>{{$blog->fecha}}</p>
-                                </div>
-
+                                <hr style="background-color:#007939 ;">
                             </div>
-                        </div>
-                    @endforeach
-
+                        @endforeach
                     </div>
+
+                    {{ $blogs->links() }}
 
 
                 </div>

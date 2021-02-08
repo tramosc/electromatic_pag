@@ -49,6 +49,9 @@ class BlogsController extends Controller
         if($request->hasFile('img_portada')){
             $datosBlog['img_portada']=$request->file('img_portada')->store('uploads', 'public');
         }
+        if($request->hasFile('img_contenido')){
+            $datosBlog['img_contenido']=$request->file('img_contenido')->store('uploads', 'public');
+        }
 
         Blogs::insert($datosBlog);
         return redirect('blogs');
@@ -98,6 +101,12 @@ class BlogsController extends Controller
             $datosBlog['img_portada']=$request->file('img_portada')->store('uploads', 'public');
        }
 
+       if($request->hasFile('img_contenido')){
+        $blog= Blogs::findOrFail($id);
+        Storage::delete('public/'.$blog->img_contenido);
+        $datosBlog['img_contenido']=$request->file('img_contenido')->store('uploads', 'public');
+   }
+
         Blogs::where('id','=',$id)->update($datosBlog);
  
          $blog= Blogs::findOrFail($id);
@@ -116,6 +125,9 @@ class BlogsController extends Controller
         $blog= Blogs::findOrFail($id);
 
         if(Storage::delete('public/'.$blog->img_portada)){
+            Blogs::destroy($id);
+        }
+        if(Storage::delete('public/'.$blog->img_contenido)){
             Blogs::destroy($id);
         }
 

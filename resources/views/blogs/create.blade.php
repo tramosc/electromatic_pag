@@ -18,7 +18,7 @@
             </div>
             <div class="col-2">
                 <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" name="fecha" id="fecha">
+                <input type="date" class="form-control" name="fecha" required id="fecha">
             </div>
             <div class="col-12">
                 <label for="descripcion_blog" class="form-label">Descripcion</label>
@@ -31,6 +31,11 @@
             <div class="col-12">
                 <label for="parrafo2" class="form-label">Parrafo 2</label>
                 <input type="text" class="form-control" name="parrafo2" id="parrafo2" >
+            </div>
+
+            <div class="col-md-6">
+                <label for="img_contenido" class="form-label">Imagen de Contenido</label>
+                <input type="file" class="form-control" name="img_contenido" required accept="image/png, image/jpeg" id="img_contenido">
             </div>
 
             <div class="col-12">

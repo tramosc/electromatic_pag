@@ -37,27 +37,27 @@
             <h3>Imagenes para Galeria</h3>
             <div class="col-md-6">
                 <label for="img_dos" class="form-label">Imagen Nro 2</label>
-                <input type="file" class="form-control" name="img_dos" id="img_dos" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_dos" id="img_dos" accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
                 <label for="img_tres" class="form-label">Imagen Nro 3</label>
-                <input type="file" class="form-control" name="img_tres" id="img_tres" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_tres" id="img_tres" accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
                 <label for="img_cuatro" class="form-label">Imagen Nro 4</label>
-                <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
                 <label for="img_cinco" class="form-label">Imagen Nro 5</label>
-                <input type="file" class="form-control" name="img_cinco" id="img_cinco" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_cinco" id="img_cinco" accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
                 <label for="img_seis" class="form-label">Imagen Nro 6</label>
-                <input type="file" class="form-control" name="img_seis" id="img_seis" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_seis" id="img_seis" accept="image/png, image/jpeg" >
             </div>
             <div class="col-md-6">
                 <label for="img_siete" class="form-label">Imagen Nro 7</label>
-                <input type="file" class="form-control" name="img_siete" id="img_siete" required accept="image/png, image/jpeg" >
+                <input type="file" class="form-control" name="img_siete" id="img_siete" accept="image/png, image/jpeg" >
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

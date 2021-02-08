@@ -239,7 +239,7 @@
 
                                         <center>
 
-                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
                                                 <div class="card-header" style="color: white;">
                                                     <h5><b>DEFINICION</b></h5>
                                                 </div>
@@ -252,7 +252,7 @@
                                         <br></br>
 
                                         <center>
-                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
                                                 <div class="card-header" style="color: white;">
                                                     <h5><b>CARACTERISTICAS</b></h5>
                                                 </div>
@@ -264,7 +264,7 @@
                                         <br></br>
 
                                         <center>
-                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
                                                 <div class="card-header" style="color: white;">
                                                     <h5><b>IMPORTANCIA</b></h5>
                                                 </div>
@@ -284,8 +284,58 @@
 
 
                         <div class="col-lg-4">
+
                             <div class="sidebar" style="background-color: #fbf9ff;">
+                            
                             <br>
+                            <style>
+                                .title{
+                                    border-bottom: #007939 1px solid;
+                                    padding: 12px;    
+                                    border-radius: 10px 10px 0px 0px;
+                                    color: white;
+                                    margin-bottom: 0px;
+                                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
+                                    background: #007939; /* Old browsers */
+                                    background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
+                                    background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
+                                    background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
+                                }
+                                .titulo{
+                                    background: white;
+                                    border-radius: 0px 30px 30px 0px;
+                                    margin-left: -15px;
+                                    margin-top: 45px;
+                                    padding: 15px 5px 1px 40px;
+                                    font-weight: bold;
+                                }
+                            </style>
+
+                            <div class="col-md-10" style="background:gainsboro">
+                                <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                <ul class="list-group">                    
+                                                <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
+                                                <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                <li class="list-group-item"><a href=""> UPS </a></li>
+                                                <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                </ul>
+                                <br>
+
+                                
+                                <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                <br><br/>
+                            </div>
+                            <!--
                                 <div class="sidebar-widget wow fadeInUp">
                                     <center>
                                         <style>
@@ -353,6 +403,7 @@
                                     <br>
                                 </center>
                                 </div>
+                                                    -->
 
 
                             </div>

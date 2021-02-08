@@ -140,182 +140,200 @@
             </div>
             <!-- Nav Bar End -->
 
-<style>
-    .blog-item {
-        background: #f1f1f1;
-        padding: 20px;
-    }
-    .image-blog img{
-        padding: 0 !important;
-        width: 100%;
-        margin: 0 !important;
-        opacity: 1;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        -moz-opacity: 1;
-        -khtml-opacity: 1;
-        -webkit-transition: all 150ms ease-in-out;
-        -moz-transition: all 150ms ease-in-out;
-        -o-transition: all 150ms ease-in-out;
-        -ms-transition: all 150ms ease-in-out;
-        transition: all 150ms ease-in-out;
-    }
-    .image-blog img:hover{
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-        -moz-opacity: 0.8;
-        -khtml-opacity: 0.8;
-        opacity: 0.8;
-    }
-    .blog-item .meta-info-blog{
-        margin-top: 25px;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 300;
-    }
-    .meta-info-blog > span {
-        display: inline-block;
-        padding-right: 14px;
-        color: #777;
-    }
-    .meta-info-blog > span > a {
-        color: #007939;
-    }
-    .meta-info-blog > span > a:hover {
-        color: #4babb1;
-    }
-    .blog-title > h2{
-        margin: 15px 0;
-        padding: 0px;
-    }
-    .blog-title a {
-        font-size: 18px;
-        line-height: 25px;
-        font-weight: 500;
-        color: #555;
-        text-transform: capitalize;
-    }
-    .blog-button .hover-btn-new{
-        line-height: 35px;
-    }
-    .blog-button a.hover-btn-new::before, .blog-button a.hover-btn-new::after {
-        background: #007939; 
-        content: '';
-        position: absolute;
-        z-index: 1;
-    }
-    .blog-button a.hover-btn-new::after {
-        background: #333333 !important;
-        height: 100%;
-        left: 0;
-        top: 0;
-        width: 100%;
-    }
-    .blog-button a.hover-btn-new span {
-        position: relative;
-        z-index: 2;
-        color: #fff;
-    }
-    .blog-button a.hover-btn-new:hover span {
-        color: #333333;
-    }
-    .blog-button a.hover-btn-new::before {
-        height: 100%;
-        left: 0;
-        top: 0;
-        width: 100%;
-    }
-    .blog-button a.hover-btn-new:hover::after {
-        height: 0;
-        left: 50%;
-        top: 50%;
-        width: 0;
-    }
-    .blog-button a.hover-btn-new::after {
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-    }
+        <style>
+            .blog-item {
+                background: #f1f1f1;
+                padding: 20px;
+            }
+            .image-blog img{
+                padding: 0 !important;
+                width: 100%;
+                margin: 0 !important;
+                opacity: 1;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                -moz-opacity: 1;
+                -khtml-opacity: 1;
+                -webkit-transition: all 150ms ease-in-out;
+                -moz-transition: all 150ms ease-in-out;
+                -o-transition: all 150ms ease-in-out;
+                -ms-transition: all 150ms ease-in-out;
+                transition: all 150ms ease-in-out;
+            }
+            .image-blog img:hover{
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+                -moz-opacity: 0.8;
+                -khtml-opacity: 0.8;
+                opacity: 0.8;
+            }
+            .blog-item .meta-info-blog{
+                margin-top: 25px;
+                padding: 0;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 300;
+            }
+            .meta-info-blog > span {
+                display: inline-block;
+                padding-right: 14px;
+                color: #777;
+            }
+            .meta-info-blog > span > a {
+                color: #007939;
+            }
+            .meta-info-blog > span > a:hover {
+                color: #4babb1;
+            }
+            .blog-title > h2{
+                margin: 15px 0;
+                padding: 0px;
+            }
+            .blog-title a {
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 500;
+                color: #555;
+                text-transform: capitalize;
+            }
+            .blog-button .hover-btn-new{
+                line-height: 35px;
+            }
+            .blog-button a.hover-btn-new::before, .blog-button a.hover-btn-new::after {
+                background: #007939; 
+                content: '';
+                position: absolute;
+                z-index: 1;
+            }
+            .blog-button a.hover-btn-new::after {
+                background: #333333 !important;
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .blog-button a.hover-btn-new span {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+            }
+            .blog-button a.hover-btn-new:hover span {
+                color: #333333;
+            }
+            .blog-button a.hover-btn-new::before {
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .blog-button a.hover-btn-new:hover::after {
+                height: 0;
+                left: 50%;
+                top: 50%;
+                width: 0;
+            }
+            .blog-button a.hover-btn-new::after {
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+            }
 
 
 
-    .widget-categories{
-        margin-bottom: 30px;
-    }
-    .widget-categories .widget-title{
-        font-size: 18px;
-        font-weight: 400;
-        padding: 0px;
-        margin-bottom: 15px;
-        border-right: 3px solid #007939;
-    }
-    .widget-categories ul{
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    .widget-categories ul li{
-        border-bottom: 1px solid #f2f2f2;
-        font-size: 12px;
-        line-height: 20px;
-        padding: 8px 2px 8px 12px;
-    }
-    .widget-categories ul li a{
-        color: #777;
-        font-size: 13px;
-    }
-    .widget-categories ul li a:hover{
-        color: #007939;
-    }
-    .widget-tags .widget-title{
-        font-size: 18px;
-        font-weight: 400;
-        padding: 0px;
-        margin-bottom: 15px;
-        border-right: 3px solid #007939;
-    }
-    .widget-tags .tags{
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    .tags li {
-        float: left;
-        padding: 0px;
-        margin: 0px 5px 5px 0px;
-        list-style-type: none;
-        line-height: 25px;
-    }
-    .tags li a {
-        border: 1px solid #007939;
-        color: #212121;
-        text-transform: capitalize;
-        float: left;
-        font-size: 12px;
-        padding: 3px 8px;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        -ms-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-    .tags li a:hover {
-        border-color: #007939;
-        background: #007939;
-        color: #ffffff;
-    }
+            .widget-categories{
+                margin-bottom: 30px;
+            }
+            .widget-categories .widget-title{
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px;
+                margin-bottom: 15px;
+                border-right: 3px solid #007939;
+            }
+            .widget-categories ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            .widget-categories ul li{
+                border-bottom: 1px solid #f2f2f2;
+                font-size: 12px;
+                line-height: 20px;
+                padding: 8px 2px 8px 12px;
+            }
+            .widget-categories ul li a{
+                color: #777;
+                font-size: 13px;
+            }
+            .widget-categories ul li a:hover{
+                color: #007939;
+            }
+            .widget-tags .widget-title{
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px;
+                margin-bottom: 15px;
+                border-right: 3px solid #007939;
+            }
+            .widget-tags .tags{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            .tags li {
+                float: left;
+                padding: 0px;
+                margin: 0px 5px 5px 0px;
+                list-style-type: none;
+                line-height: 25px;
+            }
+            .tags li a {
+                border: 1px solid #007939;
+                color: #212121;
+                text-transform: capitalize;
+                float: left;
+                font-size: 12px;
+                padding: 3px 8px;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+            .tags li a:hover {
+                border-color: #007939;
+                background: #007939;
+                color: #ffffff;
+            }
 
-</style>
-
-<br></br>
+        </style>
     <div id="overviews" class="section wb">
+            <style>
+                .contain {
+                position: relative;
+                }
+
+                .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+                }
+
+            </style>
+
+            <div class="contain">
+                <img style="opacity: 0.4; height: auto; width: 100%;" src="{{asset('storage').'/'.$blog->img_portada}}" alt="Cinque Terre" width="1000" height="300">
+                <div class="center">
+                    <h1 style="text-align: center;">{{$blog->titulo_blog}}</h1> 
+                    <br> <p style="text-align: center;"><a href="">INICIO</a> | <a>{{$blog->fecha}}</a></p></div>
+            </div>
+            <br>
         <div class="container">
             <div class="row"> 
+
                 <div class="col-lg-9 blog-post-single">
                     <div class="blog-item">
-						<div class="image-blog">
-							<img src="{{asset('storage').'/'.$blog->img_portada}}" alt="" class="img-fluid">
-						</div>
 						<div class="post-content">
 							<div class="meta-info-blog">
 								<span><i class="fa fa-calendar"></i> {{$blog->fecha}}</span>
@@ -341,78 +359,166 @@
                                 <!-- No hay parrafo 1 -->
                                 @endif
 								
-							</div>							
+							</div>	
+                            <div class="image-blog">
+							<img src="{{asset('storage').'/'.$blog->img_contenido}}" alt="" class="img-fluid">
+						</div>						
 						</div>
 					</div>
 
                     <br></br>
 
-                    <!-- Por aclarar -->
-                    <div class="blog-comments">
-						<h4>Comentarios</h4>
-
-					</div>
                 </div><!-- end col -->
+
+                <style>
+                    /* Establecemos el ancho y la altura como deseemos, elimina la perspectiva si no deseas el efecto 3D */
+                    .flip-card {
+                    background-color: transparent;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px solid #f1f1f1;
+                    perspective: 1000px; /* Borra esta línea si no quieres el efecto 3D */
+                    }
+                    /* Este contenedor es necesario para colocar el anverso y el reverso */
+                    .flip-card-inner {
+                    position: relative;
+                    width: 50%;
+                    height: 50%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                    }
+                    /* Hace un giro horizontal cuando muevas el ratón sobre el contenedor de la caja */
+                    .flip-card:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                    }
+                    /* Coloca el anverso y el reverso */
+                    .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                    }
+                    /* Estilos de la parte trasera (alternativa por si falta la imagen) */
+                    .flip-card-front {
+                    background-color: #bbb;
+                    color: black;
+                    }
+                    /* Estilos de la parte trasera */
+                    .flip-card-back {
+                    background-color: #000;
+                    color: white;
+                    transform: rotateY(180deg);
+                    }
+                </style>
                 
 				<div class="col-lg-3 col-12 right-single">
                         <br></br>
                         <div class="sidebar-widget wow fadeInUp">
-                                    <h2 class="widget-title">Recent Post</h2>
-                                    <div class="recent-post">
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-1.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>Fecha</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="widget-tags">
+                                    <h4 class="widget-title">Blogs Recientes</h4>
+                                </div>
+                                    <div class="row blog-page">
+                                    <div style="display: none">
+                    {{$contador = 0}}
+                    </div>
+                    @foreach($blogs as $blogpost)
+                    <div style="display: none">
+                        @if ($contador == 4)
+                             @break
+                        @else
+                            {{$contador = $contador + 1}}
+                        @endif
+                        </div>
+                        @if ($blogpost->id != $blog->id)
 
-                                    </div>
+                           
+                        
+                        <style>
+
+                            .flip-card {
+                            background-color: transparent;
+                            width: 300px;
+                            height: 150px;
+                            perspective: 1000px;
+                            border-radius: 10%;
+                            }
+
+                            .flip-card-inner {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.6s;
+                            transform-style: preserve-3d;
+                            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                            border-radius: 10%;
+                            }
+
+                            .flip-card:hover .flip-card-inner {
+                            transform: rotateY(180deg);
+                            }
+
+                            .flip-card-front, .flip-card-back {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            -webkit-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            border-radius: 10%;
+                            }
+
+                            .flip-card-front {
+                            background-color: #bbb;
+                            color: black;
+                            }
+
+                            .flip-card-back {
+                            background-color: #007939;
+                            color: white;
+                            transform: rotateY(180deg);
+
+                            }
+                        </style>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                <img src="{{asset('storage').'/'.$blogpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:280px;height:150px;">
+                                </div>
+                                <div class="flip-card-back">
+                                <br>
+                                <h3>{{$blogpost->titulo_blog}}</h3> 
+                                <p>{{$blogpost->fecha}}</p>
+                                <a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        @else
+                            @continue
+                        @endif
+                    @endforeach
+
+                    </div>
+                    <br>
+                    <div class="sm-col-3"></div>
+                    <div class="sm-col-2">
+                    {{ $blogs->links() }}
+                    </div>
                                 </div>
 
-                <!-- 
-					<div class="widget-categories">
-						<h3 style="color: black;" class="widget-title">Contacto</h3>
-						<ul>
-							<li>✆ Telefonos: <br> 964-770-354 - 054-399450</li>
-							<li>✉ Correo: <br> servicios_cliente@electromaticindustrial.com</li>
-							<li>▶ Direccion: <br> Calle Consuelo 307-A-Cercado</li>
-						</ul>
-					</div>
-                    <div class="widget-tags">
-						<h3 style="color: black;" class="widget-title">Nuestros servicios</h3>
-						<ul class="tags">
-                            <li><a href="#"><b>UPS</b></a></li>
-                            <li><a href="#"><b>Grupos Electrogenos</b></a></li>
-                            <li><a href="#"><b>Auditoria Energetica</b></a></li>
-							<li><a href="#"><b>Pozos de Puesta a Tierra</b></a></li>
-						</ul>
-					</div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
                     <div class="widget-categories">
-						<h3 style="color: black;" class="widget-title">Siguenos en Facebook</h3>
+						<h3 style="color: black;" class="widget-title">Siguenos en Twitter</h3>
 						<ul>
 							<li>
-                            <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-
-                                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                            
+                            <a class="twitter-timeline" data-lang="es" data-width="300" data-height="400" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </li>
 						</ul>
 					</div>
-                    -->
+                    
 				</div>
 
             </div><!-- end row -->

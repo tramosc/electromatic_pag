@@ -1353,8 +1353,8 @@ a:focus {
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #007939;
-    background: #717171;
+    color: #ffffff;
+    background: #007939;
 }
 
 .blog .pagination .disabled .page-link {

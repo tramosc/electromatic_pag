@@ -34,6 +34,11 @@
                 <label for="parrafo2" class="form-label">Parrafo 2</label>
                 <input type="text" class="form-control" name="parrafo2" id="parrafo2" value="{{ $blog->parrafo2 }}">
             </div>
+            <div class="col-md-6">
+                <label for="img_contenido" class="form-label">Imagen de Contenido</label>
+                <img src="{{asset('storage').'/'.$blog->img_contenido}}" width="200">
+                <input type="file" class="form-control" name="img_contenido" accept="image/png, image/jpeg" id="img_contenido" value="" >
+            </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
                 <a class="btn btn-danger" href="{{ url('blogs') }}">Regresar a Blogs</a>
