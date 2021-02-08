@@ -12,7 +12,7 @@
             <thead>
                 <tr>
                 <th scope="col">#ID</th>
-                <th scope="col">Titulo Repuesto</th>
+                <th scope="col">Titulo Capacitacion</th>
                 <th scope="col">Descripcion</th>
                 <th scope="col">Precio</th>
                 <th scope="col">Acciones</th>

@@ -194,10 +194,11 @@
                                 <div class="nav-item dropdown">
                                     <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
+                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        
                                     </div>
                                 </div>
                                 <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
@@ -208,10 +209,10 @@
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
@@ -223,19 +224,49 @@
             </div>
             <!-- Nav Bar End -->
 
-            <br></br>
-
-            <section id="services" class="services section-bg">
-                <div class="container">
-                  <div class="container">
-                    <div class="portfolio-description">
-                    <div class="section-header text-left">
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://micarrerauniversitaria.com/wp-content/uploads/2018/02/ingenieria-electrica-1.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Somos profesionales</p>
+                            <h1 class="animated fadeInLeft">Para el apoyo de sus proyectos</h1>
+                        </div>
                     </div>
-                      
-                      <center><iframe width="600" height="450" src="https://www.youtube.com/embed/N6FTAgmxnFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    <div class="carousel-item">
+                        <img src="https://aptus.com.ar/wp-content/uploads/2020/04/img_738_686.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Profesionales Capacitados</p>
+                            <h1 class="animated fadeInLeft">Somos una empresa enfocada en grupos electrogenos</h1> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i0.wp.com/www.ms-ingenieria.com.mx/wp-content/uploads/2020/01/proveedor-de-ingenieria-electrica-industrial-en-mexico.jpg?resize=870%2C500&ssl=1" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Somos de confianza</p>
+                            <h1 class="animated fadeInLeft">Para el mantenimiento de sus proyectos</h1>
+                        </div>
                     </div>
                 </div>
-          </section><!-- End Services Section -->
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
+
+
 
           <br></br>
 

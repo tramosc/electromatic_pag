@@ -19,12 +19,15 @@ class CreateCapacitacionesTable extends Migration
             $table->string('descripcion_capacitacion');
             $table->string('link');
             $table->string('precio');
-            $table->string('pdf_archivo');
             $table->string('img_portada');
-            $table->string('img_uno');
-            $table->string('img_dos');
-            $table->string('img_tres');
-            $table->string('img_cuatro');
+            $table->string('titulo_archivo1');
+            $table->string('pdf_archivo');
+            $table->string('titulo_archivo2');
+            $table->string('pdf_archivodos');
+            $table->string('titulo_archivo3');
+            $table->string('pdf_archivotres');
+            $table->string('titulo_archivo4');
+            $table->string('pdf_archivocuatro');
             $table->timestamps();
              /**4 fotos */
         });

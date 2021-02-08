@@ -48,29 +48,26 @@ class CapacitacionesController extends Controller
         //
         $datosCapacitacion = request()->except('_token');
 
-        if($request->hasFile('pdf_archivo')){
-            $datosCapacitacion['pdf_archivo']=$request->file('pdf_archivo')->store('uploads', 'public');
-        }
-
         if($request->hasFile('img_portada')){
             $datosCapacitacion['img_portada']=$request->file('img_portada')->store('uploads', 'public');
         }
 
-        if($request->hasFile('img_uno')){
-            $datosCapacitacion['img_uno']=$request->file('img_uno')->store('uploads', 'public');
+        if($request->hasFile('pdf_archivo')){
+            $datosCapacitacion['pdf_archivo']=$request->file('pdf_archivo')->store('uploads', 'public');
         }
 
-        if($request->hasFile('img_dos')){
-            $datosCapacitacion['img_dos']=$request->file('img_dos')->store('uploads', 'public');
+        if($request->hasFile('pdf_archivodos')){
+            $datosCapacitacion['pdf_archivodos']=$request->file('pdf_archivodos')->store('uploads', 'public');
         }
 
-        if($request->hasFile('img_tres')){
-            $datosCapacitacion['img_tres']=$request->file('img_tres')->store('uploads', 'public');
+        if($request->hasFile('pdf_archivotres')){
+            $datosCapacitacion['pdf_archivotres']=$request->file('pdf_archivotres')->store('uploads', 'public');
         }
 
-        if($request->hasFile('img_cuatro')){
-            $datosCapacitacion['img_cuatro']=$request->file('img_cuatro')->store('uploads', 'public');
+        if($request->hasFile('pdf_archivocuatro')){
+            $datosCapacitacion['pdf_archivocuatro']=$request->file('pdf_archivocuatro')->store('uploads', 'public');
         }
+
 
         Capacitaciones::insert($datosCapacitacion);
         return redirect('capacitaciones');
@@ -120,35 +117,33 @@ class CapacitacionesController extends Controller
             $datosCapacitacion['img_portada']=$request->file('img_portada')->store('uploads', 'public');
        }
 
-        if($request->hasFile('img_uno')){
-             $capacitacion= Capacitaciones::findOrFail($id);
-             Storage::delete('public/'.$capacitacion->img_uno);
-             $datosCapacitacion['img_uno']=$request->file('img_uno')->store('uploads', 'public');
-        }
-
-        if($request->hasFile('img_dos')){
-            $capacitacion= Capacitaciones::findOrFail($id);
-            Storage::delete('public/'.$capacitacion->img_dos);
-            $datosCapacitacion['img_dos']=$request->file('img_dos')->store('uploads', 'public');
-       }
-
-       if($request->hasFile('img_tres')){
-        $capacitacion= Capacitaciones::findOrFail($id);
-        Storage::delete('public/'.$capacitacion->img_tres);
-        $datosCapacitacion['img_tres']=$request->file('img_tres')->store('uploads', 'public');
-        }
-
-        if($request->hasFile('img_cuatro')){
-            $capacitacion= Capacitaciones::findOrFail($id);
-            Storage::delete('public/'.$capacitacion->img_cuatro);
-            $datosCapacitacion['img_cuatro']=$request->file('img_cuatro')->store('uploads', 'public');
-        }
 
         if($request->hasFile('pdf_archivo')){
 
             $capacitacion= Capacitaciones::findOrFail($id);
             Storage::delete('public/'.$capacitacion->pdf_archivo);
             $datosCapacitacion['pdf_archivo']=$request->file('pdf_archivo')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('pdf_archivodos')){
+
+            $capacitacion= Capacitaciones::findOrFail($id);
+            Storage::delete('public/'.$capacitacion->pdf_archivodos);
+            $datosCapacitacion['pdf_archivodos']=$request->file('pdf_archivodos')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('pdf_archivotres')){
+
+            $capacitacion= Capacitaciones::findOrFail($id);
+            Storage::delete('public/'.$capacitacion->pdf_archivotres);
+            $datosCapacitacion['pdf_archivotres']=$request->file('pdf_archivotres')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('pdf_archivocuatro')){
+
+            $capacitacion= Capacitaciones::findOrFail($id);
+            Storage::delete('public/'.$capacitacion->pdf_archivo);
+            $datosCapacitacion['pdf_archivocuatro']=$request->file('pdf_archivocuatro')->store('uploads', 'public');
         }
 
          Capacitaciones::where('id','=',$id)->update($datosCapacitacion);
@@ -173,19 +168,16 @@ class CapacitacionesController extends Controller
         if(Storage::delete('public/'.$capacitacion->img_portada)){
             Capacitaciones::destroy($id);
         }
-        if(Storage::delete('public/'.$capacitacion->img_uno)){
-            Capacitaciones::destroy($id);
-        }
-        if(Storage::delete('public/'.$capacitacion->img_dos)){
-            Capacitaciones::destroy($id);
-        }
-        if(Storage::delete('public/'.$capacitacion->img_tres)){
-            Capacitaciones::destroy($id);
-        }
-        if(Storage::delete('public/'.$capacitacion->img_cuatro)){
-            Capacitaciones::destroy($id);
-        }
         if(Storage::delete('public/'.$capacitacion->pdf_archivo)){
+            Capacitaciones::destroy($id);
+        }
+        if(Storage::delete('public/'.$capacitacion->pdf_archivodos)){
+            Capacitaciones::destroy($id);
+        }
+        if(Storage::delete('public/'.$capacitacion->pdf_archivotres)){
+            Capacitaciones::destroy($id);
+        }
+        if(Storage::delete('public/'.$capacitacion->pdf_archivocuatro)){
             Capacitaciones::destroy($id);
         }
         return redirect('capacitaciones');

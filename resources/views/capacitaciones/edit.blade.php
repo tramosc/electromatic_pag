@@ -30,32 +30,82 @@
                 <label for="img_portada" class="form-label">Imagen Portada</label>
                 <img src="{{asset('storage').'/'.$capacitacion->img_portada}}" width="200">
                 <input type="file" class="form-control" name="img_portada" id="img_portada" accept="image/png, image/jpeg" value="">
-                
+            </div>
+
+            <hr></hr>
+            <h2>Archivos PDF</h2>
+            
+            <div class="col-md-6">
+                <label for="titulo_archivo1" class="form-label">Titulo del archivo 1</label>
+                <input type="text" class="form-control" name="titulo_archivo1" id="titulo_archivo1" value="{{ $capacitacion->titulo_archivo1 }}">
             </div>
             <div class="col-md-6">
-                <label for="img_uno" class="form-label">Imagen Nro 1</label>
-                <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="200">
-                <input type="file" class="form-control" name="img_uno" id="img_uno" accept="image/png, image/jpeg" value="">
-                
+                <label for="pdf_archivo" class="form-label">Archivo Numero 1</label>
+                @if (($capacitacion->pdf_archivo))
+                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download="">Descargar</a>
+                @else                
+                    <p>No hay archivo subido </p>
+                @endif
+                <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" accept="application/pdf" value="">
+            </div>
+
+
+
+
+            <div class="col-md-6">
+                <label for="titulo_archivo2" class="form-label">Titulo del archivo 2</label>
+                <input type="text" class="form-control" name="titulo_archivo2" id="titulo_archivo2" value="{{ $capacitacion->titulo_archivo2 }}">
             </div>
             <div class="col-md-6">
-                <label for="img_dos" class="form-label">Imagen Nro 2</label>
-                <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="200">
-                <input type="file" class="form-control" name="img_dos" id="img_dos" accept="image/png, image/jpeg" value="">
-               
+                <label for="pdf_archivodos" class="form-label">Archivo Numero 2</label>
+                @if (($capacitacion->pdf_archivodos))
+                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivodos}}" download="">Descargar</a>
+                @else                
+                    <p>No hay archivo subido </p>
+                @endif
+                <input type="file" class="form-control" name="pdf_archivodos" id="pdf_archivodos" accept="application/pdf" value="">
+            </div>
+
+
+
+
+
+            <div class="col-md-6">
+                <label for="titulo_archivo3" class="form-label">Titulo del archivo 3</label>
+                <input type="text" class="form-control" name="titulo_archivo3" id="titulo_archivo3" value="{{ $capacitacion->titulo_archivo3 }}">
             </div>
             <div class="col-md-6">
-                <label for="img_tres" class="form-label">Imagen Nro 3</label>
-                <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="200">
-                <input type="file" class="form-control" name="img_tres" id="img_tres" accept="image/png, image/jpeg" value="">
-                
+                <label for="pdf_archivotres" class="form-label">Archivo Numero 3</label>
+                @if (($capacitacion->pdf_archivotres))
+                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivotres}}" download="">Descargar</a>
+                @else                
+                    <p>No hay archivo subido </p>
+                @endif
+                <input type="file" class="form-control" name="pdf_archivotres" id="pdf_archivotres" accept="application/pdf" value="">
+            </div>
+
+
+
+
+
+            <div class="col-md-6">
+                <label for="titulo_archivo4" class="form-label">Titulo del archivo 4</label>
+                <input type="text" class="form-control" name="titulo_archivo4" id="titulo_archivo4" value="{{ $capacitacion->titulo_archivo4 }}">
             </div>
             <div class="col-md-6">
-                <label for="img_cuatro" class="form-label">Imagen Nro 4</label>
-                <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="200">
-                <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" accept="image/png, image/jpeg" value="">
-                
+                <label for="pdf_archivocuatro" class="form-label">Archivo Numero 4</label>
+                @if (($capacitacion->pdf_archivocuatro))
+                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivocuatro}}" download="">Descargar</a>
+                @else                
+                    <p>No hay archivo subido </p>
+                @endif
+                <input type="file" class="form-control" name="pdf_archivocuatro" id="pdf_archivocuatro" accept="application/pdf" value="">
             </div>
+
+
+
+            
+
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
                 <a href="{{ url('capacitaciones') }}">Regresar a Capacitaciones</a>

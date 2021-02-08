@@ -110,10 +110,11 @@
                                 <div class="nav-item dropdown">
                                     <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">Grupos ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">Auditoria energetica</a>
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">Pozos de puesta a tierra</a> 
+                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        
                                     </div>
                                 </div>
                                 <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
@@ -124,10 +125,10 @@
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
@@ -142,134 +143,307 @@
             <!-- Service-detalle Start -->
             <div class="service">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Datos de la capacitacion</h2> <br>
-                    </div>
-
-                    <div class="card text-center">
-                            <div class="card-body">
-                                <h2 class="card-title" style="color: black;"><b>{{ $capacitacion->titulo_capacitacion }}</b></h2>
-
-                                <a href="{{ $capacitacion->link }}" target="_blank"><img src="{{asset('storage').'/'.$capacitacion->img_portada}}" class="img-fluid" style="align-items: center;" width="850" height="1000"></a>
-
-                                 <br></br>
+                    <div class="row">
+                        <div class="col-lg-9">
 
                                 <div class="card text-center">
-                                        <div class="card-body">
-                                            <h5 style="color: black; text-align: left;">Descripcion:</h5>
-                                            <p class="card-text">{{$capacitacion->descripcion_capacitacion}}</p>
-                                            <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h5>
-                        
+                                    <div class="card-body">
+                                        <h2 class="card-title" style="color: black;"><b>{{ $capacitacion->titulo_capacitacion }}</b></h2>
+
+                                        <a href="{{ $capacitacion->link }}" target="_blank"><img src="{{asset('storage').'/'.$capacitacion->img_portada}}" class="img-fluid" style="align-items: center;" width="850" height="1000"></a>
+
+                                        <br></br>
+
+                                        <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h5 style="color: black; text-align: left;">Descripcion:</h5><br>
+                                                    <p class="card-text" style="text-align: justify;">{{$capacitacion->descripcion_capacitacion}}</p>
+                                                    <br></br>
+                                                    @if(($capacitacion->precio))
+                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h5>
+                                                        @else
+                                                        <p style="text-align: left;"><span>No hay costo confirmado</span></p>
+                                                    @endif
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
 
-                    <div class="card text-center">
-                            <div class="card-body">
-                                <div class="card text-center">
-                                        <div class="card-body">
-                                            <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
-
+                                @if(($capacitacion->pdf_archivo)||($capacitacion->pdf_archivodos)||($capacitacion->pdf_archivotres)||($capacitacion->pdf_archivocuatro))
+                                    <div class="card text-center">
                                             <div class="card-body">
-                                                <div class="about-img">
-                                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
-                                                </div>
-                                                <a style="text-align: center;">Descargar recurso PDF</a>
-                                            </div>
+                                                <div class="card text-center">
+                                                        <div class="card-body">
+                                                            <h5 style="color: black; text-align: left;">RECURSOS EXTRAS:</h5>
 
+                                                            <div class="row">
+                                                                @if(($capacitacion->pdf_archivo))
+                                                                        <div class="col-sm-3">
+                                                                            <div class="card-body">
+                                                                                <div class="about-img">
+                                                                                    <a href="{{asset('storage').'/'.$capacitacion->pdf_archivo}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
+                                                                                </div>
+                                                                                <a style="text-align: center;">{{$capacitacion->titulo_archivo1}}</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    @else
+
+                                                                @endif
+
+                                                                @if(($capacitacion->pdf_archivodos))
+                                                                    <div class="col-sm-3">
+                                                                        <div class="card-body">
+                                                                            <div class="about-img">
+                                                                                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivodos}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
+                                                                            </div>
+                                                                            <a style="text-align: center;">{{$capacitacion->titulo_archivo2}}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    @else
+                                                                    
+                                                                @endif
+
+                                                                @if(($capacitacion->pdf_archivotres))
+                                                                    <div class="col-sm-3">
+                                                                        <div class="card-body">
+                                                                            <div class="about-img">
+                                                                                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivotres}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
+                                                                            </div>
+                                                                            <a style="text-align: center;">{{$capacitacion->titulo_archivo3}}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    @else
+                                                                    
+                                                                @endif
+
+                                                                @if(($capacitacion->pdf_archivocuatro))
+                                                                    <div class="col-sm-3">
+                                                                        <div class="card-body">
+                                                                            <div class="about-img">
+                                                                                <a href="{{asset('storage').'/'.$capacitacion->pdf_archivocuatro}}" download><img src="{{ asset('img/pdf_ico.png') }}" alt="Image" height="70" width="60"></a>
+                                                                            </div>
+                                                                            <a style="text-align: center;">{{$capacitacion->titulo_archivo4}}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    @else
+                                                                    
+                                                                @endif
+
+                                                            </div>
+                                                            
+                                                            
+                                                </div>
+                                            </div>
+                                    </div>
+                                    @else
+                                    <br>
+                                        <p>No hay recursos extras disponibles</p>
+                                    <br>
+                                @endif
+
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <!-- Zona sidebar-->
+                    
+                    <div class="col-lg-3">
+                           
+
+
+                <style>
+                    /* Establecemos el ancho y la altura como deseemos, elimina la perspectiva si no deseas el efecto 3D */
+                    .flip-card {
+                    background-color: transparent;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px solid #f1f1f1;
+                    perspective: 1000px; /* Borra esta línea si no quieres el efecto 3D */
+                    }
+                    /* Este contenedor es necesario para colocar el anverso y el reverso */
+                    .flip-card-inner {
+                    position: relative;
+                    width: 50%;
+                    height: 50%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                    }
+                    /* Hace un giro horizontal cuando muevas el ratón sobre el contenedor de la caja */
+                    .flip-card:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                    }
+                    /* Coloca el anverso y el reverso */
+                    .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                    }
+                    /* Estilos de la parte trasera (alternativa por si falta la imagen) */
+                    .flip-card-front {
+                    background-color: #bbb;
+                    color: black;
+                    }
+                    /* Estilos de la parte trasera */
+                    .flip-card-back {
+                    background-color: #000;
+                    color: white;
+                    transform: rotateY(180deg);
+                    }
+                </style>
+				<div class="col-lg-3 col-12 right-single">
+                        <br></br>
+                        <div class="sidebar-widget wow fadeInUp">
+                                <div class="widget-tags">
+                                    <h4 class="widget-title">Capacitaciones Recientes</h4>
+                                </div>
+                                    <div class="row blog-page">
+                                    <div style="display: none">
+                    {{$contador = 0}}
+                    </div>
+                    @foreach($capacitaciones as $capacitacionpost)
+                    <div style="display: none">
+                        @if ($contador == 4)
+                             @break
+                        @else
+                            {{$contador = $contador + 1}}
+                        @endif
+                        </div>
+                        @if ($capacitacionpost->id != $capacitacion->id)
+
+                           
+                        
+                        <style>
+
+                            .flip-card {
+                            background-color: transparent;
+                            width: 300px;
+                            height: 150px;
+                            perspective: 1000px;
+                            border-radius: 10%;
+                            }
+
+                            .flip-card-inner {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.6s;
+                            transform-style: preserve-3d;
+                            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                            border-radius: 10%;
+                            }
+
+                            .flip-card:hover .flip-card-inner {
+                            transform: rotateY(180deg);
+                            }
+
+                            .flip-card-front, .flip-card-back {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            -webkit-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            border-radius: 10%;
+                            }
+
+                            .flip-card-front {
+                            background-color: #bbb;
+                            color: black;
+                            }
+
+                            .flip-card-back {
+                            background-color: #007939;
+                            color: white;
+                            transform: rotateY(180deg);
+
+                            }
+                        </style>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                <img src="{{asset('storage').'/'.$capacitacionpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:280px;height:150px;">
+                                </div>
+                                <div class="flip-card-back">
+                                <br>
+                                <h3>{{$capacitacionpost->titulo_capacitacion}}</h3> 
+                                <a href="{{ url('/'.$capacitacionpost->id.'/Vista-Capacitacion-Elemento') }}" style="color: white">ver mas</a>
                                 </div>
                             </div>
-                    </div>
-
-                        <br>
-                    <!--
-                    <div class="container">
-                        <div class="card text-center">
-                            <h1 style="color: black;">CONTACTO</h1>
-                                <div class="card-body">
-                                    <p><i class="fa fa-map-marker-alt"></i> Calle Consuelo 307-A - Cercado Arequipa</p>
-                                    <p><i class="fa fa-phone-alt"></i> 054-399450 - 964-770-354</p>
-                                    <p><i class="fa fa-envelope"></i> servicios_cliente@electromaticindustrial.com</p>
-                                </div>
                         </div>
-                        <br>
-                    </div>
-                    -->
+                        
+                        @else
+                            @continue
+                        @endif
+                    @endforeach
 
                     </div>
+                    <br>
+                    <div class="sm-col-3"></div>
+                    <div class="sm-col-2">
+                    {{ $capacitaciones->links() }}
+                    </div>
+                                </div>
 
+                    <div class="widget-categories">
+						<h3 style="color: black;" class="widget-title">Siguenos en Twitter</h3>
+						<ul>
+							<li>
+                            
+                            <a class="twitter-timeline" data-lang="es" data-width="300" data-height="400" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </li>
+						</ul>
+					</div>
+                    
+				</div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
 
                 </div>
             </div>
-
-
-
             <!-- Service-detalle End -->
 
-            <!-- Service Start -->
-            <div class="service">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                    </div>
-                    <div class="row">
-                        <!-- Imagen 1 -->
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_uno}}" width="50px" height="250px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_uno}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 2 -->
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_dos}}" width="50px" height="250px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_dos}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 3 -->
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_tres}}" width="50px" height="250px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_tres}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Imagen 4 -->
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_cuatro}}" width="50px" height="250px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center; font-size: 15px;">Capacitaciones</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$capacitacion->img_cuatro}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- Service End -->
+            <br></br>
 
 
             <!-- Team Start -->

@@ -17,37 +17,56 @@
                 <input type="text" class="form-control" name="descripcion_capacitacion" id="descripcion_capacitacion" required>
             </div>
             <div class="col-12">
-                <label for="link" class="form-label">Link</label>
-                <input type="text" class="form-control" name="link" id="link" required>
-            </div>
-            <div class="col-2">
-                <label for="precio" class="form-label">Precio</label>
-                <input type="text" class="form-control" name="precio" id="precio" required>
-            </div>
-            <div class="col-md-6">
-                <label for="pdf_archivo" class="form-label">Archivo PDF</label>
-                <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" required accept="application/pdf" >
+                <label for="link" class="form-label">Link de la Imagen</label>
+                <input type="text" class="form-control" name="link" id="link">
             </div>
             <div class="col-md-6">
                 <label for="img_portada" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_portada" id="img_portada" required accept="image/png, image/jpeg" >
             </div>
+            <div class="col-2">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="text" class="form-control" name="precio" id="precio">
+            </div>
+
+            <hr></hr>
+            <h2>Archivos PDF</h2>
             <div class="col-md-6">
-                <label for="img_uno" class="form-label">Imagen Nro 1</label>
-                <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" >
+                <label for="titulo_archivo1" class="form-label">Titulo del archivo 1</label>
+                <input type="text" class="form-control" name="titulo_archivo1" id="titulo_archivo1">
             </div>
             <div class="col-md-6">
-                <label for="img_dos" class="form-label">Imagen Nro 2</label>
-                <input type="file" class="form-control" name="img_dos" id="img_dos" required accept="image/png, image/jpeg" >
+                <label for="pdf_archivo" class="form-label">Archivo PDF 1</label>
+                <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" accept="application/pdf" >
+            </div>
+
+            <div class="col-md-6">
+                <label for="titulo_archivo2" class="form-label">Titulo del archivo 2</label>
+                <input type="text" class="form-control" name="titulo_archivo2" id="titulo_archivo2">
             </div>
             <div class="col-md-6">
-                <label for="img_tres" class="form-label">Imagen Nro 3</label>
-                <input type="file" class="form-control" name="img_tres" id="img_tres" required accept="image/png, image/jpeg" >
+                <label for="pdf_archivodos" class="form-label">Archivo PDF 2</label>
+                <input type="file" class="form-control" name="pdf_archivodos" id="pdf_archivodos" accept="application/pdf" >
+            </div>
+
+            <div class="col-md-6">
+                <label for="titulo_archivo3" class="form-label">Titulo del archivo 3</label>
+                <input type="text" class="form-control" name="titulo_archivo3" id="titulo_archivo3">
             </div>
             <div class="col-md-6">
-                <label for="img_cuatro" class="form-label">Imagen Nro 4</label>
-                <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" required accept="image/png, image/jpeg" >
+                <label for="pdf_archivotres" class="form-label">Archivo PDF 3</label>
+                <input type="file" class="form-control" name="pdf_archivotres" id="pdf_archivotres" accept="application/pdf" >
             </div>
+
+            <div class="col-md-6">
+                <label for="titulo_archivo4" class="form-label">Titulo del archivo 4</label>
+                <input type="text" class="form-control" name="titulo_archivo4" id="titulo_archivo4">
+            </div>
+            <div class="col-md-6">
+                <label for="pdf_archivocuatro" class="form-label">Archivo PDF 4</label>
+                <input type="file" class="form-control" name="pdf_archivocuatro" id="pdf_archivocuatro" accept="application/pdf" >
+            </div>
+     
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>
                 <a href="{{ url('capacitaciones') }}">Regresar a capacitaciones</a>
