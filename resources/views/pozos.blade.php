@@ -35,7 +35,7 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
-                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
                                     <div class="top-bar-item">
@@ -64,9 +64,13 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -118,15 +122,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -136,24 +140,7 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            <!-- Page Header Start -->
-<!-- 
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">MANUALES</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Manuales</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-            <!-- Page Header End -->
+        
 
             <!-- Contact Start -->
              <div class="team">

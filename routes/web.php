@@ -25,18 +25,22 @@ Route::get('/Vista-Empresa', function () {
 });
 */
 //Contacto
-Route::get('/Vista-Contacto', function () {
-    return view('contacto');
-});
+//blogs
+Route::get('{blog}/Vista-Blog-Elemento', 'FrontController@viewBlog');
+Route::get('/Vista-Blog', 'FrontController@indexBlogs');
+
+//blogs
+Route::resource('blogs', 'BlogsController');
 
 //MANEJO DE DATOS
 ///Manuales
 Route::get('/Vista-Manuales', 'FrontController@indexManuales');
 Route::get('{manual}/Vista-Manual-Elemento', 'FrontController@viewManual');
 
-///Repuestos
-Route::get('/Vista-Repuestos', 'FrontController@indexRepuestos');
-Route::get('{repuesto}/Vista-Repuesto-Elemento', 'FrontController@viewRepuesto');
+//Suministros
+Route::get('/Vista-Suministros', 'FrontController@indexSuministros');
+Route::get('{suministro}/Vista-Suministro-Elemento', 'FrontController@viewSuministro');
+
 
 ///Servicios
 Route::get('/Vista-Servicios', 'FrontController@index');
@@ -72,6 +76,8 @@ Route::resource('pozos', 'PozosController');
 Route::resource('ups', 'UpsController');
 ///Capacitaciones
 Route::resource('capacitaciones', 'CapacitacionesController');
+///Suministros
+Route::resource('suministros', 'SuministrosController');
 
 
 
@@ -108,6 +114,8 @@ Route::get('/manuales', 'ManualesController@index')->name('manuales');
 Route::get('/manuales/create', 'ManualesController@create');
 Route::get('/manuales/edit', 'ManualesController@edit');
 */
+
+
 
 //Imagenes inicio
 Route::resource('imagenesInicio', 'ImagesInicioController');

@@ -126,15 +126,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -236,7 +236,6 @@
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
-
                         <!-- Inicio de la zona de animacion css con imagenes-->
                         <div class="col-lg-5 col-md-6">
                                         <div class="hs-wrapper">
@@ -564,7 +563,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                             <div class="text-left p-3" style="background-color: #717171">
-                                ©<a style="color: white;" href="">Electromatic Industrial SRL </a>| Todos los derechos reservados 2013 - 2021
+                                ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
                             </div>
                             </div>
                             <div class="col-sm-3"></div>

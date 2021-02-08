@@ -10,11 +10,11 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_manual" class="form-label">Titulo del manual</label>
-                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" maxlength="191" required>
+                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" maxlength="191">
             </div>
             <div class="col-2">
                 <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" name="fecha" id="fecha" required>
+                <input type="date" class="form-control" name="fecha" id="fecha">
             </div>
             <div class="col-12">
                 <label for="descripcion" class="form-label">Descripcion</label>
@@ -24,14 +24,33 @@
                 <label for="detalles" class="form-label">Detalles</label>
                 <input type="text" class="form-control" name="detalles" id="detalles">
             </div>
-            <div class="col-12">
-                <label for="referencias" class="form-label">Referencias</label>
-                <input type="text" class="form-control" name="referencias" id="referencias" >
-            </div>
             <div class="col-md-6">
                 <label for="archivo_url" class="form-label">Archivo</label>
                 <input type="file" class="form-control" name="archivo_url" id="archivo_url" accept="application/pdf" >
             </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Crear Datos</button>
+                <a href="{{ url('manuales') }}">Regresar a Manuales</a>
+            </div>
+
+
+<hr></hr>
+
+            <h1 class="align:center">Referencia a otros medios</h1>
+            <div class="col-md-6">
+                <label for="titulo_manual" class="form-label">Titulo del manual</label>
+                <input type="text" class="form-control" name="titulo_manual" id="titulo_manual" maxlength="191">
+            </div>
+            <div class="col-2">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" name="fecha" id="fecha">
+            </div>
+            <div class="col-12">
+                <label for="referencias" class="form-label">Referencias(Link)</label>
+                <input type="text" class="form-control" name="referencias" id="referencias" >
+            </div>
+
 
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

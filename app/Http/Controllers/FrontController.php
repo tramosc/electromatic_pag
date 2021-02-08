@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Blogs;
 use Illuminate\Http\Request;
 use App\Servicios;
-use App\Repuestos;
 use App\Manuales;
 use App\imagesInicio;
 use App\Capacitaciones;
@@ -12,6 +12,7 @@ use App\Grupos;
 use App\Pozos;
 use App\Ups;
 use App\imagenesEmpresa;
+use App\Suministros;
 use Illuminate\Support\Facades\Storage;
 
 class FrontController extends Controller
@@ -30,18 +31,17 @@ class FrontController extends Controller
         return view('welcome', $datos);
     }
 */
-public function viewImagenesCSSEmpresa(){
-    //
-    $datos['imagenesEmpresa'] = imagenesEmpresa::paginate(30);
-    return view('empresa', $datos);
-}
+    public function viewImagenesCSSEmpresa(){
+        //
+        $datos['imagenesEmpresa'] = imagenesEmpresa::paginate(30);
+        return view('empresa', $datos);
+    }
 
     public function viewImagenesCSS(){
         //
         $datos['imagenesInicio'] = imagesInicio::paginate(30);
         return view('welcome', $datos);
     }
-
 
     public function index()
     {
@@ -57,12 +57,6 @@ public function viewImagenesCSSEmpresa(){
         return view('manuales', $datos);
     }
 
-    public function indexRepuestos()
-    {
-        $datos['repuestos'] = Repuestos::paginate(15);
-        return view('repuestos', $datos);
-    }
-
 /**Nuevos cambios */
     public function indexGrupos()
     {
@@ -76,8 +70,6 @@ public function viewImagenesCSSEmpresa(){
         return view('grupoElemento', compact('grupo'));
     }
 
-
-
     public function indexPozos()
     {
         //
@@ -89,8 +81,6 @@ public function viewImagenesCSSEmpresa(){
         $pozo = Pozos::findOrFail($id);
         return view('pozoElemento', compact('pozo'));
     }
-
-
 
     public function indexUPS()
     {
@@ -119,6 +109,31 @@ public function viewImagenesCSSEmpresa(){
     }
 
 
+    public function indexSuministros()
+    {
+        //
+        $datos['suministros'] = Suministros::paginate(25);
+        return view('suministros', $datos);
+    }
+    public function viewSuministro($id)
+    {
+        $suministro = Suministros::findOrFail($id);
+        return view('suministroElemento', compact('suministro'));
+    }
+
+    public function indexBlogs()
+    {
+        //
+        $datos['blogs'] = Blogs::paginate(1);
+        return view('blog', $datos);
+    }
+    public function viewBlog($id)
+    {
+        $blog = Blogs::findOrFail($id);
+        return view('blogElemento', compact('blog'));
+    }
+
+
 
     /**
      * Show the form for editing the specified resource.
@@ -136,13 +151,6 @@ public function viewImagenesCSSEmpresa(){
     {
         $manual = Manuales::findOrFail($id);
         return view('manualElemento', compact('manual'));
-    }
-
-
-    public function viewRepuesto($id)
-    {
-        $repuesto = Repuestos::findOrFail($id);
-        return view('repuestoElemento', compact('repuesto'));
     }
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CONTACTO - ELECTROMATIC</title>
+        <title>BLOG - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -64,14 +64,19 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
@@ -116,15 +121,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -135,110 +140,284 @@
             </div>
             <!-- Nav Bar End -->
 
-            <!-- Contact Start -->
-            <div class="contact wow fadeInUp">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Mantengase en contacto con nosotros</p>
-                        <h2 style="color: black;">Para consultas</h2>
-                    </div>
+<style>
+    .blog-item {
+        background: #f1f1f1;
+        padding: 20px;
+    }
+    .image-blog img{
+        padding: 0 !important;
+        width: 100%;
+        margin: 0 !important;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        -webkit-transition: all 150ms ease-in-out;
+        -moz-transition: all 150ms ease-in-out;
+        -o-transition: all 150ms ease-in-out;
+        -ms-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+    }
+    .image-blog img:hover{
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+    }
+    .blog-item .meta-info-blog{
+        margin-top: 25px;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .meta-info-blog > span {
+        display: inline-block;
+        padding-right: 14px;
+        color: #777;
+    }
+    .meta-info-blog > span > a {
+        color: #007939;
+    }
+    .meta-info-blog > span > a:hover {
+        color: #4babb1;
+    }
+    .blog-title > h2{
+        margin: 15px 0;
+        padding: 0px;
+    }
+    .blog-title a {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 500;
+        color: #555;
+        text-transform: capitalize;
+    }
+    .blog-button .hover-btn-new{
+        line-height: 35px;
+    }
+    .blog-button a.hover-btn-new::before, .blog-button a.hover-btn-new::after {
+        background: #007939; 
+        content: '';
+        position: absolute;
+        z-index: 1;
+    }
+    .blog-button a.hover-btn-new::after {
+        background: #333333 !important;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .blog-button a.hover-btn-new span {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    }
+    .blog-button a.hover-btn-new:hover span {
+        color: #333333;
+    }
+    .blog-button a.hover-btn-new::before {
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .blog-button a.hover-btn-new:hover::after {
+        height: 0;
+        left: 50%;
+        top: 50%;
+        width: 0;
+    }
+    .blog-button a.hover-btn-new::after {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2 style="color: white;">Razon Social</h2>
-                                        <p>Electromatic Industrial S.R.L.</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2 style="color: white;">RUC</h2>
-                                        <p>20558228831</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-address"></i>
-                                    <div class="contact-text">
-                                        <h2 style="color: white;">Direccion</h2>
-                                        <p>Calle Consuelo 307-A Cercado Arequipa Referencia frente a SEAL</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2 style="color: white;">Telefonos</h2>
-                                        <p>964770354 - 054-399450</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-send-mail"></i>
-                                    <div class="contact-text">
-                                        <h2 style="color: white;">Correo</h2>
-                                        <p>servicios_cliente@electromaticindustrial.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Tu Nombre" required="required" data-validation-required-message="Por favor ingrese su nombre" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Su Email" required="required" data-validation-required-message="Por favor ingrese su email" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor ingrese su asunto" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div style="align-items: center;">
-                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <br>
-                            <h1 style="text-align: center;">Mapa:</h1>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4697028092596!2d-71.54112898554354!3d-16.400954542533746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1609950858907!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Contact End -->
 
 
-            <!-- Postulantes Start -->
-            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                           <h1>¿Le interesa trabajar con nosotros?</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                        <div class="ml-auto">
-                                <a class="btn btn-secondary btn-lg" href="{{ url('postulantes/create') }}">POSTULA AQUI</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonial End -->
+    .widget-categories{
+        margin-bottom: 30px;
+    }
+    .widget-categories .widget-title{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0px;
+        margin-bottom: 15px;
+        border-right: 3px solid #007939;
+    }
+    .widget-categories ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .widget-categories ul li{
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 8px 2px 8px 12px;
+    }
+    .widget-categories ul li a{
+        color: #777;
+        font-size: 13px;
+    }
+    .widget-categories ul li a:hover{
+        color: #007939;
+    }
+    .widget-tags .widget-title{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0px;
+        margin-bottom: 15px;
+        border-right: 3px solid #007939;
+    }
+    .widget-tags .tags{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .tags li {
+        float: left;
+        padding: 0px;
+        margin: 0px 5px 5px 0px;
+        list-style-type: none;
+        line-height: 25px;
+    }
+    .tags li a {
+        border: 1px solid #007939;
+        color: #212121;
+        text-transform: capitalize;
+        float: left;
+        font-size: 12px;
+        padding: 3px 8px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .tags li a:hover {
+        border-color: #007939;
+        background: #007939;
+        color: #ffffff;
+    }
 
+</style>
+
+<br></br>
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-lg-9 blog-post-single">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="{{asset('storage').'/'.$blog->img_portada}}" alt="" class="img-fluid">
+						</div>
+						<div class="post-content">
+							<div class="meta-info-blog">
+								<span><i class="fa fa-calendar"></i> {{$blog->fecha}}</span>
+								<span><i class="fa fa-tag"></i>  <a href="">Blog</a> </span>
+							</div>
+							<div class="blog-title">
+								<h2>{{$blog->titulo_blog}}</h2>
+							</div>
+							<div class="blog-desc">
+                           
+								<p>{{$blog->descripcion_blog}}</p>
+                                @if(($blog->parrafo1))
+                                    <blockquote class="default">
+                                    {{$blog->parrafo1}}
+                                    </blockquote>
+                                    @else
+                                <!-- No hay parrafo 1 -->
+                                @endif
+
+                                @if(($blog->parrafo2))
+								    <p>{{$blog->parrafo2}}</p>
+                                @else
+                                <!-- No hay parrafo 1 -->
+                                @endif
+								
+							</div>							
+						</div>
+					</div>
+
+                    <br></br>
+
+                    <!-- Por aclarar -->
+                    <div class="blog-comments">
+						<h4>Comentarios</h4>
+
+					</div>
+                </div><!-- end col -->
+                
+				<div class="col-lg-3 col-12 right-single">
+                        <br></br>
+                        <div class="sidebar-widget wow fadeInUp">
+                                    <h2 class="widget-title">Recent Post</h2>
+                                    <div class="recent-post">
+                                        <div class="post-item">
+                                            <div class="post-img">
+                                                <img src="img/post-1.jpg" />
+                                            </div>
+                                            <div class="post-text">
+                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                                                <div class="post-meta">
+                                                    <p>Fecha</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                <!-- 
+					<div class="widget-categories">
+						<h3 style="color: black;" class="widget-title">Contacto</h3>
+						<ul>
+							<li>✆ Telefonos: <br> 964-770-354 - 054-399450</li>
+							<li>✉ Correo: <br> servicios_cliente@electromaticindustrial.com</li>
+							<li>▶ Direccion: <br> Calle Consuelo 307-A-Cercado</li>
+						</ul>
+					</div>
+                    <div class="widget-tags">
+						<h3 style="color: black;" class="widget-title">Nuestros servicios</h3>
+						<ul class="tags">
+                            <li><a href="#"><b>UPS</b></a></li>
+                            <li><a href="#"><b>Grupos Electrogenos</b></a></li>
+                            <li><a href="#"><b>Auditoria Energetica</b></a></li>
+							<li><a href="#"><b>Pozos de Puesta a Tierra</b></a></li>
+						</ul>
+					</div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div class="widget-categories">
+						<h3 style="color: black;" class="widget-title">Siguenos en Facebook</h3>
+						<ul>
+							<li>
+                            <script>(function(d, s, id) {
+                                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                                if (d.getElementById(id)) return;
+                                                                js = d.createElement(s); js.id = id;
+                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                                }(document, 'script', 'facebook-jssdk'));
+                                                    </script>
+
+                                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                            </li>
+						</ul>
+					</div>
+                    -->
+				</div>
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
 
             <!-- Team Start -->

@@ -73,14 +73,19 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -115,15 +120,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -153,72 +158,214 @@
                             <div class="service">
                                 <div class="container">
                                         <div class="card-body">
-                                            <div class="about-img">
-                                                    <div class="scaling-image h-100">
-                                                        <div class="frame h-100">
-                                                            <div class="feature-img-bg h-100">
-                                                                <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            </div>
+
+                                        <style>
+                                            h1 {
+                                                text-align: center;
+                                            }
+                                            .capas {
+                                                position: relative;
+                                                max-width: 650px;
+                                                margin: 0 auto;
+                                            }
+                                            .capas img {
+                                                position: absolute;
+                                                max-width: 100%;
+                                                transition: all ease 1250ms;
+                                                transform-style: preserve-3d;
+                                            }
+                                            .capas:hover .capa0 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(0px);
+                                            }
+                                            .capas:hover .capa1 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(40px);
+                                                opacity: .6;
+                                            }
+                                            .capas:hover .capa2 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(80px);
+                                            }
+                                            .capas:hover .capa3 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(120px);
+                                            }
+                                            .capas:hover .capa4 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(160px);
+                                            }
+                                            .capas:hover .capa5 {
+                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(200px);
+                                            top: 0;
+                                            left: 0;
+                                            width: 250px;
+                                            height: 150px;
+                                            }
+                                        </style>
+                                        
+                                <div class="capas">
+
+                                <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="800" height="550" class="capa3">
+                                <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="400" height="250" class="capa4">
+                                    <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="800" height="550" class="capa5">
+                                </div>
+
+                                                            <br></br><br></br>
+
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+                                                            <br></br>
+
+                                                            <!--
+                                                                                                        <div class="about-img">
+                                                                                                                <div class="scaling-image h-100">
+                                                                                                                    <div class="frame h-100">
+                                                                                                                        <div class="feature-img-bg h-100">
+                                                                                                                            <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                            -->
                                         </div>
 
                                             <br></br>
-
-                                        <div class="container">
-                                                <div class="card-header" style="background-color: #007939;">
-                                                    <h5 style="color: white; text-align:left;">Definicion</h5>
-                                                </div>
-                                            <div class="card text-center">
-                                                <div class="card-body">
-                                                    <p style="color: black;">
-                                                    {{ $servicio->definicion }}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </div>
-
-
-
-                                        <div class="container">
-                                                <div class="card-header" style="background-color: #007939;">
-                                                    <h5 style="color: white; text-align:left;">Caracteristicas</h5>
-                                                </div>
-                                            <div class="card text-center">
-                                                <div class="card-body">
-                                                    <p style="color: black;">
-                                                    {{ $servicio->caracteristicas }}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </div>
-
-
-
-                                        <div class="container">
-
-                                                <div class="card-header" style="background-color: #007939;">
-                                                    <h5 style="color: white; text-align:left;">Importancia</h5>
-                                                </div>
-
-                                            <div class="card text-center">
-                                                <div class="card-body">
-                                                    <p style="color: black;">
-                                                    {{ $servicio->importancia }}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <br>
-                                        </div> 
-                                    
+  
                                 </div> 
                             </div>
-                            <!-- Service-detalle End -->
 
-                            <!-- Galeria Start -->
+
+                                        <center>
+
+                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                                <div class="card-header" style="color: white;">
+                                                    <h5><b>DEFINICION</b></h5>
+                                                </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->definicion }}</li>
+                                                    </ul>
+                                            </div>
+
+                                        </center>
+                                        <br></br>
+
+                                        <center>
+                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                                <div class="card-header" style="color: white;">
+                                                    <h5><b>CARACTERISTICAS</b></h5>
+                                                </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->caracteristicas }}</li>
+                                                    </ul>
+                                            </div>
+                                        </center>
+                                        <br></br>
+
+                                        <center>
+                                            <div class="card-contact" style="text-align: left; background-color: #007939; width: 45rem;">
+                                                <div class="card-header" style="color: white;">
+                                                    <h5><b>IMPORTANCIA</b></h5>
+                                                </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->importancia }}</li>
+                                                    </ul>
+                                            </div>
+                                        </center>
+                                        <br></br>
+                            <!-- Service-detalle End -->
+                        </div>
+
+                            <!-- Fin de Elementos de la zona de la izquierda -->
+
+
+
+
+
+                        <div class="col-lg-4">
+                            <div class="sidebar" style="background-color: #fbf9ff;">
+                            <br>
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <center>
+                                        <style>
+                                            .card-contact {
+                                            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+                                            transition: 0.3s;
+                                            width: 40%;
+                                            border-radius: 30px;
+                                            }
+                                        </style>
+                                        <div class="card-contact" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                            <h5><b>CONTACTO</b></h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✆</b> 054-399450 - 964-770-354</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✉</b> servicios_cliente@electromaticindustrial.com</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>▶</b> Calle Consuelo 307-A - Cercado Arequipa</li>
+                                            </ul>
+                                        </div>
+                                    </center>  
+                                </div>
+
+                                <br></br>
+
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <center>
+                                        <div class="card-contact" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                                <h5><b>NUESTROS SERVICIOS</b></h5>
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li style="font-size: 15px;" class="list-group-item"><a href="">Grupos electrogenos</a></li>
+                                                    <li style="font-size: 15px;" class="list-group-item"><a href="">Auditoria energetica</a></li>
+                                                    <li style="font-size: 15px;" class="list-group-item"><a href="">Ups</a></li>
+                                                    <li style="font-size: 15px;" class="list-group-item"><a href="">Pozos de puesta a tierra</a></li>
+                                                </ul>
+                                        </div>
+                                    </center>
+                                </div>
+
+                                <br></br>
+
+                                <div class="sidebar-widget wow fadeInUp">
+                                <center>
+                                    <div class="card-contact" style="text-align: left; background-color: #007939; width: 24rem;">
+                                        <div class="card-header" style="color: white;">
+                                            <h5><b>SIGUENOS EN FACEBOOK</b></h5>
+                                        </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                <script>(function(d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+
+                                        <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    <br>
+                                </center>
+                                </div>
+
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    </div>
+                
+            </div></div>
+            <!-- Single Post End-->   
+
+                        <!-- Galeria Start -->
                             <div class="service">
                                 <div class="container">
                                     <div class="section-header text-center">
@@ -231,7 +378,7 @@
                                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                                 <div class="service-item">
                                                     <div class="service-img">
-                                                        <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="200px" alt="Image">
+                                                        <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="250px" alt="Image">
                                                     </div>
                                                     <div class="service-text">
                                                         <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -251,7 +398,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -269,7 +416,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -287,7 +434,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -305,7 +452,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -323,7 +470,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -341,7 +488,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -359,7 +506,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -377,7 +524,7 @@
                                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                             <div class="service-item">
                                                 <div class="service-img">
-                                                    <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="200px" alt="Image">
+                                                    <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="250px" alt="Image">
                                                 </div>
                                                 <div class="service-text">
                                                     <h3 style="text-align: center;">Galeria Electromatic</h3>
@@ -395,55 +542,6 @@
                                 </div>
                             </div>
                             <!-- Galeria End -->
-                        </div>
-                            <!-- Fin de Elementos de la zona de la izquierda -->
-
-                        <div class="col-lg-4">
-                                <div class="sidebar">
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">CONTACTO</h2>
-                                    </div>
-
-                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="400px" height="440px" alt="Responsive image">
-                                    <br></br>
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">Otros</h2>
-                                    </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <div class="card-header">
-                                            Nuestros servicios
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Grupos electrogenos</li>
-                                            <li class="list-group-item">Auditoria energetica</li>
-                                            <li class="list-group-item">Ups</li>
-                                            <li class="list-group-item">Pozos de puesta a tierra</li>
-                                        </ul>
-                                    </div>
-                                    <br></br>
-                                    <!--Script de facebook -->
-                                        <div class="sidebar-widget wow fadeInUp">
-                                            <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
-                                        </div>
-                                                <script>(function(d, s, id) {
-                                                            var js, fjs = d.getElementsByTagName(s)[0];
-                                                            if (d.getElementById(id)) return;
-                                                            js = d.createElement(s); js.id = id;
-                                                            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                            fjs.parentNode.insertBefore(js, fjs);
-                                                            }(document, 'script', 'facebook-jssdk'));
-                                                </script>
-
-                                            <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                    <!-- Fin de script de facebook-->
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-            </div></div>
-            <!-- Single Post End-->   
 
 
             <!-- Team Start -->

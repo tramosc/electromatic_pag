@@ -213,8 +213,8 @@ a:focus {
 
 .nav-bar .btn:hover {
     color: #ffffff;
-    background: #007939;
-    border-color: #007939;
+    background: #717171;
+    border-color: #717171;
 }
 
 @media (min-width: 992px) {
@@ -600,7 +600,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 20px 0;
 }
 
 .about .section-header {
@@ -1044,7 +1044,7 @@ a:focus {
 .faqs {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    
 }
 
 .faqs .row {
@@ -1105,7 +1105,7 @@ a:focus {
     padding: 10px 25px;
     width: 100%;
     color: #121518;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     border: 1px solid rgba(0, 0, 0, .1);
     transition: .5s;
@@ -1859,7 +1859,7 @@ a:focus {
 }
 
 .portfolio .portfolio-img img {
-    width: 100%;
+
     transition: .3s;
 }
 
@@ -1895,7 +1895,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #717171;
+    background: #007939;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1907,7 +1907,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #007939;
+    color: #ffffff;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -2284,7 +2284,7 @@ a:focus {
   }
   
   .clients img {
-    width: 40%;
+    width: 100%;
     -webkit-filter: grayscale(100);
     filter: grayscale(100);
     transition: all 0.4s ease-in-out;

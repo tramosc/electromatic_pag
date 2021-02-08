@@ -37,8 +37,7 @@
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-
-                    <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
                                 <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
@@ -46,7 +45,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
@@ -76,9 +74,13 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -118,15 +120,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -236,44 +238,58 @@
                                                         </div>
                                                     </div>
 
-                                                    <!-- Imagen 5 -->
-                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                                        <div class="service-item">
-                                                            <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$ups->img_cinco}}" width="100px" height="200px" alt="Image">
-                                                            </div>
-                                                            <div class="service-text">
-                                                                <h3 style="text-align: center;">ups </h3>
-                                                                <a class="btn" href="{{asset('storage').'/'.$ups->img_cinco}}" data-lightbox="service">+</a>
+                                                    @if(($ups->img_cinco))
+                                                        <!-- Imagen 5 -->
+                                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                            <div class="service-item">
+                                                                <div class="service-img">
+                                                                    <img src="{{asset('storage').'/'.$ups->img_cinco}}" width="100px" height="200px" alt="Image">
+                                                                </div>
+                                                                <div class="service-text">
+                                                                    <h3 style="text-align: center;">ups </h3>
+                                                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_cinco}}" data-lightbox="service">+</a>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        @else
+                                                            <!-- no hay imagen 5 -->
+                                                    @endif
 
-                                                    <!-- Imagen 6 -->
-                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                                        <div class="service-item">
-                                                            <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$ups->img_seis}}" width="100px" height="200px" alt="Image">
-                                                            </div>
-                                                            <div class="service-text">
-                                                                <h3 style="text-align: center;">ups </h3>
-                                                                <a class="btn" href="{{asset('storage').'/'.$ups->img_seis}}" data-lightbox="service">+</a>
+                                                    @if(($ups->img_seis))
+                                                        <!-- Imagen 6 -->
+                                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                            <div class="service-item">
+                                                                <div class="service-img">
+                                                                    <img src="{{asset('storage').'/'.$ups->img_seis}}" width="100px" height="200px" alt="Image">
+                                                                </div>
+                                                                <div class="service-text">
+                                                                    <h3 style="text-align: center;">ups </h3>
+                                                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_seis}}" data-lightbox="service">+</a>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        @else
+                                                            <!-- no hay imagen 6 -->
+                                                    @endif
 
-                                                    <!-- Imagen 6 -->
-                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                                        <div class="service-item">
-                                                            <div class="service-img">
-                                                                <img src="{{asset('storage').'/'.$ups->img_siete}}" width="100px" height="200px" alt="Image">
-                                                            </div>
-                                                            <div class="service-text">
-                                                                <h3 style="text-align: center;">ups</h3>
-                                                                <a class="btn" href="{{asset('storage').'/'.$ups->img_siete}}" data-lightbox="service">+</a>
+                                                    @if(($ups->img_siete))
+                                                        <!-- Imagen 7 -->
+                                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                            <div class="service-item">
+                                                                <div class="service-img">
+                                                                    <img src="{{asset('storage').'/'.$ups->img_siete}}" width="100px" height="200px" alt="Image">
+                                                                </div>
+                                                                <div class="service-text">
+                                                                    <h3 style="text-align: center;">ups</h3>
+                                                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_siete}}" data-lightbox="service">+</a>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        @else
+                                                            <!-- no hay imagen 7 -->
+                                                    @endif
+
+
                                                 </div>
 
                                             </div>
@@ -285,47 +301,72 @@
                         </div>
                     <!-- Fin de Elementos de la zona de la izquierda -->
 
-                        <div class="col-lg-4">
-                                <div class="sidebar">
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">CONTACTO</h2>
-                                    </div>
-
-                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
-                                    <br></br>
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">Otros</h2>
-                                    </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <div class="card-header">
-                                            Nuestros servicios
+                    <div class="col-lg-4">
+                            <div class="sidebar" style="background-color: #fbf9ff;">
+                            <br>
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <center>
+                                        <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                            <h5><b>CONTACTO</b></h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✆</b> 054-399450 - 964-770-354</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✉</b> servicios_cliente@electromaticindustrial.com</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>▶</b> Calle Consuelo 307-A - Cercado Arequipa</li>
+                                            </ul>
                                         </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Grupos electrogenos</li>
-                                            <li class="list-group-item">Auditoria energetica</li>
-                                            <li class="list-group-item">Ups</li>
-                                            <li class="list-group-item">Pozos de puesta a tierra</li>
-                                        </ul>
-                                    </div>
-                                    <br></br>
-                                    <!--Script de facebook -->
-                                        <div class="sidebar-widget wow fadeInUp">
-                                            <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
-                                        </div>
-                                                <script>(function(d, s, id) {
-                                                            var js, fjs = d.getElementsByTagName(s)[0];
-                                                            if (d.getElementById(id)) return;
-                                                            js = d.createElement(s); js.id = id;
-                                                            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                            fjs.parentNode.insertBefore(js, fjs);
-                                                            }(document, 'script', 'facebook-jssdk'));
-                                                </script>
-
-                                            <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                    <!-- Fin de script de facebook-->
+                                    </center>  
                                 </div>
-                                
+
+                                <br></br>
+
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <center>
+                                        <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                                <h5><b>NUESTROS SERVICIOS</b></h5>
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Grupos electrogenos</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Auditoria energetica</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Ups</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Pozos de puesta a tierra</li></a>
+                                                </ul>
+                                        </div>
+                                    </center>
+                                </div>
+
+                                <br></br>
+
+                                <div class="sidebar-widget wow fadeInUp">
+                                <center>
+                                    <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                        <div class="card-header" style="color: white;">
+                                            <h5><b>SIGUENOS EN FACEBOOK</b></h5>
+                                        </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                <script>(function(d, s, id) {
+                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+
+                                        <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    <br>
+                                </center>
+                                </div>
+
+
                             </div>
+                            
                         </div>
                     </div>
             </div>

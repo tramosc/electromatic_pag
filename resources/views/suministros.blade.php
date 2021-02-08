@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Repuestos - ELECTROMATIC</title>
+        <title>POZOS - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -64,15 +64,19 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
@@ -81,7 +85,10 @@
                                 </a>
                             </div>
                         </div>
+
+
                     </div>
+
                 </div>
             </div>
             <!-- Top Bar End -->
@@ -115,15 +122,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -133,37 +140,42 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
+            
 
-           <!-- Team Start -->
-           <div class="team">
+            <!-- Contact Start -->
+             <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
-<br></br>
-                        <h2 style="color: black;">Repuestos disponibles</h2>
+                        <br></br>
+                        <h2 style="color: black;">Suministros electromatic</h2>
                     </div>
                     <div class="row">
 
 
-                    @foreach($repuestos as $repuesto)
+                    
+                    @foreach($suministros as $suministro)
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="100px" height="230px" alt="Team Image">
+                                    <img src="{{asset('storage').'/'.$suministro->img_uno}}" width="100px" height="230px" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2 style="color: white;">{{$repuesto->titulo_repuesto}}</h2>
-                                    <a href="{{ url('/'.$repuesto->id.'/Vista-Repuesto-Elemento') }}" style="color: white;">Saber mas...</a>
+                                    <h2 style="color: white;">{{$suministro->titulo_suministro}}</h2>
+                                    <a href="{{ url('/'.$suministro->id.'/Vista-Suministro-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
                         </div>
                     @endforeach
+                    
 
                     </div>
-                    <br></br>
                 </div>
+                <br></br>
             </div>
-        <!-- Team End -->
+            <!-- Contact End -->
 
+        </div>
+      
 
 
             <!-- Team Start -->
@@ -199,36 +211,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">
@@ -238,16 +220,6 @@
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
-        
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
                                     </div>
                                 </div>
 
@@ -291,7 +263,6 @@
                 </div>
             </div>
             <!-- Team End -->
-
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>

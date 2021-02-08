@@ -30,16 +30,96 @@
         <!-- Css para el mostrador de imagenes con titulo -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
 
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style8_V2.css') }}" />
+
+<!-- Estilos carousel -->
+        <style>
+                    /*
+                        body {
+                        align-items: center;
+                        background: #E3E3E3;
+                        display: flex;
+                        height: 100vh;
+                        justify-content: center;
+                        }
+                    */
+            @-webkit-keyframes scroll {
+            0% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(calc(-250px * 7));
+                        transform: translateX(calc(-250px * 7));
+            }
+            }
+
+            @keyframes scroll {
+            0% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(calc(-250px * 7));
+                        transform: translateX(calc(-250px * 7));
+            }
+            }
+            .slider {
+            background: pr;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            height: 120px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: 980px;
+            }
+            .slider::before, .slider::after {
+            background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+            }
+            .slider::after {
+            right: 0;
+            top: 0;
+            -webkit-transform: rotateZ(180deg);
+                    transform: rotateZ(180deg);
+            }
+            .slider::before {
+            left: 0;
+            top: 0;
+            }
+            .slider .slide-track {
+            -webkit-animation: scroll 40s linear infinite;
+                    animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+            }
+            .slider .slide {
+            height: 130px;
+            width: 280px;
+            }
+        </style>
+<!-- Fin Estilos carousel -->
+
+<!-- Efectos css-->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     </head>
 
     <body> 
-        <div class="wrapper">
+        <div class="wrapper" style="font-family: 'Poppins', sans-serif;">
             <!-- Top Bar Start --> 
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         
-                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
                                     <div class="top-bar-item">
@@ -68,21 +148,27 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
+                                <a href="">
                                 <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image" align="right">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                                
+                                </a>
                             </div>
                         </div>
-                        
 
                     </div>
                 </div>
@@ -118,15 +204,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -136,36 +222,14 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-            
-            <!-- Page Header Start -->
-            <!-- 
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 style="color: white;">EMPRESA</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Empresa</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-            <!-- Page Header End -->
 
             <br></br>
-            
 
             <section id="services" class="services section-bg">
                 <div class="container">
                   <div class="container">
                     <div class="portfolio-description">
                     <div class="section-header text-left">
-                    <p style="text-align: center;">Empresa Electromatic</p>
-                    <h1 style="color: black; text-align:center"><b>NUESTRA HISTORIA</b></h1>
                     </div>
                       
                       <center><iframe width="600" height="450" src="https://www.youtube.com/embed/N6FTAgmxnFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
@@ -175,129 +239,287 @@
 
           <br></br>
 
-
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-6">
+                    <div class="row align-items-center" style="text-align: center;">
+                    <div class="col-sm-1"></div>
+
+                        <div class="col-sm-6">
+
+                        <div class="section-header text-left">
+                                <h3 style="color: black; font-family: 'Poppins', sans-serif;"><b>HISTORIA</b></h3>
+                            </div>
+                            <div class="about-text">
+                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-sm-4">
+
+<!-- 
+                        <style>
+                            .mySlides {display:none;}
+                        </style>
+
+                        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+                    <div class="w3-content w3-display-container">
+                    @foreach($imagenesEmpresa as $imagenEmpresa)
+                    <div class="w3-display-container mySlides">
+                                <div class="scaling-image h-100">
+                                    <div class="frame h-100">
+                                        <div class="feature-img-bg h-100">
+                                        <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" class="animate__animated animate__fadeIn" width="333px" height="500px">
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-dark-green" style="color: white; background-color: #007939;">
+                        {{$imagenEmpresa->titulo_img}}
+                        </div>
+                    </div>
+                    @endforeach
+
+                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+-->
+
+                        <style>
+                            @keyframes display {
+                            0% {
+                                transform: translateX(200px);
+                                opacity: 0;
+                            }
+                            10% {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            20% {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                            30% {
+                                transform: translateX(-200px);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translateX(-200px);
+                                opacity: 0;
+                            }
+                            }
+
+                            .pic-ctn > img {
+                            position: absolute;
+                            top: 0;
+                            left: calc(50% - 100px);
+                            opacity: 0;
+                            animation: display 10s infinite;
+                            }
+
+                            img:nth-child(2) {
+                            animation-delay: 2s;
+                            }
+                            img:nth-child(3) {
+                            animation-delay: 4s;
+                            }
+                            img:nth-child(4) {
+                            animation-delay: 6s;
+                            }
+                            img:nth-child(5) {
+                            animation-delay: 8s;
+                            }
+                            img:nth-child(6) {
+                            animation-delay: 10s;
+                            }
+
+                            .middle {
+                            transition: .5s ease;
+                            opacity: 0;
+                            position: absolute;
+                            top: 90%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            text-align: center;
+                            }
+
+                            .container:hover .middle {
+                            opacity: 1;
+                            }
+
+                            .text {
+                            background-color: #4CAF50;
+                            color: white;
+                            font-size: 16px;
+                            padding: 20px 32px;
+                            }
+                        </style>
+
+                        <div class="pic-ctn">
+                            @foreach($imagenesEmpresa as $imagenEmpresa)
+                            <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="" class="pic">
+                            @endforeach
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                        </div>
+
+                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                        </div>
+
+                    <!-- 
+                        <div class="col-sm-1">
+                        
+                        </div>
+                        <div class="col-md-5">
                             <div class="section-header text-left">
-                                <h4 style="color: black;"><b>HISTORIA</b></h4>
+                                <h3 style="color: black;"><b>HISTORIA</b></h3>
                             </div>
                             <div class="about-text">
                                 <p style="text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
                             </div>
+                                        
                         </div>
-                        <!-- Nueva zona de imagenes con efecto css -->
-                            <div class="col-lg-5 col-md-6">
-                                        <div class="hs-wrapper">
-                                        @foreach($imagenesEmpresa as $imagenEmpresa)
-                                            <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="image01"/>
-                                        @endforeach
-                                        </div>
 
-                                        <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
+                        <div class="col-sm-4">
+
+                                <style>
+
+                                    @keyframes display {
+                                    0% {
+                                        transform: translateX(200px);
+                                        opacity: 0;
+                                    }
+                                    10% {
+                                        transform: translateX(0);
+                                        opacity: 1;
+                                    }
+                                    20% {
+                                        transform: translateX(0);
+                                        opacity: 1;
+                                    }
+                                    30% {
+                                        transform: translateX(-200px);
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        transform: translateX(-200px);
+                                        opacity: 0;
+                                    }
+                                    }
+
+                                    .pic-ctn > img {
+                                    position: absolute;
+                                    top: 0;
+                                    left: calc(50% - 100px);
+                                    opacity: 0;
+                                    animation: display 10s infinite;
+                                    }
+
+                                    img:nth-child(2) {
+                                    animation-delay: 2s;
+                                    }
+                                    img:nth-child(3) {
+                                    animation-delay: 4s;
+                                    }
+                                    img:nth-child(4) {
+                                    animation-delay: 6s;
+                                    }
+                                    img:nth-child(5) {
+                                    animation-delay: 8s;
+                                    }
+                                    img:nth-child(6) {
+                                    animation-delay: 10s;
+                                    }
+                                </style>
+
+                            <div class="pic-ctn">
+                                @foreach($imagenesEmpresa as $imagenEmpresa)
+                                    <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="" class="pic">
+                                @endforeach
                             </div>
-                        <!-- Fin de Nueva zona de imagenes con efecto css -->
+
+                        </div>
+                                -->
                     </div>
                 </div>
             </div>
             <!-- About End -->
 
-
-
-        <!-- Fact Start 
-            <div class="fact">
-                <div class="container-fluid">
-
-                
-                    <div class="row counters">
-                        <div class="col-md-6 fact-left wow slideInLeft">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/garantia.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h4 style="text-align: center; color: #20773A;"><b>GARANTÍA INMEJORABLE DE COSTO BENEFICIO PARA EL CLIENTE</b></h4>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/soporte-tecnico.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h4 style="text-align: center; color: #20773A;"><b>SERVICIO TECNICO 24/7</b></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fact-right wow slideInRight">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/servicio-al-cliente.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h4 style="text-align: center; color: #20773A;"><b>ATENCIÓN PERSONALIZADA</b></h4>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                    <img src="{{ asset('img/supervision.png') }}" width="70px" height="70px">
-                                    </div>
-                                    <div class="fact-text">
-                                        <h4 style="text-align: center; color: #20773A;" ><b>MONITOREO A DISTANCIA CONSTANTE</b></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        Fact End -->
-
+ <br></br>
 
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
-                <div class="row">
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="fact-icon">
-                        <img src="{{ asset('img/diagrama.png') }}" width="70px" height="70px">
-                        <br></br>
-                        </div>
-                        <div class="fact-text">
-                            <h4 style="text-align: center; color: #666666;"><b>COSTO - BENEFICIO</b></h4>
-                        <!-- <h4 style="text-align: center; color: #20773A;"><b>COSTO - BENEFICIO</b></h4>-->
-                        </div>
-                    
-                    </div>
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="fact-icon">
-                        <img src="{{ asset('img/soporte-tecnico.png') }}" width="70px" height="70px">
-                        <br></br>
-                        </div>
-                        <div class="fact-text">
-                            <h4 style="text-align: center; color: #666666;"><b>SERVICIO TECNICO 24/7</b></h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4" style="text-align: center;">
-                        <div class="fact-icon">
-                        <img src="{{ asset('img/apoyo.png') }}" width="70px" height="70px">
-                        <br></br>
-                        </div>
-                        <div class="fact-text">
-                            <h4 style="text-align: center; color: #666666;"><b>ATENCIÓN PERSONALIZADA</b></h4>
+                <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                                    <ul class="ca-menu">
+                                        <li>
+                                            
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('img/apoyo.png') }}" height="90" width="90">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2 style="font-family: 'Poppins', sans-serif;" class="ca-main">ATENCIÓN PERSONALIZADA</h2>
+                                                </div>
+                                    
+                                        </li>
+                                        <li>
+                                            
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('img/gestion-de-proyectos.png') }}" height="90" width="90">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2 style="font-family: 'Poppins', sans-serif;" class="ca-main">TECNOLOGíA</h2>
+                                                </div>
+                                            
+                                        </li>
+                                        <li>
+                                
+                                                <span class="ca-icon">
+                                                    <img src="{{ asset('img/soporte-tecnico.png') }}" height="90" width="90">
+                                                </span>
+                                                <div class="ca-content">
+                                                    <h2 style="font-family: 'Poppins', sans-serif;" class="ca-main">SERVICIO TECNICO 24/7</h2>
+                                                </div>
+                                            
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 </div>
+
                 </div>
             </div>
             <!-- About End -->
@@ -306,50 +528,54 @@
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
-
-                        <div class="col-lg-5 col-md-6">
+                        <div class="col-lg-5 col-md-8">
                             <div class="about-img">
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="https://2.bp.blogspot.com/-rPodlj7D3S4/WsOrEk98MGI/AAAAAAAABxY/ZRHiAxy7J0s1-lcy0fFBds-6zAU78Z7PgCLcBGAs/s750/_Electr%25C3%25B3nica_Industrial.jpg" alt="Image">
+                                            <img src="{{ asset('img/mision.png') }}" alt="Image">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-6">
+                        <div class="col-sm-1"></div>
+
+
+                        <div class="col-md-5">
                             <div class="section-header text-left">
-                                <h2 style="color: black;">Mision</h2>
+                                <h3 style="font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h3>
                             </div>
                             <div class="about-text">
-                                <p style="text-align: justify;">
+                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">
                                 Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
                                 </p>
                                 
                             </div>
-                            
+                            <br></br>
                         </div>
 
 
     
-                        <div class="col-lg-7 col-md-6">
+                        <div class="col-md-5">
                         <br></br>
                             <div class="section-header text-left">
-                                <h2 style="color: black;">Vision</h2>
+                                <h3 style="font-family: 'Poppins', sans-serif; color: black;"><b>VISIÓN</b></h3>
                             </div>
                             <div class="about-text">
-                                <p style="text-align: justify;">
+                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">
                                 Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
                                 </p>
                             </div>
+                            <br></br>
                         </div>
+                        <div class="col-sm-1"></div>
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
                                         <div class="feature-img-bg h-100">
-                                            <img src="https://ingenieromarino.com/wp-content/uploads/portada-2.jpg" alt="Image">
+                                            <img src="{{ asset('img/vision.png') }}" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -360,83 +586,37 @@
                 </div>
             </div>
             <!-- About End -->
-            
-            
-            
             
             <!-- FAQs Start -->
             <div class="faqs">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Valores de Electromatic</p>
-                       <h2 style="color: black;">NUESTROS VALORES</h2> 
+                       <h3 style=" font-family: 'Poppins', sans-serif; color: black;"><b>NUESTROS VALORES</b></h3> 
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div id="accordion-1">
                                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                                     <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            <b>ACTITUD DE SERVICIO</b>
+                                        <a style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                            <b>Actitud de servicio</b>
                                         </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                        La transparencia, sinceridad y franqueza, son valores que actualmente el público no solamente desea para las empresas, las exige.
-                                        Esto tiene que ver con usar la verdad como herramienta para ganarse la confianza y credibilidad frente al entorno.
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a  style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            <b>COMPROMISO</b>
+                                        <a  style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                            <b>Compromiso</b>
                                         </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                        La innovación no solo se basa en desarrollar nuevos productos, también supone impulsar nuevos modelos de negocio, ofrecer nuevos servicios y mejorar procesos para hacer más fácil la vida de las personas. Pero sobre todo, se basa en que estos estos avances lleguen a quienes los necesitan.
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                                     <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                                        <b>SEGURIDAD</b>
+                                        <a style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                        <b>Seguridad</b>
                                         </a>
                                     </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                        Partimos de la definición del compromiso como “la capacidad que tiene el ser humano para tomar conciencia de la importancia que tiene cumplir con el desarrollo de su trabajo dentro del tiempo estipulado para ello”. Al comprometernos, ponemos al máximo nuestras capacidades para sacar adelante la tarea encomendada.
-                                        </div>
-                                    </div>
                                 </div>
-                                <!--
-                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                                            TRABAJO EN EQUIPO
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                                            COMPROMISO
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
--->
                             </div>
                         </div>
                         <!-- Segunda mitad-->
@@ -444,119 +624,142 @@
                             <div id="accordion-2">
                                 <div class="card wow fadeInRight" data-wow-delay="0.1s">
                                     <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                        <b>RESPONSABILIDAD</b>
+                                        <a style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                        <b>Responsabilidad</b>
                                         </a>
-                                    </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                        <b>VOCACION</b>
+                                        <a style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                        <b>Vocacion</b>
                                         </a>
                                     </div>
-                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
                                 </div>
-                                
-                                <!--
-                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
                                     <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            <b>CALIDAD</b>
+                                        <a style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                                        <b>Adaptabilidad</b>
                                         </a>
                                     </div>
-                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
                                 </div>
-                      -->
-                                <!--
-                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
--->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- FAQs End -->
+<br></br>
 
-            <!-- ======= Clients LOGO Section ======= -->
+<!--  Nuevo clientes logos-->
+
+<div class="slider">
+	<div class="slide-track">
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/09.png') }}" height="80" width="250" alt="">
+		</div>
+		<div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/03.png') }}" height="80" width="250" alt="">
+		</div>
+		<div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/07.png') }}" height="100" width="250" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/credinka.png') }}" height="120" width="250" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/06.jpg') }}" height="100" width="280" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/10.png') }}" height="100" width="230" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/02.png') }}" height="100" width="250" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/logosenasa.png') }}" height="100" width="220" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/04.png') }}" height="100" width="250" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/01.png') }}" height="100" width="280" alt="">
+		</div>
+        <div style="text-align: center;" class="slide">
+			<img src="{{ asset('img/blanco.jpg') }}" height="100" width="250" alt="">
+		</div>
+        <div class="slide">
+			<p></p>
+        </div>
+        <div class="slide">
+        <p></p>
+            </div>
+	</div>
+</div>
+
+
+
+            <!-- ======= Clients LOGO Section 
       <section id="clients" class="clients">
         <div class="container">
                     <div class="section-header text-center">
-                       <h3 style="color: black;"><b>NUESTROS CLIENTES</b></h3>
+                       
+
                     </div>
           <div class="row">
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
-              <img src="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('img/01.png') }}" class="img-fluid" alt="" width="1170px" height="1170px">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
-              <img src="https://starteq.net/wp-content/uploads/2019/11/mcdonalds-png-logo-picture-3-1024x1001.png" class="img-fluid" alt="">
+              <img src="{{ asset('img/02.png') }}" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
-              <img src="https://us.123rf.com/450wm/netkoff/netkoff1502/netkoff150200044/36370600-colorido-juego-vector-icono-abstracto-sobre-un-fondo-blanco.jpg?ver=6" class="img-fluid" alt="">
+              <img src="{{ asset('img/03.jpg') }}" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
-              <img src="https://us.123rf.com/450wm/maudis60/maudis601601/maudis60160100042/49900954-vector-de-la-muestra-de-paneles-solares.jpg?ver=6" class="img-fluid" alt="">
+              <img src="{{ asset('img/04.jpg') }}" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
-              <img src="https://image.freepik.com/vector-gratis/logo-panel-solar_93835-52.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('img/08.png') }}" class="img-fluid" alt="">
             </div>
   
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
-              <img src="https://previews.123rf.com/images/deniskolt/deniskolt1608/deniskolt160800027/61841548-logotipo-de-la-energ%C3%ADa-solar-o-icono-vector-de-la-muestra-de-paneles-solares-.jpg" class="img-fluid" alt="">
+              <img src="{{ asset('img/06.png') }}" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-2 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="{{ asset('img/07.jpg') }}" class="img-fluid" alt="">
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="{{ asset('img/09.png') }}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="{{ asset('img/10.png') }}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+              <img src="{{ asset('img/12.png') }}" class="img-fluid" alt="">
             </div>
   
           </div>
   
         </div>
-      </section><!-- End Clients Section -->
+      </section> End Clients Section 
+
+-->
       <br><br>
-
-
-
-
             <!-- Team Start -->
-            <div class="team">
+            <div class="team" style="font-family: 'Poppins', sans-serif;">
                 <div class="team-item">
 
                 <!-- Footer Start -->

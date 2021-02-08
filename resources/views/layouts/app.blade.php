@@ -47,7 +47,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ url('/repuestos') }}">Respuestos</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url('/blogs') }}">Blogs</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -58,6 +58,7 @@
                         <a class="dropdown-item" href="{{ url('/grupos') }}">Grupos Electrogenos</a>
                         <a class="dropdown-item" href="{{ url('/pozos') }}">Pozos de puesta a tierra</a>
                         <a class="dropdown-item" href="{{ url('/ups') }}">UPS</a>
+                        <a class="dropdown-item" href="{{ url('/suministros') }}">Suministros</a>
                         <a class="dropdown-item" href="{{ url('/capacitaciones') }}">Capacitaciones y cursos</a>
                     </li>
 

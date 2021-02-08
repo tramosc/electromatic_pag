@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Repuestos - ELECTROMATIC</title>
+        <title>Suministros - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -76,14 +76,19 @@
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
+
                                         <div class="top-bar-text">
-                                            <h3>Correo</h3>
-                                            <a href="mailto:servicios_cliente@electromaticindustrial.com">Nuestro correo</a>
+                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -118,15 +123,15 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Repuestos" class="dropdown-item">REPUESTOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
                                         <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="dropdown-item">CAPACITACIONES Y CURSOS</a>
                                     </div>
                                 </div>
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Contacto" class="nav-item nav-link">CONTACTO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -136,93 +141,198 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-        
+
+
+
             <!-- Single Post Start-->
             <div class="single">
                     <div class="row">
-                                                    
                     <!-- Elementos de la zona de la izquierda -->
                         <div class="col-lg-8">
-                                    <!-- Elementos de izquierda -->
-                                            <div class="container">
-                                                    <div class="sidebar">
-                                                        <div class="sidebar-widget wow fadeInUp">
-                                                            <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $repuesto->titulo_repuesto }}</b></h2>
-                                                        </div>
-                                                    </div>
+                                    <div class="container">
+                                        <div class="sidebar">
+                                            <div class="sidebar-widget wow fadeInUp">
+                                                <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{ $suministro->titulo_suministro }}</b></h2>
                                             </div>
+                                        </div>
+                                    </div>
+                                                                
+                                    <!-- Elementos de izquierda -->
                                         <!-- Service-detalle Start -->
                                         <div class="service">
-                                                    
-                                    
-                                            <div class="container">
                                                         <div class="card-body">
-                                                            <!-- <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" width="450" height="250"> -->
                                                             <!--  Zona de zoom galeria -->
-                                                            <div class="container">
-                                                                <div id="my-gallery" class="vanilla-zoom">
-                                                                    <div class="sidebar">
-                                                                        <img src="{{asset('storage').'/'.$repuesto->img_repuesto}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$repuesto->img_uno}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$repuesto->img_dos}}" class="small-preview">
+                                                                <div class="container">
+                                                                    <div id="my-gallery" class="vanilla-zoom">
+                                                                        <div class="sidebar">
+                                                                            <img src="{{asset('storage').'/'.$suministro->img_uno}}" class="small-preview">
+                                                                            <img src="{{asset('storage').'/'.$suministro->img_zoom1}}" class="small-preview">
+                                                                            <img src="{{asset('storage').'/'.$suministro->img_zoom2}}" class="small-preview">
+                                                                        </div>
+                                                                        <div class="zoomed-image"></div>
                                                                     </div>
-                                                                    <div class="zoomed-image"></div>
                                                                 </div>
-                                                            </div>
 
                                                                 <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
-                                                                <script>
-                                                                    vanillaZoom.init('#my-gallery');
-                                                                    vanillaZoom.init('#my-gallery2');
-                                                                </script>
+                                                                    <script>
+                                                                        vanillaZoom.init('#my-gallery');
+                                                                        vanillaZoom.init('#my-gallery2');
+                                                                    </script>
                                                             <!-- Final de Zona de zoom galeria -->
-
                                                             <br></br>
                                                             <div class="card text-center">
                                                                     <div class="card-body">
                                                                         <h5 style="color: black; text-align: left;">Descripcion:</h5>
-                                                                        <p class="card-text">{{ $repuesto->descripcion_repuesto }}</p>
-                                                                        <h5 style="color: black; text-align: left;">Detalles:</h5>
-                                                                        <p class="card-text">{{ $repuesto->detalles_repuesto }}</p>
-                                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $repuesto->precio }}</span> </h5>
+                                                                        <p class="card-text">{{ $suministro->descripcion_suministro }}</p>
+                                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $suministro->precio }}</span> </h5>
+                                                    
                                                             </div>
                                                         </div>
-                                                
+                                        </div>
+
+                                        <!-- Service Start -->
+                                        <div class="service">
+                                            <div class="container">
+                                                <div class="section-header text-center">
+                                                    <h2 style="color: black;">Galeria</h2>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!-- Imagen 2 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_dos}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro</h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_dos}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 3 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_tres}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_tres}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 4 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_cuatro}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_cuatro}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 5 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_cinco}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_cinco}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 6 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_seis}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro </h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_seis}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Imagen 6 -->
+                                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                                        <div class="service-item">
+                                                            <div class="service-img">
+                                                                <img src="{{asset('storage').'/'.$suministro->img_siete}}" width="100px" height="230px" alt="Image">
+                                                            </div>
+                                                            <div class="service-text">
+                                                                <h3 style="text-align: center;">suministro</h3>
+                                                                <a class="btn" href="{{asset('storage').'/'.$suministro->img_siete}}" data-lightbox="service">+</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                        </div>  
+                                                
+                                                </div>
+                                        </div>
+                                        <!-- Service End -->
+
                         </div>
-                    </div>
                     <!-- Fin de Elementos de la zona de la izquierda -->
 
-                        <div class="col-lg-4">
-                            <div class="sidebar">
+                    <div class="col-lg-4">
+                            <div class="sidebar" style="background-color: #fbf9ff;">
+                            <br>
                                 <div class="sidebar-widget wow fadeInUp">
-                                    <h2 style="color: black;" class="widget-title">CONTACTO</h2>
+                                    <center>
+                                        <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                            <h5><b>CONTACTO</b></h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✆</b> 054-399450 - 964-770-354</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>✉</b> servicios_cliente@electromaticindustrial.com</li>
+                                                <li style="font-size: 14px;" class="list-group-item"><b>▶</b> Calle Consuelo 307-A - Cercado Arequipa</li>
+                                            </ul>
+                                        </div>
+                                    </center>  
                                 </div>
 
-                                    <img class="sticky" src="https://as01.epimg.net/meristation/imagenes/2020/03/06/betech/1583503603_543698_1583504166_noticia_normal_recorte1.jpg"  width="450px" height="440px" alt="Responsive image">
-                                <br></br>
-                                <div class="sidebar-widget wow fadeInUp">
-                                    <h2 style="color: black;" class="widget-title">Otros</h2>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-header">
-                                        Nuestros servicios
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Grupos electrogenos</li>
-                                        <li class="list-group-item">Auditoria energetica</li>
-                                        <li class="list-group-item">Ups</li>
-                                        <li class="list-group-item">Pozos de puesta a tierra</li>
-                                    </ul>
-                                </div>
                                 <br></br>
 
-                                <!--Script de facebook -->
-                                    <div class="sidebar-widget wow fadeInUp">
-                                        <h2 style="color: black;" class="widget-title">Siguenos en Facebook</h2>
-                                    </div>
-                                            <script>(function(d, s, id) {
+                                <div class="sidebar-widget wow fadeInUp">
+                                    <center>
+                                        <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                            <div class="card-header" style="color: white;">
+                                                <h5><b>NUESTROS SERVICIOS</b></h5>
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Grupos electrogenos</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Auditoria energetica</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Ups</li></a>
+                                                    <a href=""><li style="font-size: 15px;" class="list-group-item">Pozos de puesta a tierra</li></a>
+                                                </ul>
+                                        </div>
+                                    </center>
+                                </div>
+
+                                <br></br>
+
+                                <div class="sidebar-widget wow fadeInUp">
+                                <center>
+                                    <div class="card" style="text-align: left; background-color: #007939; width: 24rem;">
+                                        <div class="card-header" style="color: white;">
+                                            <h5><b>SIGUENOS EN FACEBOOK</b></h5>
+                                        </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                <script>(function(d, s, id) {
                                                         var js, fjs = d.getElementsByTagName(s)[0];
                                                         if (d.getElementById(id)) return;
                                                         js = d.createElement(s); js.id = id;
@@ -231,24 +341,21 @@
                                                         }(document, 'script', 'facebook-jssdk'));
                                             </script>
 
-	                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                <!-- Fin de script de facebook-->
-                                
+                                        <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    <br>
+                                </center>
+                                </div>
+
+
                             </div>
                             
                         </div>
                     </div>
-
             </div>
             <!-- Single Post End-->   
-
-
-
-
-
-
-
-
 
             <!-- Team Start -->
             <div class="team">
