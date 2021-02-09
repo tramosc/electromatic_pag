@@ -148,7 +148,7 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <br></br>
-                        <h2 style="color: black;">Pozos de puesta a tierra</h2>
+                        <h2 style="color: black;">POZOS DE PUESTA A TIERRA</h2>
                     </div>
                     <div class="row">
 
@@ -165,6 +165,7 @@
                                     <a href="{{ url('/'.$pozo->id.'/Vista-Pozo-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
+                            <br></br>
                         </div>
                     @endforeach
                     

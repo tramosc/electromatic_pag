@@ -267,241 +267,125 @@
             <!-- Carousel End -->
 
 
-
-          <br></br>
-
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <img style="opacity: 0.4; width: 100%; height: auto;" src="https://mercadovial.tv/wp-content/uploads/2019/03/IMG-20151002-WA0011.jpeg">
                 <div class="container">
                     <div class="row align-items-center" style="text-align: center;">
-                    <div class="col-sm-1"></div>
 
-                        <div class="col-sm-6">
-
-                        <div class="section-header text-left">
-                                <h3 style="color: black; font-family: 'Poppins', sans-serif;"><b>HISTORIA</b></h3>
-                            </div>
-                            <div class="about-text">
-                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
-                            </div>
-
-
-                        </div>
-                        <div class="col-sm-1"></div>
-
-                        <div class="col-sm-4">
-
-<!-- 
-                        <style>
-                            .mySlides {display:none;}
-                        </style>
-
-                        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-                    <div class="w3-content w3-display-container">
-                    @foreach($imagenesEmpresa as $imagenEmpresa)
-                    <div class="w3-display-container mySlides">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                        <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" class="animate__animated animate__fadeIn" width="333px" height="500px">
-                                        </div>
-                                    </div>
-                                </div>
-                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-dark-green" style="color: white; background-color: #007939;">
-                        {{$imagenEmpresa->titulo_img}}
-                        </div>
-                    </div>
-                    @endforeach
-
-                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-                    </div>
-                    <script>
-                        var slideIndex = 1;
-                        showDivs(slideIndex);
-
-                        function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                        }
-
-                        function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides");
-                        if (n > x.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = x.length}
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";  
-                        }
-                        x[slideIndex-1].style.display = "block";  
-                        }
-                    </script>
--->
-
-                        <style>
-                            @keyframes display {
-                            0% {
-                                transform: translateX(200px);
-                                opacity: 0;
-                            }
-                            10% {
-                                transform: translateX(0);
-                                opacity: 1;
-                            }
-                            20% {
-                                transform: translateX(0);
-                                opacity: 1;
-                            }
-                            30% {
-                                transform: translateX(-200px);
-                                opacity: 0;
-                            }
-                            100% {
-                                transform: translateX(-200px);
-                                opacity: 0;
-                            }
-                            }
-
-                            .pic-ctn > img {
-                            position: absolute;
-                            top: 0;
-                            left: calc(50% - 100px);
-                            opacity: 0;
-                            animation: display 10s infinite;
-                            }
-
-                            img:nth-child(2) {
-                            animation-delay: 2s;
-                            }
-                            img:nth-child(3) {
-                            animation-delay: 4s;
-                            }
-                            img:nth-child(4) {
-                            animation-delay: 6s;
-                            }
-                            img:nth-child(5) {
-                            animation-delay: 8s;
-                            }
-                            img:nth-child(6) {
-                            animation-delay: 10s;
-                            }
-
-                            .middle {
-                            transition: .5s ease;
-                            opacity: 0;
-                            position: absolute;
-                            top: 90%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            -ms-transform: translate(-50%, -50%);
-                            text-align: center;
-                            }
-
-                            .container:hover .middle {
-                            opacity: 1;
-                            }
-
-                            .text {
-                            background-color: #4CAF50;
-                            color: white;
-                            font-size: 16px;
-                            padding: 20px 32px;
-                            }
-                        </style>
-
-                        <div class="pic-ctn">
-                            @foreach($imagenesEmpresa as $imagenEmpresa)
-                            <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="" class="pic">
-                            @endforeach
-                                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                        </div>
-
-                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                                        <br></br>
-                        </div>
-
-                    <!-- 
-                        <div class="col-sm-1">
-                        
-                        </div>
-                        <div class="col-md-5">
-                            <div class="section-header text-left">
-                                <h3 style="color: black;"><b>HISTORIA</b></h3>
-                            </div>
-                            <div class="about-text">
-                                <p style="text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
-                            </div>
-                                        
-                        </div>
-
-                        <div class="col-sm-4">
-
-                                <style>
-
-                                    @keyframes display {
-                                    0% {
-                                        transform: translateX(200px);
-                                        opacity: 0;
-                                    }
-                                    10% {
-                                        transform: translateX(0);
-                                        opacity: 1;
-                                    }
-                                    20% {
-                                        transform: translateX(0);
-                                        opacity: 1;
-                                    }
-                                    30% {
-                                        transform: translateX(-200px);
-                                        opacity: 0;
-                                    }
-                                    100% {
-                                        transform: translateX(-200px);
-                                        opacity: 0;
-                                    }
-                                    }
-
-                                    .pic-ctn > img {
-                                    position: absolute;
-                                    top: 0;
-                                    left: calc(50% - 100px);
+                    
+                        <div class="col-sm-4" style="top: 50px; left: 60px; position: absolute; z-index: 1;">
+                            <style>
+                                @keyframes display {
+                                0% {
+                                    transform: translateX(200px);
                                     opacity: 0;
-                                    animation: display 10s infinite;
-                                    }
+                                }
+                                10% {
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                }
+                                20% {
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                }
+                                30% {
+                                    transform: translateX(-200px);
+                                    opacity: 0;
+                                }
+                                100% {
+                                    transform: translateX(-200px);
+                                    opacity: 0;
+                                }
+                                }
 
-                                    img:nth-child(2) {
-                                    animation-delay: 2s;
-                                    }
-                                    img:nth-child(3) {
-                                    animation-delay: 4s;
-                                    }
-                                    img:nth-child(4) {
-                                    animation-delay: 6s;
-                                    }
-                                    img:nth-child(5) {
-                                    animation-delay: 8s;
-                                    }
-                                    img:nth-child(6) {
-                                    animation-delay: 10s;
-                                    }
-                                </style>
+                                .pic-ctn > img {
+                                position: absolute;
+                                top: 0;
+                                left: calc(50% - 100px);
+                                opacity: 0;
+                                animation: display 10s infinite;
+                                }
+
+                                img:nth-child(2) {
+                                animation-delay: 2s;
+                                }
+                                img:nth-child(3) {
+                                animation-delay: 4s;
+                                }
+                                img:nth-child(4) {
+                                animation-delay: 6s;
+                                }
+                                img:nth-child(5) {
+                                animation-delay: 8s;
+                                }
+                                img:nth-child(6) {
+                                animation-delay: 10s;
+                                }
+
+                                .middle {
+                                transition: .5s ease;
+                                opacity: 0;
+                                position: absolute;
+                                top: 90%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                -ms-transform: translate(-50%, -50%);
+                                text-align: center;
+                                }
+
+                                .container:hover .middle {
+                                opacity: 1;
+                                }
+
+                                .text {
+                                background-color: #4CAF50;
+                                color: white;
+                                font-size: 16px;
+                                padding: 20px 32px;
+                                }
+                            </style>
 
                             <div class="pic-ctn">
                                 @foreach($imagenesEmpresa as $imagenEmpresa)
-                                    <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="333px" height="500px" alt="" class="pic">
+                                <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="1100px" height="650px" alt="" class="pic">
                                 @endforeach
+                                            <br></br>
+                                            <br></br>
+                                            <br></br>
+                                            <br></br>
+                                            <br></br>
+                                            <br></br>
+                                            <br></br>
                             </div>
 
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
                         </div>
-                                -->
+
+                    <!-- Colores de la empresa
+                    background-color: #02734A;
+                    background-color: #027333;
+                    background-color: #97BF95;
+                    background-color: #F2E9D8;
+                    background-color: #736F6E;
+                    color: #666666;
+                        -->
+
+                        <div class="col-sm-5" style="background-color: #F2E9D8; border-color:#F2E9D8; border-radius: 15px 50px 30px 5px; border-style: groove; border-width: 1px; position:absolute; top: 460px; left: 60px; z-index: 2; ">
+                            
+                                <div class="about-text" style="padding: 50px 40px;">
+                                    <h6 style="color: black; font-family: 'Poppins', sans-serif; text-align: left; color: black;"><b>HISTORIA</b></h6>
+                                    <p style="font-size: 12px; color: #666666; font-family: 'Poppins', sans-serif; text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
+                                </div>
+                            
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>

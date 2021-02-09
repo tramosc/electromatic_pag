@@ -141,6 +141,7 @@
             </div>
             <!-- Nav Bar End -->
 
+
         <style>
             .blog-item {
                 background: #f1f1f1;
@@ -333,7 +334,7 @@
         <div class="container">
             <div class="row"> 
 
-                <div class="col-lg-9 blog-post-single">
+                <div class="col-lg-8 blog-post-single">
                     <div class="blog-item">
 						<div class="post-content">
 							<div class="meta-info-blog">
@@ -414,113 +415,143 @@
                     }
                 </style>
                 
-				<div class="col-lg-3 col-12 right-single">
-                        <br></br>
-                        <div class="sidebar-widget wow fadeInUp">
-                                <div class="widget-tags">
-                                    <h4 class="widget-title">Blogs Recientes</h4>
-                                </div>
-                                    <div class="row blog-page">
+
+				<div class="col-lg-4">
+
+
+                                <style>
+                                    .title{
+                                        border-bottom: #007939 1px solid;
+                                        padding: 12px;    
+                                        border-radius: 10px 10px 0px 0px;
+                                        color: white;
+                                        margin-bottom: 0px;
+                                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
+                                        background: #007939; /* Old browsers */
+                                        background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
+                                        background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
+                                        background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
+                                    }
+                                    .titulo{
+                                        background: white;
+                                        border-radius: 0px 30px 30px 0px;
+                                        margin-left: -15px;
+                                        margin-top: 45px;
+                                        padding: 15px 5px 1px 40px;
+                                        font-weight: bold;
+                                    }
+                                </style>
+
+                                <div class="col-md-14">
+                                    <h5 class="title" style="background-color: #007939 ;"> BLOGS RECIENTES </h5>
+                                    
+                                    
                                     <div style="display: none">
-                    {{$contador = 0}}
-                    </div>
-                    @foreach($blogs as $blogpost)
-                    <div style="display: none">
-                        @if ($contador == 4)
-                             @break
-                        @else
-                            {{$contador = $contador + 1}}
-                        @endif
-                        </div>
-                        @if ($blogpost->id != $blog->id)
-
-                           
-                        
-                        <style>
-
-                            .flip-card {
-                            background-color: transparent;
-                            width: 300px;
-                            height: 150px;
-                            perspective: 1000px;
-                            border-radius: 10%;
-                            }
-
-                            .flip-card-inner {
-                            position: relative;
-                            width: 100%;
-                            height: 100%;
-                            text-align: center;
-                            transition: transform 0.6s;
-                            transform-style: preserve-3d;
-                            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                            border-radius: 10%;
-                            }
-
-                            .flip-card:hover .flip-card-inner {
-                            transform: rotateY(180deg);
-                            }
-
-                            .flip-card-front, .flip-card-back {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            -webkit-backface-visibility: hidden;
-                            backface-visibility: hidden;
-                            border-radius: 10%;
-                            }
-
-                            .flip-card-front {
-                            background-color: #bbb;
-                            color: black;
-                            }
-
-                            .flip-card-back {
-                            background-color: #007939;
-                            color: white;
-                            transform: rotateY(180deg);
-
-                            }
-                        </style>
-
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                <img src="{{asset('storage').'/'.$blogpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:280px;height:150px;">
-                                </div>
-                                <div class="flip-card-back">
-                                <br>
-                                <h3>{{$blogpost->titulo_blog}}</h3> 
-                                <p>{{$blogpost->fecha}}</p>
-                                <a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">ver mas</a>
-                                </div>
+                            {{$contador = 0}}
                             </div>
-                        </div>
-                        
-                        @else
-                            @continue
-                        @endif
-                    @endforeach
-
-                    </div>
-                    <br>
-                    <div class="sm-col-3"></div>
-                    <div class="sm-col-2">
-                    {{ $blogs->links() }}
-                    </div>
+                            @foreach($blogs as $blogpost)
+                            <div style="display: none">
+                                @if ($contador == 4)
+                                    @break
+                                @else
+                                    {{$contador = $contador + 1}}
+                                @endif
                                 </div>
+                                @if ($blogpost->id != $blog->id)
 
-                    <div class="widget-categories">
-						<h3 style="color: black;" class="widget-title">Siguenos en Twitter</h3>
-						<ul>
-							<li>
+                                
+                                
+                                <style>
+
+                                    .flip-card {
+                                    background-color: transparent;
+                                    width: 350px;
+                                    height: 150px;
+                                    perspective: 1000px;
+                                    border-radius: 10%;
+                                    }
+
+                                    .flip-card-inner {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    align-items: center;
+                                    transition: transform 0.6s;
+                                    transform-style: preserve-3d;
+                                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                                    border-radius: 10%;
+                                    }
+
+                                    .flip-card:hover .flip-card-inner {
+                                    transform: rotateY(180deg);
+                                    }
+
+                                    .flip-card-front, .flip-card-back {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    -webkit-backface-visibility: hidden;
+                                    backface-visibility: hidden;
+                                    border-radius: 10%;
+                                    }
+
+                                    .flip-card-front {
+                                    background-color: #bbb;
+                                    color: black;
+                                    }
+
+                                    .flip-card-back {
+                                    background-color: #007939;
+                                    color: white;
+                                    transform: rotateY(180deg);
+
+                                    }
+                                </style>
+                            <center>
+                                <div class="flip-card">
+                                    
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                        <img src="{{asset('storage').'/'.$blogpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:350px;height:150px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                        <br>
+                                        <h3>{{$blogpost->titulo_blog}}</h3> 
+                                        <p>{{$blogpost->fecha}}</p>
+                                        <a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">ver mas</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </center>
+                                
+                                @else
+                                    @continue
+                                @endif
+                            @endforeach
+
+                            </div>
+                            <br>
+                            <div class="sm-col-3"></div>
+                            <div class="sm-col-2">
+                            {{ $blogs->links() }}
                             
-                            <a class="twitter-timeline" data-lang="es" data-width="300" data-height="400" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </li>
-						</ul>
-					</div>
-                    
-				</div>
+                    </div>
+
+                                    <br>
+                                    
+                                    <div id="fb-root"><h5 class="title"> SIGUENOS EN TWITTER </h5></div>
+                                    <div class="card">
+                                        <div class="card-body"> 
+                                        <a class="twitter-timeline" data-width="350" data-height="450" data-theme="light" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        </div>
+                                    </div>
+                                    
+                                    <br><br/>
+                </div>
+
 
             </div><!-- end row -->
         </div><!-- end container -->

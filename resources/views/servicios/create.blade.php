@@ -18,19 +18,19 @@
             </div>
             <div class="col-12">
                 <label for="definicion" class="form-label">Definicion</label>
-                <input type="text" class="form-control" name="definicion" id="definicion" required>
+                <input type="text" class="form-control" name="definicion" id="definicion">
             </div>
             <div class="col-12">
                 <label for="caracteristicas" class="form-label">Caracteristicas</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="caracteristicas" name="caracteristicas" required style="height: 100px"></textarea>
+                <textarea class="form-control"  id="caracteristicas" name="caracteristicas" style="height: 100px"></textarea>
                 <label for="caracteristicas">Datos...</label>
                 </div>
             </div>
             <div class="col-12">
                 <label for="importancia" class="form-label">Importancia</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="importancia" name="importancia" required style="height: 100px"></textarea>
+                <textarea class="form-control"  id="importancia" name="importancia" style="height: 100px"></textarea>
                 <label for="importancia">Datos...</label>
                 </div>
             </div>

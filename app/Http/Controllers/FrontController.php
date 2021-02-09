@@ -106,7 +106,7 @@ class FrontController extends Controller
     public function viewCapacitacion($id)
     {
         $capacitacion = Capacitaciones::findOrFail($id);
-        $datos['capacitaciones'] = Capacitaciones::paginate(25);
+        $datos['capacitaciones'] = Capacitaciones::paginate(5);
         return view('capacitacionElemento', compact('capacitacion'),$datos);
     }
 

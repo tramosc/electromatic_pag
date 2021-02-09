@@ -141,32 +141,37 @@
             </div>
             <!-- Nav Bar End -->
             
+
+
             <!-- Contact Start -->
             <div class="team">
                 <div class="container">
                     <div class="section-header text-center">
                     <br></br>
-                        <h2 style="color: black;">Capacitaciones y cursos</h2>
+                        <h2 style="color: black;">Cursos y Capacitaciones</h2>
                     </div>
                     <div class="row">
-
-
                     
-                    @foreach($capacitaciones as $capacitacion)
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{asset('storage').'/'.$capacitacion->img_portada}}" width="100px" height="230px" alt="Team Image">
+                        @foreach($capacitaciones as $capacitacion)
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item">
+                                    <div class="team-img">
+                                        <img src="{{asset('storage').'/'.$capacitacion->img_portada}}" width="100px" height="230px" alt="Team Image">
+                                    </div>
+                                    <div class="team-text">
+                                        <h2 style="color: white;">{{$capacitacion->titulo_capacitacion}}</h2>
+                                        <a href="{{ url('/'.$capacitacion->id.'/Vista-Capacitacion-Elemento') }}" style="color: white;">Saber mas...</a>
+                                    </div>
                                 </div>
-                                <div class="team-text">
-                                    <h2 style="color: white;">{{$capacitacion->titulo_capacitacion}}</h2>
-                                    <a href="{{ url('/'.$capacitacion->id.'/Vista-Capacitacion-Elemento') }}" style="color: white;">Saber mas...</a>
-                                </div>
+                                <br></br>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
                     
-
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            {{ $capacitaciones->links() }}
+                        </div>
                     </div>
                     <br></br>
                 </div>
@@ -174,12 +179,7 @@
             <!-- Contact End -->
 
 
-
-
-
-
-
-      
+        </div>
 
 
             <!-- Team Start -->

@@ -162,6 +162,7 @@
                                     <a href="{{ url('/'.$grupo->id.'/Vista-Grupos-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
+                            <br></br>
                         </div>
                     @endforeach
                     

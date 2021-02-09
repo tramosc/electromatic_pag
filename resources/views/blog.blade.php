@@ -144,7 +144,7 @@
             <div class="blog">
                 <div class="container">
                     <div class="section-header text-center">
-                        <h2>Ultimas Actualizaciones </h2>
+                        <h2 style="color: black;">Ultimas Actualizaciones </h2>
                     </div>
 
         <style>

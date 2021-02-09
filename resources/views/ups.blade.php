@@ -162,7 +162,6 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <br></br>
-                        <p>Un vistazo a UPS</p>
                         <h2 style="color: black;">UPS</h2>
                     </div>
                     <div class="row">
@@ -180,6 +179,7 @@
                                     <a href="{{ url('/'.$up->id.'/Vista-UPS-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
+                            <br></br>
                         </div>
                     @endforeach
                     

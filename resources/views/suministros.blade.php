@@ -148,7 +148,7 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <br></br>
-                        <h2 style="color: black;">Suministros electromatic</h2>
+                        <h2 style="color: black;">SUMINISTROS</h2>
                     </div>
                     <div class="row">
 
@@ -165,6 +165,7 @@
                                     <a href="{{ url('/'.$suministro->id.'/Vista-Suministro-Elemento') }}" style="color: white;">Saber mas...</a>
                                 </div>
                             </div>
+                            <br></br>
                         </div>
                     @endforeach
                     

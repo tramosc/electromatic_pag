@@ -30,8 +30,9 @@
         <!-- Css para el mostrador de imagenes con titulo -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
 
-        <!-- Css para el mostrador de imagenes con titulo -->
+        <!-- Css para el mostrador de Iconos con titulo -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style8.css') }}" />
+        
             
     </head>
 
@@ -145,109 +146,108 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
+    
 
+            <!---  VIDEO - ZONA -->
 
-<!---  VIDEO - ZONA -->
-
-
-            <!-- Feature Start
-            <div class="feature wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="flaticon-worker"></i>
-                                </div>
-                                <div class="feature-text">
-                                    <h3>Expertos en grupos electrogenos</h3>
-                                    <p>Solidos conocimientos en la manipulacion y mantenimiento de grupos electrogenos</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="flaticon-building"></i>
-                                </div>
-                                <div class="feature-text">
-                                    <h3>Trabajos de profesionales</h3>
-                                    <p>Tenemos profesionales altamente capacitados dispuestos a la solucion de problemas</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="flaticon-call"></i>
-                                </div>
-                                <div class="feature-text">
-                                    <h3>Soporte de calidad</h3>
-                                    <p>Ofrecemos un soporte de primera para todos nuestros clientes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="showcase">
+                <div class="video-container">
+                    <video autoplay muted loop>
+                    <source src="{{ asset('img/video480.mp4') }}" type="video/mp4">
+                </video>
                 </div>
-            </div>
-             Feature End-->
+                <div class="container">
+                    <h3> video electromatic</h3>
+                </div>
+
+            </section>
+
 
 
             <!-- About Start -->
-            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            
+                <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                    <img style="opacity: 0.4; width: 100%; height: auto;" src="https://www.peru.travel/Contenido/Destino/Imagen/pe/27/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg">
+
                 <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Inicio de la zona de animacion css con imagenes-->
-                        <div class="col-lg-5 col-md-6">
-                                        <div class="hs-wrapper">
-                                        @foreach($imagenesInicio as $imagenInicio)
-                                            <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" width="333px" height="500px"/>
-                                        @endforeach
-
-                                        </div>
-
-                                        <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
-                        </div>
-                        <!-- Fin de la zona de animacion css con imagenes-->
-
-                        <div class="col-lg-7 col-md-6">
-                            <h4><b>PRONTO!!</b></h4>
+                       
+                        <div class="row align-items-center" style="top: 50px; left: 60px; position: absolute; z-index: 1;">
+                            <!-- Inicio de la zona de animacion css con imagenes-->
                             <br></br>
-                        <h5 style="color: black;"><b>Actualmente estamos trabajando en realizar alianzas estratégicas para la venta y alquiler de grupos electrógenos.  </b></h5>
+                            <div class="col-lg-7 col-md-6">
+                                            <div class="hs-wrapper">
+                                            @foreach($imagenesInicio as $imagenInicio)
+                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" width="1200px" height="600px"/>
+                                            @endforeach
 
-                        <div class="about-text">
-                        <br>
-                                <p style="text-align: center;">
-                                Somos parte de aquellos que no se conforman.
-                                </p>
+                                            </div>
 
-                                <p style="text-align: justify;">
-                                Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos lleva a mejorar día a día.   
-                                </p>
-
-                                <p style="text-align: justify;">
-                                Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad su desarrollo personal y profesional.   
-                                </p>
-
-                                <p style="text-align: justify;">
-                                Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
-                                </p>
-
-                                <p style="text-align: justify;">Pensando en nuestros clientes implementamos una plataforma digital los 365 días del año con información importante del diagnóstico, evaluación, mantenimiento preventivo o correctivo, permitiendo adquirir información importante de su equipo, sumado al seguimiento personalizado periódico mientras dura nuestra garantía.</p>
-
-                                <p style="color: black; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
-                                
-                                
+                                            <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
                             </div>
-
-                            <div class="about-text">
-                            <a class="btn" href="http://localhost/electromatic/public/Vista-Empresa">Saber Mas...</a>
-                            </div>
-                            
+                            <!-- Fin de la zona de animacion css con imagenes-->    
                         </div>
+
+                        <!-- Colores de la empresa seccion 1
+                    background-color: #02734A;
+                    background-color: #027333;
+                    background-color: #97BF95;
+                    background-color: #F2E9D8;
+                    background-color: #736F6E;
+                        -->
+
+                        <!-- Colores de la empresa seccion 2
+                    background-color: #BAD9C8;
+                    background-color: #82F27E;
+                        -->
+
+                        <!-- colores seccion 3
+                    background-color: #F2F2F2;
+                    background-color: #358C5B;
+
+                        -->
+
+                        <!-- colores seccion 4
+                    background-color: #5DA676;
+                    background-color: #358C5B;
+
+                        -->
+
+
+                        <div class="col-lg-6 col-md-6" style="background-color: #F2F2F2; border-color:#F2F2F2; border-radius: 15px 50px; border-style: groove; border-width: 1px; position:absolute; top: 190px; left: 650px; z-index: 2; ">
+                                    
+                            <div class="about-text" style="padding: 50px 50px;">
+                                    <h5 style="font-size: 15px;"><b>PRONTO!!</b></h5>
+                                <h6 style="color: black; font-size: 14px;"><b>Actualmente estamos trabajando en realizar alianzas estratégicas para la venta y alquiler de grupos electrógenos.  </b></h6>
+                                        
+                                            <p style="font-size: 12px; text-align: center;">
+                                            Somos parte de aquellos que no se conforman.
+                                            </p>
+
+                                            <p style="font-size: 12px; text-align: justify;">
+                                            Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos lleva a mejorar día a día.   
+                                            </p>
+
+                                            <p style="font-size: 12px; text-align: justify;">
+                                            Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad su desarrollo personal y profesional.   
+                                            </p>
+
+                                            <p style="font-size: 12px; text-align: justify;">
+                                            Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
+                                            </p>
+
+                                            <p style=" font-size: 12px; text-align: justify;">Pensando en nuestros clientes implementamos una plataforma digital los 365 días del año con información importante del diagnóstico, evaluación, mantenimiento preventivo o correctivo, permitiendo adquirir información importante de su equipo, sumado al seguimiento personalizado periódico mientras dura nuestra garantía.</p>
+
+                                            <p style=" font-size: 12px; color: black; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
+                                            
+                                            
+                                    </div>
+
+                                
+                                
+                        </div>
+
                     </div>
                 </div>
-            </div>
             <!-- About End -->
             <br></br>
             <!-- Feature Start-->
