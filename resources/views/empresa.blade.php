@@ -440,11 +440,13 @@
             </div>
             <!-- About End -->
 
+
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-8">
+                        
+                        <div class="col-lg-7 col-md-8" style="top: 50px; left: 140px; width: 500px; height: 400px;">
                             <div class="about-img">
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
@@ -455,38 +457,28 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="col-sm-1"></div>
 
 
-                        <div class="col-md-5">
-                            <div class="section-header text-left">
-                                <h3 style="font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h3>
-                            </div>
-                            <div class="about-text">
-                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">
+                        <div class="col-md-5" style="background-color: #BAD9C8; border-style: groove; border-color: #BAD9C8; border-width: 1px; border-radius: 15px 50px; top: -200px; left: 480px;">
+                            
+                            <div class="about-text" style="padding: 30px 40px;">
+                                <div class="section-header text-left">
+                                    <h5 style="font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h5>
+                                </div>
+                                <p style="font-size: 13px; font-family: 'Poppins', sans-serif; text-align: justify;">
                                 Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
                                 </p>
-                                
                             </div>
-                            <br></br>
+                            
                         </div>
 
 
-    
-                        <div class="col-md-5">
-                        <br></br>
-                            <div class="section-header text-left">
-                                <h3 style="font-family: 'Poppins', sans-serif; color: black;"><b>VISIÓN</b></h3>
-                            </div>
-                            <div class="about-text">
-                                <p style="font-family: 'Poppins', sans-serif; text-align: justify;">
-                                Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
-                                </p>
-                            </div>
-                            <br></br>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-lg-5 col-md-6">
+
+                        
+                        <div class="col-lg-5 col-md-6" style="top: 150px; left: 60px; width: 700px; height: 400px;">
                             <div class="about-img">
                                 <div class="scaling-image h-100">
                                     <div class="frame h-100">
@@ -498,10 +490,27 @@
                             </div>
                         </div>
 
+                        <div class="col-md-5" style="background-color: #BAD9C8; border-color: #BAD9C8; border-style: groove; border-width: 1px; border-radius: 15px 50px; top: 5px; left: 200px;">
+                            <div class="about-text" style="padding: 30px 40px;">
+                                    <div class="section-header text-left">
+                                        <h5 style="font-family: 'Poppins', sans-serif; color: black;"><b>VISIÓN</b></h5>
+                                    </div>
+                                <p style="font-size: 13px; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                                </p>
+                            </div>
+                        </div>
+
+
+    
+
+
                     </div>
                 </div>
             </div>
             <!-- About End -->
+
+<br></br>
             
             <!-- FAQs Start -->
             <div class="faqs">

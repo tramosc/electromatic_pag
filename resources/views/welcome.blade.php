@@ -156,8 +156,9 @@
                     <source src="{{ asset('img/video480.mp4') }}" type="video/mp4">
                 </video>
                 </div>
-                <div class="container">
-                    <h3> video electromatic</h3>
+                <div class="content">
+                    <h1 style="color: white;"><b>BIENVENIDO  A ELECTROMATIC INDUSTRIAL</b></h1>
+                    <h3 style="color: white;">CONFIANZA QUE DA CALIDAD</h3>
                 </div>
 
             </section>
@@ -166,7 +167,7 @@
 
             <!-- About Start -->
             
-                <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s">
                     <img style="opacity: 0.4; width: 100%; height: auto;" src="https://www.peru.travel/Contenido/Destino/Imagen/pe/27/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg">
 
                 <div class="container">

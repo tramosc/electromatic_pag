@@ -330,7 +330,7 @@
                                         @if(($capacitacion->precio))
                                             <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$capacitacion->precio}}</span> </h5>
                                             @else
-                                            <p style="text-align: left;"><span>No hay costo confirmado</span></p>
+                                        
                                         @endif
                                     </div>
                             </div>
@@ -404,7 +404,7 @@
                             </div>
                             @else
                             <br>
-                                <p>No hay recursos extras disponibles</p>
+                               
                             <br>
                         @endif
                     </div>
