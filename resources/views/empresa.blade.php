@@ -380,7 +380,13 @@
                             
                                 <div class="about-text" style="padding: 50px 40px;">
                                     <h6 style="color: black; font-family: 'Poppins', sans-serif; text-align: left; color: black;"><b>HISTORIA</b></h6>
-                                    <p style="font-size: 12px; color: #666666; font-family: 'Poppins', sans-serif; text-align: justify;">ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra, cumpliendo estándares y normas de calidad para una operación segura</p>
+                                    <p style="font-size: 12px; color: black; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                    ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de 
+                                    dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, 
+                                    electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. 
+                                    Además, tableros de transferencia automática, auditorias energéticas, proyectos eléctricos y pozos de puesta a tierra,
+                                     cumpliendo estándares y normas de calidad para una operación segura</p>
+
                                 </div>
                             
                         </div>
@@ -439,81 +445,146 @@
                 </div>
             </div>
             <!-- About End -->
+<!-- opcion 1 #358C5B;  #F2F2F2-->
+<!-- opcion 2 #97BF95;  #F2E9D8-->
+<!-- opcion 3 #02732A;  #82F27E-->
+<!-- opcion 4 #02732A;  #358C5B-->
+<!-- opcion 5 #F2F2F2;  #358C5B-->
+<!-- opcion 6 #038C7F;  #F2F2F2-->
+<!-- opcion 7 #5DA676;  #82F27E-->
+<!-- opcion 8 #02732A;  #737373-->
+<!-- opcion 9 #82F27E;  #F2F2F2-->
+<!-- opcion 10 #82F27E;  #BAD9C8-->
+<!-- opcion 11 #737373;  #02732A-->
+<!-- opcion 12 #038C7F;  #358C5B-->
+<!-- opcion 13 #F2F2F2;  #BAD9C8-->
+<!-- opcion 14 #02732A;  #F2F2F2          style="background-color: #66aa84;-->
+
+<style>
+    .bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #FFFFFF;
+        padding: 90px 90px
+        ;
+    }
+
+    .col {
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .bg-left {
+        background: url("img/img07.jpg");
+        /**linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), */
+
+    }
+
+    .bg-right {
+        background: url("img/img08.jpg");
+
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+</style>
 
 
-            <!-- About Start -->
-            <div class="about wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="row align-items-center">
-                        
-                        <div class="col-lg-7 col-md-8" style="top: 50px; left: 140px; width: 500px; height: 400px;">
-                            <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{ asset('img/mision.png') }}" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="about wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid"  data-wow-delay="0.1s">
+	<div class="row">
+	    <div class="col-xs-12 col-md-6">
+	        <div class="bg bg-left">
+            <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>MISIÓN</b></h3>
+               
+               <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
+               Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
+               </p>
+               <br>
+	        </div>
+	    </div>
+	    <div class="col-xs-12 col-md-6">
+            <div class="bg bg-right">
+                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>VISION</b></h3>
+                         
+                         <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
+                         Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                         </p>
+	        </div>
+	    </div>
+	</div>
+</div>
+</div>
 
 
-                        <div class="col-sm-1"></div>
 
 
-                        <div class="col-md-5" style="background-color: #BAD9C8; border-style: groove; border-color: #BAD9C8; border-width: 1px; border-radius: 15px 50px; top: -200px; left: 480px;">
-                            
-                            <div class="about-text" style="padding: 30px 40px;">
-                                <div class="section-header text-left">
-                                    <h5 style="font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h5>
-                                </div>
-                                <p style="font-size: 13px; font-family: 'Poppins', sans-serif; text-align: justify;">
+
+
+
+
+
+
+
+
+            <!-- Fact Start -->
+            <!-- 
+            <div class="fact">
+                
+                    <div class="row">
+                        <div class="col-md-6 fact-left wow slideInLeft" style="padding-right: 0%; padding-left: 0%;">
+                        <img src="{{ asset('img/img07.jpg') }}" width="100%" height="60%">
+                            <div class="about-text" style=" position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
+                           
+                                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>MISIÓN</b></h3>
+               
+                                <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
                                 Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
                                 </p>
-                            </div>
-                            
-                        </div>
-
-
-
-                        
-                        <div class="col-lg-5 col-md-6" style="top: 150px; left: 60px; width: 700px; height: 400px;">
-                            <div class="about-img">
-                                <div class="scaling-image h-100">
-                                    <div class="frame h-100">
-                                        <div class="feature-img-bg h-100">
-                                            <img src="{{ asset('img/vision.png') }}" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
+                                <br></br><br></br><br></br><br></br>
                             </div>
                         </div>
+                        <div class="col-md-6 fact-right wow slideInRight" style="padding-right: 0%; padding-left: 0%;">
+                        <img src="{{ asset('img/img08.jpg') }}" width="100%" height="60%">
 
-                        <div class="col-md-5" style="background-color: #BAD9C8; border-color: #BAD9C8; border-style: groove; border-width: 1px; border-radius: 15px 50px; top: 5px; left: 200px;">
-                            <div class="about-text" style="padding: 30px 40px;">
-                                    <div class="section-header text-left">
-                                        <h5 style="font-family: 'Poppins', sans-serif; color: black;"><b>VISIÓN</b></h5>
-                                    </div>
-                                <p style="font-size: 13px; font-family: 'Poppins', sans-serif; text-align: justify;">
+                            <div class="about-text" style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
+                               
+                                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>VISION</b></h3>
+                         
+                                <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
                                 Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
                                 </p>
+                                <br></br><br></br><br></br>
                             </div>
+
                         </div>
-
-
-    
-
-
                     </div>
-                </div>
-            </div>
-            <!-- About End -->
+            
+            </div>-->
+            <!-- Fact End -->
 
-<br></br>
+
+
+
+
+
+
+
+
+
+
+            
+
             
             <!-- FAQs Start -->
             <div class="faqs">
+            <br></br>
                 <div class="container">
                     <div class="section-header text-center">
                        <h3 style=" font-family: 'Poppins', sans-serif; color: black;"><b>NUESTROS VALORES</b></h3> 
@@ -575,53 +646,52 @@
             </div>
             <!-- FAQs End -->
 <br></br>
+<br>
 
 <!--  Nuevo clientes logos-->
-
-<div class="slider">
-	<div class="slide-track">
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/09.png') }}" height="80" width="250" alt="">
-		</div>
-		<div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/03.png') }}" height="80" width="250" alt="">
-		</div>
-		<div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/07.png') }}" height="100" width="250" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/credinka.png') }}" height="120" width="250" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/06.jpg') }}" height="100" width="280" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/10.png') }}" height="100" width="230" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/02.png') }}" height="100" width="250" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/logosenasa.png') }}" height="100" width="220" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/04.png') }}" height="100" width="250" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/01.png') }}" height="100" width="280" alt="">
-		</div>
-        <div style="text-align: center;" class="slide">
-			<img src="{{ asset('img/blanco.jpg') }}" height="100" width="250" alt="">
-		</div>
-        <div class="slide">
-			<p></p>
-        </div>
-        <div class="slide">
-        <p></p>
+            <div class="slider">
+                <div class="slide-track">
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/09.png') }}" height="80" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/03.png') }}" height="80" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/07.png') }}" height="100" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/credinka.png') }}" height="120" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/06.jpg') }}" height="100" width="280" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/10.png') }}" height="100" width="230" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/02.png') }}" height="100" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/logosenasa.png') }}" height="100" width="220" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/04.png') }}" height="100" width="250" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/01.png') }}" height="100" width="280" alt="">
+                    </div>
+                    <div style="text-align: center;" class="slide">
+                        <img src="{{ asset('img/blanco.jpg') }}" height="100" width="250" alt="">
+                    </div>
+                    <div class="slide">
+                        <p></p>
+                    </div>
+                    <div class="slide">
+                    <p></p>
+                        </div>
+                </div>
             </div>
-	</div>
-</div>
-
 
 
             <!-- ======= Clients LOGO Section 

@@ -160,79 +160,125 @@
                                            </div>
                                             
                                        </div>     
+
                             <div class="service">
                                 <div class="container">
                                         <div class="card-body">
 
-                                        <style>
-                                            h1 {
-                                                text-align: center;
-                                            }
-                                            .capas {
-                                                position: relative;
-                                                max-width: 650px;
-                                                margin: 0 auto;
-                                            }
-                                            .capas img {
-                                                position: absolute;
-                                                max-width: 100%;
-                                                transition: all ease 1250ms;
-                                                transform-style: preserve-3d;
-                                            }
-                                            .capas:hover .capa0 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(0px);
-                                            }
-                                            .capas:hover .capa1 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(40px);
-                                                opacity: .6;
-                                            }
-                                            .capas:hover .capa2 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(80px);
-                                            }
-                                            .capas:hover .capa3 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(120px);
-                                            }
-                                            .capas:hover .capa4 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(160px);
-                                            }
-                                            .capas:hover .capa5 {
-                                                transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(200px);
-                                            top: 0;
-                                            left: 0;
-                                            width: 250px;
-                                            height: 150px;
-                                            }
-                                        </style>
-                                        
-                                <div class="capas">
 
-                                <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="800" height="550" class="capa3">
-                                <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="400" height="250" class="capa4">
-                                    <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="800" height="550" class="capa5">
-                                </div>
+                                    <!-- Nueva animacion de imagenes  -->
+                                                <style>
+                                                        * {
+                                                        padding: 0;
+                                                        margin: 0;
+                                                        }
+                                                        .contenidos {
+                                                        width: 100%;
+                                                        min-height: 50vh;
+                                                        }
+                                                        .image {
+                                                        perspective: 3000px;
+                                                        width: 50%;
+                                                        position: absolute;
+                                                        left: 50%;
+                                                        top:50%;
+                                                        transform: translate(-50%, -50%);
+                                                        transform-style: preserve-3d;
+                                                        }
+                                                        .image img {
+                                                        transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+                                                        box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+                                                        transition: all .4s;
+                                                        transform-style: preserve-3d;
+                                                        }
+                                                        .image:hover img {
+                                                        transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+                                                        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+                                                        }
 
-                                                            <br></br><br></br>
+                                                </style>
+                                                <div class="contenidos">
+                                                    <div class="image">
+                                                        <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" alt="">
+                                                    </div>
+                                                </div>
 
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
-                                                            <br></br>
+                                    <!-- Fin de la nuema animacion-->
+
+
+                                            <!-- Imagenes 3D-->
+                                                    <!-- 
+                                                            <style>
+                                                                h1 {
+                                                                    text-align: center;
+                                                                }
+                                                                .capas {
+                                                                    position: relative;
+                                                                    max-width: 650px;
+                                                                    margin: 0 auto;
+                                                                }
+                                                                .capas img {
+                                                                    position: absolute;
+                                                                    max-width: 100%;
+                                                                    transition: all ease 1250ms;
+                                                                    transform-style: preserve-3d;
+                                                                }
+                                                                .capas:hover .capa0 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(0px);
+                                                                }
+                                                                .capas:hover .capa1 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(40px);
+                                                                    opacity: .6;
+                                                                }
+                                                                .capas:hover .capa2 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(80px);
+                                                                }
+                                                                .capas:hover .capa3 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(120px);
+                                                                }
+                                                                .capas:hover .capa4 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(160px);
+                                                                }
+                                                                .capas:hover .capa5 {
+                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(200px);
+                                                                top: 0;
+                                                                left: 0;
+                                                                width: 250px;
+                                                                height: 150px;
+                                                                }
+                                                            </style>
+                                                    
+                                                            <div class="capas">
+
+                                                            <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="800" height="550" class="capa3">
+                                                            <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="400" height="250" class="capa4">
+                                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="800" height="550" class="capa5">
+                                                            </div>
+
+                                                                        <br></br><br></br>
+
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                                        <br></br>
+                                                        -->
+                                            <!-- Fin Imagenes 3D-->
 
                                                             <!--
-                                                                                                        <div class="about-img">
-                                                                                                                <div class="scaling-image h-100">
-                                                                                                                    <div class="frame h-100">
-                                                                                                                        <div class="feature-img-bg h-100">
-                                                                                                                            <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                        </div>
+                                                                    <div class="about-img">
+                                                                            <div class="scaling-image h-100">
+                                                                                <div class="frame h-100">
+                                                                                    <div class="feature-img-bg h-100">
+                                                                                        <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                    </div>
                                                             -->
                                         </div>
 
@@ -243,6 +289,18 @@
 
                                     <center>
                                         @if (($servicio->definicion))
+
+                                        <div class="card" style="background-color: #007939; width: 45rem;">
+                                            <div class="card-header" style="color: white;">
+                                                <h5 style="text-align: left;"><b>DEFINICION</b></h5>
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">{{ $servicio->definicion }}</li>
+                                                
+                                                </ul>
+                                        </div>
+                                        
+                                        <!-- 
                                             <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
                                             
                                                 <div class="card-header" style="color: white;">
@@ -253,6 +311,7 @@
                                                     </ul>
                                                 
                                             </div>
+                                        -->
                                             @else
                                             <!-- mensaje de que no hay descripcion--->
                                         @endif
@@ -262,14 +321,16 @@
 
                                         @if (($servicio->caracteristicas))
                                         <center>
-                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
+                                            <div class="card" style="background-color: #007939; width: 45rem;">
                                                 <div class="card-header" style="color: white;">
-                                                    <h5><b>CARACTERISTICAS</b></h5>
+                                                    <h5 style="text-align: left;"><b>CARACTERISTICAS</b></h5>
                                                 </div>
                                                     <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->caracteristicas }}</li>
+                                                        <li class="list-group-item">{{ $servicio->caracteristicas }}</li>
+                                                    
                                                     </ul>
                                             </div>
+
                                         </center>
                                         @else
                                             <!-- mensaje de que no hay descripcion--->
@@ -278,12 +339,13 @@
                   
                                         @if (($servicio->importancia))
                                         <center>
-                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
+                                            <div class="card" style="background-color: #007939; width: 45rem;">
                                                 <div class="card-header" style="color: white;">
-                                                    <h5><b>IMPORTANCIA</b></h5>
+                                                    <h5 style="text-align: left;"><b>IMPORTANCIA</b></h5>
                                                 </div>
                                                     <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->importancia }}</li>
+                                                        <li class="list-group-item">{{ $servicio->importancia }}</li>
+                                                    
                                                     </ul>
                                             </div>
                                         </center>

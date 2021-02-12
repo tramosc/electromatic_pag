@@ -153,7 +153,7 @@
             <section class="showcase">
                 <div class="video-container">
                     <video autoplay muted loop>
-                    <source src="{{ asset('img/video480.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('img/video480.mp4') }}" type="video/mp4">
                 </video>
                 </div>
                 <div class="content">
@@ -172,13 +172,13 @@
 
                 <div class="container">
                        
-                        <div class="row align-items-center" style="top: 50px; left: 60px; position: absolute; z-index: 1;">
+                        <div class="row align-items-center" style=" top: 50px; left: 60px; position: absolute; z-index: 1;">
                             <!-- Inicio de la zona de animacion css con imagenes-->
                             <br></br>
                             <div class="col-lg-7 col-md-6">
                                             <div class="hs-wrapper">
                                             @foreach($imagenesInicio as $imagenInicio)
-                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" width="1200px" height="600px"/>
+                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="" width="1200px" height="600px"/>
                                             @endforeach
 
                                             </div>
@@ -189,7 +189,7 @@
                         </div>
 
                         <!-- Colores de la empresa seccion 1
-                    background-color: #02734A;
+                    background-color: #02732A;
                     background-color: #027333;
                     background-color: #97BF95;
                     background-color: #F2E9D8;
@@ -210,35 +210,46 @@
                         <!-- colores seccion 4
                     background-color: #5DA676;
                     background-color: #358C5B;
-
+                    border-radius: 15px 50px;
+                    background: linear-gradient(#02732A, #F2F2F2);
                         -->
 
 
-                        <div class="col-lg-6 col-md-6" style="background-color: #F2F2F2; border-color:#F2F2F2; border-radius: 15px 50px; border-style: groove; border-width: 1px; position:absolute; top: 190px; left: 650px; z-index: 2; ">
+                        <div class="col-lg-6 col-md-6" style="background-color: #F2F2F2; border-style: ridge; border-width: 6px; border-color: #358C5B; position:absolute; top: 350px; left: 650px; z-index: 2; ">
                                     
                             <div class="about-text" style="padding: 50px 50px;">
-                                    <h5 style="font-size: 15px;"><b>PRONTO!!</b></h5>
+                                    <h5 style="font-size: 15px; color: black;"><b>PRONTO!!</b></h5>
                                 <h6 style="color: black; font-size: 14px;"><b>Actualmente estamos trabajando en realizar alianzas estratégicas para la venta y alquiler de grupos electrógenos.  </b></h6>
                                         
-                                            <p style="font-size: 12px; text-align: center;">
+                                            <p style="color: black; font-size: 12px; text-align: center;">
                                             Somos parte de aquellos que no se conforman.
                                             </p>
 
-                                            <p style="font-size: 12px; text-align: justify;">
-                                            Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos lleva a mejorar día a día.   
+                                            <p style="color: black; font-size: 12px; text-align: justify;">
+                                                Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas 
+                                                de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos 
+                                                lleva a mejorar día a día.   
                                             </p>
 
-                                            <p style="font-size: 12px; text-align: justify;">
-                                            Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad su desarrollo personal y profesional.   
+                                            <p style="color: black; font-size: 12px; text-align: justify;">
+                                                Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad 
+                                                su desarrollo personal y profesional.   
                                             </p>
-
-                                            <p style="font-size: 12px; text-align: justify;">
+                                        <!-- 
+                                            <p style="color: black; font-size: 12px; text-align: justify;">
                                             Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
                                             </p>
-
-                                            <p style=" font-size: 12px; text-align: justify;">Pensando en nuestros clientes implementamos una plataforma digital los 365 días del año con información importante del diagnóstico, evaluación, mantenimiento preventivo o correctivo, permitiendo adquirir información importante de su equipo, sumado al seguimiento personalizado periódico mientras dura nuestra garantía.</p>
-
-                                            <p style=" font-size: 12px; color: black; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
+                                        -->
+                                        <!-- 
+                                            <p style=" color: black; font-size: 12px; text-align: justify;">
+                                                        Pensando en nuestros clientes implementamos una plataforma digital los 
+                                                        365 días del año con información importante del diagnóstico, evaluación, 
+                                                        mantenimiento preventivo o correctivo, permitiendo adquirir información 
+                                                        importante de su equipo, sumado al seguimiento personalizado periódico mientras 
+                                                        dura nuestra garantía.
+                                            </p>
+                                        -->
+                                            <p style="  color: black; font-size: 12px; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
                                             
                                             
                                     </div>
@@ -463,36 +474,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">
@@ -502,16 +483,7 @@
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
-        
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
+    
                                     </div>
                                 </div>
 

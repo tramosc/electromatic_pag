@@ -221,7 +221,7 @@
         </style>
                     
                     <div class="thumb">
-                        <a href="#">
+                        <a >
                                 <span>Blogs - Electromatic </span>
                         </a>
                     </div>
