@@ -139,6 +139,23 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
+
+            <!-- Page Header Start -->
+                <div class="page-header" style="background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-image: url('https://www.grupoalbe.com/wp-content/uploads/2018/01/pexels-photo-265118.jpeg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>MANUALES</h2>
+                            </div>
+                            <div class="col-12">
+                                <a>INICIO</a>
+                                <a>MANUALES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Page Header End -->
+
             
             <!-- Single Post Start-->
             <div class="single">

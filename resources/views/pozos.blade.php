@@ -156,15 +156,17 @@
                     
                     @foreach($pozos as $pozo)
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="100px" height="230px" alt="Team Image">
+                            <a href="{{ url('/'.$pozo->id.'/Vista-Pozo-Elemento') }}">
+                                <div class="team-item">
+                                    <div class="team-img">
+                                        <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="100px" height="230px" alt="Team Image">
+                                    </div>
+                                    <div class="team-text">
+                                        <h2 style="color: white;">{{$pozo->titulo_pozo}}</h2>
+                                        <a href="{{ url('/'.$pozo->id.'/Vista-Pozo-Elemento') }}" style="color: white;">Saber mas...</a>
+                                    </div>
                                 </div>
-                                <div class="team-text">
-                                    <h2 style="color: white;">{{$pozo->titulo_pozo}}</h2>
-                                    <a href="{{ url('/'.$pozo->id.'/Vista-Pozo-Elemento') }}" style="color: white;">Saber mas...</a>
-                                </div>
-                            </div>
+                            </a>
                             <br></br>
                         </div>
                     @endforeach

@@ -215,7 +215,7 @@
                         -->
 
 
-                        <div class="col-lg-6 col-md-6" style="background-color: #F2F2F2; border-style: ridge; border-width: 6px; border-color: #358C5B; position:absolute; top: 350px; left: 650px; z-index: 2; ">
+                        <div class="col-lg-6 col-md-6" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; ">
                                     
                             <div class="about-text" style="padding: 50px 50px;">
                                     <h5 style="font-size: 15px; color: black;"><b>PRONTO!!</b></h5>
@@ -235,11 +235,11 @@
                                                 Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad 
                                                 su desarrollo personal y profesional.   
                                             </p>
-                                        <!-- 
+                                        
                                             <p style="color: black; font-size: 12px; text-align: justify;">
                                             Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
                                             </p>
-                                        -->
+                                        
                                         <!-- 
                                             <p style=" color: black; font-size: 12px; text-align: justify;">
                                                         Pensando en nuestros clientes implementamos una plataforma digital los 

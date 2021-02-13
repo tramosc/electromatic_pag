@@ -177,6 +177,18 @@ class SuministrosController extends Controller
            Storage::delete('public/'.$suministro->img_zoom2);
            $datosSuministro['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
        }
+       
+       if($request->hasFile('img_zoom3')){
+        $suministro= Suministros::findOrFail($id);
+        Storage::delete('public/'.$suministro->img_zoom3);
+        $datosSuministro['img_zoom3']=$request->file('img_zoom3')->store('uploads', 'public');
+    }
+
+    if($request->hasFile('img_zoom4')){
+        $suministro= Suministros::findOrFail($id);
+        Storage::delete('public/'.$suministro->img_zoom4);
+        $datosSuministro['img_zoom4']=$request->file('img_zoom4')->store('uploads', 'public');
+    }
 
         Suministros::where('id','=',$id)->update($datosSuministro);
  
@@ -222,6 +234,12 @@ class SuministrosController extends Controller
             Suministros::destroy($id);
         }
         if(Storage::delete('public/'.$suministro->img_zoom2)){
+            Suministros::destroy($id);
+        }
+        if(Storage::delete('public/'.$suministro->img_zoom3)){
+            Suministros::destroy($id);
+        }
+        if(Storage::delete('public/'.$suministro->img_zoom4)){
             Suministros::destroy($id);
         }
         return redirect('suministros');

@@ -504,7 +504,7 @@ a:focus {
 /*******************************/
 .feature {
     position: relative;
-    margin-bottom: 45px;
+    /*margin-bottom: 45px;*/
 }
 
 .feature .col-md-12 {

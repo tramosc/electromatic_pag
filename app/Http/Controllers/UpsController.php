@@ -175,6 +175,18 @@ class UpsController extends Controller
         $datosUps['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
     }
 
+    if($request->hasFile('img_zoom3')){
+        $ups= Ups::findOrFail($id);
+        Storage::delete('public/'.$ups->img_zoom3);
+        $datosUps['img_zoom3']=$request->file('img_zoom3')->store('uploads', 'public');
+    }
+
+    if($request->hasFile('img_zoom4')){
+        $ups= Ups::findOrFail($id);
+        Storage::delete('public/'.$ups->img_zoom4);
+        $datosUps['img_zoom4']=$request->file('img_zoom4')->store('uploads', 'public');
+    }
+
          Ups::where('id','=',$id)->update($datosUps);
  
          $ups= Ups::findOrFail($id);
@@ -219,6 +231,12 @@ class UpsController extends Controller
             Ups::destroy($id);
         }
         if(Storage::delete('public/'.$ups->img_zoom2)){
+            Ups::destroy($id);
+        }
+        if(Storage::delete('public/'.$ups->img_zoom3)){
+            Ups::destroy($id);
+        }
+        if(Storage::delete('public/'.$ups->img_zoom4)){
             Ups::destroy($id);
         }
         return redirect('ups');

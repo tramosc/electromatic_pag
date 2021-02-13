@@ -10,7 +10,7 @@
         {{ csrf_field() }}
             <div class="col-md-6">
                 <label for="titulo_blog" class="form-label">Titulo del blog</label>
-                <input type="text" class="form-control" name="titulo_blog" id="titulo_blog" maxlength="191">
+                <input type="text" class="form-control" name="titulo_blog" id="titulo_blog" required maxlength="191">
             </div>
             <div class="col-md-6">
                 <label for="img_portada" class="form-label">Imagen de portada</label>
@@ -35,7 +35,7 @@
 
             <div class="col-md-6">
                 <label for="img_contenido" class="form-label">Imagen de Contenido</label>
-                <input type="file" class="form-control" name="img_contenido" required accept="image/png, image/jpeg" id="img_contenido">
+                <input type="file" class="form-control" name="img_contenido" accept="image/png, image/jpeg" id="img_contenido">
             </div>
 
             <div class="col-12">

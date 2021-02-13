@@ -162,18 +162,35 @@
                                                 <div class="card-body">
                                                     <!-- <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="450" height="250">-->
                                                     <!--  Zona de zoom galeria -->
-                                                        <div class="container">
-                                                            <div id="my-gallery" class="vanilla-zoom">
-                                                                <div class="sidebar">
-                                                                    <img src="{{asset('storage').'/'.$pozo->img_uno}}" class="small-preview">
-                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" class="small-preview">
-                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" class="small-preview">
-                                                                </div>
-                                                                <div class="zoomed-image"></div>
-                                                            </div>
-                                                        </div>
 
-                                                        <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
+
+                                                        @if(($pozo->img_zoom1)||($pozo->img_zoom2)||($pozo->img_zoom3)||($pozo->img_zoom4))
+                                                                <div class="container">
+                                                                    <div id="my-gallery" class="vanilla-zoom">
+                                                                        <div class="sidebar">
+                                                                        @if(($pozo->img_zoom1))
+                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" class="small-preview">
+                                                                            @else
+                                                                        @endif
+                                                                        @if(($pozo->img_zoom2))
+                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" class="small-preview">
+                                                                            @else
+                                                                        @endif
+                                                                        @if(($pozo->img_zoom3))
+                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom3}}" class="small-preview">
+                                                                            @else
+                                                                        @endif
+                                                                        @if(($pozo->img_zoom4))
+                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom4}}" class="small-preview">
+                                                                            @else
+                                                                        @endif
+                                                                        </div>
+                                                                        <div class="zoomed-image"></div>
+                                                                    </div>
+                                                                </div>
+                                                            @else
+                                                        @endif
+                                                            <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                             <script>
                                                                 vanillaZoom.init('#my-gallery');
                                                                 vanillaZoom.init('#my-gallery2');
@@ -193,7 +210,6 @@
                         <!-- Fin de Elementos de la zona de la izquierda -->
                     </div>
                         <div class="col-lg-4">
-                            <div class="sidebar" style="background-color: #fbf9ff;">
                                         <br>
                                 <style>
                                     .title{
@@ -220,9 +236,54 @@
                                 </style>
 
                                 <div class="col-md-10" style="background:gainsboro">
+                                            <br>
                                     <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
                                     <ul class="list-group">                    
                                                     <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
+                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                    </ul>
+                                    <br>
+
+                                    <style>
+                                  
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
+
+                                    <div class="sticky">
+                                    <br></br>
+                                    <br>
+                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                    <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    
+
+                                </div>
+
+
+                            <!-- Antiguo lateral
+                                <div class="col-md-10" style="background:gainsboro">
+                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <ul class="list-group">                    
                                                     <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
                                                     <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
                                                     <li class="list-group-item"><a href=""> UPS </a></li>
@@ -242,8 +303,8 @@
                                     <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
                                     <br><br/>
                                 </div>
-                                
-                            </div>
+                            -->
+                            
                         </div>
                     </div>
                 </div>
@@ -254,118 +315,119 @@
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                    </div>
+                    @if(($pozo->img_dos)||($pozo->img_tres)||($pozo->img_cuatro)||($pozo->img_cinco)||($pozo->img_seis)||($pozo->img_siete))                    
+                        <div class="section-header text-center">
+                            <h2 style="color: black;">Galeria</h2>
+                        </div>
 
-                    <div class="row">
+                        <div class="row">
 
-                    @if(($pozo->img_dos))
-                        <!-- Imagen 2 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_dos}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
+                                @if(($pozo->img_dos))
+                                    <!-- Imagen 2 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_dos}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo</h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_dos}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 5-->
+                                @endif
+
+                                @if(($pozo->img_tres))
+                                    <!-- Imagen 3 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo </h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_tres}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 5-->
+                                @endif
+
+                                @if(($pozo->img_cuatro))
+                                    <!-- Imagen 4 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo </h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_cuatro}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 5-->
+                                @endif
+
+                                @if(($pozo->img_cinco))
+                                    <!-- Imagen 5 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo </h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_cinco}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 5-->
+                                @endif
+
+                                @if(($pozo->img_seis))
+                                    <!-- Imagen 6 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo </h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_seis}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 6-->
+                                @endif
+
+                                @if(($pozo->img_siete))
+                                    <!-- Imagen 7 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="230px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Pozo</h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$pozo->img_siete}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    <!-- No hay imagen 7-->
+                                @endif
+
                         </div>
                         @else
-                        <!-- No hay imagen 5-->
+                        
                     @endif
-
-                    @if(($pozo->img_tres))
-                        <!-- Imagen 3 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_tres}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_tres}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        @else
-                        <!-- No hay imagen 5-->
-                    @endif
-
-                    @if(($pozo->img_cuatro))
-                        <!-- Imagen 4 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_cuatro}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_cuatro}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        @else
-                        <!-- No hay imagen 5-->
-                    @endif
-
-                    @if(($pozo->img_cinco))
-                        <!-- Imagen 5 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_cinco}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_cinco}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        @else
-                        <!-- No hay imagen 5-->
-                    @endif
-
-                    
-                    @if(($pozo->img_seis))
-                        <!-- Imagen 6 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_seis}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_seis}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        @else
-                        <!-- No hay imagen 6-->
-                    @endif
-
-                    
-                    @if(($pozo->img_siete))
-                        <!-- Imagen 7 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$pozo->img_siete}}" width="100px" height="230px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">Pozo</h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$pozo->img_siete}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        @else
-                        <!-- No hay imagen 7-->
-                    @endif
-
-                    </div>
-
                 </div>
                     
                     </div>

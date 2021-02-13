@@ -163,16 +163,36 @@
                                                         <div class="card-body">
                                                             <!-- <img src="{{asset('storage').'/'.$ups->img_uno}}" width="450" height="250"> -->
                                                             <!--  Zona de zoom galeria -->
-                                                            <div class="container">
-                                                                <div id="my-gallery" class="vanilla-zoom">
-                                                                    <div class="sidebar">
-                                                                        <img src="{{asset('storage').'/'.$ups->img_uno}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$ups->img_zoom1}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$ups->img_zoom2}}" class="small-preview">
+                                                            @if(($ups->img_zoom1)||($ups->img_zoom2)||($ups->img_zoom3)||($ups->img_zoom4))
+                                                                <div class="container">
+                                                                    <div id="my-gallery" class="vanilla-zoom">
+                                                                        <div class="sidebar">
+                                                                            @if(($ups->img_zoom1))
+                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom1}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+
+                                                                            @if(($ups->img_zoom2))
+                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom2}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+
+                                                                            @if(($ups->img_zoom3))
+                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom3}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+
+                                                                            @if(($ups->img_zoom4))
+                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom4}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+                                                                        </div>
+                                                                        <div class="zoomed-image"></div>
                                                                     </div>
-                                                                    <div class="zoomed-image"></div>
                                                                 </div>
-                                                            </div>
+                                                                @else
+                                                                    <!--  No hay imagenes Zoom -->
+                                                            @endif
 
                                                             <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                                 <script>
@@ -197,60 +217,96 @@
                         </div>
                     <!-- Fin de Elementos de la zona de la izquierda -->
                     </div>
-                    <div class="col-lg-4">
-                            <div class="sidebar" style="background-color: #fbf9ff;">
-                            <br>
+                        <div class="col-lg-4">
+                                <br>
+                                <style>
+                                    .title{
+                                        border-bottom: #007939 1px solid;
+                                        padding: 12px;    
+                                        border-radius: 10px 10px 0px 0px;
+                                        color: white;
+                                        margin-bottom: 0px;
+                                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
+                                        background: #007939; /* Old browsers */
+                                        background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
+                                        background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
+                                        background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
+                                    }
+                                    .titulo{
+                                        background: white;
+                                        border-radius: 0px 30px 30px 0px;
+                                        margin-left: -15px;
+                                        margin-top: 45px;
+                                        padding: 15px 5px 1px 40px;
+                                        font-weight: bold;
+                                    }
+                                </style>
+
+                                <div class="col-md-10" style="background:gainsboro">
+                                            <br>
+                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <ul class="list-group">                    
+                                                    <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
+                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                    </ul>
+                                    <br>
+
+                                    <style>
                                 
-                                            <style>
-                                                .title{
-                                                    border-bottom: #007939 1px solid;
-                                                    padding: 12px;    
-                                                    border-radius: 10px 10px 0px 0px;
-                                                    color: white;
-                                                    margin-bottom: 0px;
-                                                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
-                                                    background: #007939; /* Old browsers */
-                                                    background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
-                                                    background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
-                                                    background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
-                                                }
-                                                .titulo{
-                                                    background: white;
-                                                    border-radius: 0px 30px 30px 0px;
-                                                    margin-left: -15px;
-                                                    margin-top: 45px;
-                                                    padding: 15px 5px 1px 40px;
-                                                    font-weight: bold;
-                                                }
-                                            </style>
-                                    <div class="col-md-10" style="background:gainsboro">
-                                        <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
-                                        <ul class="list-group">                    
-                                                        <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
-                                                        <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                        <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                        <li class="list-group-item"><a href=""> UPS </a></li>
-                                                        <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
-                                        </ul>
-                                        <br>
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
 
-                                        
-                                        <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
-                                        <script>(function(d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s); js.id = id;
-                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                        }(document, 'script', 'facebook-jssdk'));</script>
-                                        <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                        <br><br/>
+                                    <div class="sticky">
+                                    <br></br>
+                                    <br>
+                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                    <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
                                     </div>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                </div>
 
+                                        <!-- Anterior lateral
+                                            <div class="col-md-10" style="background:gainsboro">
+                                                <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                                <ul class="list-group">                    
+                                                                <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                                <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                                <li class="list-group-item"><a href=""> UPS </a></li>
+                                                                <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                                </ul>
+                                                <br>
 
-                            </div>
-                            
+                                                
+                                                <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                                <script>(function(d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s); js.id = id;
+                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                                }(document, 'script', 'facebook-jssdk'));</script>
+                                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                                <br><br/>
+                                            </div>
+                                        -->
                         </div>
                     </div>
                 </div>
@@ -264,117 +320,120 @@
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                    </div>
 
-                    <div class="row">
-                    @if(($ups->img_dos))
-                            <!-- Imagen 2 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$ups->img_dos}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">ups </h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$ups->img_dos}}" data-lightbox="service">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                        @else
-                                <!-- no hay imagen 5 -->
-                    @endif
-
-
-                    @if(($ups->img_tres))
-                        <!-- Imagen 3 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$ups->img_tres}}" width="100px" height="300px" alt="Image">
-                                </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">ups </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_tres}}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
+                @if(($ups->img_dos))||($ups->img_tres)||($ups->img_cuatro)||($ups->img_cinco)||($ups->img_seis)||($ups->img_siete))
+                        <div class="section-header text-center">
+                            <h2 style="color: black;">Galeria</h2>
                         </div>
-                        @else
-                                <!-- no hay imagen 5 -->
-                    @endif
 
-                    @if(($ups->img_cuatro))
-                        <!-- Imagen 4 -->
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{asset('storage').'/'.$ups->img_cuatro}}" width="100px" height="300px" alt="Image">
+                        <div class="row">
+
+                            @if(($ups->img_dos))
+                                    <!-- Imagen 2 -->
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$ups->img_dos}}" width="100px" height="300px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">ups </h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$ups->img_dos}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @else
+                                        <!-- no hay imagen 5 -->
+                            @endif
+
+                            @if(($ups->img_tres))
+                                <!-- Imagen 3 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$ups->img_tres}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">ups </h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$ups->img_tres}}" data-lightbox="service">+</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="service-text">
-                                    <h3 style="text-align: center;">ups </h3>
-                                    <a class="btn" href="{{asset('storage').'/'.$ups->img_cuatro}}" data-lightbox="service">+</a>
+                                @else
+                                        <!-- no hay imagen 5 -->
+                            @endif
+
+                            @if(($ups->img_cuatro))
+                                <!-- Imagen 4 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$ups->img_cuatro}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">ups </h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$ups->img_cuatro}}" data-lightbox="service">+</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                @else
+                                        <!-- no hay imagen 5 -->
+                            @endif
+
+                            @if(($ups->img_cinco))
+                                <!-- Imagen 5 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$ups->img_cinco}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">ups </h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$ups->img_cinco}}" data-lightbox="service">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @else
+                                    <!-- no hay imagen 5 -->
+                            @endif
+
+                            @if(($ups->img_seis))
+                                <!-- Imagen 6 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$ups->img_seis}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">ups </h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$ups->img_seis}}" data-lightbox="service">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @else
+                                    <!-- no hay imagen 6 -->
+                            @endif
+
+                            @if(($ups->img_siete))
+                                <!-- Imagen 7 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$ups->img_siete}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">ups</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$ups->img_siete}}" data-lightbox="service">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @else
+                                    <!-- no hay imagen 7 -->
+                            @endif
+
+
                         </div>
-                        @else
-                                <!-- no hay imagen 5 -->
-                    @endif
-
-                        @if(($ups->img_cinco))
-                            <!-- Imagen 5 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$ups->img_cinco}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">ups </h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$ups->img_cinco}}" data-lightbox="service">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                            @else
-                                <!-- no hay imagen 5 -->
-                        @endif
-
-                        @if(($ups->img_seis))
-                            <!-- Imagen 6 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$ups->img_seis}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">ups </h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$ups->img_seis}}" data-lightbox="service">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                            @else
-                                <!-- no hay imagen 6 -->
-                        @endif
-
-                        @if(($ups->img_siete))
-                            <!-- Imagen 7 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$ups->img_siete}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">ups</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$ups->img_siete}}" data-lightbox="service">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                            @else
-                                <!-- no hay imagen 7 -->
-                        @endif
-
-
-                    </div>
-
+                    @else
+                @endif
                 </div>
                     
                     </div>
@@ -417,36 +476,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">

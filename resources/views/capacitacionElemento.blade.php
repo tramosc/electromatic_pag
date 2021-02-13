@@ -416,30 +416,30 @@
                 <div class="col-lg-4">
 
 
-                <style>
-                    .title{
-                        border-bottom: #007939 1px solid;
-                        padding: 12px;    
-                        border-radius: 10px 10px 0px 0px;
-                        color: white;
-                        margin-bottom: 0px;
-                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
-                        background: #007939; /* Old browsers */
-                        background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
-                        background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
-                        background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
-                    }
-                    .titulo{
-                        background: white;
-                        border-radius: 0px 30px 30px 0px;
-                        margin-left: -15px;
-                        margin-top: 45px;
-                        padding: 15px 5px 1px 40px;
-                        font-weight: bold;
-                    }
-                </style>
-                
+                        <style>
+                            .title{
+                                border-bottom: #007939 1px solid;
+                                padding: 12px;    
+                                border-radius: 10px 10px 0px 0px;
+                                color: white;
+                                margin-bottom: 0px;
+                                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,299a0b+100;Green+Flat+%231 */
+                                background: #007939; /* Old browsers */
+                                background: -moz-linear-gradient(top,  #007939 0%, #007939 100%); /* FF3.6-15 */
+                                background: -webkit-linear-gradient(top,  #007939 0%,#007939 100%); /* Chrome10-25,Safari5.1-6 */
+                                background: linear-gradient(to bottom,  #007939 0%,#007939 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007939', endColorstr='#007939',GradientType=0 ); /* IE6-9 */
+                            }
+                            .titulo{
+                                background: white;
+                                border-radius: 0px 30px 30px 0px;
+                                margin-left: -15px;
+                                margin-top: 45px;
+                                padding: 15px 5px 1px 40px;
+                                font-weight: bold;
+                            }
+                        </style>
+                        
                     <div class="col-md-14">
                         <br></br>
                         <h5 class="title" style="background-color: #007939 ;"> CAPACITACIONES RECIENTES </h5>
@@ -510,14 +510,16 @@
 
                                     <div class="flip-card">
                                         <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img src="{{asset('storage').'/'.$capacitacionpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:350px;height:170px;">
-                                            </div>
-                                            <div class="flip-card-back">
-                                                <br>
-                                                <h3>{{$capacitacionpost->titulo_capacitacion}}</h3> 
-                                                <a href="{{ url('/'.$capacitacionpost->id.'/Vista-Capacitacion-Elemento') }}" style="color: white">Ver mas</a>
-                                            </div>
+                                        
+                                                <div class="flip-card-front">
+                                                    <img src="{{asset('storage').'/'.$capacitacionpost->img_portada}}" alt="Avatar" style="border-radius: 10%; width:350px;height:170px;">
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <br>
+                                                    <a href="{{ url('/'.$capacitacionpost->id.'/Vista-Capacitacion-Elemento') }}"><h3 style="color: white;">{{$capacitacionpost->titulo_capacitacion}}</h3></a> 
+                                                    <a href="{{ url('/'.$capacitacionpost->id.'/Vista-Capacitacion-Elemento') }}" style="color: white">Ver mas</a>
+                                                </div>
+                                            
                                         </div>
                                     </div>
                                 
@@ -535,19 +537,37 @@
                         
                         
                         <br>
+
+                                    <style>
+                                
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
+                                       
+                                    <div class="sticky"> <!--   -->
+                                                        <br>
+                                                    <br></br>
+                                        <div id="fb-root"><h5 class="title"> SIGUENOS EN TWITTER </h5></div>
+                                            <div class="card">
+                                                <div class="card-body"> 
+                                                <a class="twitter-timeline" data-width="350" data-height="450" data-theme="light" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                                </div>
+                                            </div>
+                                
+                                                        <br></br>
+                                        </div>
+
+                                    </div>
+
                         
-                        <div id="fb-root"><h5 class="title"> SIGUENOS EN TWITTER </h5></div>
-                            <div class="card">
-                                <div class="card-body"> 
-                                <a class="twitter-timeline" data-width="350" data-height="450" data-theme="light" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-                            </div>
-                           
-                        <br><br/>
-                    </div>
+                            
                 
-            </div><!-- end row -->
-        </div><!-- end container -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
     </div><!-- end section -->
     <br></br>
 

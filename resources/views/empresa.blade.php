@@ -367,15 +367,6 @@
                                         <br></br>
                         </div>
 
-                    <!-- Colores de la empresa
-                    background-color: #02734A;
-                    background-color: #027333;
-                    background-color: #97BF95;
-                    background-color: #F2E9D8;
-                    background-color: #736F6E;
-                    color: #666666;
-                        -->
-
                         <div class="col-sm-5" style="background-color: #F2E9D8; border-color:#F2E9D8; border-radius: 15px 50px 30px 5px; border-style: groove; border-width: 1px; position:absolute; top: 460px; left: 60px; z-index: 2; ">
                             
                                 <div class="about-text" style="padding: 50px 40px;">
@@ -397,8 +388,6 @@
                 </div>
             </div>
             <!-- About End -->
-
- <br></br>
 
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
@@ -444,130 +433,172 @@
 
                 </div>
             </div>
+
+            
             <!-- About End -->
-<!-- opcion 1 #358C5B;  #F2F2F2-->
-<!-- opcion 2 #97BF95;  #F2E9D8-->
-<!-- opcion 3 #02732A;  #82F27E-->
-<!-- opcion 4 #02732A;  #358C5B-->
-<!-- opcion 5 #F2F2F2;  #358C5B-->
-<!-- opcion 6 #038C7F;  #F2F2F2-->
-<!-- opcion 7 #5DA676;  #82F27E-->
-<!-- opcion 8 #02732A;  #737373-->
-<!-- opcion 9 #82F27E;  #F2F2F2-->
-<!-- opcion 10 #82F27E;  #BAD9C8-->
-<!-- opcion 11 #737373;  #02732A-->
-<!-- opcion 12 #038C7F;  #358C5B-->
-<!-- opcion 13 #F2F2F2;  #BAD9C8-->
-<!-- opcion 14 #02732A;  #F2F2F2          style="background-color: #66aa84;-->
 
-<style>
-    .bg {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        color: #FFFFFF;
-        padding: 90px 90px
-        ;
-    }
+            <!-- Inicio -  Mision y vision -->
 
-    .col {
-        padding-left:0px;
-        padding-right: 0px;
-    }
-    .container-fluid {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .bg-left {
-        background: url("img/img07.jpg");
-        /**linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), */
+                <!-- 
+                        <style>
+                            .bg {
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                                color: #FFFFFF;
+                                padding: 90px 90px
+                                ;
+                            }
 
-    }
+                            .col {
+                                padding-left:0px;
+                                padding-right: 0px;
+                            }
+                            /*
+                            .container-fluid {
+                                padding-left: 0px;
+                                padding-right: 0px;
+                            }
+                            */
+                            .bg-left {
+                                background: url("img/img07.jpg");
+                                /**linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), */
 
-    .bg-right {
-        background: url("img/img08.jpg");
+                            }
 
-    }
+                            .bg-right {
+                                background: url("img/img08.jpg");
 
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-</style>
+                            }
 
+                            .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+                                padding-left: 0px;
+                                padding-right: 0px;
+                            }
 
-<div class="about wow fadeInUp" data-wow-delay="0.1s">
-<div class="container-fluid"  data-wow-delay="0.1s">
-	<div class="row">
-	    <div class="col-xs-12 col-md-6">
-	        <div class="bg bg-left">
-            <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>MISIÓN</b></h3>
-               
-               <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
-               Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
-               </p>
-               <br>
-	        </div>
-	    </div>
-	    <div class="col-xs-12 col-md-6">
-            <div class="bg bg-right">
-                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>VISION</b></h3>
-                         
-                         <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
-                         Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
-                         </p>
-	        </div>
-	    </div>
-	</div>
-</div>
-</div>
+                        </style>
 
+                    <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="container-fluid"  data-wow-delay="0.1s">
+                            <div class="row" >
+                                <div class="col-xs-12 col-md-6" style="padding-left: 0px; padding-right: 5px;">
 
+                                    <div class="bg bg-left" >
 
+                                    <div class="card" style="top: 200px; width: 30rem; background-color: #F2E9D8; z-index: 2; border-radius: 15px;">
+                                        <div class="card-body"> 
+                                                <h6 style="text-align: center; font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h6>
+                                                
+                                                <p style="font-size: 12px; color: black; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                                Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
+                                                </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    </div>
+                                </div>
 
+                                <div class="col-xs-12 col-md-6" style="padding-left: 5px; padding-right: 0px;">
 
+                                    <div class="bg bg-right">
 
-
-
-
-
-
-
-            <!-- Fact Start -->
-            <!-- 
-            <div class="fact">
-                
-                    <div class="row">
-                        <div class="col-md-6 fact-left wow slideInLeft" style="padding-right: 0%; padding-left: 0%;">
-                        <img src="{{ asset('img/img07.jpg') }}" width="100%" height="60%">
-                            <div class="about-text" style=" position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
-                           
-                                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>MISIÓN</b></h3>
-               
-                                <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
-                                Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
-                                </p>
-                                <br></br><br></br><br></br><br></br>
+                                            <div class="card" style="top: 200px; width: 30rem; background-color: #F2E9D8; border-radius: 15px;">
+                                                <div class="card-body">
+                                                        <h6 style="text-align: center; font-family: 'Poppins', sans-serif; color: black;"><b>VISION</b></h6>
+                                                            
+                                                        <p style="font-size: 12px; color: black; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                                        Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        <br>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 fact-right wow slideInRight" style="padding-right: 0%; padding-left: 0%;">
-                        <img src="{{ asset('img/img08.jpg') }}" width="100%" height="60%">
-
-                            <div class="about-text" style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
-                               
-                                    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>VISION</b></h3>
-                         
-                                <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
-                                Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
-                                </p>
-                                <br></br><br></br><br></br>
-                            </div>
-
                         </div>
                     </div>
-            
-            </div>-->
+
+                -->
+
+            <!-- Fin -  Mision y vision -->
+
+
+            <!-- Fact Start NO -->
+                <!-- 
+                <div class="fact">
+                    
+                        <div class="row">
+                            <div class="col-md-6 fact-left wow slideInLeft" style="padding-right: 0%; padding-left: 0%;">
+                            <img src="{{ asset('img/img07.jpg') }}" width="100%" height="60%">
+                                <div class="about-text" style=" position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
+                            
+                                        <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>MISIÓN</b></h3>
+                
+                                    <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                    Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
+                                    </p>
+                                    <br></br><br></br><br></br><br></br>
+                                </div>
+                            </div>
+                            <div class="col-md-6 fact-right wow slideInRight" style="padding-right: 0%; padding-left: 0%;">
+                            <img src="{{ asset('img/img08.jpg') }}" width="100%" height="60%">
+
+                                <div class="about-text" style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%);">
+                                
+                                        <h3 style="text-align: center; font-family: 'Poppins', sans-serif; color: white;"><b>VISION</b></h3>
+                            
+                                    <p style="font-size: 16px; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                    Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                                    </p>
+                                    <br></br><br></br><br></br>
+                                </div>
+
+                            </div>
+                        </div>
+                
+                </div>-->
             <!-- Fact End -->
+<br></br>
+<br></br>
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- Segunda version-->
+                            <!-- 
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="section-header text-left">
+                                        <h5 style="color: black;"><b>Mision</b></h5>
+                                    </div>
+                                    <div class="about-text">
+                                        <p>
+                                        Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="section-header text-left">
+                                        <h5 style="color: black;"><b>Vision</b></h5>
+                                    </div>
+                                    <div class="about-text">
+                                        <p>
+                                        Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="about-img">
+                                        <div class="scaling-image h-100">
+                                            <div class="frame h-100">
+                                                <div class="feature-img-bg h-100">
+                                                    <img src="{{ asset('img/vision.png') }}" alt="Image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            -->
 
 
 
@@ -575,13 +606,56 @@
 
 
 
+                        <!-- Primera version -->
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="about-img">
+                                                    <img src="{{ asset('img/vision.png') }}" alt="Image">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-6 col-md-6">
+                                                        <div class="card" style="width: 30rem; background-color: #F2E9D8; z-index: 2; border-radius: 15px;">
+                                                            <div class="card-body"> 
+                                                                    <h6 style="text-align: left; font-family: 'Poppins', sans-serif; color: black;"><b>MISIÓN</b></h6>
+                                                                    
+                                                                    <p style="font-size: 12px; color: black; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                                                    Brindar a cada cliente soluciones innovadoras con calidad y seguridad, que se adapten a sus necesidades a través de un servicio personalizado.
+                                                                    </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <br></br>
+
+                                                        <div class="card" style="width: 30rem; background-color: #F2E9D8; border-radius: 15px;">
+                                                            <div class="card-body">
+                                                                    <h6 style="text-align: left; font-family: 'Poppins', sans-serif; color: black;"><b>VISION</b></h6>
+                                                                        
+                                                                    <p style="font-size: 12px; color: black; font-family: 'Poppins', sans-serif; text-align: justify;">
+                                                                    Ser una empresa confiable, comprometida y reconocida por brindar servicios de alta calidad en el mercado eléctrico, electromecánico, obteniendo la satisfacción de nuestros clientes actuales y futuros.
+                                                                    </p>
+                                                            </div>
+                                                        </div>
+
+                                            </div>
+
+                                            
+
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+            <br></br>
+            <br></br>
 
 
 
 
-            
 
-            
+
             <!-- FAQs Start -->
             <div class="faqs">
             <br></br>
@@ -758,7 +832,7 @@
                 <div class="team-item">
 
                 <!-- Footer Start -->
-                    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                    <div class="footer wow fadeIn" style="padding-left: 5px; padding-right: 5px;" data-wow-delay="0.3s">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -767,18 +841,7 @@
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
-                                            <!-- Frame del mapa 
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                            -->
                                 </div>
-
-
-                                
-                                            <!-- Div 
-                                                <div class="col-md-2 col-lg-1"></div>
-                                                <div class="col-md-2 col-lg-1"></div>
-                                            --> 
-                                        
 
                                 <div class="col-sm-5">
                                     <h2><i class="fa fa-envelope"></i> Correos</h2>
@@ -786,36 +849,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">
@@ -825,16 +858,6 @@
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
-        
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
                                     </div>
                                 </div>
 

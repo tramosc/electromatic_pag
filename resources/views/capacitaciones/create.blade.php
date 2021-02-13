@@ -17,7 +17,7 @@
                 <input type="text" class="form-control" name="descripcion_capacitacion" id="descripcion_capacitacion" required>
             </div>
             <div class="col-12">
-                <label for="link" class="form-label">Link de la Imagen</label>
+                <label for="link" class="form-label">Link para la Imagen Portada</label>
                 <input type="text" class="form-control" name="link" id="link">
             </div>
             <div class="col-md-6">
@@ -40,6 +40,8 @@
                 <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" accept="application/pdf" >
             </div>
 
+            <hr></hr>
+
             <div class="col-md-6">
                 <label for="titulo_archivo2" class="form-label">Titulo del archivo 2</label>
                 <input type="text" class="form-control" name="titulo_archivo2" id="titulo_archivo2">
@@ -48,6 +50,8 @@
                 <label for="pdf_archivodos" class="form-label">Archivo PDF 2</label>
                 <input type="file" class="form-control" name="pdf_archivodos" id="pdf_archivodos" accept="application/pdf" >
             </div>
+
+            <hr></hr>
 
             <div class="col-md-6">
                 <label for="titulo_archivo3" class="form-label">Titulo del archivo 3</label>
@@ -58,6 +62,8 @@
                 <input type="file" class="form-control" name="pdf_archivotres" id="pdf_archivotres" accept="application/pdf" >
             </div>
 
+            <hr></hr>
+
             <div class="col-md-6">
                 <label for="titulo_archivo4" class="form-label">Titulo del archivo 4</label>
                 <input type="text" class="form-control" name="titulo_archivo4" id="titulo_archivo4">
@@ -66,6 +72,8 @@
                 <label for="pdf_archivocuatro" class="form-label">Archivo PDF 4</label>
                 <input type="file" class="form-control" name="pdf_archivocuatro" id="pdf_archivocuatro" accept="application/pdf" >
             </div>
+
+            <hr></hr>
      
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

@@ -82,6 +82,14 @@ class PozosController extends Controller
             $datosPozo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
         }
 
+        if($request->hasFile('img_zoom3')){
+            $datosPozo['img_zoom3']=$request->file('img_zoom3')->store('uploads', 'public');
+        }
+
+        if($request->hasFile('img_zoom4')){
+            $datosPozo['img_zoom4']=$request->file('img_zoom4')->store('uploads', 'public');
+        }
+
         Pozos::insert($datosPozo);
         return redirect('pozos');
     }
@@ -176,6 +184,18 @@ class PozosController extends Controller
                     Storage::delete('public/'.$pozo->img_zoom2);
                     $datosPozo['img_zoom2']=$request->file('img_zoom2')->store('uploads', 'public');
                 }
+
+                if($request->hasFile('img_zoom3')){
+                    $pozo= Pozos::findOrFail($id);
+                    Storage::delete('public/'.$pozo->img_zoom3);
+                    $datosPozo['img_zoom3']=$request->file('img_zoom3')->store('uploads', 'public');
+                }
+
+                if($request->hasFile('img_zoom4')){
+                    $pozo= Pozos::findOrFail($id);
+                    Storage::delete('public/'.$pozo->img_zoom4);
+                    $datosPozo['img_zoom4']=$request->file('img_zoom4')->store('uploads', 'public');
+                }
          
                   Pozos::where('id','=',$id)->update($datosPozo);
           
@@ -221,6 +241,12 @@ class PozosController extends Controller
             Pozos::destroy($id);
         }
         if(Storage::delete('public/'.$pozo->img_zoom2)){
+            Pozos::destroy($id);
+        }
+        if(Storage::delete('public/'.$pozo->img_zoom3)){
+            Pozos::destroy($id);
+        }
+        if(Storage::delete('public/'.$pozo->img_zoom4)){
             Pozos::destroy($id);
         }
         return redirect('pozos');

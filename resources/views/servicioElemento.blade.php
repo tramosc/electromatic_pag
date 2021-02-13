@@ -199,7 +199,7 @@
                                                 </style>
                                                 <div class="contenidos">
                                                     <div class="image">
-                                                        <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" alt="">
+                                                        <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" width="500px" height="400px" alt="">
                                                     </div>
                                                 </div>
 
@@ -364,7 +364,7 @@
 
                         <div class="col-lg-4">
 
-                            <div class="sidebar" style="background-color: #fbf9ff;">
+                            
                                 
                                 
                                 <style>
@@ -392,6 +392,7 @@
                                 </style>
 
                                 <div class="col-md-10" style="background:gainsboro">
+                                            <br>
                                     <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
                                     <ul class="list-group">                    
                                                     <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
@@ -402,7 +403,19 @@
                                     </ul>
                                     <br>
 
-                                    
+                                    <style>
+                                  
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
+
+                                    <div class="sticky">
+                                    <br></br>
+                                    <br>
                                     <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
                                     <script>(function(d, s, id) {
                                     var js, fjs = d.getElementsByTagName(s)[0];
@@ -412,10 +425,20 @@
                                     fjs.parentNode.insertBefore(js, fjs);
                                     }(document, 'script', 'facebook-jssdk'));</script>
                                     <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                    <br><br/>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+
                                 </div>
 
-                            </div>
+                            
                         </div>
 
                     </div>
@@ -427,177 +450,180 @@
             <!-- Galeria Start -->
                 <div class="service">
                     <div class="container">
-                        <div class="section-header text-center">
-                            <h2 style="color: black;">Galeria</h2>
-                            
-                        </div>
-                        <div class="row">
-                            <!-- Imagen 1 -->
-                            @if (($servicio->img_uno))
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                        @if(($servicio->img_uno)||($servicio->img_dos)||($servicio->img_tres)||($servicio->img_cuatro)||($servicio->img_cinco)||($servicio->img_seis)||($servicio->img_siete)||($servicio->img_ocho)||($servicio->img_nueve))
+                            <div class="section-header text-center">
+                                <h2 style="color: black;">Galeria</h2>
+                            </div>
+                            <div class="row">
+                                <!-- Imagen 1 -->
+                                @if (($servicio->img_uno))
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="service-item">
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="280px" alt="Image">
+                                            </div>
+                                            <div class="service-text">
+                                                <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                                <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
+
+
+
+                                <!-- Imagen 2 -->
+                                @if (($servicio->img_dos))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
                                     <div class="service-item">
                                         <div class="service-img">
-                                            <img src="{{asset('storage').'/'.$servicio->img_uno}}" width="100px" height="280px" alt="Image">
+                                            <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="280px" alt="Image">
                                         </div>
                                         <div class="service-text">
                                             <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_uno}}" data-lightbox="service">+</a>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_dos}}" data-lightbox="service">+</a>
                                         </div>
                                     </div>
                                 </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-
-
-                            <!-- Imagen 2 -->
-                            @if (($servicio->img_dos))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_dos}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_dos}}" data-lightbox="service">+</a>
+                                <!-- Imagen 3 -->
+                                @if (($servicio->img_tres))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_tres}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 3 -->
-                            @if (($servicio->img_tres))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_tres}}" data-lightbox="service">+</a>
+                                <!-- Imagen 4 -->
+                                @if (($servicio->img_cuatro))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_cuatro}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 4 -->
-                            @if (($servicio->img_cuatro))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_cuatro}}" data-lightbox="service">+</a>
+                                <!-- Imagen 5 -->
+                                @if (($servicio->img_cinco))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_cinco}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 5 -->
-                            @if (($servicio->img_cinco))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_cinco}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_cinco}}" data-lightbox="service">+</a>
+                                <!-- Imagen 6 -->
+                                @if (($servicio->img_seis))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_seis}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 6 -->
-                            @if (($servicio->img_seis))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_seis}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_seis}}" data-lightbox="service">+</a>
+                                <!-- Imagen 7 -->
+                                @if (($servicio->img_siete))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_siete}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 7 -->
-                            @if (($servicio->img_siete))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_siete}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_siete}}" data-lightbox="service">+</a>
+                                <!-- Imagen 8 -->
+                                @if (($servicio->img_ocho))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_ocho}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 8 -->
-                            @if (($servicio->img_ocho))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_ocho}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_ocho}}" data-lightbox="service">+</a>
+                                <!-- Imagen 9 -->
+                                @if (($servicio->img_nueve))
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="280px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Galeria Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$servicio->img_nueve}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
+                                @else
+                                    <!-- mensaje de que no hay descripcion--->
+                                @endif
+                                <!-- Zona de elemento descripcion -->
 
-                            <!-- Imagen 9 -->
-                            @if (($servicio->img_nueve))
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_nueve}}" width="100px" height="280px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Galeria Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$servicio->img_nueve}}" data-lightbox="service">+</a>
-                                    </div>
-                                </div>
                             </div>
-                            @else
-                                <!-- mensaje de que no hay descripcion--->
-                            @endif
-                            <!-- Zona de elemento descripcion -->
-
-                        </div>
-                        
+                        @else
+                            <!-- mensaje de que no hay imagenes--->
+                        @endif
                     </div>
                 </div>
             <!-- Galeria End -->

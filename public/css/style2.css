@@ -117,6 +117,35 @@
 	animation-delay: 0.8s;
 	z-index: 2;
 }
+.hs-wrapper img:nth-child(10),
+.hs-titles span:nth-child(10){
+    -webkit-animation-delay: 0.9s;
+	-moz-animation-delay: 0.9s;
+	-o-animation-delay: 0.9s;
+	-ms-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+	z-index: 2;
+}
+
+.hs-wrapper img:nth-child(11),
+.hs-titles span:nth-child(11){
+    -webkit-animation-delay: 0.10s;
+	-moz-animation-delay: 0.10s;
+	-o-animation-delay: 0.10s;
+	-ms-animation-delay: 0.10s;
+	animation-delay: 0.10s;
+	z-index: 2;
+}
+
+.hs-wrapper img:nth-child(12),
+.hs-titles span:nth-child(12){
+    -webkit-animation-delay: 0.11s;
+	-moz-animation-delay: 0.11s;
+	-o-animation-delay: 0.11s;
+	-ms-animation-delay: 0.11s;
+	animation-delay: 0.11s;
+	z-index: 2;
+}
 .hs-wrapper:hover img{
 	-webkit-animation-play-state: running;
 	-moz-animation-play-state: running;

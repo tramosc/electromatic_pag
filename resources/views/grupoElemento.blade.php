@@ -164,16 +164,37 @@
 
                                                             <!-- <img src="{{asset('storage').'/'.$grupo->img_uno}}" width="650" height="450"> -->
                                                             <!--  Zona de zoom galeria -->
-                                                            <div class="container">
-                                                                <div id="my-gallery" class="vanilla-zoom">
-                                                                    <div class="sidebar">
-                                                                        <img src="{{asset('storage').'/'.$grupo->img_uno}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$grupo->img_zoom1}}" class="small-preview">
-                                                                        <img src="{{asset('storage').'/'.$grupo->img_zoom2}}" class="small-preview">
+                                                            @if(($grupo->img_zoom1)||($grupo->img_zoom2)||($grupo->img_zoom3)||($grupo->img_zoom4))
+                                                                <div class="container">
+                                                                    <div id="my-gallery" class="vanilla-zoom">
+                                                                        <div class="sidebar">
+                                                                        @if(($grupo->img_zoom1))
+                                                                            <img src="{{asset('storage').'/'.$grupo->img_zoom1}}" class="small-preview">
+                                                                        @else
+                                                                        @endif
+                                                                        
+                                                                        @if(($grupo->img_zoom2))
+                                                                            <img src="{{asset('storage').'/'.$grupo->img_zoom2}}" class="small-preview">
+                                                                        @else
+                                                                        @endif
+
+                                                                        @if(($grupo->img_zoom3))
+                                                                            <img src="{{asset('storage').'/'.$grupo->img_zoom3}}" class="small-preview">
+                                                                        @else
+                                                                        @endif
+
+                                                                        @if(($grupo->img_zoom4))
+                                                                            <img src="{{asset('storage').'/'.$grupo->img_zoom4}}" class="small-preview">
+                                                                        @else
+                                                                        @endif
+                                                                            
+                                                                        </div>
+                                                                        <div class="zoomed-image"></div>
                                                                     </div>
-                                                                    <div class="zoomed-image"></div>
                                                                 </div>
-                                                            </div>
+                                                                @else
+
+                                                            @endif
 
                                                             <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
                                                                 <script>
@@ -187,7 +208,11 @@
                                                                     <div class="card-body">
                                                                         <h5 style="color: black; text-align: left;">Descripcion:</h5>
                                                                         <p class="card-text">{{$grupo->descripcion_grupo}}</p>
+                                                                        @if(($grupo->precio))
                                                                         <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{$grupo->precio}}</span> </h5>
+                                                                        @else
+                                                                        @endif
+                                                                        
                                                     
                                                             </div>
                                             </div>
@@ -200,8 +225,9 @@
 
                             
                     </div>
+                    
                     <div class="col-lg-4">
-                                    <div class="sidebar" style="background-color: #fbf9ff;">
+                                
                                     <br>
                                             <style>
                                                 .title{
@@ -226,10 +252,11 @@
                                                     font-weight: bold;
                                                 }
                                             </style>
+                                <!--- Lateral antiguo 
                                     <div class="col-md-10" style="background:gainsboro">
                                         <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
                                         <ul class="list-group">                    
-                                                        <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
+                                                    
                                                         <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
                                                         <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
                                                         <li class="list-group-item"><a href=""> UPS </a></li>
@@ -237,148 +264,203 @@
                                         </ul>
                                         <br>
 
-                                        
-                                        <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
-                                        <script>(function(d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s); js.id = id;
-                                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                        }(document, 'script', 'facebook-jssdk'));</script>
-                                        <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                        <br><br/>
+                                            <style>
+                                                div.sticky {
+                                                position: -webkit-sticky;
+                                                position: sticky;
+                                                top: 0;
+                                                padding: 5px;
+                                                }
+                                            </style>
+                                            <br></br>
+                                            <br></br>
+
+                                        <div class="sticky">
+                                            <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                            <script>(function(d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));</script>
+                                            <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                        </div>
                                     </div>
+                                -->
+
+                                <div class="col-md-10" style="background:gainsboro">
+                                            <br>
+                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <ul class="list-group">                    
+                                                    <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
+                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                    </ul>
+                                    <br>
+
+                                    <style>
+                                  
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
+
+                                    <div class="sticky">
+                                    <br></br>
+                                    <br>
+                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                    <script>(function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
+                                    <br></br>
 
 
-                                    </div>
+                                </div>
+
+                                
                                     
                                 </div>
                             </div></div></div></div>
             </div>
             <!-- Single Post End-->   
 
-
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Galeria</h2>
-                    </div>
 
-                    <div class="row">
-                        @if(($grupo->img_dos))
-                            <!-- Imagen 2 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_dos}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_dos}}" data-lightbox="service">+</a>
+                @if(($grupo->img_dos)||($grupo->img_tres)||($grupo->img_cuatro)||($grupo->img_cinco)||($grupo->img_seis)||($grupo->img_siete))
+                    
+                        <div class="section-header text-center">
+                            <h2 style="color: black;">Galeria</h2>
+                        </div>
+
+                        <div class="row">
+                            @if(($grupo->img_dos))
+                                <!-- Imagen 2 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_dos}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_dos}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- No hay foto 5-->
-                        @endif
+                                @else
+                                    <!-- No hay foto 5-->
+                            @endif
 
 
-                        @if(($grupo->img_tres))
-                            <!-- Imagen 3 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_tres}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_tres}}" data-lightbox="service">+</a>
+                            @if(($grupo->img_tres))
+                                <!-- Imagen 3 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_tres}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_tres}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- No hay foto 5-->
-                        @endif
+                                @else
+                                    <!-- No hay foto 5-->
+                            @endif
 
 
-                        @if(($grupo->img_cuatro))
-                            <!-- Imagen 4 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_cuatro}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_cuatro}}" data-lightbox="service">+</a>
+                            @if(($grupo->img_cuatro))
+                                <!-- Imagen 4 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_cuatro}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_cuatro}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- No hay foto 5-->
-                        @endif
+                                @else
+                                    <!-- No hay foto 5-->
+                            @endif
 
-                        @if(($grupo->img_cinco))
-                            <!-- Imagen 5 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_cinco}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_cinco}}" data-lightbox="service">+</a>
+                            @if(($grupo->img_cinco))
+                                <!-- Imagen 5 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_cinco}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_cinco}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                                <!-- No hay foto 5-->
-                        @endif
+                                @else
+                                    <!-- No hay foto 5-->
+                            @endif
 
-                        @if(($grupo->img_seis))
-                            <!-- Imagen 6 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_seis}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_seis}}" data-lightbox="service">+</a>
+                            @if(($grupo->img_seis))
+                                <!-- Imagen 6 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_seis}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_seis}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                        <!-- No hay foto 6-->
-                        @endif
+                                @else
+                            <!-- No hay foto 6-->
+                            @endif
 
-                        @if(($grupo->img_siete))
-                            <!-- Imagen 7 -->
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-                                <div class="service-item">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$grupo->img_siete}}" width="100px" height="300px" alt="Image">
-                                    </div>
-                                    <div class="service-text">
-                                        <h3 style="text-align: center;">Grupos Electromatic</h3>
-                                        <a class="btn" href="{{asset('storage').'/'.$grupo->img_siete}}" data-lightbox="service">+</a>
+                            @if(($grupo->img_siete))
+                                <!-- Imagen 7 -->
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
+                                    <div class="service-item">
+                                        <div class="service-img">
+                                            <img src="{{asset('storage').'/'.$grupo->img_siete}}" width="100px" height="300px" alt="Image">
+                                        </div>
+                                        <div class="service-text">
+                                            <h3 style="text-align: center;">Grupos Electromatic</h3>
+                                            <a class="btn" href="{{asset('storage').'/'.$grupo->img_siete}}" data-lightbox="service">+</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @else
-                        <!-- No hay foto 7-->
-                        @endif
-                    </div>
-
+                                @else
+                            <!-- No hay foto 7-->
+                            @endif
+                        </div>
+                    @else
+                @endif
                 </div>
                     
                     </div>
             </div>
             <!-- Service End -->
-
-
 
             <!-- Team Start -->
             <div class="team">

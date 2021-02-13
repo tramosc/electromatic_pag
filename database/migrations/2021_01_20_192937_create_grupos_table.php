@@ -27,6 +27,9 @@ class CreateGruposTable extends Migration
             $table->string('img_siete');
             $table->string('img_zoom1');
             $table->string('img_zoom2');
+            $table->string('img_zoom3');
+            $table->string('img_zoom4');
+
             $table->timestamps();
             /**8 fotos */
         });

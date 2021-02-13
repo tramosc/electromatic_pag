@@ -49,7 +49,7 @@
                 <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" accept="application/pdf" value="">
             </div>
 
-
+            <hr></hr>
 
 
             <div class="col-md-6">
@@ -67,7 +67,7 @@
             </div>
 
 
-
+            <hr></hr>
 
 
             <div class="col-md-6">
@@ -85,7 +85,7 @@
             </div>
 
 
-
+            <hr></hr>
 
 
             <div class="col-md-6">
@@ -102,7 +102,7 @@
                 <input type="file" class="form-control" name="pdf_archivocuatro" id="pdf_archivocuatro" accept="application/pdf" value="">
             </div>
 
-
+            <hr></hr>
 
             
 

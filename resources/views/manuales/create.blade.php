@@ -18,8 +18,8 @@
             </div>
 
 <hr></hr>
-            <div class="col-lg-6">
-
+        <div class="col-lg-6">
+        <h1 class="align:center">Contenido para la pagina</h1>
             <div class="col-12">
                 <label for="descripcion" class="form-label">Descripcion</label>
                 <input type="text" class="form-control" name="descripcion" id="descripcion" >
@@ -32,7 +32,9 @@
                 <label for="archivo_url" class="form-label">Archivo</label>
                 <input type="file" class="form-control" name="archivo_url" id="archivo_url" accept="application/pdf" >
             </div>
-        
+            <div class="alert alert-warning" role="alert">
+                    <b>Aviso</b>: Llenar estos campos si se quiere dar contenido a la pagina junto con el titulo y Fecha.
+            </div>
         </div>
             
         <div class="col-lg-6">
@@ -41,7 +43,11 @@
                     <label for="referencias" class="form-label">Referencias(Link)</label>
                     <input type="text" class="form-control" name="referencias" id="referencias" >
                 </div>
+                <div class="alert alert-warning" role="alert">
+                    <b>Aviso</b>: Llenar este campo si se quiere dar referencias a paginas o articulos de otros medios junto con el titulo y Fecha.
+                </div>
         </div>
+
             
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>

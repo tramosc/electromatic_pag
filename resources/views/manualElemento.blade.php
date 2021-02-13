@@ -150,7 +150,7 @@
                                             <div class="container">
                                                 <div class="sidebar">
                                                     <div class="sidebar-widget wow fadeInUp">
-                                                        <h2 class="widget-title" style=" text-align: left; color: black;"><b>{{$manual->titulo_manual}} </b></h2>
+                                                        <h2 class="widget-title" style=" text-align: left; color: black;">{{$manual->titulo_manual}}</h2>
                                                     </div>
                                                 </div>
                                             </div>

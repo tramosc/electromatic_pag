@@ -363,8 +363,8 @@
 								
 							</div>	
                             <div class="image-blog">
-							<img src="{{asset('storage').'/'.$blog->img_contenido}}" alt="" class="img-fluid">
-						</div>						
+							    <img src="{{asset('storage').'/'.$blog->img_contenido}}" alt="" class="img-fluid">
+						    </div>						
 						</div>
 					</div>
 
@@ -541,12 +541,30 @@
                     </div>
 
                                     <br>
+
                                     
-                                    <div id="fb-root"><h5 class="title"> SIGUENOS EN TWITTER </h5></div>
-                                    <div class="card">
-                                        <div class="card-body"> 
-                                        <a class="twitter-timeline" data-width="350" data-height="450" data-theme="light" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                    <style>
+                                        div.sticky {
+                                        position: -webkit-sticky;
+                                        position: sticky;
+                                        top: 0;
+                                        padding: 5px;
+                                        }
+                                    </style>
+                                       
+                                    <div class="sticky"> <!--   -->
+                                                        <br>
+                                                    <br></br>
+                                        <div id="fb-root"><h5 class="title"> SIGUENOS EN TWITTER </h5></div>
+                                            <div class="card">
+                                                <div class="card-body"> 
+                                                <a class="twitter-timeline" data-width="350" data-height="450" data-theme="light" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                                </div>
+                                            </div>
+                                
+                                                        <br></br>
                                         </div>
+
                                     </div>
                                     
                                     <br><br/>
