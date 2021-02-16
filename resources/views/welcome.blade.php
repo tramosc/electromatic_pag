@@ -6,7 +6,6 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
-
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
         <link href="{{ asset('css/favicon.ico') }}" rel="icon">
@@ -167,10 +166,10 @@
 
             <!-- About Start -->
             
-                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s" style="width:100%;">
                     <img style="opacity: 0.4; width: 100%; height: auto;" src="https://www.peru.travel/Contenido/Destino/Imagen/pe/27/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg">
 
-                <div class="container">
+                <div class="container" style="width:100%;">
                        
                         <div class="row align-items-center" style=" top: 50px; left: 60px; position: absolute; z-index: 1;">
                             <!-- Inicio de la zona de animacion css con imagenes-->
@@ -178,7 +177,7 @@
                             <div class="col-lg-7 col-md-6">
                                             <div class="hs-wrapper">
                                             @foreach($imagenesInicio as $imagenInicio)
-                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="" width="1200px" height="600px"/>
+                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="width:100%;" width="1200px" height="600px"/>
                                             @endforeach
 
                                             </div>
@@ -215,7 +214,7 @@
                         -->
 
 
-                        <div class="col-lg-6 col-md-6" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; ">
+                        <div class="col-lg-6 col-md-6" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; width:100%;">
                                     
                             <div class="about-text" style="padding: 50px 50px;">
                                     <h5 style="font-size: 15px; color: black;"><b>PRONTO!!</b></h5>
@@ -263,7 +262,8 @@
             <!-- About End -->
             <br></br>
             <!-- Feature Start-->
-                <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+                <div class="feature wow fadeInUp" data-wow-delay="0.1s" style="width:100%; height: 100%;">
+                
                     <div class="container-fluid">
                         <div class="row align-items-center">
                                     <ul class="ca-menu">
@@ -300,6 +300,7 @@
                                     </ul>
                         </div>
                     </div>
+                
                 </div>
             <!-- Feature End-->
             <!-- FAQs Start -->

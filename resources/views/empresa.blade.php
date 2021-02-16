@@ -388,8 +388,8 @@
                 </div>
             </div>
             <!-- About End -->
-
-            <!-- About Start -->
+            <br>
+            <!-- About Start-->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                 <div class="feature wow fadeInUp" data-wow-delay="0.1s">
@@ -433,7 +433,6 @@
 
                 </div>
             </div>
-
             
             <!-- About End -->
 
@@ -558,8 +557,7 @@
                 
                 </div>-->
             <!-- Fact End -->
-<br></br>
-<br></br>
+<br>
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
@@ -599,12 +597,6 @@
                                     </div>
                                 </div>
                             -->
-
-
-
-
-
-
 
                         <!-- Primera version -->
 
@@ -647,14 +639,6 @@
                 </div>
             </div>
             <!-- About End -->
-
-            <br></br>
-            <br></br>
-
-
-
-
-
 
             <!-- FAQs Start -->
             <div class="faqs">
@@ -723,48 +707,48 @@
 <br>
 
 <!--  Nuevo clientes logos-->
-            <div class="slider">
-                <div class="slide-track">
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/09.png') }}" height="80" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/03.png') }}" height="80" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/07.png') }}" height="100" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/credinka.png') }}" height="120" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/06.jpg') }}" height="100" width="280" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/10.png') }}" height="100" width="230" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/02.png') }}" height="100" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/logosenasa.png') }}" height="100" width="220" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/04.png') }}" height="100" width="250" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/01.png') }}" height="100" width="280" alt="">
-                    </div>
-                    <div style="text-align: center;" class="slide">
-                        <img src="{{ asset('img/blanco.jpg') }}" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <p></p>
-                    </div>
-                    <div class="slide">
-                    <p></p>
+            <div class="slider" style="width: 100%;">
+                    <div class="slide-track">
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/09.png') }}" height="80" width="250" alt="">
                         </div>
-                </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/03.png') }}" height="80" width="250" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/07.png') }}" height="100" width="250" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/credinka.png') }}" height="120" width="250" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/06.jpg') }}" height="100" width="280" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/10.png') }}" height="100" width="230" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/02.png') }}" height="100" width="250" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/logosenasa.png') }}" height="100" width="220" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/04.png') }}" height="100" width="250" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/01.png') }}" height="100" width="280" alt="">
+                        </div>
+                        <div style="text-align: center;" class="slide">
+                            <img src="{{ asset('img/blanco.jpg') }}" height="100" width="250" alt="">
+                        </div>
+                        <div class="slide">
+                            <p></p>
+                        </div>
+                        <div class="slide">
+                        <p></p>
+                            </div>
+                    </div>
             </div>
 
 

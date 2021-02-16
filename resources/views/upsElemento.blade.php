@@ -34,53 +34,54 @@
     <body>
         <div class="wrapper">
             <!-- Top Bar Start -->
-            <div class="top-bar">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="logo">
-                                <a href="">
-                                <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                                </a>
+                <div class="top-bar">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="logo">
+                                    <a href="">
+                                    <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
+                                        <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                        <div class="top-bar-icon">
-                                            <i class="flaticon-calendar"></i>
-                                        </div>
-                                        <div class="top-bar-text">
-                                            <h3>Horario</h3>
-                                            <p>Lun - Sab, 9:00 - 7:00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                        <div class="top-bar-icon">
-                                            <i class="flaticon-call"></i>
-                                        </div>
-                                        <div class="top-bar-text">
-                                            <h3>LLamanos</h3>
-                                            <p>054-399450 - 964-770-354</p>
+                            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="top-bar-item">
+                                            <div class="top-bar-icon">
+                                                <i class="flaticon-calendar"></i>
+                                            </div>
+                                            <div class="top-bar-text">
+                                                <h3>Horario</h3>
+                                                <p>Lun - Sab, 9:00 - 7:00</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                        <div class="top-bar-icon">
-                                            <i class="flaticon-send-mail"></i>
+                                    <div class="col-4">
+                                        <div class="top-bar-item">
+                                            <div class="top-bar-icon">
+                                                <i class="flaticon-call"></i>
+                                            </div>
+                                            <div class="top-bar-text">
+                                                <h3>LLamanos</h3>
+                                                <p>054-399450 - 964-770-354</p>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="top-bar-item">
+                                            <div class="top-bar-icon">
+                                                <i class="flaticon-send-mail"></i>
+                                            </div>
 
-                                        <div class="top-bar-text">
-                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
+                                            <div class="top-bar-text">
+                                            <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
 
 
 
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -88,56 +89,55 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
-            <div class="nav-bar">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                <div class="nav-bar">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                            <a href="#" class="navbar-brand">MENU</a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto">
-                                <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">EMPRESA</a>
-                                <!--
-                                <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                -->
-                                <div class="nav-item dropdown">
-                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                    <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                        
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav mr-auto">
+                                    <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
+                                    <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">EMPRESA</a>
+                                    <!--
+                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
+                                    -->
+                                    <div class="nav-item dropdown">
+                                        <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
+                                        <div class="dropdown-menu">
+                                            <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                            <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                            <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                            <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                            
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
-                                    <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
-                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                    <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                    <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                        <div class="dropdown-menu">
+                                            <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                            <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
+                                            <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                            <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                        </div>
                                     </div>
+                                    <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
+                                    <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
+                                    <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                                 </div>
-                                <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
+                                <div class="ml-auto">
+                                    <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
+                                </div>
                             </div>
-                            <div class="ml-auto">
-                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
-                            </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
-            </div>
             <!-- Nav Bar End -->
 
 
@@ -161,45 +161,98 @@
                                         <div class="service">
                                             <div class="container">
                                                         <div class="card-body">
-                                                            <!-- <img src="{{asset('storage').'/'.$ups->img_uno}}" width="450" height="250"> -->
-                                                            <!--  Zona de zoom galeria -->
-                                                            @if(($ups->img_zoom1)||($ups->img_zoom2)||($ups->img_zoom3)||($ups->img_zoom4))
-                                                                <div class="container">
-                                                                    <div id="my-gallery" class="vanilla-zoom">
-                                                                        <div class="sidebar">
-                                                                            @if(($ups->img_zoom1))
-                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom1}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
+                                                            
+                                                    <!-- Inicio -  jquery zoom -->
+                                                        <link rel="stylesheet" href="{{ asset('css/smoothproducts.css') }}">
+                                                        @if(($ups->img_zoom1)||($ups->img_zoom2)||($ups->img_zoom3)||($ups->img_zoom4))
+                                                            <center>
+                                                                <div class="page">
+                                                                        
+                                                                    <div class="sp-wrap">
+                                                                        @if(($ups->img_zoom1))
+                                                                                <a href="{{asset('storage').'/'.$ups->img_zoom1}}"><img src="{{asset('storage').'/'.$ups->img_zoom1}}" alt=""></a>
+                                                                            @else
+                                                                        @endif
 
-                                                                            @if(($ups->img_zoom2))
-                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom2}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
+                                                                        @if(($ups->img_zoom2))
+                                                                                <a href="{{asset('storage').'/'.$ups->img_zoom2}}"><img src="{{asset('storage').'/'.$ups->img_zoom2}}" alt=""></a>
+                                                                            @else
+                                                                        @endif
 
-                                                                            @if(($ups->img_zoom3))
-                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom3}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
+                                                                        @if(($ups->img_zoom3))
+                                                                                <a href="{{asset('storage').'/'.$ups->img_zoom3}}"><img src="{{asset('storage').'/'.$ups->img_zoom3}}" alt=""></a>
+                                                                            @else
+                                                                        @endif
 
-                                                                            @if(($ups->img_zoom4))
-                                                                                    <img src="{{asset('storage').'/'.$ups->img_zoom4}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
-                                                                        </div>
-                                                                        <div class="zoomed-image"></div>
+                                                                        @if(($ups->img_zoom4))
+                                                                                <a href="{{asset('storage').'/'.$ups->img_zoom4}}"><img src="{{asset('storage').'/'.$ups->img_zoom4}}" alt=""></a>
+                                                                            @else
+                                                                        @endif
+                                                                          
                                                                     </div>
-                                                                </div>
-                                                                @else
-                                                                    <!--  No hay imagenes Zoom -->
-                                                            @endif
 
-                                                            <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
-                                                                <script>
-                                                                    vanillaZoom.init('#my-gallery');
-                                                                    vanillaZoom.init('#my-gallery2');
-                                                                </script>
+                                                                </div>
+                                                            </center>
+                                                            @else
+
+                                                        @endif
+
+                                                            <script type="text/javascript" src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+                                                            <script type="text/javascript" src="{{ asset('js/smoothproducts.min.js') }}"></script>
+                                                            <script type="text/javascript">
+                                                                /* wait for images to load */
+                                                                $(window).load(function() {
+                                                                    $('.sp-wrap').smoothproducts();
+                                                                });
+                                                            </script>
+                                                    <!-- Fin -  jquery zoom -->
+
+
+
+                                                            
+                                                            
+
+                                                            <!--  Zona de zoom galeria -->
+                                                                <!-- 
+                                                                    @if(($ups->img_zoom1)||($ups->img_zoom2)||($ups->img_zoom3)||($ups->img_zoom4))
+                                                                        <div class="container">
+                                                                            <div id="my-gallery" class="vanilla-zoom">
+                                                                                <div class="sidebar">
+                                                                                    @if(($ups->img_zoom1))
+                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom1}}" class="small-preview">
+                                                                                        @else
+                                                                                    @endif
+
+                                                                                    @if(($ups->img_zoom2))
+                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom2}}" class="small-preview">
+                                                                                        @else
+                                                                                    @endif
+
+                                                                                    @if(($ups->img_zoom3))
+                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom3}}" class="small-preview">
+                                                                                        @else
+                                                                                    @endif
+
+                                                                                    @if(($ups->img_zoom4))
+                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom4}}" class="small-preview">
+                                                                                        @else
+                                                                                    @endif
+                                                                                </div>
+                                                                                <div class="zoomed-image"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        @else
+                                                                            
+                                                                    @endif
+
+                                                                    <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
+                                                                        <script>
+                                                                            vanillaZoom.init('#my-gallery');
+                                                                            vanillaZoom.init('#my-gallery2');
+                                                                        </script>
+                                                                -->
                                                             <!-- Final de Zona de zoom galeria -->
+
                                                             <br></br>
                                                             <div class="card text-center">
                                                                     <div class="card-body">
@@ -245,13 +298,13 @@
 
                                 <div class="col-md-10" style="background:gainsboro">
                                             <br>
-                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <h5 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h5>
                                     <ul class="list-group">                    
                                                     <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
-                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                    <li class="list-group-item"><a href=""> UPS </a></li>
-                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Auditoria energetica </a></li>
                                     </ul>
                                     <br>
 
@@ -282,31 +335,6 @@
                                     <br></br>
                                     <br></br>
                                 </div>
-
-                                        <!-- Anterior lateral
-                                            <div class="col-md-10" style="background:gainsboro">
-                                                <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
-                                                <ul class="list-group">                    
-                                                                <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                                <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                                <li class="list-group-item"><a href=""> UPS </a></li>
-                                                                <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
-                                                </ul>
-                                                <br>
-
-                                                
-                                                <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
-                                                <script>(function(d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (d.getElementById(id)) return;
-                                                js = d.createElement(s); js.id = id;
-                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                fjs.parentNode.insertBefore(js, fjs);
-                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                                <br><br/>
-                                            </div>
-                                        -->
                         </div>
                     </div>
                 </div>
@@ -457,18 +485,7 @@
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
-                                            <!-- Frame del mapa 
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                            -->
                                 </div>
-
-
-                                
-                                            <!-- Div 
-                                                <div class="col-md-2 col-lg-1"></div>
-                                                <div class="col-md-2 col-lg-1"></div>
-                                            --> 
-                                        
 
                                 <div class="col-sm-5">
                                     <h2><i class="fa fa-envelope"></i> Correos</h2>
@@ -485,16 +502,6 @@
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
-        
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
                                     </div>
                                 </div>
 
@@ -543,7 +550,7 @@
         </div>
 
         <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
         <script src="{{ asset('lib/wow/wow.min.js') }}"></script>

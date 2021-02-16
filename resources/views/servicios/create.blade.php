@@ -34,44 +34,54 @@
                 <label for="importancia">Datos...</label>
                 </div>
             </div>
+            <h1><b>Imagenes para galeria</b></h1>
 
             <!-- Imagenes  -->
             <div class="col-md-6">
                 <label for="img_uno" class="form-label">Imagen Numero 1</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_dos" class="form-label">Imagen Numero 2</label>
                 <input type="file" class="form-control" name="img_dos" id="img_dos" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_tres" class="form-label">Imagen Numero 3</label>
                 <input type="file" class="form-control" name="img_tres" id="img_tres" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_cuatro" class="form-label">Imagen Numero 4</label>
                 <input type="file" class="form-control" name="img_cuatro" id="img_cuatro" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_cinco" class="form-label">Imagen Numero 5</label>
                 <input type="file" class="form-control" name="img_cinco" id="img_cinco" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_seis" class="form-label">Imagen Numero 6</label>
                 <input type="file" class="form-control" name="img_seis" id="img_seis" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_siete" class="form-label">Imagen Numero 7</label>
                 <input type="file" class="form-control" name="img_siete" id="img_siete" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_ocho" class="form-label">Imagen Numero 8</label>
                 <input type="file" class="form-constrol" name="img_ocho" id="img_ocho" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-md-6">
                 <label for="img_nueve" class="form-label">Imagen Numero 9</label>
                 <input type="file" class="form-control" name="img_nueve" id="img_nueve" accept="image/png, image/jpeg">
             </div>
+            <hr></hr>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Crear Datos</button>
                 <a href="{{ url('servicios') }}">Regresar a Servicios</a>

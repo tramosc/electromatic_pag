@@ -220,7 +220,7 @@
             
         </style>
                     
-                    <div class="thumb">
+                    <div class="thumb" style="width: 100%;">
                         <a >
                                 <span>Blogs - Electromatic </span>
                         </a>

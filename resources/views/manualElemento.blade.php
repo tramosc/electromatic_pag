@@ -275,18 +275,18 @@
                                                 }
                                             </style>
                                     <div class="col-md-10" style="background:gainsboro">
-                                        <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                        <h5 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h5>
                                         <ul class="list-group">                    
                                                         <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
-                                                        <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                        <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                        <li class="list-group-item"><a href=""> UPS </a></li>
-                                                        <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                                        <li style="font-size: 20px;" class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                        <li style="font-size: 20px;" class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                        <li style="font-size: 20px;" class="list-group-item"><a href=""> UPS </a></li>
+                                                        <li style="font-size: 20px;" class="list-group-item"><a href=""> Auditoria energetica </a></li>
                                         </ul>
                                         <br>
 
                                         
-                                        <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                        <div id="fb-root"><h5 class="title"> SIGUENOS EN FACEBOOK </h5></div>
                                         <script>(function(d, s, id) {
                                         var js, fjs = d.getElementsByTagName(s)[0];
                                         if (d.getElementById(id)) return;

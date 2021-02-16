@@ -158,7 +158,7 @@
                                                     </div>
                                                 </div>
                                            </div>
-                                            
+     
                                        </div>     
 
                             <div class="service">
@@ -198,10 +198,15 @@
 
                                                 </style>
                                                 <div class="contenidos">
-                                                    <div class="image">
-                                                        <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" width="500px" height="400px" alt="">
-                                                    </div>
+                                                    <center>
+                                                        <div class="image" style="width:100%;">  <!-- width="500px" height="400px" --->
+                                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" width="700px" height="500px" alt="">
+                                                        </div>
+                                                    </center>
+                                                    
                                                 </div>
+                                                <br></br>
+                                                <br></br>
 
                                     <!-- Fin de la nuema animacion-->
 
@@ -290,7 +295,7 @@
                                     <center>
                                         @if (($servicio->definicion))
 
-                                        <div class="card" style="background-color: #007939; width: 45rem;">
+                                        <div class="card" style="background-color: #007939; width: 80%;">
                                             <div class="card-header" style="color: white;">
                                                 <h5 style="text-align: left;"><b>DEFINICION</b></h5>
                                             </div>
@@ -321,7 +326,7 @@
 
                                         @if (($servicio->caracteristicas))
                                         <center>
-                                            <div class="card" style="background-color: #007939; width: 45rem;">
+                                            <div class="card" style="background-color: #007939; width: 80%;">
                                                 <div class="card-header" style="color: white;">
                                                     <h5 style="text-align: left;"><b>CARACTERISTICAS</b></h5>
                                                 </div>
@@ -339,7 +344,7 @@
                   
                                         @if (($servicio->importancia))
                                         <center>
-                                            <div class="card" style="background-color: #007939; width: 45rem;">
+                                            <div class="card" style="background-color: #007939; width: 80%;">
                                                 <div class="card-header" style="color: white;">
                                                     <h5 style="text-align: left;"><b>IMPORTANCIA</b></h5>
                                                 </div>
@@ -393,13 +398,12 @@
 
                                 <div class="col-md-10" style="background:gainsboro">
                                             <br>
-                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <h5 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h5>
                                     <ul class="list-group">                    
-                                                    <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
-                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                    <li class="list-group-item"><a href=""> UPS </a></li>
-                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Auditoria energetica </a></li>
                                     </ul>
                                     <br>
 
@@ -416,7 +420,7 @@
                                     <div class="sticky">
                                     <br></br>
                                     <br>
-                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                    <div id="fb-root"><h5 class="title"> SIGUENOS EN FACEBOOK </h5></div>
                                     <script>(function(d, s, id) {
                                     var js, fjs = d.getElementsByTagName(s)[0];
                                     if (d.getElementById(id)) return;
@@ -630,7 +634,7 @@
 
 
             <!-- Team Start -->
-            <div class="team">
+            <div class="team" style="width:100%;">
                 <div class="team-item">
 
                 <!-- Footer Start -->

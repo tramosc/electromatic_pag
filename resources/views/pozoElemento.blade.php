@@ -161,40 +161,105 @@
                                             <div class="service">
                                                 <div class="card-body">
                                                     <!-- <img src="{{asset('storage').'/'.$pozo->img_uno}}" width="450" height="250">-->
-                                                    <!--  Zona de zoom galeria -->
+                                                    
+                                                    <!-- Inicio - Nuevo elemento Zoom -->
 
-
+                                                    <!-- Inicio -  jquery zoom -->
+                                                        <link rel="stylesheet" href="{{ asset('css/smoothproducts.css') }}">
                                                         @if(($pozo->img_zoom1)||($pozo->img_zoom2)||($pozo->img_zoom3)||($pozo->img_zoom4))
-                                                                <div class="container">
-                                                                    <div id="my-gallery" class="vanilla-zoom">
-                                                                        <div class="sidebar">
+                                                            <center>
+                                                                <div class="page">
+                                                                        
+                                                                    <div class="sp-wrap">
                                                                         @if(($pozo->img_zoom1))
-                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" class="small-preview">
+                                                                                <a href="{{asset('storage').'/'.$pozo->img_zoom1}}"><img src="{{asset('storage').'/'.$pozo->img_zoom1}}" alt=""></a>
                                                                             @else
                                                                         @endif
+
                                                                         @if(($pozo->img_zoom2))
-                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" class="small-preview">
+                                                                                <a href="{{asset('storage').'/'.$pozo->img_zoom2}}"><img src="{{asset('storage').'/'.$pozo->img_zoom2}}" alt=""></a>
                                                                             @else
                                                                         @endif
+
                                                                         @if(($pozo->img_zoom3))
-                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom3}}" class="small-preview">
+                                                                                <a href="{{asset('storage').'/'.$pozo->img_zoom3}}"><img src="{{asset('storage').'/'.$pozo->img_zoom3}}" alt=""></a>
                                                                             @else
                                                                         @endif
+
                                                                         @if(($pozo->img_zoom4))
-                                                                                <img src="{{asset('storage').'/'.$pozo->img_zoom4}}" class="small-preview">
+                                                                                <a href="{{asset('storage').'/'.$pozo->img_zoom4}}"><img src="{{asset('storage').'/'.$pozo->img_zoom4}}" alt=""></a>
                                                                             @else
                                                                         @endif
-                                                                        </div>
-                                                                        <div class="zoomed-image"></div>
+                                                                          
                                                                     </div>
+
                                                                 </div>
+                                                            </center>
                                                             @else
+
                                                         @endif
-                                                            <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
-                                                            <script>
-                                                                vanillaZoom.init('#my-gallery');
-                                                                vanillaZoom.init('#my-gallery2');
+
+                                                            <script type="text/javascript" src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+                                                            <script type="text/javascript" src="{{ asset('js/smoothproducts.min.js') }}"></script>
+                                                            <script type="text/javascript">
+                                                                /* wait for images to load */
+                                                                $(window).load(function() {
+                                                                    $('.sp-wrap').smoothproducts();
+                                                                });
                                                             </script>
+                                                    <!-- Fin -  jquery zoom -->
+
+
+
+
+
+
+                                                    <!-- Fin -  Nuevo elemento Zoom -->
+
+
+
+
+
+
+
+
+
+
+                                                    <!--  Zona de zoom galeria -->
+                                                        <!-- 
+
+                                                            @if(($pozo->img_zoom1)||($pozo->img_zoom2)||($pozo->img_zoom3)||($pozo->img_zoom4))
+                                                                    <div class="container">
+                                                                        <div id="my-gallery" class="vanilla-zoom">
+                                                                            <div class="sidebar">
+                                                                            @if(($pozo->img_zoom1))
+                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+                                                                            @if(($pozo->img_zoom2))
+                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+                                                                            @if(($pozo->img_zoom3))
+                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom3}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+                                                                            @if(($pozo->img_zoom4))
+                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom4}}" class="small-preview">
+                                                                                @else
+                                                                            @endif
+                                                                            </div>
+                                                                            <div class="zoomed-image"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                @else
+                                                            @endif
+                                                                <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
+                                                                <script>
+                                                                    vanillaZoom.init('#my-gallery');
+                                                                    vanillaZoom.init('#my-gallery2');
+                                                                </script>
+                                                        -->
                                                     <!-- Final de Zona de zoom galeria -->
                                                     <br></br>
                                                     <div class="card text-center">
@@ -237,13 +302,13 @@
 
                                 <div class="col-md-10" style="background:gainsboro">
                                             <br>
-                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
+                                    <h5 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h5>
                                     <ul class="list-group">                    
                                                     <!-- <li style="background-color: #f8f5f0;" class="list-group-item active"><a href="?page=pozos-de-puesta-a-tierra">Pozos de puesta a tierra </a></li>-->
-                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                    <li class="list-group-item"><a href=""> UPS </a></li>
-                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> UPS </a></li>
+                                                    <li style="font-size: 20px;" class="list-group-item"><a href=""> Auditoria energetica </a></li>
                                     </ul>
                                     <br>
 
@@ -260,7 +325,7 @@
                                     <div class="sticky">
                                     <br></br>
                                     <br>
-                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
+                                    <div id="fb-root"><h5 class="title"> SIGUENOS EN FACEBOOK </h5></div>
                                     <script>(function(d, s, id) {
                                     var js, fjs = d.getElementsByTagName(s)[0];
                                     if (d.getElementById(id)) return;
@@ -278,32 +343,6 @@
                                     
 
                                 </div>
-
-
-                            <!-- Antiguo lateral
-                                <div class="col-md-10" style="background:gainsboro">
-                                    <h4 class="title" style="background-color: #007939 ;"> NUESTROS SERVICIOS </h4>
-                                    <ul class="list-group">                    
-                                                    <li class="list-group-item"><a href=""> Grupos Electrógenos </a></li>                         
-                                                    <li class="list-group-item"><a href=""> Pozos de puesta a tierra </a></li>
-                                                    <li class="list-group-item"><a href=""> UPS </a></li>
-                                                    <li class="list-group-item"><a href=""> Auditoria energetica </a></li>
-                                    </ul>
-                                    <br>
-
-                                    
-                                    <div id="fb-root"><h4 class="title"> SIGUENOS EN FACEBOOK </h4></div>
-                                    <script>(function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));</script>
-                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                    <br><br/>
-                                </div>
-                            -->
                             
                         </div>
                     </div>
@@ -468,36 +507,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">
@@ -508,15 +517,6 @@
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
         
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
                                     </div>
                                 </div>
 
@@ -565,7 +565,7 @@
         </div>
 
         <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
         <script src="{{ asset('lib/wow/wow.min.js') }}"></script>

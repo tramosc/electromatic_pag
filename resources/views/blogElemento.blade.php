@@ -325,10 +325,11 @@
             </style>
 
             <div class="contain">
-                <img style="opacity: 0.4; height: auto; width: 100%;" src="{{asset('storage').'/'.$blog->img_portada}}" alt="Cinque Terre" width="1000" height="300">
+                <img style="opacity: 0.4; height: auto; width: 100%;" src="{{asset('storage').'/'.$blog->img_portada}}" alt="Cinque Terre">
                 <div class="center">
                     <h1 style="text-align: center;">{{$blog->titulo_blog}}</h1> 
-                    <br> <p style="text-align: center;"><a href="">INICIO</a> | <a>{{$blog->fecha}}</a></p></div>
+                    <br> <p style="text-align: center;"><a href="">INICIO</a> | <a>{{$blog->fecha}}</a></p>
+                </div>
             </div>
             <br>
         <div class="container">
@@ -518,9 +519,9 @@
                                         </div>
                                         <div class="flip-card-back">
                                         <br>
-                                        <h3>{{$blogpost->titulo_blog}}</h3> 
+                                        <h3><a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">{{$blogpost->titulo_blog}}</a></h3> 
                                         <p>{{$blogpost->fecha}}</p>
-                                        <a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">ver mas</a>
+                                        <a href="{{ url('/'.$blogpost->id.'/Vista-Blog-Elemento') }}" style="color: white">Ver mas...</a>
                                         </div>
                                     </div>
                                     

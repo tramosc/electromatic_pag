@@ -30,7 +30,7 @@
                     <label for="detalles" class="form-label">Detalles</label>
                     <input type="text" class="form-control" name="detalles" id="detalles" value="{{ $manual->detalles }}">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-11">
                     <label for="archivo_url" class="form-label">Archivo - Actual</label>
                     @if (($manual->archivo_url))
                     <a href="{{asset('storage').'/'.$manual->archivo_url}}" download="">Descargar</a>

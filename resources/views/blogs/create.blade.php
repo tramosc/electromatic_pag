@@ -8,12 +8,15 @@
         <div class="card-body">
         <form action="{{ url('/blogs') }}" method="POST" class="row g-3" enctype="multipart/form-data">
         {{ csrf_field() }}
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <label for="titulo_blog" class="form-label">Titulo del blog</label>
                 <input type="text" class="form-control" name="titulo_blog" id="titulo_blog" required maxlength="191">
             </div>
             <div class="col-md-6">
                 <label for="img_portada" class="form-label">Imagen de portada</label>
+                <div class="alert alert-warning" role="alert">
+                    Aviso: Usar imagenes Horizontales de tamaño 1200(ancho o similar) x 676(alto o que se mantenga en ese tamaño)
+                </div>
                 <input type="file" class="form-control" name="img_portada" required accept="image/png, image/jpeg" id="img_portada">
             </div>
             <div class="col-2">

@@ -59,7 +59,6 @@
                         <a class="dropdown-item" href="{{ url('/pozos') }}">Pozos de puesta a tierra</a>
                         <a class="dropdown-item" href="{{ url('/ups') }}">UPS</a>
                         <a class="dropdown-item" href="{{ url('/suministros') }}">Suministros</a>
-                        <a class="dropdown-item" href="{{ url('/capacitaciones') }}">Capacitaciones y cursos</a>
                     </li>
 
                     <li class="nav-item">
@@ -68,6 +67,10 @@
 
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ url('/imagenesEmpresa') }}">Galeria Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url('/capacitaciones') }}">Capacitaciones y cursos</a>
                     </li>
 
                     <li class="nav-item">
