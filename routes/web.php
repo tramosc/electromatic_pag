@@ -24,6 +24,18 @@ Route::get('/Vista-Empresa', function () {
     return view('empresa');
 });
 */
+
+
+
+
+//Contacto
+Route::resource('contactos', 'ContactosController');
+
+Route::get('/Vista-Contacto', function () {
+    return view('contacto');
+});
+
+
 //Contacto
 //blogs
 Route::get('{blog}/Vista-Blog-Elemento', 'FrontController@viewBlog');
@@ -92,13 +104,6 @@ Route::get('/servicios/{servicio}/create', 'ServiciosController@create');
 Route::get('/servicios/edit', 'ServiciosController@edit');
 */
 
-//REPUESTOS
-Route::resource('repuestos', 'RepuestosController');
-/*
-Route::get('/repuestos', 'RepuestosController@index')->name('repuestos');
-Route::get('/repuestos/create', 'RepuestosController@create');
-Route::get('/repuestos/edit', 'RepuestosController@edit');
-*/
 //POSTULANTES
 Route::resource('postulantes', 'PostulantesController');
 /*

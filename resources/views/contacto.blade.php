@@ -2,11 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>SUMINISTROS - ELECTROMATIC</title>
+        <title>CONTACTO - ELECTROMATIC INDUSTRIAL</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
-
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
         <link href="{{ asset('css/favicon.ico') }}" rel="icon">
@@ -26,15 +25,32 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
+
+        <!-- Css para el mostrador de Iconos con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style8.css') }}" />
+        
+            
     </head>
 
     <body>
+        
         <div class="wrapper">
             <!-- Top Bar Start -->
+            
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="">
+                                <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
@@ -72,23 +88,11 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="col-lg-4 col-md-12">
-                            <div class="logo">
-                                <a href="">
-                                <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image" align="right">
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                                </a>
-                            </div>
-                        </div>
-
-
                     </div>
-
                 </div>
             </div>
             <!-- Top Bar End -->
-
+            
             <!-- Nav Bar Start -->
             <div class="nav-bar">
                 <div class="container-fluid">
@@ -137,47 +141,120 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
-            
-
-            <!-- Contact Start -->
-             <div class="team">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <br></br>
-                        <h2 style="color: black;">SUMINISTROS</h2>
-                    </div>
-                    <div class="row">
-
-
-                    
-                    @foreach($suministros as $suministro)
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <a href="{{ url('/'.$suministro->id.'/Vista-Suministro-Elemento') }}">
-                                    <div class="team-item">
-                                        <div class="team-img">
-                                            <img src="{{asset('storage').'/'.$suministro->img_uno}}" width="100px" height="230px" alt="Team Image">
-                                        </div>
-                                        <div class="team-text">
-                                            <h2 style="color: white;">{{$suministro->titulo_suministro}}</h2>
-                                            <a href="{{ url('/'.$suministro->id.'/Vista-Suministro-Elemento') }}" style="color: white;">Saber mas...</a>
-                                        </div>
+    <!-- referencia
+    https://www.youtube.com/watch?v=okmsJ8Y-w1c
+     -->
+            <br>
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container" >
+                    <h3>Contáctenos</h3>
+                        <br>
+                        <div class="justify-content-center align-items-center">
+                            <form style="background-color: #f8f8f8; padding: 30px;" action="enviarcorreo.php" method="POST" enctype="multipart/form-data" class=" align-items-center">
+                                    
+                                <div class="form-row">
+                                    <div class="col-6">
+                                        <label style="color: black;" for="nombres">Nombre Completo</label>
+                                            <input type="text" class="form-control" name="nombres" id="nombres" required>
                                     </div>
-                            </a>
-                            <br></br>
+                                    
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-3">
+                                        <label style="color: black;" for="empresa">Empresa</label>
+                                            <input type="text" class="form-control" name="empresa" id="empresa" required>
+                                    </div>
+                                    <div class="col-3">
+                                        <label style="color: black;" for="ruc">Ruc de la empresa</label>
+                                            <input type="number" class="form-control" name="ruc" id="ruc" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-4">
+                                        <label style="color: black;" for="email">Correo Electronico</label>
+                                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                                    </div>
+                                    <div class="col-3">
+                                        <label style="color: black;" for="telefono">Telefono</label>
+                                            <input type="number" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="6" maxlength="9"   name="telefono" id="telefono" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-3">
+                                        <label style="color: black;" for="tipo">Tipo de cliente</label>
+                                            <select class="form-control" name="tipo" id="tipo" required>
+                                            <option name="tipo" id="tipo">Seleccione...</option>
+                                            <option name="tipo" id="tipo">Almacén</option>
+                                            <option name="tipo" id="tipo">Alquilador</option>
+                                            <option name="tipo" id="tipo">Cliente final</option>
+                                            <option name="tipo" id="tipo">Constructora</option>
+                                            <option name="tipo" id="tipo">Distribuidor</option>
+                                            <option name="tipo" id="tipo">EPC</option>
+                                            <option name="tipo" id="tipo">Gran cuenta</option>
+                                            <option name="tipo" id="tipo">Ingeniería</option>
+                                            <option name="tipo" id="tipo">Instalador Eléctrico</option>
+                                            <option name="tipo" id="tipo">Otros</option>
+                                            <option name="tipo" id="tipo">Particular</option>
+                                            </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label style="color: black;" for="lugar">Lugar de la instalacion</label>
+                                            <input type="text" class="form-control" name="lugar" id="lugar" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-sm-4">
+                                        <label style="color: black;" for="potencia">Indíquenos la potencia del equipo (kVA)</label>
+                                            <input type="text" class="form-control" name="potencia" id="potencia" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="col-5">
+                                        <label style="color: black;" for="motivo">¿Qué necesita?</label>
+                                            <select class="form-control" name="motivo" id="motivo" required>
+                                                <option value="">Seleccione...</option>
+                                                <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
+                                                <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
+                                                <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                    <br>
+                                <div class="form-row">
+                                    <div class="col-5">
+                                        <label style="color: black;" for="mensaje">Otros detalles</label>
+                                        <textarea class="form-control" name="mensaje" id="mensaje" required rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-check required">
+                                    <input type="checkbox" class="form-check-input" required id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1" style="color: black;"><b>Acepto el uso de mis datos personales.</b></label>
+                                </div>
+
+                                <button type="submit" onclick="return confirm('¿Desea Enviar sus datos?');" class="btn btn-success btn-lg btn-block">Enviar datos</button>
+
+            
+                            </form>
                         </div>
-                    @endforeach
                     
-
-                    </div>
                 </div>
-                <br></br>
             </div>
-            <!-- Contact End -->
-
-        </div>
-      
+            <!-- About End -->
+        <br>
 
 
+
+<!-- https://pruebahostingaom.000webhostapp.com/index.html 
+    https://files.000webhost.com/
+ -->
             <!-- Team Start -->
             <div id="contactos" class="team">
                 <div class="team-item">
@@ -192,6 +269,9 @@
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
+                                            <!-- Frame del mapa 
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                            -->
                                 </div>
 
 
@@ -217,6 +297,7 @@
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
+    
                                     </div>
                                 </div>
 
@@ -230,7 +311,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                             <div class="text-left p-3" style="background-color: #717171">
-                                ©<a style="color: white;" href="">Electromatic Industrial SRL </a>| Todos los derechos reservados 2013 - 2021
+                                ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
                             </div>
                             </div>
                             <div class="col-sm-3"></div>
@@ -260,6 +341,8 @@
                 </div>
             </div>
             <!-- Team End -->
+
+            
 
             <!-- Boton de whatsapp -->
             <style>
@@ -291,8 +374,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
             <!-- Fin de Boton de whatsapp -->
-
+        
+        
         </div>
+
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

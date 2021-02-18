@@ -82,11 +82,7 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
-
-
-
-
+                                        <a href="#contactos">Correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -187,32 +183,6 @@
                             <!-- Fin de la zona de animacion css con imagenes-->    
                         </div>
 
-                        <!-- Colores de la empresa seccion 1
-                    background-color: #02732A;
-                    background-color: #027333;
-                    background-color: #97BF95;
-                    background-color: #F2E9D8;
-                    background-color: #736F6E;
-                        -->
-
-                        <!-- Colores de la empresa seccion 2
-                    background-color: #BAD9C8;
-                    background-color: #82F27E;
-                        -->
-
-                        <!-- colores seccion 3
-                    background-color: #F2F2F2;
-                    background-color: #358C5B;
-
-                        -->
-
-                        <!-- colores seccion 4
-                    background-color: #5DA676;
-                    background-color: #358C5B;
-                    border-radius: 15px 50px;
-                    background: linear-gradient(#02732A, #F2F2F2);
-                        -->
-
 
                         <div class="col-lg-6 col-md-6" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; width:100%;">
                                     
@@ -303,76 +273,6 @@
                 
                 </div>
             <!-- Feature End-->
-            <!-- FAQs Start -->
-            <!--
-            <div class="faqs">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 style="color: black;">Nuestros servicios</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="accordion-1">
-                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
-                                    <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            <b>GRUPOS ELECTROGENOS</b>
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
-                                    <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            <b>UPS</b>
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="accordion-2">
-                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
-                                    <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                                            <b>AUDITORIA ENERGICA</b>
-                                        </a>
-                                    </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
-                                    <div class="card-header">
-                                        <a style="text-align: center;" class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                                            <b>POZOS DE PUESTA A TIERRA</b>
-                                        </a>
-                                    </div>
-                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-            <!-- FAQs End -->
-
 
             <!-- Testimonial Start -->
             <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
@@ -443,7 +343,7 @@
 
 
             <!-- Team Start -->
-            <div class="team">
+            <div id="contactos" class="team">
                 <div class="team-item">
 
                 <!-- Footer Start -->
@@ -529,9 +429,45 @@
             </div>
             <!-- Team End -->
 
-            
+            <!-- Boton de whatsapp -->
+    <style>
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+        font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        }
+        .float:hover {
+            text-decoration: none;
+            color: #25d366;
+        background-color:#fff;
+        }
 
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        .my-float{
+            margin-top:16px;
+        }
+    </style>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+            <!-- Fin de Boton de whatsapp -->
+            
+<!-- 
+            <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola!%20Quiero%20Saber%20Mas" 
+            target="_blank" class="back-to-top">
+            <img src="https://www.diariolibre.com/binrepository/512x512/0c0/0d0/none/10904/VHFO/whatsapp_11706609_20190529112246.png"  
+            style="border-radius: 15px;" width="50px" 
+            height="50px"></a>
+-->
+
         </div>
 
 

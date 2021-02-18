@@ -74,8 +74,9 @@
                     </li>
 
                     <li class="nav-item">
-                        <b><a class="nav-link active" aria-current="page" href="{{ url('/postulantes') }}">Postulantes</a></b>
+                        <a class="nav-link active" aria-current="page" href="{{ url('/postulantes') }}"><b>Postulantes</b></a>
                     </li>
+                    
                     </ul>
 
                     <!-- Right Side Of Navbar -->

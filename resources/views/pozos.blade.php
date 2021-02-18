@@ -66,11 +66,7 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="mailto:servicios_cliente@electromaticindustrial.com?Subject=Interesado%20Pagina">Correo</a>
-
-
-
-
+                                            <a href="#contactos">Correo</a>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +179,7 @@
 
 
             <!-- Team Start -->
-            <div class="team">
+            <div id="contactos" class="team">
                 <div class="team-item">
 
                 <!-- Footer Start -->
@@ -196,18 +192,8 @@
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
-                                            <!-- Frame del mapa 
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                            -->
+
                                 </div>
-
-
-                                
-                                            <!-- Div 
-                                                <div class="col-md-2 col-lg-1"></div>
-                                                <div class="col-md-2 col-lg-1"></div>
-                                            --> 
-                                        
 
                                 <div class="col-sm-5">
                                     <h2><i class="fa fa-envelope"></i> Correos</h2>
@@ -215,36 +201,6 @@
                                         <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
                                         <a style="color: white;">jcueva@electromaticindustrial.com</a>
                                     </div>
-                                    <!-- Div personalizado  
-                                        <div class=".col-sm-4 .col-sm-push-2">
-                                            <!--
-                                                <h2>INTRANET</h2>
-                                                <p>
-                                                    Solo para clientes, <a style="color: white;" href="http://intranet.electromaticindustrial.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                                <br>
-                                                <p>
-                                                    Grupos electrogenos, <a style="color: white;" href="http://gruposelectrogenosei.com/"><b><u>IR</u></b></a>
-                                                </p>
-                                            -->  
-
-                                            <!--   SCRIPT DE FACEBOOK
-                                                    <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=1662789413962452";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));
-                                                    </script>
-                                                    
-                                                    <div class="fb-page" data-href="https://www.facebook.com/electromaticindustrialsrl/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>	
-                                            -->
-
-                                            <!-- SCRIPT DE TWITTER personalizado              
-                                                <a class="twitter-timeline" data-lang="es" data-width="350" data-height="350" href="https://twitter.com/electromaticind?ref_src=twsrc%5Etfw">Tweets by electromaticind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            --> 
-                                    <!--  </div> -->
                                 </div>
 
                                 <div class="col-sm-5">
@@ -255,15 +211,6 @@
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
         
-                                        <!--
-                                        <div class="footer-social">
-                                            <a href=""><i class="fab fa-twitter"></i></a>
-                                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-youtube"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                        -->
                                     </div>
                                 </div>
 
@@ -308,7 +255,37 @@
             </div>
             <!-- Team End -->
 
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <!-- Boton de whatsapp -->
+                <style>
+                    .float{
+                        position:fixed;
+                        width:60px;
+                        height:60px;
+                        bottom:40px;
+                        right:40px;
+                        background-color:#25d366;
+                        color:#FFF;
+                        border-radius:50px;
+                        text-align:center;
+                    font-size:30px;
+                        box-shadow: 2px 2px 3px #999;
+                    z-index:100;
+                    }
+                    .float:hover {
+                        text-decoration: none;
+                        color: #25d366;
+                    background-color:#fff;
+                    }
+
+                    .my-float{
+                        margin-top:16px;
+                    }
+                </style>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+            <!-- Fin de Boton de whatsapp -->
+
         </div>
 
         <!-- JavaScript Libraries -->
