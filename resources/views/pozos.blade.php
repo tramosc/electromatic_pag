@@ -188,7 +188,7 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
@@ -205,7 +205,7 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>

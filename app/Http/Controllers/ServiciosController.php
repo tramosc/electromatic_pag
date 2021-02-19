@@ -241,16 +241,6 @@ class ServiciosController extends Controller
             $datosServicio['img_nueve']=$request->file('img_nueve')->store('uploads', 'public');
         }
 
-        /**imagen 10 */
-        if($request->hasFile('img_diez')){
- 
-            $servicio= Servicios::findOrFail($id);
-
-            Storage::delete('public/'.$servicio->img_diez);
-
-            $datosServicio['img_diez']=$request->file('img_diez')->store('uploads', 'public');
-        }
-
          /** Fin de imagenes de galeria */
 
 

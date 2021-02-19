@@ -21,6 +21,7 @@ class CreateBlogsTable extends Migration
             $table->string('img_contenido');
             $table->string('parrafo1');
             $table->string('parrafo2');
+            $table->string('parrafo3');
             $table->date('fecha');
             $table->timestamps();
         });

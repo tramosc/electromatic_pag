@@ -203,61 +203,22 @@
                                                             </script>
                                                     <!-- Fin -  jquery zoom -->
 
-
-
-                                                            
-                                                            
-
-                                                            <!--  Zona de zoom galeria -->
-                                                                <!-- 
-                                                                    @if(($ups->img_zoom1)||($ups->img_zoom2)||($ups->img_zoom3)||($ups->img_zoom4))
-                                                                        <div class="container">
-                                                                            <div id="my-gallery" class="vanilla-zoom">
-                                                                                <div class="sidebar">
-                                                                                    @if(($ups->img_zoom1))
-                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom1}}" class="small-preview">
-                                                                                        @else
-                                                                                    @endif
-
-                                                                                    @if(($ups->img_zoom2))
-                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom2}}" class="small-preview">
-                                                                                        @else
-                                                                                    @endif
-
-                                                                                    @if(($ups->img_zoom3))
-                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom3}}" class="small-preview">
-                                                                                        @else
-                                                                                    @endif
-
-                                                                                    @if(($ups->img_zoom4))
-                                                                                            <img src="{{asset('storage').'/'.$ups->img_zoom4}}" class="small-preview">
-                                                                                        @else
-                                                                                    @endif
-                                                                                </div>
-                                                                                <div class="zoomed-image"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        @else
-                                                                            
-                                                                    @endif
-
-                                                                    <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
-                                                                        <script>
-                                                                            vanillaZoom.init('#my-gallery');
-                                                                            vanillaZoom.init('#my-gallery2');
-                                                                        </script>
-                                                                -->
-                                                            <!-- Final de Zona de zoom galeria -->
-
                                                             <br></br>
-                                                            <div class="card text-center">
-                                                                    <div class="card-body">
-                                                                        <h5 style="color: black; text-align: left;">Descripcion:</h5>
-                                                                        <p class="card-text">{{ $ups->descripcion_ups }}</p>
-                                                                        <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $ups->precio }}</span> </h5>
-                                                    
-                                                            </div>
-                                                        </div>
+
+                                                            @if(($ups->descripcion_ups)||($ups->precio))
+                                                                <div class="card text-center">
+                                                                        <div class="card-body">
+                                                                            <h5 style="color: black; text-align: left;">Descripcion:</h5>
+                                                                            <p class="card-text">{{ $ups->descripcion_ups }}</p>
+                                                                            
+                                                                            @if(($ups->precio))
+                                                                                    <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $ups->precio }}</span> </h5>
+                                                                                @else
+                                                                            @endif
+                                                                        </div>
+                                                                </div>
+                                                                @else
+                                                            @endif
                                             </div>
                                         </div>
 
@@ -477,11 +438,22 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
+                                            <!-- Frame del mapa 
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                            -->
                                 </div>
+
+
+                                
+                                            <!-- Div 
+                                                <div class="col-md-2 col-lg-1"></div>
+                                                <div class="col-md-2 col-lg-1"></div>
+                                            --> 
+                                        
 
                                 <div class="col-sm-5">
                                     <h2><i class="fa fa-envelope"></i> Correos</h2>
@@ -493,11 +465,12 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
+    
                                     </div>
                                 </div>
 
@@ -511,7 +484,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                             <div class="text-left p-3" style="background-color: #717171">
-                                ©<a style="color: white;" href="">Electromatic Industrial SRL </a>| Todos los derechos reservados 2013 - 2021
+                                ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
                             </div>
                             </div>
                             <div class="col-sm-3"></div>

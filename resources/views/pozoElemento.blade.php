@@ -213,59 +213,22 @@
                                                     <!-- Fin -  Nuevo elemento Zoom -->
 
 
-
-
-
-
-
-
-
-
-                                                    <!--  Zona de zoom galeria -->
-                                                        <!-- 
-
-                                                            @if(($pozo->img_zoom1)||($pozo->img_zoom2)||($pozo->img_zoom3)||($pozo->img_zoom4))
-                                                                    <div class="container">
-                                                                        <div id="my-gallery" class="vanilla-zoom">
-                                                                            <div class="sidebar">
-                                                                            @if(($pozo->img_zoom1))
-                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom1}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
-                                                                            @if(($pozo->img_zoom2))
-                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom2}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
-                                                                            @if(($pozo->img_zoom3))
-                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom3}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
-                                                                            @if(($pozo->img_zoom4))
-                                                                                    <img src="{{asset('storage').'/'.$pozo->img_zoom4}}" class="small-preview">
-                                                                                @else
-                                                                            @endif
-                                                                            </div>
-                                                                            <div class="zoomed-image"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                @else
-                                                            @endif
-                                                                <script src="{{ asset('css/vanilla-zoom/vanilla-zoom.js') }}"></script>
-                                                                <script>
-                                                                    vanillaZoom.init('#my-gallery');
-                                                                    vanillaZoom.init('#my-gallery2');
-                                                                </script>
-                                                        -->
-                                                    <!-- Final de Zona de zoom galeria -->
                                                     <br></br>
-                                                    <div class="card text-center">
-                                                            <div class="card-body">
-                                                                <h5 style="color: black; text-align: left;">Descripcion:</h5>
-                                                                <p class="card-text">{{ $pozo->descripcion_pozo }}</p>
-                                                                <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $pozo->precio }}</span> </h5>
-                                            
-                                                    </div>
-                                                </div>
+
+                                                    @if(($pozo->descripcion_pozo)||($pozo->precio))
+                                                        <div class="card text-center">
+                                                                <div class="card-body">
+                                                                    <h5 style="color: black; text-align: left;">Descripcion:</h5>
+                                                                    <p class="card-text">{{ $pozo->descripcion_pozo }}</p>
+                                                                    @if(($pozo->precio))
+                                                                            <h5 style="color: black; text-align: left;">Costo: <span class="card-text">S/{{ $pozo->precio }}</span> </h5>
+                                                                        @else
+                                                                    @endif
+                                                                </div>
+                                                        </div>
+                                                        @else
+
+                                                    @endif
                                             </div>
                             </div>
                         <!-- Fin de Elementos de la zona de la izquierda -->
@@ -480,7 +443,7 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
@@ -496,7 +459,7 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>

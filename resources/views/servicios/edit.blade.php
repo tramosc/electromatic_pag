@@ -10,8 +10,8 @@
         <form action="{{ url('/servicios/'.$servicio->id) }}" method="POST" enctype="multipart/form-data">
         {{ csrf_field() }}
         {{ method_field('PATCH') }}
-        <div class="col-md-6">
-                <label for="titulo_servicios" class="form-label">titulo</label>
+            <div class="col-md-6">
+                <label for="titulo_servicios" class="form-label">Titulo</label>
                 <input type="text" class="form-control" name="titulo_servicios" id="titulo_servicios" value="{{ $servicio->titulo_servicios }}">
             </div>
             <div class="col-md-6">
@@ -20,27 +20,45 @@
                 <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
                 <input type="file" class="form-control" name="img_portada" id="img_portada" accept="image/png, image/jpeg" value="">
             </div>
-            <div class="col-12">
-                <label for="definicion" class="form-label">Definicion</label>
-                <input type="text" class="form-control" name="definicion" id="definicion" value="{{ $servicio->definicion }}">
+            <hr></hr>
+            <div class="col-md-6">
+                <label for="titulo1" class="form-label">Subtitulo1</label>
+                <input type="text" class="form-control" name="titulo1" id="titulo1" value="{{ $servicio->titulo1 }}">
             </div>
             <div class="col-12">
-                <label for="caracteristicas" class="form-label">Caracteristicas</label>
+                <label for="parrafo1" class="form-label">Parrafo 1</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="caracteristicas" name="caracteristicas" style="height: 100px" value="{{ $servicio->caracteristicas }}">{{ $servicio->caracteristicas }}</textarea>
-                <label for="caracteristicas">Datos...</label>
+                <textarea class="form-control"  id="parrafo1" name="parrafo1" style="height: 100px" value="{{ $servicio->parrafo1 }}">{{ $servicio->parrafo1 }}</textarea>
+                <label for="parrafo1">Datos...</label>
                 </div>
             </div>
+            <hr></hr>
+            <div class="col-md-6">
+                <label for="titulo2" class="form-label">Subtitulo2</label>
+                <input type="text" class="form-control" name="titulo2" id="titulo2" value="{{ $servicio->titulo2 }}">
+            </div>
             <div class="col-12">
-                <label for="importancia" class="form-label">Importancia</label>
+                <label for="parrafo2" class="form-label">Parrafo 2</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="importancia" name="importancia" style="height: 100px" value="{{ $servicio->importancia }}">{{ $servicio->importancia }}</textarea>
-                <label for="importancia">Datos...</label>
+                <textarea class="form-control"  id="parrafo2" name="parrafo2" style="height: 100px" value="{{ $servicio->parrafo2 }}">{{ $servicio->parrafo2 }}</textarea>
+                <label for="parrafo2">Datos...</label>
+                </div>
+            </div>
+            <hr></hr>
+            <div class="col-md-6">
+                <label for="titulo3" class="form-label">Subtitulo3</label>
+                <input type="text" class="form-control" name="titulo3" id="titulo3" value="{{ $servicio->titulo3 }}">
+            </div>
+            <div class="col-12">
+                <label for="parrafo3" class="form-label">Parrafo 3</label>
+                <div class="form-floating">
+                <textarea class="form-control"  id="parrafo3" name="parrafo3" style="height: 100px" value="{{ $servicio->parrafo3 }}">{{ $servicio->parrafo3 }}</textarea>
+                <label for="parrafo3">Datos...</label>
                 </div>
                 <br></br>
             </div>
-
-            <H1>GALERIA DE IMAGENES (Opcional)</H1>
+            <hr></hr>
+            <h1>GALERIA DE IMAGENES (Opcional)</h1>
             <div class="col-md-6">
                 <label for="img_uno" class="form-label">Imagen 1:</label>
                     @if(($servicio->img_uno))

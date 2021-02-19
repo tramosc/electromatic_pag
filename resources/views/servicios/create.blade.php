@@ -16,22 +16,37 @@
                 <label for="img_portada" class="form-label">Portada</label>
                 <input type="file" class="form-control" name="img_portada" id="img_portada" required accept="image/png, image/jpeg">
             </div>
-            <div class="col-12">
-                <label for="definicion" class="form-label">Definicion</label>
-                <input type="text" class="form-control" name="definicion" id="definicion">
+            <div class="col-md-6">
+                <label for="titulo1" class="form-label">Titulo de parrafo 1</label>
+                <input type="text" class="form-control" name="titulo1" id="titulo1">
             </div>
             <div class="col-12">
-                <label for="caracteristicas" class="form-label">Caracteristicas</label>
+                <label for="parrafo1" class="form-label">Parrafo 1</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="caracteristicas" name="caracteristicas" style="height: 100px"></textarea>
-                <label for="caracteristicas">Datos...</label>
+                <textarea class="form-control"  id="parrafo1" name="parrafo1" style="height: 100px"></textarea>
+                <label for="parrafo1">Datos...</label>
+                </div>
+            </div>  
+            <div class="col-md-6">
+                <label for="titulo2" class="form-label">Titulo de parrafo 2</label>
+                <input type="text" class="form-control" name="titulo2" id="titulo2">
+            </div>
+            <div class="col-12">
+                <label for="parrafo2" class="form-label">Parrafo 2</label>
+                <div class="form-floating">
+                <textarea class="form-control"  id="parrafo2" name="parrafo2" style="height: 100px"></textarea>
+                <label for="parrafo2">Datos...</label>
                 </div>
             </div>
+            <div class="col-md-6">
+                <label for="titulo3" class="form-label">Titulo de parrafo 3</label>
+                <input type="text" class="form-control" name="titulo3" id="titulo3">
+            </div>
             <div class="col-12">
-                <label for="importancia" class="form-label">Importancia</label>
+                <label for="parrafo3" class="form-label">Parrafo 3</label>
                 <div class="form-floating">
-                <textarea class="form-control"  id="importancia" name="importancia" style="height: 100px"></textarea>
-                <label for="importancia">Datos...</label>
+                <textarea class="form-control"  id="parrafo3" name="parrafo3" style="height: 100px"></textarea>
+                <label for="parrafo3">Datos...</label>
                 </div>
             </div>
             <h1><b>Imagenes para galeria</b></h1>

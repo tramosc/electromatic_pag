@@ -15,9 +15,6 @@
                 <tr>
                 <th scope="col">#ID</th>
                 <th scope="col">Titulo Servicios</th>
-                <th scope="col">Definicion</th>
-                <th scope="col">Caracteristicas</th>
-                <th scope="col">Importancia</th>
                 <th scope="col">Img Portada</th>
                 <th scope="col">Acciones</th>
                 </tr>
@@ -27,9 +24,6 @@
                 <tr>
                 <th scope="row">{{$loop->iteration}}</th>
                 <td>{{$servicio->titulo_servicios}}</td>
-                <td>{{$servicio->definicion}}</td>
-                <td>{{$servicio->caracteristicas}}</td>
-                <td>{{$servicio->importancia}}</td>
                 <td>
                 <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="200">
                 

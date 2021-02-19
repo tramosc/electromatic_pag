@@ -17,7 +17,7 @@
                 <label for="descripcion_grupo" class="form-label">Descripcion del Grupo</label>
                 <input type="text" class="form-control" name="descripcion_grupo" id="descripcion_grupo" value="{{ $grupo->descripcion_grupo }}">
             </div>
-            <div class="col-">
+            <div class="col-3">
                 <label for="precio" class="form-label">Precio</label>
                 <input type="text" class="form-control" name="precio" id="precio" value="{{ $grupo->precio }}">
             </div>

@@ -34,6 +34,10 @@
                 <label for="parrafo2" class="form-label">Parrafo 2</label>
                 <input type="text" class="form-control" name="parrafo2" id="parrafo2" value="{{ $blog->parrafo2 }}">
             </div>
+            <div class="col-12">
+                <label for="parrafo3" class="form-label">Parrafo 3</label>
+                <input type="text" class="form-control" name="parrafo3" id="parrafo3" value="{{ $blog->parrafo3 }}">
+            </div>
             <div class="col-md-6">
                 <label for="img_contenido" class="form-label">Imagen de Contenido</label>
                 <img src="{{asset('storage').'/'.$blog->img_contenido}}" width="200">

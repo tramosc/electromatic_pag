@@ -171,9 +171,6 @@
             <!-- Contact End -->
 
 
-      
-
-
             <!-- Team Start -->
             <div id="contactos" class="team">
                 <div class="team-item">
@@ -184,7 +181,7 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
@@ -194,6 +191,12 @@
                                 </div>
 
 
+                                
+                                            <!-- Div 
+                                                <div class="col-md-2 col-lg-1"></div>
+                                                <div class="col-md-2 col-lg-1"></div>
+                                            --> 
+                                        
 
                                 <div class="col-sm-5">
                                     <h2><i class="fa fa-envelope"></i> Correos</h2>
@@ -205,11 +208,12 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
                                             </div>
+    
                                     </div>
                                 </div>
 
@@ -223,7 +227,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                             <div class="text-left p-3" style="background-color: #717171">
-                                ©<a style="color: white;" href="">Electromatic Industrial SRL </a>| Todos los derechos reservados 2013 - 2021
+                                ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
                             </div>
                             </div>
                             <div class="col-sm-3"></div>

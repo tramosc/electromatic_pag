@@ -192,95 +192,27 @@
                                                         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
                                                         }
 
+                                                        
+                                                        .responsive {
+                                                        width: 100%;
+                                                        max-width: 700px;
+                                                        height: auto;
+                                                        }
+
                                                 </style>
                                                 <div class="contenidos">
                                                     <center>
                                                         <div class="image" style="width:100%;">  <!-- width="500px" height="400px" --->
-                                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img" width="700px" height="500px" alt="">
+                                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" class="img responsive" alt="">
                                                         </div>
                                                     </center>
                                                     
                                                 </div>
                                                 <br></br>
                                                 <br></br>
+                                                <br></br>
 
                                     <!-- Fin de la nuema animacion-->
-
-
-                                            <!-- Imagenes 3D-->
-                                                    <!-- 
-                                                            <style>
-                                                                h1 {
-                                                                    text-align: center;
-                                                                }
-                                                                .capas {
-                                                                    position: relative;
-                                                                    max-width: 650px;
-                                                                    margin: 0 auto;
-                                                                }
-                                                                .capas img {
-                                                                    position: absolute;
-                                                                    max-width: 100%;
-                                                                    transition: all ease 1250ms;
-                                                                    transform-style: preserve-3d;
-                                                                }
-                                                                .capas:hover .capa0 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(0px);
-                                                                }
-                                                                .capas:hover .capa1 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(40px);
-                                                                    opacity: .6;
-                                                                }
-                                                                .capas:hover .capa2 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(80px);
-                                                                }
-                                                                .capas:hover .capa3 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(120px);
-                                                                }
-                                                                .capas:hover .capa4 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(160px);
-                                                                }
-                                                                .capas:hover .capa5 {
-                                                                    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(-30px) translateY(0px) translateZ(200px);
-                                                                top: 0;
-                                                                left: 0;
-                                                                width: 250px;
-                                                                height: 150px;
-                                                                }
-                                                            </style>
-                                                    
-                                                            <div class="capas">
-
-                                                            <img src="{{asset('storage').'/'.$servicio->img_tres}}" width="800" height="550" class="capa3">
-                                                            <img src="{{asset('storage').'/'.$servicio->img_cuatro}}" width="400" height="250" class="capa4">
-                                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" width="800" height="550" class="capa5">
-                                                            </div>
-
-                                                                        <br></br><br></br>
-
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                                        <br></br>
-                                                        -->
-                                            <!-- Fin Imagenes 3D-->
-
-                                                            <!--
-                                                                    <div class="about-img">
-                                                                            <div class="scaling-image h-100">
-                                                                                <div class="frame h-100">
-                                                                                    <div class="feature-img-bg h-100">
-                                                                                        <center><img src="{{asset('storage').'/'.$servicio->img_portada}}" width="450" height="400" alt="Image"></center>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                    </div>
-                                                            -->
                                         </div>
 
                                             <br></br>
@@ -289,30 +221,18 @@
                             </div>
 
                                     <center>
-                                        @if (($servicio->definicion))
+                                        @if (($servicio->titulo1)||($servicio->parrafo1))
 
                                         <div class="card" style="background-color: #007939; width: 80%;">
                                             <div class="card-header" style="color: white;">
-                                                <h5 style="text-align: left;"><b>DEFINICION</b></h5>
+                                                <h5 style="text-align: left;"><b>{{$servicio->titulo1}}</b></h5>
                                             </div>
                                                 <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item">{{ $servicio->definicion }}</li>
+                                                    <li class="list-group-item">{{ $servicio->parrafo1 }}</li>
                                                 
                                                 </ul>
                                         </div>
                                         
-                                        <!-- 
-                                            <div class="card" style="text-align: left; background-color: #007939; width: 45rem;">
-                                            
-                                                <div class="card-header" style="color: white;">
-                                                    <h5><b>DEFINICION</b></h5>
-                                                </div>
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item" style="text-align: justify;"> {{ $servicio->definicion }}</li>
-                                                    </ul>
-                                                
-                                            </div>
-                                        -->
                                             @else
                                             <!-- mensaje de que no hay descripcion--->
                                         @endif
@@ -320,14 +240,14 @@
                                     </center>
                                             <br>
 
-                                        @if (($servicio->caracteristicas))
+                                        @if (($servicio->titulo2)||($servicio->parrafo2))
                                         <center>
                                             <div class="card" style="background-color: #007939; width: 80%;">
                                                 <div class="card-header" style="color: white;">
-                                                    <h5 style="text-align: left;"><b>CARACTERISTICAS</b></h5>
+                                                    <h5 style="text-align: left;"><b>{{$servicio->titulo2}}</b></h5>
                                                 </div>
                                                     <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">{{ $servicio->caracteristicas }}</li>
+                                                        <li class="list-group-item">{{ $servicio->parrafo2 }}</li>
                                                     
                                                     </ul>
                                             </div>
@@ -338,14 +258,14 @@
                                         @endif
                                         <br>
                   
-                                        @if (($servicio->importancia))
+                                        @if (($servicio->titulo3)||($servicio->parrafo3))
                                         <center>
                                             <div class="card" style="background-color: #007939; width: 80%;">
                                                 <div class="card-header" style="color: white;">
-                                                    <h5 style="text-align: left;"><b>IMPORTANCIA</b></h5>
+                                                    <h5 style="text-align: left;"><b>{{$servicio->titulo3}}</b></h5>
                                                 </div>
                                                     <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">{{ $servicio->importancia }}</li>
+                                                        <li class="list-group-item">{{ $servicio->parrafo3 }}</li>
                                                     
                                                     </ul>
                                             </div>
@@ -639,7 +559,7 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
@@ -656,7 +576,7 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>

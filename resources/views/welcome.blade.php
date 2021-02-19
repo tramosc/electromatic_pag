@@ -232,44 +232,46 @@
             <br></br>
             <!-- Feature Start-->
                 <div class="feature wow fadeInUp" data-wow-delay="0.1s" style="width:100%; height: 100%;">
-                
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                                    <ul class="ca-menu">
-                                        <li>
-                                            
-                                                <span class="ca-icon">
-                                                    <img src="{{ asset('/img/industria_img.png') }}" height="90" width="90">
-                                                </span>
-                                                <div class="ca-content">
-                                                    <h2  class="ca-main">EMPRESAS DEL SECTOR INDUSTRIAL</h2>
-                                                </div>
+                    
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
                                     
-                                        </li>
-                                        <li>
-                                            
-                                                <span class="ca-icon">
-                                                    <img src="{{ asset('/img/banco_img.png') }}" height="90" width="90">
-                                                </span>
-                                                <div class="ca-content">
-                                                    <h2 class="ca-main">BANCOS Y FINANCIERAS </h2>
-                                                </div>
-                                            
-                                        </li>
-                                        <li>
-                                
-                                                <span class="ca-icon">
-                                                    <img src="{{ asset('/img/edificios-hospitalarios_img.png') }}" height="90" width="90">
-                                                </span>
-                                                <div class="ca-content">
-                                                    <h2  class="ca-main">HOSPITALES <br>Y CLINICAS</h2>
-                                                </div>
-                                            
-                                        </li>
-                                    </ul>
+                                        <ul class="ca-menu">
+                                            <li>
+                                                
+                                                    <span class="ca-icon">
+                                                        <img src="{{ asset('/img/industria_img.png') }}" height="90" width="90">
+                                                    </span>
+                                                    <div class="ca-content">
+                                                        <h2  class="ca-main">EMPRESAS DEL SECTOR INDUSTRIAL</h2>
+                                                    </div>
+                                        
+                                            </li>
+                                            <li>
+                                                
+                                                    <span class="ca-icon">
+                                                        <img src="{{ asset('/img/banco_img.png') }}" height="90" width="90">
+                                                    </span>
+                                                    <div class="ca-content">
+                                                        <h2 class="ca-main">BANCOS Y FINANCIERAS </h2>
+                                                    </div>
+                                                
+                                            </li>
+                                            <li>
+                                    
+                                                    <span class="ca-icon">
+                                                        <img src="{{ asset('/img/edificios-hospitalarios_img.png') }}" height="90" width="90">
+                                                    </span>
+                                                    <div class="ca-content">
+                                                        <h2  class="ca-main">HOSPITALES <br>Y CLINICAS</h2>
+                                                    </div>
+                                                
+                                            </li>
+                                        </ul>
+                                    
+                            </div>
                         </div>
-                    </div>
-                
+                    
                 </div>
             <!-- Feature End-->
 
@@ -351,7 +353,7 @@
                             <div class="row">
                                 <div class="col-sm-2">
                                     <div class="footer-link">
-                                        <h2><i class="fa fa-phone-alt"></i> Telefonos</h2>		
+                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
                                         <a style="color: white;"> 054-399450</a>
                                         <a style="color: white;"> 964-770-354</a>
                                     </div>
@@ -378,7 +380,7 @@
 
                                 <div class="col-sm-5">
                                     <div class="footer-contact">
-                                        <h2><i class="fa fa-map-marker-alt"></i> Direcciones</h2>
+                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
                                             <div class="footer-link">
                                             <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
                                             <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
@@ -459,13 +461,6 @@
         <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
             <!-- Fin de Boton de whatsapp -->
             
-<!-- 
-            <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola!%20Quiero%20Saber%20Mas" 
-            target="_blank" class="back-to-top">
-            <img src="https://www.diariolibre.com/binrepository/512x512/0c0/0d0/none/10904/VHFO/whatsapp_11706609_20190529112246.png"  
-            style="border-radius: 15px;" width="50px" 
-            height="50px"></a>
--->
 
         </div>
 
