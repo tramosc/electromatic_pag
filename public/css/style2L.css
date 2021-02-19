@@ -1,5 +1,6 @@
 .hs-wrapper{
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	height: 600px;
 	position: relative;
 	margin: 0 auto;
@@ -8,17 +9,12 @@
 }
 
 .div-ayuda{
-	font-size: 50rem;
-	background: rosybrown;
+	width: 100%;
 }
 
-@media(max-width: 1200px){
-	.div-ayuda{
-		font-size: 40rem;
-		background: rosybrown;
-	}
+.div-imagenes{
+	max-width: 1200px;
 }
-
 
 
 .hs-wrapper img{
@@ -36,6 +32,43 @@
 	-ms-animation-play-state: paused;
 	animation-play-state: paused;	
 }
+
+@media(max-width: 1000px){
+	.hs-wrapper, .div-imagenes{
+		width: 100%;
+	}
+	.div-ayuda{
+		max-height: 460px;
+		overflow: hidden;
+	}
+	.pic-ctn > img {
+		left: calc(00% - 100px) !important;
+	}
+	.cartitaamarilla{
+		margin-top: 50px;
+		position: initial !important;
+		 width:100%;
+		 flex: none; 
+    	 max-width: none;
+	}
+}
+
+@media(max-width: 850px){
+	.hs-wrapper{
+		width: 100%;
+		margin-left: -20px;
+	}
+	.div-ayuda{
+		max-height: 300px;
+		overflow: hidden;
+	}
+	.cartitaamarilla{
+		margin-top: 50px;
+		position: initial !important;
+		 width:100%;
+	}
+}
+
 .hs-titles span{
 	-webkit-animation: showMeTitle 0.8s linear infinite 0s forwards;
 	-moz-animation: showMeTitle 0.8s linear infinite 0s forwards;

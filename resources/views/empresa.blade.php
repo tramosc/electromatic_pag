@@ -27,6 +27,10 @@
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+
+
+        <link href="{{ asset('css/style2L.css') }}" rel="stylesheet">
+
         <!-- Css para el mostrador de imagenes con titulo e iconos -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style8_V2.css') }}" />
 
@@ -268,7 +272,7 @@
                     <div class="row align-items-center" style="text-align: center;">
 
                     
-                        <div class="col-sm-4" style="top: 50px; left: 60px; position: absolute; z-index: 1;">
+                        <div class="div-ayuda" style=" width: 100% ;top: 50px; left: 60px; position: absolute; z-index: 1;">
                             <style>
                                 @keyframes display {
                                 0% {
@@ -295,8 +299,9 @@
 
                                 .pic-ctn > img {
                                 position: absolute;
+                                width: 100%;
                                 top: 0;
-                                left: calc(50% - 100px);
+                                left: calc(10% - 100px);
                                 opacity: 0;
                                 animation: display 10s infinite;
                                 }
@@ -340,9 +345,9 @@
                                 }
                             </style>
 
-                            <div class="pic-ctn">
+                            <div class="pic-ctn div-imagenes">
                                 @foreach($imagenesEmpresa as $imagenEmpresa)
-                                <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" width="1100px" height="650px" alt="" class="pic">
+                                <img src="{{asset('storage').'/'.$imagenEmpresa->img_empresa}}" style="max-width: 1200px; width: 100%; max-height: 600px" alt="" class="pic">
                                 @endforeach
                                             <br></br>
                                             <br></br>
@@ -360,7 +365,7 @@
                                         <br></br>
                         </div>
 
-                        <div class="col-sm-5" style="background-color: #F2E9D8; border-color:#F2E9D8; border-radius: 15px 50px 30px 5px; border-style: groove; border-width: 1px; position:absolute; top: 460px; left: 60px; z-index: 2; ">
+                        <div class="col-sm-5 cartitaamarilla" style="background-color: #F2E9D8; border-color:#F2E9D8; border-radius: 15px 50px 30px 5px; border-style: groove; border-width: 1px; position:absolute; top: 460px; left: 60px; z-index: 2; ">
                             
                                 <div class="about-text" style="padding: 50px 40px;">
                                     <h6 style="color: black; font-family: 'Poppins', sans-serif; text-align: left; color: black;"><b>HISTORIA</b></h6>

@@ -27,7 +27,7 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
         <!-- Css para el mostrador de imagenes con titulo -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2L.css') }}" />
 
         <!-- Css para el mostrador de Iconos con titulo -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style8.css') }}" />
@@ -167,24 +167,23 @@
 
                 <div class="container" style="width:100%;">
                        
-                        <div class="row align-items-center" style=" top: 50px; left: 60px; position: absolute; z-index: 1;">
+                        <div class="row align-items-center" style="width:94%; top: 50px; left: 60px; position: absolute; z-index: 1;">
                             <!-- Inicio de la zona de animacion css con imagenes-->
                             <br></br>
-                            <div class="col-lg-7 col-md-6">
+                            <div class="div-ayuda">
                                             <div class="hs-wrapper">
                                             @foreach($imagenesInicio as $imagenInicio)
-                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="width:100%;" width="1200px" height="600px"/>
+                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="width:100%;"/>
                                             @endforeach
 
                                             </div>
-
                                             <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
                             </div>
                             <!-- Fin de la zona de animacion css con imagenes-->    
                         </div>
 
 
-                        <div class="col-lg-6 col-md-6" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; width:100%;">
+                        <div class="col-lg-6 col-md-6 cartitaamarilla" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; width:100%;">
                                     
                             <div class="about-text" style="padding: 50px 50px;">
                                     <h5 style="font-size: 15px; color: black;"><b>PRONTO!!</b></h5>
