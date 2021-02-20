@@ -41,6 +41,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $suministros->links() }}
     </div>
 
 

@@ -37,7 +37,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pdf_archivo" class="form-label">Archivo PDF 1</label>
-                <input type="file" class="form-control" name="pdf_archivo" id="pdf_archivo" accept="application/pdf" >
+                <input type="file" class="form-control" name="pdf_archivo" id="file" accept="application/pdf" >
             </div>
 
             <hr></hr>
@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pdf_archivodos" class="form-label">Archivo PDF 2</label>
-                <input type="file" class="form-control" name="pdf_archivodos" id="pdf_archivodos" accept="application/pdf" >
+                <input type="file" class="form-control" name="pdf_archivodos" id="file2" accept="application/pdf" >
             </div>
 
             <hr></hr>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-6">
                 <label for="pdf_archivotres" class="form-label">Archivo PDF 3</label>
-                <input type="file" class="form-control" name="pdf_archivotres" id="pdf_archivotres" accept="application/pdf" >
+                <input type="file" class="form-control" name="pdf_archivotres" id="file3" accept="application/pdf" >
             </div>
 
             <hr></hr>
@@ -70,8 +70,49 @@
             </div>
             <div class="col-md-6">
                 <label for="pdf_archivocuatro" class="form-label">Archivo PDF 4</label>
-                <input type="file" class="form-control" name="pdf_archivocuatro" id="pdf_archivocuatro" accept="application/pdf" >
+                <input type="file" class="form-control" name="pdf_archivocuatro" id="file4" accept="application/pdf" >
             </div>
+
+
+            <script>
+
+                var uploadField = document.getElementById("file");
+
+                    uploadField.onchange = function() {
+                        if(this.files[0].size > 32000000){
+                        alert("El archivo es muy grande. Tamaño maximo 32MB");
+                        this.value = "";
+                        };
+                    };
+                
+                    var uploadField2 = document.getElementById("file2");
+
+                    uploadField2.onchange = function() {
+                        if(this.files[0].size > 32000000){
+                        alert("El archivo es muy grande. Tamaño maximo 32MB");
+                        this.value = "";
+                        };
+                    };
+
+                    var uploadField3 = document.getElementById("file3");
+
+                    uploadField3.onchange = function() {
+                        if(this.files[0].size > 32000000){
+                        alert("El archivo es muy grande. Tamaño maximo 32MB");
+                        this.value = "";
+                        };
+                    };
+
+                    var uploadField4 = document.getElementById("file4");
+
+                    uploadField4.onchange = function() {
+                        if(this.files[0].size > 32000000){
+                        alert("El archivo es muy grande. Tamaño maximo 32MB");
+                        this.value = "";
+                        };
+                    };
+
+            </script>
 
             <hr></hr>
      

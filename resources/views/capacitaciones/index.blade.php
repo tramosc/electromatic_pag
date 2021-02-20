@@ -43,6 +43,7 @@
             
             </tbody>
         </table>
+        {{ $capacitaciones->links() }}
     </div>
 
 

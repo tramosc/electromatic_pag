@@ -47,6 +47,7 @@
             </tbody>
 
         </table>
+        {{ $imagenesInicio->links() }}
     </div>
 </div>
 @endsection

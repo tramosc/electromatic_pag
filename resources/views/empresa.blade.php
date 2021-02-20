@@ -266,8 +266,8 @@
 
             <!-- About Start -->
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
-                <img style="opacity: 0.4; width: 100%; height: auto;" src="https://mercadovial.tv/wp-content/uploads/2019/03/IMG-20151002-WA0011.jpeg">
-                <div class="container">
+                <img style="opacity: 0.4; width: 100%; height: auto;" src="{{ asset('img/imagegrs.jpg') }}"> <!-- https://mercadovial.tv/wp-content/uploads/2019/03/IMG-20151002-WA0011.jpeg -->
+                <div class="container"> <!--imagegrs.jpg -->
                 <!-- zona de contenido-->
                     <div class="row align-items-center" style="text-align: center;">
 

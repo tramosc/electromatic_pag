@@ -41,6 +41,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $ups->links() }}
     </div>
 
 

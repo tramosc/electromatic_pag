@@ -41,6 +41,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $grupos->links() }}
     </div>
 
 

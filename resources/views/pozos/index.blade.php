@@ -41,6 +41,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $pozos->links() }}
     </div>
 
 

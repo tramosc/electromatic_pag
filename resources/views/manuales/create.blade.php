@@ -30,7 +30,8 @@
             </div>
             <div class="col-10">
                 <label for="archivo_url" class="form-label">Archivo</label>
-                <input type="file" class="form-control" name="archivo_url" id="archivo_url" accept="application/pdf" >
+                <input type="file" class="form-control" name="archivo_url" id="miInput" accept="application/pdf" >
+                <script src="{{ asset('js/control.js') }}"></script>
             </div>
             <div class="alert alert-warning" role="alert">
                     <b>Aviso</b>: Llenar estos campos si se quiere dar contenido a la pagina junto con el titulo y Fecha.

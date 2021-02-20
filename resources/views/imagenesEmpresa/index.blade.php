@@ -47,6 +47,7 @@
             </tbody>
 
         </table>
+        {{ $imagenesEmpresa->links() }}
     </div>
 </div>
 @endsection

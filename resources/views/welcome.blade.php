@@ -162,8 +162,8 @@
 
             <!-- About Start -->
             
-                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s" style="width:100%;">
-                    <img style="opacity: 0.4; width: 100%; height: auto;" src="https://www.peru.travel/Contenido/Destino/Imagen/pe/27/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg">
+                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s" style="width:100%;"> <!-- plaza_ejemplo.jpg -->
+                    <img style="opacity: 0.4; width: 100%; height: auto;" src="{{ asset('img/plaza_ejemplo.jpg') }}">
 
                 <div class="container" style="width:100%;">
                        
