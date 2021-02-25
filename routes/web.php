@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\DB;
 ///Estaticas
 //Route::get('/', 'FrontController@viewImagenes');
 //Route::get('/', 'FrontController@viewPostManuales');
-Route::get('/', 'FrontController@viewImagenesCSS');
+//Route::get('/', 'FrontController@viewImagenesCSS');
+Route::get('/', 'FrontController@indexServicios');
 //Empresa
 Route::get('/Vista-Empresa', 'FrontController@viewImagenesCSSEmpresa');
 /*
@@ -24,6 +25,16 @@ Route::get('/Vista-Empresa', function () {
     return view('empresa');
 });
 */
+
+/*  direccion de vista a suministros  */
+Route::get('/Vista-Suministros-Generales', function () {
+    return view('elementosSuministros');
+});
+
+/*  direccion de vista a suministros  */
+Route::get('/Vista-Confirmacion', function () {
+    return view('confirmacion');
+});
 
 
 

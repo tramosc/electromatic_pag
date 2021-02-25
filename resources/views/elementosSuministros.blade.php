@@ -2,11 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>MANUALES - ELECTROMATIC</title>
+        <title>ELECTROMATIC INDUSTRIAL</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
-
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
         <link href="{{ asset('css/favicon.ico') }}" rel="icon">
@@ -26,16 +25,25 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+        <!-- Css para el mostrador de imagenes con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style2L.css') }}" />
+
+        <!-- Css para el mostrador de Iconos con titulo -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style8.css') }}" />
+        
+            
     </head>
 
     <body>
+        
         <div class="wrapper">
             <!-- Top Bar Start -->
+            
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-
-                    <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="">
                                 <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
@@ -43,7 +51,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
                             <div class="row">
                                 <div class="col-4">
@@ -75,140 +82,136 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="http://localhost/electromatic/public/#contactos">Cotizar</a>
+                                            <a href="http://localhost/electromatic/public/#contactos">Cotizar</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <!-- Top Bar End -->
-
+            
             <!-- Nav Bar Start -->
-                <div class="nav-bar">
-                    <div class="container-fluid">
-                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                            <a href="#" class="navbar-brand">MENU</a>
-                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                <div class="navbar-nav mr-auto">
-                                    <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                    
-
-                                    <!-- 
-                                        <div class="nav-item dropdown">
-                                            <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                            <div class="dropdown-menu">
-                                                <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                                <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                                <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                                <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                                
-                                            </div>
-                                        </div>
-                                    -->
-                        
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
+                                <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
+                                
+                                <!-- 
                                     <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                         <div class="dropdown-menu">
-                                            <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
-                                            <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                            <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                            <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                            <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                            <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
                                         </div>
                                     </div>
-                                    <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
+                                -->
+                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
+                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                    </div>
                                 </div>
-                                <div class="ml-auto">
-                                    <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
-                                </div>
+                                <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
-                        </nav>
-                    </div>
-                </div>
-            <!-- Nav Bar End -->
-
-            <!-- Page Header Start -->
-                <div class="page-header" style="background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-image: url('https://www.grupoalbe.com/wp-content/uploads/2018/01/pexels-photo-265118.jpeg');">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>MANUALES</h2>
-                            </div>
-                            <div class="col-12">
-                                <a>INICIO</a>
-                                <a>MANUALES</a>
+                            <div class="ml-auto">
+                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            <!-- Page Header End -->
-
-            
-            <!-- Single Post Start-->
-            <div class="single">
-                <div class="container">
-                    <div class="row">
-
-                            <div class="single-comment wow fadeInUp">
-                                <h2 style="color: black;">Manuales</h2>
-                                @if (count($manuales))
-                                    @foreach($manuales as $manual)
-                                        @if (($manual->referencias))
-                                            <ul class="comment-list">
-                                                    <li class="comment-item">
-                                                        <div class="comment-body">
-                                                            <div class="comment-img">
-                                                                <img src="{{ asset('img/manual.png') }}" width="100" height="50"/>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <h3><a href="{{$manual->referencias}}">{{$manual->titulo_manual}}</a></h3>
-                                                                <span>{{$manual->fecha}}</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            @else    
-                                            <ul class="comment-list">
-                                                <li class="comment-item">
-                                                    <div class="comment-body">
-                                                        <div class="comment-img">
-                                                            <img src="{{ asset('img/manual.png') }}" width="100" height="50"/>
-                                                        </div>
-                                                        <div class="comment-text">
-                                                            <h3><a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a></h3>
-                                                            <span>{{$manual->fecha}}</span>
-                                                            <p>
-                                                                {{$manual->descripcion}}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>            
-                                        @endif
-
-
-                                    @endforeach
-                                @else                
-                                    <p>Próximamente habra nuevas Publicaciones</p>
-                                @endif
-                                
-                            </div>
-
-                    </div>
+                    </nav>
                 </div>
             </div>
-            <!-- Single Post End-->   
+            <!-- Nav Bar End -->
+    
+            <br></br>
+            <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">SUMINISTROS ELECTROMATIC</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="{{ url('http://localhost/electromatic/public/Vista-Grupos') }}">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/GruposElectrogenos.png') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2 style="color: white;">GRUPOS ELECTROGENOS</h2>
+                                </div>
+                            </div>
+                        </a>
+                            <br></br>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="{{ url('http://localhost/electromatic/public/Vista-Pozos') }}">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/pozosTierra3.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2 style="color: white;">POZOS DE PUESTA A TIERRA</h2>
+                                </div>
+                            </div>
+                        </a>
+                            <br></br>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="{{ url('http://localhost/electromatic/public/Vista-UPS') }}">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/upsequipo.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2 style="color: white;">UPS  -  ELECTROMATIC</h2>
+                                </div>
+                            </div>
+                        </a>
+                            <br></br>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="{{ url('http://localhost/electromatic/public/Vista-Suministros') }}">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/suministrosimg.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2 style="color: white;">SUMINISTROS - ELECTROMATIC</h2>
+                                </div>
+                            </div>
+                        </a>
+                            <br></br>
+                        </div>
+                    </div>
+                    <br></br>
+                </div>
+            </div>
+            <!-- Team End -->
+
+
 
             <!-- Team Start -->
                 <div id="contactos" class="team">
@@ -287,41 +290,40 @@
                 </div>
             <!-- Team End -->
 
-            
             <!-- Boton de whatsapp -->
-            <style>
-                .float{
-                    position:fixed;
-                    width:60px;
-                    height:60px;
-                    bottom:40px;
-                    right:40px;
-                    background-color:#25d366;
-                    color:#FFF;
-                    border-radius:50px;
-                    text-align:center;
-                font-size:30px;
-                    box-shadow: 2px 2px 3px #999;
-                z-index:100;
-                }
-                .float:hover {
-                    text-decoration: none;
-                    color: #25d366;
-                background-color:#fff;
-                }
+    <style>
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+        font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        }
+        .float:hover {
+            text-decoration: none;
+            color: #25d366;
+        background-color:#fff;
+        }
 
-                .my-float{
-                    margin-top:16px;
-                }
-            </style>
+        .my-float{
+            margin-top:16px;
+        }
+    </style>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
             <!-- Fin de Boton de whatsapp -->
-
-
+            
 
         </div>
+
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

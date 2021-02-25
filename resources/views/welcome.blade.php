@@ -82,7 +82,7 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="#contactos">Correo</a>
+                                        <a href="#contactos">Cotizar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -105,21 +105,23 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">EMPRESA</a>
-                                <!--
+                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
                                 <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                -->
-                                <div class="nav-item dropdown">
-                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                    <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                        <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                        <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                        
+                                
+                                <!-- 
+                                    <div class="nav-item dropdown">
+                                        <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
+                                        <div class="dropdown-menu">
+                                            <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                            <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                            <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                            <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
+                                        </div>
                                     </div>
-                                </div>
+                                -->
                                 <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
+                                <!-- 
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
@@ -129,8 +131,9 @@
                                         <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                     </div>
                                 </div>
+                                -->
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
@@ -159,78 +162,87 @@
             </section>
 
 
-
-            <!-- About Start -->
-            
-                <div id="inicio" class="about wow fadeInUp" data-wow-delay="0.1s" style="width:100%;"> <!-- plaza_ejemplo.jpg -->
-                    <img style="opacity: 0.4; width: 100%; height: auto;" src="{{ asset('img/plaza_ejemplo.jpg') }}">
-
-                <div class="container" style="width:100%;">
-                       
-                        <div class="row align-items-center" style="width:94%; top: 50px; left: 60px; position: absolute; z-index: 1;">
-                            <!-- Inicio de la zona de animacion css con imagenes-->
-                            <br></br>
-                            <div class="div-ayuda">
-                                            <div class="hs-wrapper">
-                                            @foreach($imagenesInicio as $imagenInicio)
-                                                <img src="{{asset('storage').'/'.$imagenInicio->imagen_inicio}}" alt="{{$imagenInicio->titulo_img}}" style="width:100%;"/>
-                                            @endforeach
-
-                                            </div>
-                                            <script type="text/javascript" src="{{ asset('js/modernizr.custom.04022.js') }}"></script>
-                            </div>
-                            <!-- Fin de la zona de animacion css con imagenes-->    
-                        </div>
-
-
-                        <div class="col-lg-6 col-md-6 cartitaamarilla" style="background-color: #F2E9D8; border-width: 6px; border-radius: 15px; position:absolute; top: 280px; left: 650px; z-index: 2; width:100%;">
-                                    
-                            <div class="about-text" style="padding: 50px 50px;">
-                                    <h5 style="font-size: 15px; color: black;"><b>PRONTO!!</b></h5>
-                                <h6 style="color: black; font-size: 14px;"><b>Actualmente estamos trabajando en realizar alianzas estratégicas para la venta y alquiler de grupos electrógenos.  </b></h6>
-                                        
-                                            <p style="color: black; font-size: 12px; text-align: center;">
-                                            Somos parte de aquellos que no se conforman.
-                                            </p>
-
-                                            <p style="color: black; font-size: 12px; text-align: justify;">
-                                                Aplicamos tecnología en la búsqueda de soluciones innovadoras y eficientes para resolver problemas 
-                                                de grupos electrógenos. Teniendo siempre presente el cómo ser el apoyo para nuestros clientes que nos 
-                                                lleva a mejorar día a día.   
-                                            </p>
-
-                                            <p style="color: black; font-size: 12px; text-align: justify;">
-                                                Contamos con un grupo humano de valor incalculable, “experiencia y capacitación” que hacen realidad 
-                                                su desarrollo personal y profesional.   
-                                            </p>
-                                        
-                                            <p style="color: black; font-size: 12px; text-align: justify;">
-                                            Un proceso de diagnóstico con el análisis de lubricantes nos permite una mejor evaluación en la aplicación del mejor procedimiento en el mantenimiento preventivo o correctivo.
-                                            </p>
-                                        
-                                        <!-- 
-                                            <p style=" color: black; font-size: 12px; text-align: justify;">
-                                                        Pensando en nuestros clientes implementamos una plataforma digital los 
-                                                        365 días del año con información importante del diagnóstico, evaluación, 
-                                                        mantenimiento preventivo o correctivo, permitiendo adquirir información 
-                                                        importante de su equipo, sumado al seguimiento personalizado periódico mientras 
-                                                        dura nuestra garantía.
-                                            </p>
-                                        -->
-                                            <p style="  color: black; font-size: 12px; text-align: center;"><b>La confianza de nuestros clientes es su tranquilidad</b></p>
-                                            
-                                            
-                                    </div>
-
-                                
-                                
-                        </div>
-
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Nuestros Principales Servicios</h2>
                     </div>
+                    <div class="row">
+                    @foreach($servicios as $servicio)
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>{{$servicio->titulo_servicios}}</h3>
+                                    <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    </div>
+                        <br></br>
+                            <style>
+                                .button {
+                                border-radius: 4px;
+                                background-color: #007939;
+                                border: none;
+                                color: #FFFFFF;
+                                text-align: center;
+                                font-size: 28px;
+                                padding: 20px;
+                                width: 200px;
+                                transition: all 0.5s;
+                                cursor: pointer;
+                                margin: 5px;
+                                }
+
+                                .button span {
+                                cursor: pointer;
+                                display: inline-block;
+                                position: relative;
+                                transition: 0.5s;
+                                }
+
+                                .button span:after {
+                                content: '\00bb';
+                                position: absolute;
+                                opacity: 0;
+                                top: 0;
+                                right: -20px;
+                                transition: 0.5s;
+                                }
+
+                                .button:hover span {
+                                padding-right: 25px;
+                                }
+
+                                .button:hover span:after {
+                                opacity: 1;
+                                right: 0;
+                                }
+                            </style>
+                            <center><a href="http://localhost/electromatic/public/Vista-Servicios" class="button"><span style="color: white;">Saber más... </span></a></center>
+
+
                 </div>
-            <!-- About End -->
+            </div>
+            <!-- Service End -->
+
+
+            <br></br>
             <br></br>
             <!-- Feature Start-->
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Sectores que Cubrimos</h2>
+                    </div>
                 <div class="feature wow fadeInUp" data-wow-delay="0.1s" style="width:100%; height: 100%;">
                     
                         <div class="container-fluid">
@@ -274,7 +286,7 @@
                     
                 </div>
             <!-- Feature End-->
-
+            <br><br>
             <!-- Testimonial Start -->
             <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
@@ -341,93 +353,266 @@
                 </div>
             </div>
             <!-- Testimonial End -->
+<br></br>
+
+
+
+
+<style>
+.contact_form {
+    border: none;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    padding: 40px 30px;
+	margin-right: -15px;
+}
+
+.contact_form .form-control {
+    background-color: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #bcbcbc;
+    font-size: 16px;
+    outline: 0 none;
+    padding: 10px 25px;
+    height: 55px;
+    resize: none;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.contact_form textarea {
+    color: #bcbcbc;
+    padding: 20px 25px !important;
+    height: 160px !important;
+}
+
+.contact_form .form-control::-webkit-input-placeholder {
+    color: #bcbcbc;
+}
+
+.contact_form .form-control::-moz-placeholder {
+    opacity: 1;
+    color: #bcbcbc;
+}
+
+.contact_form .form-control::-ms-input-placeholder {
+    color: #bcbcbc;
+}
+
+
+</style>
+
+
+
+
+
+
+
+    <div id="contactos" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 style="color: black;"> ¿Quiere realizar una cotizacion? ¡Envianos un correo!</h2>
+            </div><!-- end title -->
+            <br>
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="" action="enviarcorreo.php" name="contactform" method="post">
+                            <div class="row row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Su Nombre">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Su Telefono">
+                                </div>
+                                <br></br>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Tu Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <select class="form-control" name="motivo" id="motivo" required>
+                                                <option value="">Seleccione...</option>
+                                                <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
+                                                <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
+                                                <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
+                                            </select>
+                                </div>
+                                <br></br>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="form-control" name="mensaje" id="mensaje" rows="6" placeholder="Detalles"></textarea>
+                                </div>
+                                <div class="text-center pd">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-success btn-radius btn-brd grd1 btn-block">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+				<div class="col-xl-6 col-md-12 col-sm-12">
+					<div class="map-box">
+                        <div class="row">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4696016253074!2d-71.54112898513709!3d-16.400959688676743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1614279308893!5m2!1ses-419!2spe" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+				</div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+
+
+
+    <br></br>
+
+            <!-- Service Start -->
+                <!-- 
+                <div class="service">
+                    
+                        <div class="col-sm-6">
+                            <div class="justify-content-center align-items-center">
+                                <div class="section-header text-center">
+                                    <h2 style="color: black;">Contactenos</h2>
+                                </div>
+                                        <form style="background-color: #f8f8f8; padding: 30px;" action="enviarcorreo.php" method="POST" enctype="multipart/form-data" class=" align-items-center">
+                                                
+                                            
+                                                <div class="col-7">
+                                                    <label style="color: black;" for="nombres">Nombre Completo</label>
+                                                        <input type="text" class="form-control" name="nombres" id="nombres" required>
+                                                </div>
+                                                
+                                                <div class="col-5">
+                                                    <label style="color: black;" for="empresa">Empresa</label>
+                                                        <input type="text" class="form-control" name="empresa" id="empresa" required>
+                                                </div>
+                                                
+                                            
+                                            
+                                                <div class="col-8">
+                                                    <label style="color: black;" for="email">Correo Electronico</label>
+                                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                                                </div>
+                                                <div class="col-5">
+                                                    <label style="color: black;" for="telefono">Telefono</label>
+                                                        <input type="number" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="6" maxlength="9"   name="telefono" id="telefono" required>
+                                                </div>
+                                            
+                                            <br>
+                                            
+                                                <div class="col-7">
+                                                    <label style="color: black;" for="motivo">¿Qué necesita?</label>
+                                                        <select class="form-control" name="motivo" id="motivo" required>
+                                                            <option value="">Seleccione...</option>
+                                                            <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
+                                                            <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
+                                                            <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
+                                                        </select>
+                                                </div>
+                                            
+                                                <br>
+                                            
+                                                <div class="col-10">
+                                                    <label style="color: black;" for="mensaje">Otros detalles</label>
+                                                    <textarea class="form-control" name="mensaje" id="mensaje" required rows="3"></textarea>
+                                                </div>
+                                            
+
+                                            <div class="form-group form-check required">
+                                                <input type="checkbox" class="form-check-input" required id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1" style="color: black;"><b>Acepto el uso de mis datos personales.</b></label>
+                                            </div>
+                                            <div class="col-sm-3" > 
+                                                <a type="submit" onclick="return confirm('¿Desea Enviar sus datos?');" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Enviar</a>
+                                            </div>
+                                        </form>
+                            </div>
+                        </div>
+                    
+                </div>
+                -->
+            <!-- Service End -->
 
 
             <!-- Team Start -->
-            <div id="contactos" class="team">
-                <div class="team-item">
+                <div class="team">
+                    <div class="team-item">
 
-                <!-- Footer Start -->
-                    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-                        <div class="container">
+                    <!-- Footer Start -->
+                        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="footer-link">
+                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <a style="color: white;"> 054-399450</a>
+                                            <a style="color: white;"> 964-770-354</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <h2><i class="fa fa-envelope"></i> Correos</h2>
+                                        <div class="footer-link">	
+                                            <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
+                                            <a style="color: white;">jcueva@electromaticindustrial.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="footer-contact">
+                                            <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
+                                                <div class="footer-link">
+                                                <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
+                                                <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
+                                                </div>
+        
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
                             <div class="row">
-                                <div class="col-sm-2">
-                                    <div class="footer-link">
-                                        <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
-                                        <a style="color: white;"> 054-399450</a>
-                                        <a style="color: white;"> 964-770-354</a>
-                                    </div>
-                                            <!-- Frame del mapa 
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21680939087483!2d-71.53906100252811!3d-16.400992816915345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1610986894827!5m2!1ses-419!2spe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                            -->
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6">
+                                <div class="text-left p-3" style="background-color: #717171">
+                                    ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
                                 </div>
-
-
+                                </div>
                                 
-                                            <!-- Div 
-                                                <div class="col-md-2 col-lg-1"></div>
-                                                <div class="col-md-2 col-lg-1"></div>
-                                            --> 
-                                        
+                                <div class="col-sm-3" style="text-align: center;">
+                                        <!-- Contador de visitas -->
+                                    
+                                        <a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+                                        <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a>
+                                    
+                                        <!-- Fin Contador de visitas -->
 
-                                <div class="col-sm-5">
-                                    <h2><i class="fa fa-envelope"></i> Correos</h2>
-                                    <div class="footer-link">	
-                                        <a style="color: white;">servicios_cliente@electromaticindustrial.com</a>
-                                        <a style="color: white;">jcueva@electromaticindustrial.com</a>
-                                    </div>
                                 </div>
-
-                                <div class="col-sm-5">
-                                    <div class="footer-contact">
-                                        <h2><i class="fas fa-map-marker-alt"></i> Direcciones</h2>
-                                            <div class="footer-link">
-                                            <a style="color: white;">Calle Consuelo 307-A - Cercado Arequipa</a>
-                                            <a style="color: white;">Calle Praga 232 Santa Rosa - M. Melgar</a>
-                                            </div>
-    
-                                    </div>
-                                </div>
-
-
-
                             </div>
 
                         </div>
+                    <!-- Footer End -->
 
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                            <div class="text-left p-3" style="background-color: #717171">
-                                ©<a style="color: white;" href=""><b>Electromatic Industrial SRL</b> </a>| Todos los derechos reservados 2013 - 2021
-                            </div>
-                            </div>
-                            <div class="col-sm-3"></div>
-                            <div class="col-sm-3" style="text-align: center;">
-                                    <!-- Contador de visitas -->
-                                
-                                    <a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-                                    <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=289448"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></a><br><a href='http://www.websmultimedia.com/diseno-logotipos'></a>
-                                
-                                    <!-- Fin Contador de visitas -->
-
-                            </div>
+                    <!-- Inicio deslizable lateral social -->
+                        <div class="team-social">
+                            <hr>
+                            <a class="social-tw" href="https://twitter.com/electromaticind"><i class="fab fa-twitter"></i></a>
+                            <a class="social-fb" href="https://www.facebook.com/electromaticindustrialsrl/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-li" href="https://www.linkedin.com/in/electromatic-industrial-55857ba1?trk=nav_responsive_tab_profile"><i class="fab fa-linkedin-in"></i></a>
+                            <a style="background-color: red" class="social-yt" href="https://www.youtube.com/channel/UCaDoRP93nUjVAhSYax_EYTg"><i class="fab fa-youtube"></i></a>
                         </div>
-
+                    <!-- fin deslizable lateral social -->
                     </div>
-                <!-- Footer End -->
-
-                <!-- Inicio deslizable lateral social -->
-                    <div class="team-social">
-                        <hr>
-                        <a class="social-tw" href="https://twitter.com/electromaticind"><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href="https://www.facebook.com/electromaticindustrialsrl/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href="https://www.linkedin.com/in/electromatic-industrial-55857ba1?trk=nav_responsive_tab_profile"><i class="fab fa-linkedin-in"></i></a>
-                        <a style="background-color: red" class="social-yt" href="https://www.youtube.com/channel/UCaDoRP93nUjVAhSYax_EYTg"><i class="fab fa-youtube"></i></a>
-                    </div>
-                <!-- fin deslizable lateral social -->
                 </div>
-            </div>
             <!-- Team End -->
 
             <!-- Boton de whatsapp -->

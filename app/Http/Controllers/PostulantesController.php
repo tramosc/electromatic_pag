@@ -53,7 +53,7 @@ class PostulantesController extends Controller
         }
         
         Postulantes::insert($datosPostulante);
-        return redirect('/');
+        return redirect('/Vista-Confirmacion');
     }
 
     /**

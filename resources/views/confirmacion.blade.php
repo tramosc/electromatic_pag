@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>MANUALES - ELECTROMATIC</title>
+        <title>GRUPOS - ELECTROMATIC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -28,7 +28,7 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
 
-    <body>
+    <body onLoad="redireccionar()">
         <div class="wrapper">
             <!-- Top Bar Start -->
             <div class="top-bar">
@@ -75,7 +75,7 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="http://localhost/electromatic/public/#contactos">Cotizar</a>
+                                            <a href="http://localhost/electromatic/public/#contactos">Cotizar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,79 +137,32 @@
                     </div>
                 </div>
             <!-- Nav Bar End -->
-
-            <!-- Page Header Start -->
-                <div class="page-header" style="background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-image: url('https://www.grupoalbe.com/wp-content/uploads/2018/01/pexels-photo-265118.jpeg');">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>MANUALES</h2>
+<br></br>
+            <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header text-center">
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                            <div class="jumbotron">
+                                <h1>Electromatic : Confirmación</h1>
+                                <p>Gracias por enviar tu CV, recibiras una respuesta en lo antes posible.</p>
                             </div>
-                            <div class="col-12">
-                                <a>INICIO</a>
-                                <a>MANUALES</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            <!-- Page Header End -->
 
-            
-            <!-- Single Post Start-->
-            <div class="single">
-                <div class="container">
-                    <div class="row">
-
-                            <div class="single-comment wow fadeInUp">
-                                <h2 style="color: black;">Manuales</h2>
-                                @if (count($manuales))
-                                    @foreach($manuales as $manual)
-                                        @if (($manual->referencias))
-                                            <ul class="comment-list">
-                                                    <li class="comment-item">
-                                                        <div class="comment-body">
-                                                            <div class="comment-img">
-                                                                <img src="{{ asset('img/manual.png') }}" width="100" height="50"/>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <h3><a href="{{$manual->referencias}}">{{$manual->titulo_manual}}</a></h3>
-                                                                <span>{{$manual->fecha}}</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            @else    
-                                            <ul class="comment-list">
-                                                <li class="comment-item">
-                                                    <div class="comment-body">
-                                                        <div class="comment-img">
-                                                            <img src="{{ asset('img/manual.png') }}" width="100" height="50"/>
-                                                        </div>
-                                                        <div class="comment-text">
-                                                            <h3><a href="{{ url('/'.$manual->id.'/Vista-Manual-Elemento') }}">{{$manual->titulo_manual}}</a></h3>
-                                                            <span>{{$manual->fecha}}</span>
-                                                            <p>
-                                                                {{$manual->descripcion}}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>            
-                                        @endif
-
-
-                                    @endforeach
-                                @else                
-                                    <p>Próximamente habra nuevas Publicaciones</p>
-                                @endif
-                                
-                            </div>
-
+                        <script language="JavaScript">
+                            function redireccionar() {
+                                setTimeout("location.href='http://localhost/electromatic/public/'", 3000);
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
-            <!-- Single Post End-->   
-
+            <!-- Team End -->
+            <br></br>
             <!-- Team Start -->
                 <div id="contactos" class="team">
                     <div class="team-item">
@@ -287,7 +240,7 @@
                 </div>
             <!-- Team End -->
 
-            
+
             <!-- Boton de whatsapp -->
             <style>
                 .float{
@@ -318,7 +271,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=964770354&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20Servicios%20." class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
             <!-- Fin de Boton de whatsapp -->
-
 
 
         </div>

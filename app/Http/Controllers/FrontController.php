@@ -37,11 +37,23 @@ class FrontController extends Controller
         return view('empresa', $datos);
     }
 
-    public function viewImagenesCSS(){
+    /**Cambios en la interfaz */
+    /*
+        public function viewImagenesCSS(){
+            //
+            $datos['imagenesInicio'] = imagesInicio::paginate(30);
+            return view('welcome', $datos);
+        }
+    */
+
+    public function indexServicios()
+    {
         //
-        $datos['imagenesInicio'] = imagesInicio::paginate(30);
+        $datos['servicios'] = Servicios::paginate(3);
         return view('welcome', $datos);
     }
+
+
 
     public function index()
     {
