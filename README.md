@@ -45,7 +45,10 @@ la primera vez se necesitara que se cree un usuario eso se realizara pulsando Re
 ### Login
 ![login](./documentacion(indicaciones)/Funcionamiento-SI/login.PNG)
 
+Cuando se complete la informacion de la cuenta el sistema aparacera la vista de bienvenida del administrador de la pagina con todos los elementos d ela pagina accesibles
 
+### Bienvenida
+![bienvenida](./documentacion(indicaciones)/Funcionamiento-SI/bienvenida.PNG)
 
 
 
