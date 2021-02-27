@@ -6,34 +6,34 @@ El proyecto se diseño en Laravel 7 a traves del servidor wampp
 Hay que tener en cuenta tener estas especificaciones en cada atributo de la base de datos 
 
 ### Blog
-![Blog] (./documentacion(indicaciones)/capturas-BD/blogs.PNG)
+![Blog](./documentacion(indicaciones)/capturas-BD/blogs.PNG)
 
 ### Capacitaciones
-![Capacitaciones] (./documentacion(indicaciones)/capturas-BD/capacitaciones.PNG)
+![Capacitaciones](./documentacion(indicaciones)/capturas-BD/capacitaciones.PNG)
 
 ### Grupos
-![Grupos] (./documentacion(indicaciones)/capturas-BD/grupos.PNG)
+![Grupos](./documentacion(indicaciones)/capturas-BD/grupos.PNG)
 
 ### Imagenes para la vista "NOSOTROS"
-![imgNosotros] (./documentacion(indicaciones)/capturas-BD/imagenesNosotros.PNG)
+![imgNosotros](./documentacion(indicaciones)/capturas-BD/imagenesNosotros.PNG)
 
 ### Manuales
-![Manuales] (./documentacion(indicaciones)/capturas-BD/manuales.PNG)
+![Manuales](./documentacion(indicaciones)/capturas-BD/manuales.PNG)
 
 ### Postulantes
-![Postulantes] (./documentacion(indicaciones)/capturas-BD/postulantes.PNG)
+![Postulantes](./documentacion(indicaciones)/capturas-BD/postulantes.PNG)
 
 ### Pozos
-![Pozos] (./documentacion(indicaciones)/capturas-BD/pozos.PNG)
+![Pozos](./documentacion(indicaciones)/capturas-BD/pozos.PNG)
 
 ### Servicios
-![Servicios] (./documentacion(indicaciones)/capturas-BD/servicios.PNG)
+![Servicios](./documentacion(indicaciones)/capturas-BD/servicios.PNG)
 
 ### Suministros
-![Suministros] (./documentacion(indicaciones)/capturas-BD/suministros.PNG)
+![Suministros](./documentacion(indicaciones)/capturas-BD/suministros.PNG)
 
 ### UPS
-![ups] (./documentacion(indicaciones)/capturas-BD/ups.PNG)
+![ups](./documentacion(indicaciones)/capturas-BD/ups.PNG)
 
 
 ## Funcionamiento del sistema interno 
@@ -43,8 +43,7 @@ Cuando se ingrese a login de ==> (url de la pagina)/login
 la primera vez se necesitara que se cree un usuario eso se realizara pulsando Register visible en la vista de Login 
 
 ### Login
-![login] (./documentacion(indicaciones)/Funcionamiento-SI/login.PNG)
-
+![login](./documentacion(indicaciones)/Funcionamiento-SI/login.PNG)
 
 
 
