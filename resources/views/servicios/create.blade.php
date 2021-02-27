@@ -16,6 +16,13 @@
                 <label for="img_portada" class="form-label">Portada</label>
                 <input type="file" class="form-control" name="img_portada" id="img_portada" required accept="image/png, image/jpeg">
             </div>
+            <div class="col-12">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <div class="form-floating">
+                <textarea class="form-control"  id="descripcion" name="descripcion" style="height: 100px"></textarea>
+                <label for="descripcion">Datos...</label>
+                </div>
+            </div>  
             <div class="col-md-6">
                 <label for="titulo1" class="form-label">Titulo de parrafo 1</label>
                 <input type="text" class="form-control" name="titulo1" id="titulo1">

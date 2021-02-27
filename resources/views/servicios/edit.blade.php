@@ -20,6 +20,13 @@
                 <!-- <a href="{{asset('storage').'/'.$servicio->img_portada}}" download=""> Descargar </a>-->
                 <input type="file" class="form-control" name="img_portada" id="img_portada" accept="image/png, image/jpeg" value="">
             </div>
+            <div class="col-12">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <div class="form-floating">
+                <textarea class="form-control"  id="descripcion" name="descripcion" style="height: 100px" value="{{ $servicio->descripcion }}">{{ $servicio->descripcion }}</textarea>
+                <label for="descripcion">Datos...</label>
+                </div>
+            </div>
             <hr></hr>
             <div class="col-md-6">
                 <label for="titulo1" class="form-label">Subtitulo1</label>

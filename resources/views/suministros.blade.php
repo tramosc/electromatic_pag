@@ -104,7 +104,6 @@
                                     <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
                                     <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
                                     
-
                                     <!-- 
                                         <div class="nav-item dropdown">
                                             <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
@@ -113,11 +112,12 @@
                                                 <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
                                                 <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
                                                 <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                                
                                             </div>
                                         </div>
                                     -->
-                        
+                                    <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                    <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
+                                    <!-- 
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                         <div class="dropdown-menu">
@@ -127,6 +127,7 @@
                                             <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                         </div>
                                     </div>
+                                    -->
                                     <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
                                     <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
                                     <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>

@@ -769,7 +769,7 @@ a:focus {
 .service .service-text {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 60px;
     background: #717171;
     overflow: hidden;
     white-space: nowrap;

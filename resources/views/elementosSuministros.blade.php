@@ -120,6 +120,8 @@
                                     </div>
                                 -->
                                 <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
+                                <!-- 
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
                                     <div class="dropdown-menu">
@@ -129,8 +131,9 @@
                                         <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
                                     </div>
                                 </div>
+                                -->
                                 <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CURSOS Y CAPACITACIONES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
                                 <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
@@ -185,7 +188,7 @@
                                     <img src="{{ asset('img/upsequipo.jpg') }}" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2 style="color: white;">UPS  -  ELECTROMATIC</h2>
+                                    <h2 style="color: white;">EQUIPOS UPS  -  ELECTROMATIC</h2>
                                 </div>
                             </div>
                         </a>

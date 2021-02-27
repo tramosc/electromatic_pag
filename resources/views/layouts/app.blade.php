@@ -60,13 +60,13 @@
                         <a class="dropdown-item" href="{{ url('/ups') }}">UPS</a>
                         <a class="dropdown-item" href="{{ url('/suministros') }}">Suministros</a>
                     </li>
-
+                <!-- 
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ url('/imagenesInicio') }}">Galeria Inicio</a>
                     </li>
-
+                -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ url('/imagenesEmpresa') }}">Galeria Empresa</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url('/imagenesEmpresa') }}">Galeria Nosotros</a>
                     </li>
 
                     <li class="nav-item">

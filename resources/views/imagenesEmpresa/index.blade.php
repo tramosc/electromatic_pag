@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
     <a class="btn btn-primary" href="{{ url('imagenesEmpresa/create/') }}" role="button">Subir Nueva imagen</a>
-        <h1 class="align:center">Lista de imagenes para EMPRESA</h1>
+        <h1 class="align:center">Lista de imagenes para NOSOTROS</h1>
         
         <i class="bi bi-plus-square-fill"></i>
         

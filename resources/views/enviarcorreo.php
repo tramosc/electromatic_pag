@@ -39,5 +39,5 @@ $mensajeCompleto =
                         "\n". "Mensaje :" . $mensaje;
 
 mail($destino, $asunto, $mensajeCompleto, $header);
-header('Location: contacto.blade.php');
+header('Location: welcome.blade.php');
 

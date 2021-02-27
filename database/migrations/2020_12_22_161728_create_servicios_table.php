@@ -17,6 +17,7 @@ class CreateServiciosTable extends Migration
             $table->id();
             $table->string('titulo_servicios');
             $table->string('img_portada');
+            $table->string('descripcion');
             $table->string('titulo1');
             $table->string('parrafo1');
             $table->string('titulo2');

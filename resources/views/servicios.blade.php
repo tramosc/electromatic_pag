@@ -88,54 +88,55 @@
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
-                <div class="nav-bar">
-                    <div class="container-fluid">
-                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                            <a href="#" class="navbar-brand">MENU</a>
-                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                <div class="navbar-nav mr-auto">
-                                    <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                    
-
-                                    <!-- 
-                                        <div class="nav-item dropdown">
-                                            <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                            <div class="dropdown-menu">
-                                                <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                                <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                                <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                                <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                                
-                                            </div>
-                                        </div>
-                                    -->
-                        
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
+                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
+                                <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
+                                
+                                <!-- 
                                     <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
                                         <div class="dropdown-menu">
-                                            <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
-                                            <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                            <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                            <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
+                                            <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
+                                            <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
                                         </div>
                                     </div>
-                                    <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
+                                -->
+                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
+                                <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
+                                <!-- 
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
+                                    <div class="dropdown-menu">
+                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
+                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
+                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
+                                    </div>
                                 </div>
-                                <div class="ml-auto">
-                                    <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
-                                </div>
+                                -->
+                                <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
+                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
                             </div>
-                        </nav>
-                    </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+            </div>
             <!-- Nav Bar End -->
 
 
@@ -143,11 +144,11 @@
 
             
             <!-- Team Start -->
-                <!-- 
+                <br></br>
                     <div class="team">
                         <div class="container">
                             <div class="section-header text-center">
-                                <p>Servicios Electromatic</p>
+                                <!-- <p>Servicios Electromatic</p>-->
                                 <h2 style="color: black;">Brindamos estos servicios</h2>
                             </div>
                             <div class="row">
@@ -162,55 +163,57 @@
                                             </div>
                                             <div class="team-text">
                                                 <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">
-                                                    <h2>{{$servicio->titulo_servicios}}</h2>
+                                                    <h2 style="color: white;">{{$servicio->titulo_servicios}}</h2>
                                                 </a>
                                             </div>
                                         </div>
-                                    
+                                        <br></br>
                                     </div>
+                                    
                                 @endforeach
                                 
                             </div>
                         </div>
                     </div>
-                -->
+                
             <!-- Team End -->
 
             <!--  Nueva version de servicios -->
-
             <!-- Service Start -->
-                <div class="service">
-                    <div class="container">
-                        <div class="section-header text-center">
-                            <h2 style="color: black;">Servicios de Electromatic </h2>
-                        </div>
-                        <div class="row" style="display: flex; align-items: center; justify-content: center;">
-                                
-                        @foreach($servicios as $servicio) 
-                                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="service-item">
-                                        
-                                        <div class="service-img">
-                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
+                <!-- 
+                    <div class="service">
+                        <div class="container">
+                            <div class="section-header text-center">
+                                <h2 style="color: black;">Servicios de Electromatic </h2>
+                            </div>
+                            <div class="row" style="display: flex; align-items: center; justify-content: center;">
+                                    
+                            @foreach($servicios as $servicio) 
+                                    <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="service-item">
                                             
-                                            <div class="service-overlay">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                                </p>
+                                            <div class="service-img">
+                                                <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
+                                                
+                                                <div class="service-overlay">
+                                                    
+                                                    <p>{{$servicio->descripcion}}</p>
+                                                    
+                                                </div>
+                                                
                                             </div>
-                                            
-                                        </div>
-                                        <div class="service-text">
-                                            <h3>{{$servicio->titulo_servicios}}</h3>
-                                            <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">+</a>
+                                            <div class="service-text">
+                                                <h3>{{$servicio->titulo_servicios}}</h3>
+                                                <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">+</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                        @endforeach
+                            @endforeach
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                -->
             <!-- Service End -->
             
 

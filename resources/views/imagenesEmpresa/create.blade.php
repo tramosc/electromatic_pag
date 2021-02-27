@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    <h1 class="align:center">Subir imagen a Empresa</h1>
+    <h1 class="align:center">Subir imagen a Nosotros</h1>
         <div class="card" style="width: 70rem;">
         <div class="card-body">
         <form action="{{ url('/imagenesEmpresa') }}" method="POST" class="row g-3" enctype="multipart/form-data">
