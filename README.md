@@ -45,10 +45,165 @@ la primera vez se necesitara que se cree un usuario eso se realizara pulsando Re
 ### Login
 ![login](./documentacion(indicaciones)/Funcionamiento-SI/login.PNG)
 
-Cuando se complete la informacion de la cuenta el sistema aparacera la vista de bienvenida del administrador de la pagina con todos los elementos d ela pagina accesibles
+Cuando se complete la informacion de la cuenta el sistema aparacera la vista de bienvenida del administrador de la pagina con todos los elementos de la pagina accesibles
 
 ### Bienvenida
 ![bienvenida](./documentacion(indicaciones)/Funcionamiento-SI/bienvenida.PNG)
+
+
+## Servicios
+Aqui se podran crear diversos elementos con imagenes que apareceran en las vistas inicio, vista servicios y servicios por elemento
+
+![servicios](./documentacion(indicaciones)/Funcionamiento-SI/VistaServicios.PNG)
+
+### Crear Servicios 
+Aqui se pueden crear los servicios a traves de un formulario donde los unicos datos obligatorios seran la imagen de portada y el titulo del elemento que se quiere crear
+![crearservicio](./documentacion(indicaciones)/Funcionamiento-SI/CrearServicios.PNG)
+
+### Editar Servicios 
+Cuando en el listado general se puedan ver todos los servicios se podra editar cada uno con total libertad y cuando se coloque en editar se mostrara un formulario donde se podra actualizar la informacion
+
+![editarservicio](./documentacion(indicaciones)/Funcionamiento-SI/EditarServicios.PNG)
+
+
+
+## Galeria para la vista Nosotros
+aqui se listara todas las fotos que se quieran mostrar en la vista Nosotros de la pagina web tambien tendran la accion de editar y eliminar si se desea
+![nosotros](./documentacion(indicaciones)/Funcionamiento-SI/VistaNosotros.PNG)
+
+### Subir una foto a la galeria para nosotros
+en este breve formulario se podran cargar las imagenes para mostrarlas en la vista Nosotros
+![crearnosotros](./documentacion(indicaciones)/Funcionamiento-SI/CrearNosotros.PNG)
+
+### Actualizar una foto a la galeria para nosotros
+aqui se podran actualizar las fotos de la galeria nosotros
+![editarnosotros](./documentacion(indicaciones)/Funcionamiento-SI/EditarNosotros.PNG)
+
+
+## Vista Manuales
+![manuales](./documentacion(indicaciones)/Funcionamiento-SI/vistaManuales.PNG)
+
+### Crear un manual
+cuando se quiera crear un manual se podra de dos formas la primera llenando los datos de la derecha y la otra con la de la izquierda
+
+ - Los datos de la derecha se colocaran link para referirse a articulos u otro tipo de referencias a otras paginas web
+
+ - los de la izquierda se colocaran para que se vea en la pagina donde se llenaran esos datos para poder verse en la pagina
+
+ - es obligatorio el que el titulo y la fecha este presente para las dos formas
+
+![crearmanuales](./documentacion(indicaciones)/Funcionamiento-SI/crearManual.PNG)
+
+### Editar un manual
+aqui se podran actualizar los datos de los manuales
+
+![editarmanuales](./documentacion(indicaciones)/Funcionamiento-SI/editarManual.PNG)
+
+## Suministros 
+hay un elemento deslizable en la seccion de suministros donde se llenaran diversos elemetnos como repuestos u otros articulos que se quieran mostrar en la pagina
+
+![suministros](./documentacion(indicaciones)/Funcionamiento-SI/Suministros.PNG)
+
+## Grupos electrogenos
+Una vez dentro del deslizable suministros e ingresando a grupos electrogenos se podran crear elementos a travez de formularios para este tipo de articulos
+
+![grupos](./documentacion(indicaciones)/Funcionamiento-SI/vistaGruposElectrogenos.PNG)
+
+### Crear grupos electrogenos
+aqui se podran colocar datos para crear articulos relacionados a grupos electrogenos siendo solo obligatorio el titulo y la imagen de portada
+
+![creargrupos](./documentacion(indicaciones)/Funcionamiento-SI/crearGruposElectrogenos.PNG)
+
+### Editar grupos electrogenos
+aqui se podran actualizar de manera individual cada grupo electrogeno que se halla creado
+
+![editargrupos](./documentacion(indicaciones)/Funcionamiento-SI/editarGruposElectrogenos.PNG)
+
+
+## Vista de Pozos
+Una vez dentro del deslizable suministros e ingresando a pozos se podran crear elementos a travez de formularios para este tipo de articulos
+![pozos](./documentacion(indicaciones)/Funcionamiento-SI/VistaPozos.PNG)
+
+### Crear pozos
+aqui se podran colocar datos para crear articulos relacionados a pozos siendo solo obligatorio el titulo y la imagen de portada
+
+![crearpozos](./documentacion(indicaciones)/Funcionamiento-SI/crearPozos.PNG)
+
+### Editar pozos
+aqui se podran actualizar de manera individual cada pozo que se halla creado
+
+![editarpozos](./documentacion(indicaciones)/Funcionamiento-SI/editarPozos.PNG)
+
+
+
+## Vista de UPS
+Una vez dentro del deslizable suministros e ingresando a UPS se podran crear elementos a travez de formularios para este tipo de articulos
+![UPS](./documentacion(indicaciones)/Funcionamiento-SI/vistaUPS.PNG)
+
+### Crear UPS
+aqui se podran colocar datos para crear articulos relacionados a UPS siendo solo obligatorio el titulo y la imagen de portada
+
+![crearUPS](./documentacion(indicaciones)/Funcionamiento-SI/crearUPS.PNG)
+
+### Editar UPS
+aqui se podran actualizar de manera individual cada pozo que se halla creado
+
+![editarUPS](./documentacion(indicaciones)/Funcionamiento-SI/editarUPS.PNG)
+
+
+## Vista de Suministros(articulos)
+Una vez dentro del deslizable suministros e ingresando a Suministros(articulos) se podran crear elementos a travez de formularios para este tipo de articulos
+![suministro](./documentacion(indicaciones)/Funcionamiento-SI/vistaSuministros.PNG)
+
+### Crear Suministros(articulos)
+aqui se podran colocar datos para crear articulos relacionados a Suministros(articulos) siendo solo obligatorio el titulo y la imagen de portada
+
+![crearsuministro](./documentacion(indicaciones)/Funcionamiento-SI/crearSuministros.PNG)
+
+### Editar Suministros(articulos)
+aqui se podran actualizar de manera individual cada Suministro(articulos) que se halla creado
+
+![editarsuministro](./documentacion(indicaciones)/Funcionamiento-SI/editarSuministros.PNG)
+
+
+
+## Capacitaciones 
+En esta vista del administrador se podran listar diversos elementos relacionados a cursos o capacitaciones con sus acciones de eliminar y editar respectivamente
+
+![capcitaciones](./documentacion(indicaciones)/Funcionamiento-SI/VistaCapacitaciones.PNG)
+
+### Crear capacitacion
+Aqui se podran crear diversos elementos relacionados a cursos o capacitaciones de lo cual los unicos datos obligatorios serian el titulo y la imagen de portada, lo cual de manera opcional permite que se adicionen de manera opcional hasta 4 archivos pdf 
+![crearcapcitaciones](./documentacion(indicaciones)/Funcionamiento-SI/crearCapacitaciones.PNG)
+
+### Editar capacitaciones
+en este formulario se podran actualizar los datos de las capacitaciones que esten creadas
+![editarcapcitaciones](./documentacion(indicaciones)/Funcionamiento-SI/editarCapacitaciones.PNG)
+
+## Blog
+en esta vista se listaran todos los elementos creados y seran vistos tambien en la vista de blog para la pagina web
+
+![blog](./documentacion(indicaciones)/Funcionamiento-SI/vistaBlog.PNG)
+
+### Crear Blog
+en esta vista se podran crear cad elemento de blog lo cual se podran ingresar elementos de alto contendio de texto para que sean visualizado en la pagina web
+
+![crearblog](./documentacion(indicaciones)/Funcionamiento-SI/crearBlog.PNG)
+
+## Editar Blog
+aqui se podra cambiar los datos de cad elemento de blog creado
+
+![editarblog](./documentacion(indicaciones)/Funcionamiento-SI/editarBlog.PNG)
+
+## Postulantes
+en esta vista el administrador solo podra ver y eliminar los datos de los postulantes registrados en la pagina
+
+![postulantes](./documentacion(indicaciones)/Funcionamiento-SI/vistaPostulantes.PNG)
+### Ver Postulantes
+Aqui solo se podra ver los datos detallados de cad postulante que halla ingresado su informacion en la pagina web
+![verpostulantes](./documentacion(indicaciones)/Funcionamiento-SI/verPostulantes.PNG)
+
+
 
 
 
