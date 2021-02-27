@@ -186,12 +186,12 @@ en esta vista se listaran todos los elementos creados y seran vistos tambien en 
 ![blog](./documentacion(indicaciones)/Funcionamiento-SI/vistaBlog.PNG)
 
 ### Crear Blog
-en esta vista se podran crear cad elemento de blog lo cual se podran ingresar elementos de alto contendio de texto para que sean visualizado en la pagina web
+en esta vista se podran crear cada elemento de blog lo cual se podran ingresar elementos de alto contendio de texto para que sean visualizado en la pagina web
 
 ![crearblog](./documentacion(indicaciones)/Funcionamiento-SI/crearBlog.PNG)
 
 ## Editar Blog
-aqui se podra cambiar los datos de cad elemento de blog creado
+aqui se podra cambiar los datos de cada elemento de blog creado
 
 ![editarblog](./documentacion(indicaciones)/Funcionamiento-SI/editarBlog.PNG)
 
@@ -200,7 +200,8 @@ en esta vista el administrador solo podra ver y eliminar los datos de los postul
 
 ![postulantes](./documentacion(indicaciones)/Funcionamiento-SI/vistaPostulantes.PNG)
 ### Ver Postulantes
-Aqui solo se podra ver los datos detallados de cad postulante que halla ingresado su informacion en la pagina web
+Aqui solo se podra ver los datos detallados de cada postulante que halla ingresado su informacion en la pagina web tambien descargar su respectivo cv en PDF 
+
 ![verpostulantes](./documentacion(indicaciones)/Funcionamiento-SI/verPostulantes.PNG)
 
 
