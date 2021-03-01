@@ -565,7 +565,7 @@
 
 
 
-
+<!-- 
 <style>
     .contact_form {
         border: none;
@@ -667,7 +667,7 @@
 
 
 </style>
-
+-->
 
 <!-- 
     <div id="contactos" class="section wb">
@@ -729,11 +729,12 @@
 
 
 
-
+<!-- 
 
                             <div id="contactos" class="row no-gutters">
 								<div class="col-md-6">
                                     <div class="row">
+                                        <br></br>
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4696016253074!2d-71.54112898513709!3d-16.400959688676743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1614279308893!5m2!1ses-419!2spe" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
 									
@@ -789,8 +790,52 @@
                                         </div>
                                     </div>
 							</div>
+-->
 
 
+        <section id="contactos" class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+
+                    <div class="section-header text-center">
+                        <h2 style="color: black;">Contactanos</h2>
+                    </div>
+
+			<div class="container">
+				<div class="row d-flex align-items-stretch no-gutters">
+					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light" style="background-color: #007939 !important;">
+                        <form action="enviarcorreo.php">
+                            <div class="form-group">
+                                <input name="nombre" type="text" class="form-control" placeholder="Tu Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="telefono" type="text" class="form-control" placeholder="Tu Telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Tu Email" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name="motivo" id="motivo" required>
+                                    <option value="">Seleccione...</option>
+                                    <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
+                                    <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
+                                    <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="mensaje" id="" cols="30" rows="7" class="form-control" required placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input style="border-color: white;" type="submit" value="Enviar" class="btn btn-success py-3 px-5">
+                            </div>
+                        </form>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4696016253074!2d-71.54112898513709!3d-16.400959688676743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1614279308893!5m2!1ses-419!2spe" width="600" height="580" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        
+					</div>
+				</div>
+			</div>
+		</section>
 
 
     <br></br>

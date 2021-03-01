@@ -27,8 +27,7 @@
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     </head>
-
-    <body onLoad="redireccionar()">
+   <body onLoad="redireccionar()">
         <div class="wrapper">
             <!-- Top Bar Start -->
             <div class="top-bar">
@@ -148,15 +147,15 @@
                         <div class="container">
                             <div class="row">
                             <div class="jumbotron">
-                                <h1>Electromatic : Confirmación</h1>
-                                <p>Gracias por enviar tu CV, recibiras una respuesta en lo antes posible.</p>
+                                <h1>Electromatic : Tus Datos Se Han Enviado, exitosamente.</h1>
+                                <p style="font-size: 20px;">Gracias por enviar tu CV, recibiras una respuesta en lo antes posible.</p>
                             </div>
                             </div>
                         </div>
 
                         <script language="JavaScript">
                             function redireccionar() {
-                                setTimeout("location.href='http://localhost/electromatic/public/'", 3000);
+                                setTimeout("location.href='http://localhost/electromatic/public/'", 2000);
                             }
                         </script>
                     </div>
