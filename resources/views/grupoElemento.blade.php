@@ -66,7 +66,7 @@
                                             <i class="flaticon-call"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>LLamanos</h3>
+                                            <h3>LLámanos</h3>
                                             <p>054-399450 - 964-770-354</p>
                                         </div>
                                     </div>

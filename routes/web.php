@@ -40,14 +40,10 @@ Route::get('/Vista-Confirmacion', function () {
 
 
 //Contacto
-Route::resource('contactos', 'ContactosController');
-
-Route::get('/Vista-Contacto', function () {
-    return view('contacto');
-});
+//Route::resource('contactos', 'ContactosController');
 
 
-//Contacto
+
 //blogs
 Route::get('{blog}/Vista-Blog-Elemento', 'FrontController@viewBlog');
 Route::get('/Vista-Blog', 'FrontController@indexBlogs');
