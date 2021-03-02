@@ -263,29 +263,31 @@
 
 
             <!-- Postulantes Start -->
-            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                           <h1 style="color: white;" >¿Le interesa trabajar con nosotros?</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                        <div class="ml-auto">
-                                <a class="btn btn-secondary btn-lg" href="{{ url('postulantes/create') }}">POSTULA AQUI</a>
+                <!-- 
+                    <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                <h1 style="color: white;" >¿Le interesa trabajar con nosotros?</h1>
+                                </div>
                             </div>
-                            
+                            <div class="row">
+                                <div class="col-12">
+                                <div class="ml-auto">
+                                        <a class="btn btn-secondary btn-lg" href="{{ url('postulantes/create') }}">POSTULA AQUI</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Testimonial End -->
+                -->
+            <!-- Postulantes End -->
 
 
 
             <!-- Team Start -->
-                <div id="contactos" class="team">
+                <div class="team">
                     <div class="team-item">
 
                     <!-- Footer Start -->
@@ -294,7 +296,7 @@
                                 <div class="row">
                                     <div class="col-sm-2">
                                         <div class="footer-link">
-                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <h2><i class="fas fa-phone-alt"></i> Teléfonos</h2>		
                                             <a style="color: white;"> 054-399450</a>
                                             <a style="color: white;"> 964-770-354</a>
                                         </div>

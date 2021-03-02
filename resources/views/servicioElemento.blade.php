@@ -595,7 +595,7 @@
         <br></br>
 
             <!-- Team Start -->
-                <div id="contactos" class="team" style="width: 100%;">
+            <div class="team" style="width: 100%;">
                     <div class="team-item">
 
                     <!-- Footer Start -->
@@ -604,7 +604,7 @@
                                 <div class="row">
                                     <div class="col-sm-2">
                                         <div class="footer-link">
-                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <h2><i class="fas fa-phone-alt"></i> Teléfonos</h2>		
                                             <a style="color: white;"> 054-399450</a>
                                             <a style="color: white;"> 964-770-354</a>
                                         </div>

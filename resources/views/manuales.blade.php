@@ -139,16 +139,12 @@
                 </div>
             <!-- Nav Bar End -->
 
-            <!-- Page Header Start -->
-                <div class="page-header" style="background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-image: url('https://www.grupoalbe.com/wp-content/uploads/2018/01/pexels-photo-265118.jpeg');">
+            <!-- Page Header Start -->   <!-- https://energytel.typepad.com/.a/6a0120a80c0c5a970b0133f079f82a970b-600wi   https://1.bp.blogspot.com/-TPnRxLZJ0BU/V__SKMNSV5I/AAAAAAAACt0/S0_UlYssw3waskVskNDJP9EIOl-hHzHgACLcB/s1600/Esquema%2Belectronico.jpg     https://www.ambientum.com/wp-content/uploads/2018/10/industria-696x391.jpg--> 
+                <div class="page-header" style="background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-image: url('img/nuevo.png');">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <h2>MANUALES</h2>
-                            </div>
-                            <div class="col-12">
-                                <a>INICIO</a>
-                                <a>MANUALES</a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +208,7 @@
             <!-- Single Post End-->   
 
             <!-- Team Start -->
-                <div id="contactos" class="team">
+                <div class="team">
                     <div class="team-item">
 
                     <!-- Footer Start -->
@@ -221,7 +217,7 @@
                                 <div class="row">
                                     <div class="col-sm-2">
                                         <div class="footer-link">
-                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <h2><i class="fas fa-phone-alt"></i> Teléfonos</h2>		
                                             <a style="color: white;"> 054-399450</a>
                                             <a style="color: white;"> 964-770-354</a>
                                         </div>

@@ -289,7 +289,7 @@
                             <div class="col-lg-12">
                                 <div class="section-tittle mb-55">
                                 <div class="section-header text-center">
-                                        <h2 style="color: black;">Nuestros Principales Servicios</h2>
+                                        <h2 style="color: black;">Nuestros Servicios</h2>
                                     </div>
                                 </div>
                             </div>
@@ -796,7 +796,7 @@
         <section id="contactos" class="ftco-section ftco-no-pt ftco-no-pb contact-section">
 
                     <div class="section-header text-center">
-                        <h2 style="color: black;">Contactanos</h2>
+                        <h2 style="color: black;">Contáctanos</h2>
                     </div>
 
 			<div class="container">
@@ -814,7 +814,7 @@
                             </div>
                             <div class="form-group">
                                 <select class="form-control" name="motivo" id="motivo" required>
-                                    <option value="">Seleccione...</option>
+                                    <option value="">Mencione su motivo...</option>
                                     <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
                                     <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
                                     <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
@@ -919,7 +919,7 @@
                                 <div class="row">
                                     <div class="col-sm-2">
                                         <div class="footer-link">
-                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <h2><i class="fas fa-phone-alt"></i> Teléfonos</h2>		
                                             <a style="color: white;"> 054-399450</a>
                                             <a style="color: white;"> 964-770-354</a>
                                         </div>

@@ -271,12 +271,12 @@
             <div class="about wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="section-header text-left">
                                 <h3 style="color: black;"><b>HISTORIA</b></h3>
                             </div>
                             <div class="about-text" >
-                                <p>
+                                <p style="text-align: justify;">
                                             ELECTROMATIC INDUSTRIAL, se consolido en el año 2013 con el fin de 
                                             dar soluciones alternativas en el campo de la energía, para los cual nos especializamos en el rubro eléctrico, 
                                             electromecánico dedicada principalmente al dimensionamiento, instalación y mantenimiento de grupos electrógenos. 
@@ -286,6 +286,7 @@
                             
                             </div>
                         </div>
+                        <div class="col-lg-1 col-md-1"></div>
                         <div class="col-lg-5 col-md-6">
                             <!-- Deslizable de imagenes -->
                             <div class="div-ayuda" style=" width: 100% ;top: 50px; left: 60px; position: absolute; z-index: 1;">
@@ -949,8 +950,8 @@
       <br><br>
 
             <!-- Team Start -->
-                <div class="team" id="contactos" style="font-family: 'Poppins', sans-serif;">
-                    <div class="team-item">
+                <div class="team">
+                    <div class="team-item" style="font-family: 'Poppins', sans-serif;">
 
                     <!-- Footer Start -->
                         <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -958,7 +959,7 @@
                                 <div class="row">
                                     <div class="col-sm-2">
                                         <div class="footer-link">
-                                            <h2><i class="fas fa-phone-alt"></i> Telefonos</h2>		
+                                            <h2><i class="fas fa-phone-alt"></i> Teléfonos</h2>		
                                             <a style="color: white;"> 054-399450</a>
                                             <a style="color: white;"> 964-770-354</a>
                                         </div>
