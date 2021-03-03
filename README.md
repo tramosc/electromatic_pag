@@ -1,6 +1,7 @@
 ## Indicaciones para el proyecto
-El proyecto se diseño en Laravel 7 a traves del servidor wampp
-la base de datos exportada se encuentra en la carpeta (/documentacion(indicaciones)/pag_electromatic.sql)
+El proyecto se diseño en Laravel 7 a traves del servidor wampp.
+
+La base de datos exportada se encuentra en la carpeta (/documentacion(indicaciones)/pag_electromatic.sql)
 
 ## Base de Datos
 
