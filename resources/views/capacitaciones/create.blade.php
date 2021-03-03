@@ -30,7 +30,7 @@
             </div>
 
             <hr></hr>
-            <h2>Archivos PDF</h2>
+            <h2>Archivos PDF (opcionales)</h2>
             <div class="col-md-6">
                 <label for="titulo_archivo1" class="form-label">Titulo del archivo 1</label>
                 <input type="text" class="form-control" name="titulo_archivo1" id="titulo_archivo1">

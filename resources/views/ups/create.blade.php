@@ -24,7 +24,7 @@
                 <label for="img_uno" class="form-label">Imagen Portada</label>
                 <input type="file" class="form-control" name="img_uno" id="img_uno" required accept="image/png, image/jpeg" >
             </div>
-            <h3>Imagenes para Zoom</h3>
+            <h3>Imagenes para Zoom (opcionales)</h3>
             <div class="col-md-6">
                 <label for="img_zoom1" class="form-label">Imagen Zoom 1</label>
                 <input type="file" class="form-control" name="img_zoom1" id="img_zoom1" accept="image/png, image/jpeg" >

@@ -56,7 +56,7 @@
                 <label for="parrafo3">Datos...</label>
                 </div>
             </div>
-            <h1><b>Imagenes para galeria</b></h1>
+            <h1><b>Imagenes para galeria(elementos opcionales)</b></h1>
 
             <!-- Imagenes  -->
             <div class="col-md-6">
