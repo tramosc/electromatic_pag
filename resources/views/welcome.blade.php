@@ -38,14 +38,14 @@
     <body>
         
         <div class="wrapper">
+        
             <!-- Top Bar Start -->
-            
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <a href="">
+                                <a href="{{ url('/') }}">
                                 <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -104,37 +104,13 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
-                                <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                
-                                <!-- 
-                                    <div class="nav-item dropdown">
-                                        <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                        <div class="dropdown-menu">
-                                            <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                            <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                            <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                            <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                        </div>
-                                    </div>
-                                -->
-                                <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
-                                <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
-                                <!-- 
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
-                                    <div class="dropdown-menu">
-                                        <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
-                                        <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
-                                        <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
-                                    </div>
-                                </div>
-                                -->
-                                <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
-                                <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
+                                <a href="{{ url('/') }}" class="nav-item nav-link active">INICIO</a>
+                                <a href="{{ url('/Vista-Empresa') }}" class="nav-item nav-link">NOSOTROS</a>
+                                <a href="{{ url('/Vista-Servicios') }}" class="nav-item nav-link">SERVICIOS</a>
+                                <a href="{{ url('/Vista-Suministros-Generales') }}" class="nav-item nav-link">SUMINISTROS</a>
+                                <a href="{{ url('/Vista-Manuales') }}" class="nav-item nav-link">MANUALES</a>
+                                <a href="{{ url('/Vista-Capacitaciones') }}" class="nav-item nav-link">CAPACITACIONES</a>
+                                <a href="{{ url('/Vista-Blog') }}" class="nav-item nav-link">Blog</a>
                             </div>
                             <div class="ml-auto">
                                 <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
@@ -162,82 +138,6 @@
 -->
             </section>
 
-
-            <!-- Service Start -->
-                <!-- 
-                    <div class="service">
-                        <div class="container">
-                            <div class="section-header text-center">
-                                <h2 style="color: black;">Nuestros Principales Servicios</h2>
-                            </div>
-                            <div class="row">
-                            @foreach($servicios as $servicio)
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="service-item">
-                                        <div class="service-img">
-                                            <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
-                                            <div class="service-overlay">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="service-text">
-                                            <h3>{{$servicio->titulo_servicios}}</h3>
-                                            <a class="btn" href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">+</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                            </div>
-                                <br></br>
-                                    <style>
-                                        .button {
-                                        border-radius: 4px;
-                                        background-color: #007939;
-                                        border: none;
-                                        color: #FFFFFF;
-                                        text-align: center;
-                                        font-size: 28px;
-                                        padding: 20px;
-                                        width: 200px;
-                                        transition: all 0.5s;
-                                        cursor: pointer;
-                                        margin: 5px;
-                                        }
-
-                                        .button span {
-                                        cursor: pointer;
-                                        display: inline-block;
-                                        position: relative;
-                                        transition: 0.5s;
-                                        }
-
-                                        .button span:after {
-                                        content: '\00bb';
-                                        position: absolute;
-                                        opacity: 0;
-                                        top: 0;
-                                        right: -20px;
-                                        transition: 0.5s;
-                                        }
-
-                                        .button:hover span {
-                                        padding-right: 25px;
-                                        }
-
-                                        .button:hover span:after {
-                                        opacity: 1;
-                                        right: 0;
-                                        }
-                                    </style>
-                                    <center><a href="http://localhost/electromatic/public/Vista-Servicios" class="button"><span style="color: white;">Saber más... </span></a></center>
-
-
-                        </div>
-                    </div>
-                -->
-            <!-- Service End -->
 
 <br></br>
 <style>
@@ -356,93 +256,12 @@
                                                 right: 0;
                                                 }
                                             </style>
-                                            <center><a href="http://localhost/electromatic/public/Vista-Servicios" class="button"><span style="color: white;">Ver Todos Los servicios</span></a></center>
+                                            <center><a href="{{ url('/Vista-Servicios') }}" class="button"><span style="color: white;">Ver Todos Los servicios</span></a></center>
                     </div>
                 </div>
                 
         <!-- Services Area End -->
 
-
-        <!-- Services Area Start -->
-           <!--                             
-            <div class="services-area1 section-padding30">
-                <div class="container">
-                    
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-55">
-                            <div class="section-header text-center">
-                                    <h2 style="color: black;">Nuestros Principales Servicios</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        @foreach($servicios as $servicio)
-                            <div class="col-xl-3 col-lg-4 col-md-6">
-                                <div class="single-service-cap mb-30">
-                                    <div class="service-img">
-                                        <img src="{{asset('storage').'/'.$servicio->img_portada}}" alt="Image">
-                                    </div>
-                                    <div class="service-cap">
-                                        <h4><a href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}">{{$servicio->titulo_servicios}}</a></h4>
-                                        <p>{{$servicio->descripcion}}</p>
-                                        <a href="{{ url('/'.$servicio->id.'/Vista-Servicio-Elemento') }}" class="more-btn">Ver Mas...<i class="ti-plus"></i></a>
-                                    </div>
-                                    <div class="service-icon">
-                                        <hr></hr>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                    <br></br>
-                                        <style>
-                                            .button {
-                                            border-radius: 4px;
-                                            background-color: #007939;
-                                            border: none;
-                                            color: #FFFFFF;
-                                            text-align: center;
-                                            font-size: 28px;
-                                            padding: 20px;
-                                            width: 200px;
-                                            transition: all 0.5s;
-                                            cursor: pointer;
-                                            margin: 5px;
-                                            }
-
-                                            .button span {
-                                            cursor: pointer;
-                                            display: inline-block;
-                                            position: relative;
-                                            transition: 0.5s;
-                                            }
-
-                                            .button span:after {
-                                            content: '\00bb';
-                                            position: absolute;
-                                            opacity: 0;
-                                            top: 0;
-                                            right: -20px;
-                                            transition: 0.5s;
-                                            }
-
-                                            .button:hover span {
-                                            padding-right: 25px;
-                                            }
-
-                                            .button:hover span:after {
-                                            opacity: 1;
-                                            right: 0;
-                                            }
-                                        </style>
-                                        <center><a href="http://localhost/electromatic/public/Vista-Servicios" class="button"><span style="color: white;">Ver Todos Los servicios</span></a></center>
-                </div>
-            </div>
-            --> 
-        <!-- Services Area End -->
 
 
             <br></br>
@@ -564,233 +383,6 @@
 <br></br>
 
 
-
-<!-- 
-<style>
-    .contact_form {
-        border: none;
-        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-        background-color: #f8f8f8;
-        padding: 40px 30px;
-        margin-right: -15px;
-    }
-
-    .contact_form .form-control {
-        background-color: #fff;
-        margin-bottom: 30px;
-        border: 1px solid #ebebeb;
-        box-sizing: border-box;
-        color: #bcbcbc;
-        font-size: 16px;
-        outline: 0 none;
-        padding: 10px 25px;
-        height: 55px;
-        resize: none;
-        box-shadow: none !important;
-        width: 100%;
-    }
-
-    .contact_form textarea {
-        color: #bcbcbc;
-        padding: 20px 25px !important;
-        height: 160px !important;
-    }
-
-    .contact_form .form-control::-webkit-input-placeholder {
-        color: #bcbcbc;
-    }
-
-    .contact_form .form-control::-moz-placeholder {
-        opacity: 1;
-        color: #bcbcbc;
-    }
-
-    .contact_form .form-control::-ms-input-placeholder {
-        color: #bcbcbc;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    .contactForm textarea.form-control {
-    height: inherit !important; }
-
-
-    .contact-wrap {
-    background: #fff; }
-
-    .contactForm .label {
-    color: #007939  !important;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600; }
-
-    .contactForm .form-control {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0; }
-
-    .contactForm .form-control {
-    height: 36px;
-    background: #fff;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    border-radius: 2px;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .contactForm .form-control::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: rgba(0, 0, 0, 0.5) !important; }
-    .contactForm .form-control::-moz-placeholder {
-        /* Firefox 19+ */
-        color: rgba(0, 0, 0, 0.5) !important; }
-    .contactForm .form-control:-ms-input-placeholder {
-        /* IE 0+ */
-        color: rgba(0, 0, 0, 0.5) !important; }
-    .contactForm .form-control:-moz-placeholder {
-        /* Firefox 18- */
-        color: rgba(0, 0, 0, 0.5) !important; }
-    .contactForm .form-control:focus, .contactForm .form-control:active {
-        border-color: #007939  !important; }
-
-    .contactForm textarea.form-control {
-    height: inherit !important; }
-
-
-</style>
--->
-
-<!-- 
-    <div id="contactos" class="section wb">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2 style="color: black;"> ¿Quiere realizar una cotizacion? ¡Envianos un correo!</h2>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xl-6 col-md-12 col-sm-12">
-                    <div class="contact_form">
-                        <div id="message"></div>
-                        <form id="contactform" class="" action="enviarcorreo.php" name="contactform" method="post">
-                            <div class="row row-fluid">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Su Nombre">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Su Telefono">
-                                </div>
-                                <br></br>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Tu Email">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <select class="form-control" name="motivo" id="motivo" required>
-                                                <option value="">Seleccione...</option>
-                                                <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
-                                                <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
-                                                <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
-                                            </select>
-                                </div>
-                                <br></br>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="form-control" name="mensaje" id="mensaje" rows="6" placeholder="Detalles"></textarea>
-                                </div>
-                                <div class="text-center pd">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-success btn-radius btn-brd grd1 btn-block">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-
-				<div class="col-xl-6 col-md-12 col-sm-12">
-					<div class="map-box">
-                        <div class="row">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4696016253074!2d-71.54112898513709!3d-16.400959688676743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1614279308893!5m2!1ses-419!2spe" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-				</div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!-- end section -->
-
-
-
-<!-- 
-
-                            <div id="contactos" class="row no-gutters">
-								<div class="col-md-6">
-                                    <div class="row">
-                                        <br></br>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4696016253074!2d-71.54112898513709!3d-16.400959688676743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684292ea9%3A0x8745faeb5ca5bd33!2sELECTROMATIC%20INDUSTRIAL%20S.R.L.!5e0!3m2!1ses-419!2spe!4v1614279308893!5m2!1ses-419!2spe" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-									
-								</div>
-								<div class="col-md-6 order-md-first d-flex align-items-stretch">
-                                    <div class="contact-wrap w-100 p-md-5 p-4">
-                                            <h3 class="mb-4">Contáctanos.</h3>
-                                            <form method="POST" id="contactForm" action="enviarcorreo.php" name="contactForm" class="contactForm">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="label" for="subject">Asunto</label>
-                                                            <select style="color: black;" class="form-control" name="motivo" id="motivo" required>
-                                                                <option value="">Seleccione...</option>
-                                                                <option name="motivo" id="motivo">Compra de un grupo electrógeno</option>
-                                                                <option name="motivo" id="motivo">Alquiler de un grupo electrógeno</option>
-                                                                <option name="motivo" id="motivo">Mantenimiento de un grupo electrógeno</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <br></br>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="label" for="name">Nombre</label>
-                                                            <input style="color: black;" type="text" class="form-control" name="name" id="name" placeholder="Nombre">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group">
-                                                            <label class="label" for="telefono">Telefono</label>
-                                                            <input style="color: black;" type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="label" for="email">Correo</label>
-                                                            <input style="color: black;" type="email" class="form-control" name="email" id="email" placeholder="Su Correo">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label class="label" for="mensaje">Mensaje</label>
-                                                            <textarea style="color: black;" name="mensaje" class="form-control" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <a type="submit" class="btn btn-success" style="color: white;"> Enviar </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-							</div>
--->
 
 
         <section id="contactos" class="ftco-section ftco-no-pt ftco-no-pb contact-section">

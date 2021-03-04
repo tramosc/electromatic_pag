@@ -37,7 +37,7 @@
 
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <a href="">
+                            <a href="{{ url('/') }}">
                                 <img src="{{ asset('img/logo1.png') }}" width="350" height="110" alt="Image">
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -75,7 +75,7 @@
                                         </div>
 
                                         <div class="top-bar-text">
-                                        <a href="http://localhost/electromatic/public/#contactos">Cotizar</a>
+                                        <a href="{{ url('/#contactos') }}">Cotizar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -88,55 +88,31 @@
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
-                <div class="nav-bar">
-                    <div class="container-fluid">
-                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                            <a href="#" class="navbar-brand">MENU</a>
-                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                <div class="navbar-nav mr-auto">
-                                    <a href="http://localhost/electromatic/public/" class="nav-item nav-link active">INICIO</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Empresa" class="nav-item nav-link">NOSOTROS</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-item nav-link">SERVICIOS</a>
-                                    
-                                    <!-- 
-                                        <div class="nav-item dropdown">
-                                            <a href="http://localhost/electromatic/public/Vista-Servicios" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-                                            <div class="dropdown-menu">
-                                                <a href="http://localhost/electromatic/public/1/Vista-Servicio-Elemento" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                                <a href="http://localhost/electromatic/public/2/Vista-Servicio-Elemento" class="dropdown-item">POZOS DE PUESTA A TIERRA</a> 
-                                                <a href="http://localhost/electromatic/public/3/Vista-Servicio-Elemento" class="dropdown-item">AUDITORIA ENERGETICA</a>
-                                                <a href="http://localhost/electromatic/public/4/Vista-Servicio-Elemento" class="dropdown-item">UPS</a>
-                                            </div>
-                                        </div>
-                                    -->
-                                    <!-- <a href="http://localhost/electromatic/public/Vista-Repuestos" class="nav-item nav-link">REPUESTOS</a> -->
-                                    <a href="http://localhost/electromatic/public/Vista-Suministros-Generales" class="nav-item nav-link">SUMINISTROS</a>
-                                    <!-- 
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SUMINISTROS</a>
-                                        <div class="dropdown-menu">
-                                            <a href="http://localhost/electromatic/public/Vista-Grupos" class="dropdown-item">GRUPOS ELECTROGENOS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Pozos" class="dropdown-item">POZOS DE PUESTA A TIERRA</a>
-                                            <a href="http://localhost/electromatic/public/Vista-UPS" class="dropdown-item">UPS</a>
-                                            <a href="http://localhost/electromatic/public/Vista-Suministros" class="dropdown-item">SUMINISTROS</a>
-                                        </div>
-                                    </div>
-                                    -->
-                                    <a href="http://localhost/electromatic/public/Vista-Manuales" class="nav-item nav-link">MANUALES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Capacitaciones" class="nav-item nav-link">CAPACITACIONES</a>
-                                    <a href="http://localhost/electromatic/public/Vista-Blog" class="nav-item nav-link">Blog</a>
-                                </div>
-                                <div class="ml-auto">
-                                    <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
-                                </div>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="{{ url('/') }}" class="nav-item nav-link active">INICIO</a>
+                                <a href="{{ url('/Vista-Empresa') }}" class="nav-item nav-link">NOSOTROS</a>
+                                <a href="{{ url('/Vista-Servicios') }}" class="nav-item nav-link">SERVICIOS</a>
+                                <a href="{{ url('/Vista-Suministros-Generales') }}" class="nav-item nav-link">SUMINISTROS</a>
+                                <a href="{{ url('/Vista-Manuales') }}" class="nav-item nav-link">MANUALES</a>
+                                <a href="{{ url('/Vista-Capacitaciones') }}" class="nav-item nav-link">CAPACITACIONES</a>
+                                <a href="{{ url('/Vista-Blog') }}" class="nav-item nav-link">Blog</a>
                             </div>
-                        </nav>
-                    </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="http://intranet.electromaticindustrial.com/" target="_blank">ZONA CLIENTES</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+            </div>
             <!-- Nav Bar End -->
 
             <!-- Single Post Start-->
@@ -591,7 +567,7 @@
                 right: 0;
                 }
             </style>
-            <center><a href="http://localhost/electromatic/public/#contactos" class="button"><span style="color: white;">Cotizar Ahora...</span></a></center>
+            <center><a href="{{ url('/#contactos') }}" class="button"><span style="color: white;">Cotizar Ahora...</span></a></center>
         <br></br>
 
             <!-- Team Start -->

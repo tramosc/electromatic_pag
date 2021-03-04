@@ -1,6 +1,6 @@
 <?php
 
-$destino = "toni.ramos@tecsup.edu.pe";
+$destino = "servicios_cliente@electromaticindustrial.com";
 //Esto es al correo que se enviarÃ¡ el mensaje
 
 $nombre = $_POST['nombre']; 
